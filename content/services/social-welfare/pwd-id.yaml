@@ -1,0 +1,48 @@
+# PWD ID
+# Page: /services/social-welfare/pwd-id
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 87
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: PWD ID
+fullTitle: Provision of Persons with Disability (PWD) Identification Card
+summary: ID for persons with disability under the Magna Carta for Disabled Persons
+description: The MSWDO issues the PWD ID as mandated by R.A. 7277, the Magna Carta for Disabled
+  Persons. ID holders can avail of programs and services from government and private agencies.
+icon: Accessibility
+office: mswdo
+source:
+  page: 87
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Persons with disability
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Medical certificate or certificate of disability showing the type of disability (DOH
+      category)
+    where: Attending physician, RHU, hospital or clinic
+  - item: Barangay certification
+    where: Sangguniang Barangay
+steps:
+- client: Write your name and purpose in the client logbook.
+  agency:
+  - Briefs you on the service and its requirements
+  fee: None
+  time: 3 minutes
+  responsible: DSWD Staff
+- client: Submit the documents discussed with you.
+  agency:
+  - Interviews you and fills out the PWD form
+  fee: None
+  time: 5 minutes
+  responsible: DSWD Staff
+- client: Go to the MSWDO on the release date, get your PWD ID and sign the logbook.
+  agency:
+  - Releases the PWD ID
+  fee: None
+  time: 2 minutes
+  responsible: DSWD Staff
+totalFee: None
+totalTime: 10 minutes

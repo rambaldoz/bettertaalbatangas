@@ -1,0 +1,55 @@
+# Cancellation of Tricycle Franchise
+# Page: /services/community/tricycle-franchise-cancellation
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 24
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Cancellation of Tricycle Franchise
+summary: Cancel a tricycle franchise and get a certificate of cancellation
+description: The Sangguniang Bayan may revoke, cancel or withdraw a tricycle franchise at any time on
+  reasonable grounds. Franchise holders may also apply to cancel their franchise.
+icon: Ban
+office: sb-secretariat
+source:
+  page: 24
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: All
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Notarized application form
+    where: Applicant
+  - item: Franchise to be cancelled
+    where: Applicant
+  - item: Official receipt
+    where: Applicant
+steps:
+- client: Get the list of requirements from the Sangguniang Bayan Office.
+  agency:
+  - Prepares the list of requirements
+  fee: None
+  time: 5 minutes
+  responsible: Administrative Aide VI (Clerk III)
+- client: Get the order of payment slip.
+  agency:
+  - Prepares the order of payment slip
+  fee: None
+  time: 5 minutes
+  responsible: Administrative Aide VI
+- client: Pay for the certificate of cancellation at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee: ₱100.00
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Claim the certificate of cancellation.
+  agency:
+  - Prepares the certificate of cancellation (5 minutes)
+  - Issues the certificate of cancellation (3 minutes)
+  fee: None
+  time: 8 minutes
+  responsible: Administrative Aide VI
+totalFee: ₱100.00
+totalTime: 23 minutes

@@ -1,0 +1,77 @@
+# TUPAD (Emergency Employment)
+# Page: /services/jobs/tupad
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 112
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: TUPAD (Emergency Employment)
+fullTitle: Tulong Panghanapbuhay sa Ating Disadvantaged/Displaced Workers (TUPAD)
+summary: Short-term paid community work for disadvantaged and displaced workers
+description: TUPAD is a community-based, short-term employment program. Beneficiaries are paid to do unskilled
+  work such as community clean-ups and repairs of public facilities, giving temporary income while helping
+  the community.
+icon: HardHat
+office: peso
+source:
+  page: 112
+classification: Complex
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Disadvantaged and displaced workers
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: TUPAD application form
+    where: Applicant
+  - item: Valid ID
+    where: Applicant
+  - item: Barangay certificate
+    where: Barangay where you live
+steps:
+- client: Ask PESO about the TUPAD program.
+  agency:
+  - Explains the program and screens your eligibility
+  fee: None
+  time: 10 minutes
+  responsible: PESO Officer
+- client: Submit your completed TUPAD requirements.
+  agency:
+  - Reviews and validates the documents
+  fee: None
+  time: 15 minutes
+  responsible: PESO Officer
+- client: Complete your registration.
+  agency:
+  - Registers you under TUPAD
+  fee: None
+  time: 10 minutes
+  responsible: PESO Officer
+- client: Attend the TUPAD orientation.
+  agency:
+  - Conducts the orientation
+  fee: None
+  time: 40 minutes
+  responsible: PESO Officer
+- client: Receive your work assignment and schedule.
+  agency:
+  - Issues the assignment and coordination details
+  fee: None
+  time: 5 minutes
+  responsible: PESO Officer
+- client: Do the assigned work.
+  agency:
+  - Monitors the work and makes sure the program rules are followed
+  fee: None
+  time: 3 days
+  responsible: PESO Officer
+- client: Attend the payout and sign the needed documents.
+  agency:
+  - Schedules the payout
+  fee: None
+  time: 2 hours
+  responsible: PESO Officer
+totalFee: None
+totalTime: 3 days, 3 hours and 20 minutes
+notes:
+- The Charter lists "Students/Graduates" under who may avail, which appears to be copied from the previous
+  service. TUPAD is for disadvantaged and displaced workers, so we show that instead.

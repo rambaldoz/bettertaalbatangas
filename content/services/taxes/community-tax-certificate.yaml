@@ -1,0 +1,52 @@
+# Community Tax Certificate (Cedula)
+# Page: /services/taxes/community-tax-certificate
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 72
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Community Tax Certificate (Cedula)
+fullTitle: Issuance of Community Tax Certificate
+summary: Get your cedula, as an individual or a corporation
+description: A Community Tax Certificate (CTC or cedula) is proof that you are a resident of
+  the municipality and have paid the community tax based on income from business, profession
+  or real property. Profit and non-profit corporations and other entities operating in Taal
+  must also get one.
+icon: IdCard
+office: mto
+source:
+  page: 72
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Resident individuals or corporations
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: 'Proof of previous year''s income: BIR Form 2316, or statement of prior year gross
+      sales or revenue'
+    where: Employer, or the business's books of accounts
+  - item: Completed information sheet
+    where: Municipal Treasurer's Office
+  - item: ID of the client
+    where: Client
+steps:
+- client: Fill out the client information sheet and submit your proof of income to the cashier.
+  agency:
+  - Computes the amount to pay
+  - Prints the CTC (Form No. 0016 for individuals
+  - 0017 for corporations)
+  fee: None
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Pay the assessed amount and put your thumbmark on the three (3) copies of the CTC.
+  agency:
+  - Receives payment
+  fee:
+  - 'Individuals: basic community tax ₱5.00, plus ₱1.00 for every ₱1,000.00 of income from business,
+    salary, profession or real property'
+  - 'Corporations: basic community tax ₱500.00, plus ₱2.00 for every ₱5,000.00 of prior-year
+    earnings in the Philippines or assessed value of real property owned'
+  time: 5 minutes
+  responsible: Revenue Collection Clerk II
+totalFee: As assessed
+totalTime: 10 minutes

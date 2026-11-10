@@ -1,0 +1,46 @@
+# Pollution and Environmental Complaints
+# Page: /services/environment/environmental-complaint
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 117
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Pollution and Environmental Complaints
+fullTitle: Responding to Complaints Related to Pollution and Violation of Environmental Laws
+summary: Report pollution, sanitation problems and environmental violations
+description: The municipality receives complaints about pollution, environmental laws, sanitation and
+  nuisances from residents and businesses. These are referred to MENRO or the Municipal Health Office
+  for investigation and action.
+icon: Megaphone
+office: menro
+source:
+  page: 117
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Owners of properties within Taal
+requirements:
+- group: 1 copy
+  items:
+  - item: Written and signed letter of complaint to the Municipal Mayor, or through MENRO
+    where: Complainant
+steps:
+- client: Sign the client logbook and submit your written complaint to the Mayor or through MENRO.
+  agency:
+  - Discusses the issue with you and gets the Mayor's approval for the action to take
+  fee: None
+  time: 30 minutes
+  responsible: MENRO / MENRO Staff
+- client: Wait for confirmation of the schedule.
+  agency:
+  - Schedules the inspection and dialogue with the parties concerned
+  fee: None
+  time: 2 to 3 days
+  responsible: MENRO / MENRO Staff
+- client: Attend the dialogue or meeting.
+  agency:
+  - Mediates the meeting to reach an agreement
+  fee: None
+  time: 1 day
+  responsible: MENRO / MENRO Staff
+totalFee: None
+totalTime: 3 days and 30 minutes

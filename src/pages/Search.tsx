@@ -13,12 +13,8 @@ export default function Search() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!query.trim()) {
-      setResults([]);
-      setHasSearched(false);
-      setError(null);
-      return;
-    }
+    // An empty query shows the intro text; nothing to fetch.
+    if (!query.trim()) return;
 
     const timer = setTimeout(async () => {
       setIsLoading(true);
@@ -39,12 +35,19 @@ export default function Search() {
     return () => clearTimeout(timer);
   }, [query]);
 
+  // Results from an earlier query stay in state but are hidden once the box
+  // is cleared, so the effect never has to reset them.
+  const active = query.trim() !== '';
+  const shownError = active ? error : null;
+  const shownResults = active ? results : [];
+  const searched = active && hasSearched;
+
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
       <h1 className="text-2xl font-bold text-gray-900 mb-6">Search</h1>
 
       <div className="relative mb-8">
-        <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+        <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-600" />
         <input
           type="search"
           value={query}
@@ -55,48 +58,51 @@ export default function Search() {
         />
       </div>
 
-      {error && (
-        <div className="text-center py-12 text-red-500 text-sm">{error}</div>
+      {shownError && (
+        <div className="text-center py-12 text-red-500 text-sm">
+          {shownError}
+        </div>
       )}
 
-      {!error && isLoading && (
-        <div className="text-center py-12 text-gray-500 text-sm">
+      {!shownError && isLoading && (
+        <div className="text-center py-12 text-gray-700 text-sm">
           Searching...
         </div>
       )}
 
-      {!error && !isLoading && hasSearched && results.length === 0 && (
-        <div className="text-center py-12 text-gray-500">
+      {!shownError && !isLoading && searched && shownResults.length === 0 && (
+        <div className="text-center py-12 text-gray-700">
           No results for{' '}
-          <span className="font-medium">&ldquo;{query}&rdquo;</span>
+          <span className="font-bold">&ldquo;{query}&rdquo;</span>
         </div>
       )}
 
-      {!error && !isLoading && results.length > 0 && (
+      {!shownError && !isLoading && shownResults.length > 0 && (
         <div className="space-y-3">
-          <p className="text-sm text-gray-500 mb-4">
-            {results.length} result{results.length !== 1 ? 's' : ''} for &ldquo;
+          <p className="text-sm text-gray-700 mb-4">
+            {shownResults.length} result{shownResults.length !== 1 ? 's' : ''}{' '}
+            for &ldquo;
             {query}&rdquo;
           </p>
-          {results.map(hit => (
+          {shownResults.map(hit => (
             <Link key={hit.id} to={hit.url} className="block group">
               <div className="border border-gray-200 rounded-lg p-4 hover:border-primary-300 hover:bg-primary-50 transition-colors">
                 <div className="flex items-center gap-2 mb-2">
                   <span
-                    className={`text-xs font-medium px-2 py-0.5 rounded-full ${
+                    className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                       hit.type === 'service'
-                        ? 'bg-blue-100 text-blue-700'
+                        ? 'bg-primary-100 text-primary-700'
                         : 'bg-green-100 text-green-700'
                     }`}
                   >
                     {hit.category}
                   </span>
                 </div>
-                <h2 className="text-base font-semibold text-gray-900 group-hover:text-primary-700">
+                <h2 className="text-base font-bold text-gray-900 group-hover:text-primary-700">
                   {hit.title}
                 </h2>
                 {hit.description && (
-                  <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+                  <p className="text-sm text-gray-700 mt-1 line-clamp-2">
                     {hit.description}
                   </p>
                 )}
@@ -106,8 +112,8 @@ export default function Search() {
         </div>
       )}
 
-      {!hasSearched && !isLoading && !error && (
-        <div className="text-center py-12 text-gray-400 text-sm">
+      {!searched && !isLoading && !shownError && (
+        <div className="text-center py-12 text-gray-700 text-sm">
           Start typing to search across services and government information
         </div>
       )}

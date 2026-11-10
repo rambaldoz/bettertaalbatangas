@@ -1,0 +1,124 @@
+# Change First Name, Birthday or Sex
+# Page: /services/civil-registry/change-of-first-name-sex-dob
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 58
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Change First Name, Birthday or Sex
+fullTitle: Change of First Name / Correction of Day or Month of Birth / Correction of Sex (R.A.
+  9048 and R.A. 10172)
+summary: Change a first name, or correct the day or month of birth or the sex in a birth certificate
+description: Under R.A. 9048 and R.A. 10172, the Municipal Civil Registrar can process a change
+  of first name, or a correction of the day or month of birth or of sex, without a court order.
+  The petition is published in a newspaper for two weeks before it is decided.
+icon: UserPen
+office: mcr
+source:
+  page: 58
+classification: Highly Technical
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Civil registry document owners
+requirements:
+- group: Mandatory (1 copy each)
+  items:
+  - item: Birth certificate
+    where: PSA / LCRO
+  - item: Police clearance
+    where: Police station
+  - item: NBI clearance
+    where: NBI
+  - item: Affidavit of Non-Employment or Certificate of Employment
+    where: Notary Public / Employer
+- group: At least five (5) of these supporting documents (1 copy each)
+  items:
+  - item: Baptismal certificate
+    where: Church
+  - item: Voter's affidavit
+    where: COMELEC
+  - item: Employment record
+    where: Employer
+  - item: GSIS or SSS record
+  - item: Medical record
+    where: Hospital / clinic
+  - item: Business record
+  - item: School record
+    where: School attended
+  - item: Driver's license
+    where: LTO
+  - item: Insurance
+  - item: Civil registry records of ascendants
+    where: LCRO / PSA
+  - item: Land titles
+  - item: Certificate of Land Transfer
+  - item: Bank passbook
+    where: Bank
+  - item: IDs
+steps:
+- client: Get the checklist of documents at the Civil Registrar's Office. The office will give
+    you specific instructions.
+  agency:
+  - Gives a briefing, the checklist and other instructions
+  fee: None
+  time: 15 minutes
+  responsible: Registration Officer I / Administrative Assistant II / Municipal Civil Registrar
+- client: Submit the required documents and answer the interview.
+  agency:
+  - Receives and reviews the documents and interviews you
+  - Issues an order of payment
+  fee: None
+  time: 30 minutes
+  responsible: Registration Officer I
+- client: Pay the fees at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee: ₱3,000.00 (change of first name, correction of day or month of birth, or correction of
+    sex)
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: Get the endorsement or motion for publication. Present the official receipt and leave
+    the documents for preparation and approval of the petition.
+  agency:
+  - Prepares the petition
+  fee: None
+  time: To be confirmed
+  responsible: Registration Officer I / Administrative Assistant II / Municipal Civil Registrar
+- client: After the two-week publication, submit the certificate of publication and get the
+    approved petition.
+  agency:
+  - Prepares the approved petition for mailing
+  fee: None
+  time: To be confirmed
+  responsible: Registration Officer I / Administrative Assistant II / Municipal Civil Registrar
+- client: Mail the approved petition to the Office of the Civil Registrar General, and keep
+    the courier receipt and a duplicate of the mailed documents.
+  agency: []
+  fee: None
+  time: To be confirmed
+  responsible: Courier (LBC / JRS)
+- client: Follow up at the Civil Registrar's Office after two to three months for the Certificate
+    of Finality.
+  agency:
+  - Tells you the decision of the Civil Registrar General
+  fee: None
+  time: After 2 to 3 months
+  responsible: Municipal Civil Registrar
+- client: 'If the petition is affirmed: mail the Certificate of Finality, record sheet, annotated
+    certificate and endorsement letter to the Office of the Civil Registrar General. If it is
+    impugned: file a motion for reconsideration through the Civil Registrar''s Office within
+    15 days.'
+  agency:
+  - Issues the Certificate of Finality, record sheet, annotated certificate and endorsement
+    letter, or receives the motion and sends it to the OCRG
+  fee: None
+  time: 25 minutes
+  responsible: Municipal Civil Registrar
+- client: Three (3) days after mailing, request the annotated birth certificate on security
+    paper at PSA in Quezon City. Bring copies of the Certificate of Finality, record sheet,
+    annotated certificate and the courier receipt.
+  agency: []
+  fee: None
+  time: Within 15 days
+  responsible: Municipal Civil Registrar
+totalFee: ₱3,000.00
+totalTime: 2 to 3 months, 1 hour and 20 minutes

@@ -1,0 +1,272 @@
+# Birth Registration
+# Page: /services/civil-registry/birth-registration
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 41, 43, 45
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Birth Registration
+fullTitle: Registration of Certificate of Live Birth
+summary: On-time or delayed registration of a child's birth
+description: Birth registration is the permanent and official recording of a child's existence.
+  A birth must be registered within thirty (30) days from the date of birth at the Civil Registrar
+  of the place where the birth happened. Births registered after 30 days are considered delayed.
+icon: Baby
+office: mcr
+transactionType: Government-to-Citizen (G2C)
+variants:
+- name: On-time registration
+  source:
+    page: 41
+  classification: Simple
+  whoMayAvail: Children born in Taal, Batangas
+  requirements:
+  - group: If the birth happened in a hospital, clinic or similar institution (1 photocopy each)
+    items:
+    - item: Accomplished Certificate of Live Birth (Municipal Form No. 102) signed by the attendant
+        at birth
+      where: Hospital, clinic or similar institution
+    - item: Certificate of Marriage of the parents (if applicable)
+      where: LCRO / PSA
+  - group: If the birth happened at home (1 photocopy each)
+    items:
+    - item: Accomplished COLB pre-registration form
+      where: LCRO
+    - item: Certificate of Marriage of the parents
+      where: Requester
+    - item: Certificate from the barangay
+      where: Barangay
+  - group: Additional if the child was born to unmarried parents (1 copy each)
+    items:
+    - item: Affidavit of Admission of Paternity
+      where: LCRO / Notary Public
+    - item: Affidavit to Use the Surname of the Father
+      where: LCRO / Notary Public
+    - item: Cedula (Community Tax Certificate)
+      where: Treasurer's Office
+  - group: For everyone
+    items:
+    - item: Valid ID of the informant and other signatories
+  steps:
+  - client: Check with the Civil Registrar's Office if the hospital has completed the four (4)
+      copies of the Certificate of Live Birth.
+    agency:
+    - Checks if the hospital has submitted the completed copies
+    - Encodes the birth data in the PhilCRIS database
+    - Prints four (4) copies of the COLB
+    fee: None
+    time: 20 minutes
+    responsible: LCR Office Staff
+  - client: Bring the COLB to the attendant at birth for signature.
+    agency:
+    - Attendant signs the certification portion of the COLB
+    fee: None
+    time: 5 minutes
+    responsible: Requester
+  - client: Submit the completed COLB to the Civil Registrar's Office.
+    agency:
+    - Receives the COLB
+    - Assigns the registry number
+    - Signs in the appropriate spaces (prepared by and received by)
+    - Issues an order of payment
+    fee: None
+    time: 25 minutes
+    responsible: Registration Officer I / Administrative Assistant II / LCR Staff
+  - client: Pay the fees at the Municipal Treasurer's Office.
+    agency:
+    - Issues an official receipt
+    fee:
+    - ₱100.00 per copy
+    - Documentary stamp ₱30.00
+    time: 10 minutes
+    responsible: Revenue Collection Clerk
+  - client: Return to the Civil Registrar's Office and present the official receipt.
+    agency:
+    - Releases the owner's copy of the registered COLB
+    fee: None
+    time: 3 minutes
+    responsible: Municipal Civil Registrar
+  totalFee: ₱130.00
+  totalTime: 1 hour and 3 minutes
+- name: Delayed (born in a hospital)
+  source:
+    page: 43
+  classification: Highly Technical
+  whoMayAvail: Applicants for delayed registration of birth, married or unmarried parents
+  requirements:
+  - group: 1 photocopy of the following
+    items:
+    - item: PSA Negative Result (no record of birth)
+      where: PSA
+    - item: Affidavit for Delayed/Late Registration, with two (2) disinterested persons
+      where: Public Attorney's Office / Notary Public
+    - item: National ID
+      where: PhilSys registration outlet
+    - item: Barangay Certificate (proof of residency)
+      where: Barangay
+    - item: 'Any 2 documents of the parents: government-issued ID, birth certificate, death
+        certificate (if deceased)'
+      where: Requester
+    - item: 2x2 picture of the registrant, white background
+    - item: Baptismal certificate or Certificate of No Record
+      where: Place of baptism
+    - item: Certification provided by the Civil Registrar
+      where: Civil Registrar's Office
+    - item: Valid IDs or immunization card
+      where: Municipal Health Office
+    - item: Marriage contract (if married)
+      where: Requester
+  - group: Other supporting documents (1 copy)
+    items:
+    - item: School record or diploma
+      where: School attended
+    - item: PhilHealth MDR
+      where: PhilHealth
+    - item: Voter's ID or certificate
+      where: COMELEC
+    - item: Any other document
+      where: Requester
+    - item: Certificate of Indigency
+      where: Barangay and DSWD
+    - item: Barangay certificate of the place of birth
+  - group: Additional if the child was born to unmarried parents (1 photocopy each)
+    items:
+    - item: Affidavit of Admission of Paternity
+      where: LCRO / Notary Public
+    - item: Affidavit to Use the Surname of the Father
+      where: LCRO
+    - item: Cedula (Community Tax Certificate)
+      where: Treasurer's Office
+  - group: For everyone
+    items:
+    - item: Valid ID of the informant and other signatories
+    - item: The application is posted for 10 days before registration
+  steps:
+  - client: Submit the completed COLB (4 copies) prepared by the hospital.
+    agency:
+    - Reviews the documents for completeness
+    - Issues an order of payment
+    fee: None
+    time: 15 minutes
+    responsible: MCR / LCR Staff
+  - client: Pay the fees at the Municipal Treasurer's Office.
+    agency:
+    - Issues an official receipt
+    fee:
+    - ₱100.00 per year (of delay)
+    - ₱200.00 penalty
+    time: 15 minutes
+    responsible: Revenue Collection Clerk
+  - client: Go back to the Civil Registrar's Office and present the official receipt and all
+      other requirements.
+    agency:
+    - Tells you the release date, after the 10-day posting period
+    fee: None
+    time: 5 minutes
+    responsible: Registration Officer I / Administrative Assistant II / LCR Staff
+  - client: Return on the appointed date and get the registered Certificate of Live Birth.
+    agency:
+    - Assigns the registry number
+    - Signs the COLB (prepared by and received by)
+    - Issues the COLB and records the issuance
+    fee: None
+    time: 8 minutes
+    responsible: Registration Officer I / Administrative Assistant II / LCR Staff / Municipal
+      Civil Registrar
+  totalFee: ₱100.00 per year plus ₱200.00 penalty
+  totalTime: 43 minutes, plus the 10-day posting period
+- name: Delayed (born at home)
+  source:
+    page: 45
+  classification: Highly Technical
+  whoMayAvail: Applicants for delayed registration of birth, married or unmarried parents
+  requirements:
+  - group: 1 photocopy of the following
+    items:
+    - item: PSA Negative Result (no record of birth)
+      where: PSA
+    - item: Affidavit for Delayed/Late Registration, with two (2) disinterested persons
+      where: Public Attorney's Office / Notary Public
+    - item: National ID
+      where: PhilSys registration outlet
+    - item: Barangay Certificate (proof of residency)
+      where: Barangay
+    - item: 'Any 2 documents of the parents: government-issued ID, birth certificate, death
+        certificate (if deceased)'
+      where: Requester
+    - item: 2x2 picture of the registrant, white background
+    - item: Baptismal certificate or Certificate of No Record
+      where: Place of baptism
+    - item: Certification provided by the Civil Registrar
+      where: Civil Registrar's Office
+    - item: Valid IDs or immunization card
+      where: Municipal Health Office
+    - item: Marriage contract (if married)
+      where: Requester
+  - group: Other supporting documents (1 copy)
+    items:
+    - item: School record or diploma
+      where: School attended
+    - item: PhilHealth MDR
+      where: PhilHealth
+    - item: Voter's ID or certificate
+      where: COMELEC
+    - item: Any other document
+      where: Requester
+    - item: Certificate of Indigency
+      where: Barangay and DSWD
+    - item: Barangay certificate of the place of birth
+  - group: Additional if the child was born to unmarried parents (1 photocopy each)
+    items:
+    - item: Affidavit of Admission of Paternity
+      where: LCRO / Notary Public
+    - item: Affidavit to Use the Surname of the Father
+      where: LCRO
+    - item: Cedula (Community Tax Certificate)
+      where: Treasurer's Office
+  - group: For everyone
+    items:
+    - item: Valid ID of the informant and other signatories
+    - item: The application is posted for 10 days before registration
+  steps:
+  - client: Submit the application and the required documents, and answer the interview.
+    agency:
+    - Prepares the COLB based on the information you give
+    fee: None
+    time: 15 minutes
+    responsible: LCR Staff
+  - client: Review the COLB and sign in the space provided.
+    agency:
+    - Checks that the COLB is properly signed
+    - Issues an order of payment
+    fee: None
+    time: To be confirmed
+    responsible: LCR Staff
+  - client: Pay the fees at the Municipal Treasurer's Office.
+    agency:
+    - Issues an official receipt
+    fee:
+    - ₱100.00 per year (of delay)
+    - ₱200.00 penalty
+    time: 5 minutes
+    responsible: Revenue Collection Clerk
+  - client: Present the official receipt and all other requirements to the Civil Registrar's
+      Office.
+    agency:
+    - Tells you the release date, after the 10-day posting period
+    fee: None
+    time: 10 minutes
+    responsible: LCR Staff
+  - client: Go back on the appointed date and get the registered Certificate of Live Birth.
+    agency:
+    - Assigns the registry number
+    - Signs the COLB (prepared by and received by)
+    - Issues the COLB and records the issuance
+    fee: None
+    time: 13 minutes
+    responsible: LCR Staff
+  totalFee: ₱100.00 per year plus ₱200.00 penalty
+  totalTime: 50 minutes, plus the 10-day posting period
+  notes:
+  - The Charter lists step 2's processing time as "a. minutes". We are confirming it with the
+    office.

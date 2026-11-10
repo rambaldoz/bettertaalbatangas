@@ -1,0 +1,51 @@
+# Occupational Permit (Work Endorsement)
+# Page: /services/jobs/work-endorsement
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 12
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Occupational Permit (Work Endorsement)
+fullTitle: Occupational Permit
+summary: Mayor's work endorsement for job seekers
+description: The Office of the Mayor issues a work endorsement (occupational permit) to people seeking
+  employment.
+icon: FileBadge
+office: mayor
+source:
+  page: 12
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Individuals seeking job placement
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Barangay clearance
+    where: Barangay where you live
+  - item: Resume
+    where: Applicant
+  - item: Checklist from the employer
+    where: Employer
+steps:
+- client: Bring all requirements to the Mayor's Office.
+  agency:
+  - Checks the requirements
+  fee: None
+  time: 5 minutes
+  responsible: Mayor's Office Staff
+- client: Pay at the cashier.
+  agency:
+  - Issues an official receipt
+  fee: ₱200.00
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Go back to the Mayor's Office to get your occupational permit.
+  agency:
+  - Issues the occupational permit
+  fee: None
+  time: 5 minutes
+  responsible: Mayor's Office Staff
+totalFee: ₱200.00
+totalTime: 15 minutes
+notes:
+- The Charter gives a total of 10 minutes, but its three steps add up to 15 minutes.

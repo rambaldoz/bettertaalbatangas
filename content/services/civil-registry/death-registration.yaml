@@ -1,0 +1,146 @@
+# Death Registration
+# Page: /services/civil-registry/death-registration
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 49, 52
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Death Registration
+fullTitle: Registration of Certificate of Death
+summary: On-time or delayed registration of a death
+description: The nearest relative or spouse should report a death within forty-eight (48) hours
+  if the person died with medical assistance. The Health Officer examines the deceased, certifies
+  the death and directs its registration with the Civil Registrar within thirty (30) days. Deaths
+  registered after 30 days are considered delayed.
+icon: FileHeart
+office: mcr
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: The nearest relative, or a person who knows the facts of the death
+variants:
+- name: On-time registration
+  source:
+    page: 49
+  classification: Simple
+  requirements:
+  - group: Four (4) copies of the Certificate of Death, signed by
+    items:
+    - item: The informant
+    - item: The attendant at death
+      where: Hospital or clinic administrator; Municipal Health Office if the death happened
+        at home without a physician
+    - item: The embalmer (if applicable)
+    - item: The Municipal Health Officer (MHO)
+      where: Municipal Health Office
+  steps:
+  - client: Go to the Civil Registrar's Office and give the needed information during the interview.
+    agency:
+    - Interviews you
+    fee: None
+    time: 15 minutes
+    responsible: Registration Officer I / Administrative Assistant II / LCR Staff
+  - client: Review the prepared Death Certificate and sign in the space provided.
+    agency:
+    - Gives you a copy of the completed but unregistered death certificate
+    fee: None
+    time: 5 minutes
+    responsible: LCR Staff
+  - client: Bring the Certificate of Death to the embalmer for signature.
+    agency:
+    - Embalmer signs the death certificate
+    fee: None
+    time: 1 hour
+    responsible: Embalmer
+  - client: Pay the fees at the Treasurer's Office.
+    agency:
+    - Issues an official receipt
+    fee:
+    - Burial permit ₱100.00
+    - Non-resident ₱200.00
+    - Opening of niche for exhumation or removal of cadaver ₱200.00
+    - 'Transfer of cadaver: ₱500.00 outside Taal, ₱300.00 within Taal'
+    - Funeral service ₱300.00; outside funeral parlor ₱500.00
+    time: 10 minutes
+    responsible: Revenue Collection Clerk
+  - client: Submit the death certificate and official receipt.
+    agency:
+    - Receives the Certificate of Death
+    - Assigns the registry number
+    - Signs the Certificate of Death for registration
+    fee: None
+    time: 7 minutes
+    responsible: LCR Staff
+  - client: Claim the registered Death Certificate.
+    agency:
+    - Issues the registered death certificate and records the issuance
+    fee: None
+    time: 5 minutes
+    responsible: LCR Staff
+  totalFee: ₱400.00 within Taal; ₱500.00 outside Taal
+  totalTime: 1 hour and 42 minutes
+- name: Delayed registration
+  source:
+    page: 52
+  classification: Highly Technical
+  requirements:
+  - group: Requirements
+    items:
+    - item: Four (4) copies of the Certificate of Death signed by the informant, the attendant
+        at death, the embalmer (if applicable) and the Municipal Health Officer
+      where: Hospital or clinic administrator; Municipal Health Office if the death happened
+        at home without a physician
+    - item: PSA Negative Result
+      where: Philippine Statistics Authority (PSA)
+    - item: Affidavit of Delayed Registration of Death
+      where: Notary Public / Public Attorney's Office
+    - item: Certificate
+      where: Church
+    - item: Picture of the lapida (tombstone)
+      where: Cemetery
+  steps:
+  - client: Submit the requirements to the Civil Registrar's Office.
+    agency:
+    - Evaluates the requirements
+    fee: None
+    time: 5 minutes
+    responsible: LCR Staff
+  - client: Give the required information.
+    agency:
+    - Interviews you
+    - Prepares the Certificate of Death
+    fee: None
+    time: 15 minutes
+    responsible: LCR Staff
+  - client: Review the Certificate of Death and sign it.
+    agency:
+    - Checks that it is properly signed
+    fee: None
+    time: 2 minutes
+    responsible: LCR Staff
+  - client: Bring the Certificate of Death to the Municipal Health Officer.
+    agency:
+    - Asks the cause of death and signs the certification and review portion
+    fee: None
+    time: 15 minutes
+    responsible: Municipal Health Officer
+  - client: Pay the fees at the Treasurer's Office.
+    agency:
+    - Receives payment and issues an official receipt
+    fee: ₱1,000.00 (burial permit and penalty)
+    time: 10 minutes
+    responsible: Revenue Collection Clerk
+  - client: Return the completed Certificate of Death to the Civil Registrar's Office.
+    agency:
+    - Receives it and tells you the release date, after the 10-day posting period
+    - Assigns the registry number
+    fee: None
+    time: 10 days
+    responsible: LCR Staff
+  - client: Claim the registered Death Certificate.
+    agency:
+    - Signs the Certificate of Death for registration
+    - Issues the registered death certificate
+    fee: None
+    time: 7 minutes
+    responsible: LCR Staff
+  totalFee: ₱1,000.00
+  totalTime: 10 days and 54 minutes

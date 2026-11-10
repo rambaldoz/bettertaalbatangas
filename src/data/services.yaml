@@ -1,66 +1,187 @@
-# Government Services Data
-# This file contains all the service categories for the government portal
-# Each category's index.yaml file is automatically located at content/services/{slug}/index.yaml
-# Non-technical users can easily edit this file to add, remove, or modify service categories
+# Service categories for the Services directory (/services).
+# Each category lists its services in display order; every slug needs a file
+# at content/services/<category>/<service>.yaml. A category with no services
+# shows as "Coming soon". popular: services shown on the home page.
+# icon: any icon name from https://lucide.dev/icons
 
+description: Browse all services offered by the Municipality of Taal
 categories:
-  # Health Services
-  - category: 'Health Services'
-    slug: 'health-services'
-    description: 'Where to go for free check-ups, vaccines, and medicines, which hospitals are available, and details on health programs in your area.'
-    icon: 'Heart'
-
-  # Education Services
-  - category: 'Education'
-    slug: 'education'
-    description: 'Where to enroll kids in daycare or preschool, how to apply for scholarships, and what education support your LGU offers.'
-    icon: 'GraduationCap'
-
-  # Business & Livelihood Services
-  - category: 'Business and Livelihood'
-    slug: 'business'
-    description: 'What permits and clearances you need, where to pay taxes or renew permits, and what livelihood or trade opportunities are offered.'
-    icon: 'Building2'
-
-  # Social Welfare Services
-  - category: 'Social Welfare'
-    slug: 'social-welfare'
-    description: 'What assistance is available for seniors, PWDs, solo parents, and indigent families, plus details on relief goods, and livelihood aid.'
-    icon: 'Users'
-  
-  # Agriculture & Fisheries Services
-  - category: 'Agriculture & Fisheries'
-    slug: 'agriculture-fisheries'
-    description: 'What farm or fishing support is available, including seeds, fertilizers, veterinary care, and where to join training or borrow equipment.'
-    icon: 'Wheat'
-  
-  # Infrastructure & Public Works Services
-  - category: 'Infrastructure & Public Works'
-    slug: 'infrastructure-public-works'
-    description: 'How to report damaged roads or drainage, where to request water supply, and how to access public facilities and markets.'
-    icon: 'Wrench'
-  
-  # Garbage and Waste Disposal Services
-  - category: 'Garbage and Waste Disposal'
-    slug: 'garbage-waste-disposal'
-    description: 'Garbage collection schedules, waste disposal guidelines, and how to properly dispose of different types of waste.'
-    icon: 'Trash2'
-  
-  # Environment Services
-  - category: 'Environment'
-    slug: 'environment'
-    description: 'Clean-up or tree planting activities, environmental protection rules, and conservation programs.'
-    icon: 'TreePine'
-  
-  # Disaster Preparedness Services
-  - category: 'Disaster Preparedness'
-    slug: 'disaster-preparedness'
-    description: 'Disaster preparedness plans, emergency response information, and evacuation procedures.'
-    icon: 'Shield'
-  
-  # Housing & Land Use Services
-  - category: 'Housing & Land Use'
-    slug: 'housing-land-use'
-    description: 'How to apply for housing projects, what zoning and building permits are needed, and where relocation sites are available.'
-    icon: 'Home'
-  
+- category: Business & Permits
+  slug: business
+  icon: Store
+  description: Business permits, tricycle permits and licensing
+  services:
+  - business-permit
+  - tricycle-permit
+- category: Civil Registry
+  slug: civil-registry
+  icon: FileText
+  description: Birth, marriage and death registration, corrections and PSA copies
+  services:
+  - certified-true-copy
+  - birth-registration
+  - marriage-registration
+  - death-registration
+  - marriage-license
+  - correction-of-clerical-error
+  - change-of-first-name-sex-dob
+  - legitimation-and-ausf
+  - psa-documents-breqs
+- category: Property & Real Property Tax
+  slug: property
+  icon: Map
+  description: Real property tax, tax declarations, certifications and reassessment
+  services:
+  - real-property-tax
+  - new-tax-declaration
+  - certified-tax-declaration
+  - property-certifications-and-maps
+  - property-reassessment
+- category: Taxes & Payments
+  slug: taxes
+  icon: Wallet
+  description: Cedula, business tax and other fees paid at the Treasurer's Office
+  services:
+  - business-tax
+  - community-tax-certificate
+  - other-fees-and-charges
+- category: Building & Construction
+  slug: building
+  icon: HardHat
+  description: Building, heritage, fencing, demolition, sign, electrical and occupancy permits
+  services:
+  - construction-permit-guide
+  - building-permit
+  - heritage-building-permit
+  - fencing-permit
+  - demolition-permit
+  - sign-permit
+  - occupancy-permit
+  - electrical-permit
+- category: Health
+  slug: health
+  icon: Stethoscope
+  description: Consultations, certificates, laboratory tests, vaccines and burial permits
+  services:
+  - medical-consultation
+  - dental-services
+  - medical-certificate
+  - health-certificate
+  - family-planning
+  - laboratory-tests
+  - maternal-care
+  - immunization
+  - animal-bite-treatment
+  - tb-dots
+  - pre-marriage-counseling
+  - social-hygiene-registration
+  - gram-staining
+  - blood-request
+  - disease-reporting
+  - philhealth-konsulta
+  - maintenance-medicines
+  - permit-to-bury
+  - permit-to-transfer-remains
+  - permit-to-open-grave
+- category: Social Welfare
+  slug: social-welfare
+  icon: HandHeart
+  description: Crisis assistance, case studies, and Senior Citizen, PWD and Solo Parent IDs
+  services:
+  - aics
+  - social-case-study
+  - disaster-relief
+  - solo-parent-id
+  - pwd-id
+  - certificate-of-indigency
+  - senior-citizen-id
+- category: Jobs & Employment
+  slug: jobs
+  icon: BriefcaseBusiness
+  description: PESO job matching, SPES, government internships, TUPAD, OJT and Mayor's work endorsement
+  services:
+  - local-recruitment
+  - spes
+  - gip
+  - tupad
+  - career-coaching
+  - ojt-immersion
+  - work-endorsement
+  - mayors-clearance-pnp
+- category: Agriculture & Fisheries
+  slug: agriculture
+  icon: Wheat
+  description: Farmer and fisherfolk registration, boat permits, insurance, seeds, soil analysis and anti-rabies vaccination
+  services:
+  - farmer-fisherfolk-registration
+  - boat-permit
+  - crop-livestock-boat-insurance
+  - insurance-claim-assistance
+  - agriculture-certificates
+  - anti-rabies-vaccination
+  - hvcc-seeds
+  - soil-analysis
+  - farm-technical-assistance
+  - animal-dispersal
+  - farmers-association
+  - farm-seminars
+- category: Environment
+  slug: environment
+  icon: Trees
+  description: Special garbage collection, pollution complaints, tree cutting and business clearance
+  services:
+  - special-garbage-collection
+  - environmental-complaint
+  - tree-cutting-no-objection
+  - menro-business-clearance
+- category: Tourism
+  slug: tourism
+  icon: Camera
+  description: Guided heritage tours and tourism data
+  services:
+  - guided-tour-walk-in
+  - guided-tour-scheduled
+  - tourism-data-request
+- category: Legislative & Community
+  slug: community
+  icon: ScrollText
+  description: Tricycle franchises, CSO accreditation, zoning clearance, land reclassification and municipal data
+  services:
+  - cso-accreditation
+  - tricycle-franchise
+  - tricycle-no-record
+  - tricycle-franchise-cancellation
+  - toda-certification
+  - complaint-against-barangay-officials
+  - zoning-clearance
+  - land-reclassification
+  - municipal-data-request
+lifeEvents:
+- title: Starting a Business
+  icon: Rocket
+  href: /services/business/business-permit
+- title: Getting Married
+  icon: HeartHandshake
+  href: /services/civil-registry/marriage-license
+- title: Having a Baby
+  icon: Baby
+  href: /services/civil-registry/birth-registration
+- title: Building or Renovating
+  icon: House
+  href: /services/building/construction-permit-guide
+- title: Losing a Loved One
+  icon: Flower2
+  href: /services/civil-registry/death-registration
+- title: Turning 60
+  icon: Armchair
+  href: /services/social-welfare/senior-citizen-id
+popular:
+- civil-registry/birth-registration
+- civil-registry/psa-documents-breqs
+- business/business-permit
+- property/real-property-tax
+- taxes/community-tax-certificate
+- building/building-permit
+- health/medical-certificate
+- social-welfare/senior-citizen-id
+- civil-registry/marriage-license

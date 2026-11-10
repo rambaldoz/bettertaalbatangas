@@ -1,0 +1,70 @@
+# Anti-Rabies Vaccination
+# Page: /services/agriculture/anti-rabies-vaccination
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 127
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Anti-Rabies Vaccination
+summary: Free mass vaccination of dogs in the barangays, or walk-in every Friday
+description: Free mass vaccinations are held every year in all 42 barangays from January to April. Walk-in
+  clients are also served at the office every Friday, 8:00 AM to 5:00 PM. Healthy dogs 3 months and older
+  can be vaccinated.
+icon: Syringe
+office: agriculture
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Pet owners
+variants:
+- name: Mass vaccination
+  source:
+    page: 127
+  requirements:
+  - group: 1 copy
+    items:
+    - item: Request letter from the Barangay Captain
+      where: Barangay Captain
+  steps:
+  - client: Submit the Barangay Captain's request letter to the Municipal Agriculturist's Office.
+    agency:
+    - Receives the request and schedules the vaccination
+    fee: None
+    time: 10 minutes
+    responsible: MAO Staff / Municipal Agriculturist
+  - client: Bring your dog on the vaccination day.
+    agency:
+    - Vaccinates healthy dogs 3 months and older
+    fee: None
+    time: 4 hours
+    responsible: MAO Staff / Municipal Agriculturist
+  totalFee: None
+  totalTime: 4 hours and 10 minutes
+- name: Walk-in (Fridays)
+  source:
+    page: 127
+  requirements:
+  - group: None
+    items:
+    - item: Bring your dog
+      where: Pet owner
+  steps:
+  - client: Pay ₱200.00 at the Treasurer's Office and get an official receipt.
+    agency:
+    - Processes the payment and issues an official receipt
+    fee: ₱200.00
+    time: 5 minutes
+    responsible: Revenue Collection Clerk
+  - client: Go back to the Agriculturist's Office for the vaccination.
+    agency:
+    - Vaccinates healthy dogs 3 months and older
+    fee: None
+    time: 2 minutes
+    responsible: MAO Staff / Municipal Agriculturist
+  - client: Give the information needed for your dog's rabies vaccination card.
+    agency:
+    - Fills out the rabies vaccination card
+    fee: None
+    time: 5 minutes
+    responsible: MAO Staff / Municipal Agriculturist
+  totalFee: ₱200.00
+  totalTime: 12 minutes

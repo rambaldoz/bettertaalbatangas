@@ -1,0 +1,41 @@
+# Free Maintenance Medicines
+# Page: /services/health/maintenance-medicines
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 157
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Free Maintenance Medicines
+fullTitle: Issuance of Free Maintenance Medicines
+summary: Free maintenance medicines for patients on the masterlist
+description: Free maintenance medicines for patients registered on the masterlist.
+icon: Pill
+office: mho
+source:
+  page: 157
+classification: Simple
+whoMayAvail: General public
+requirements:
+- group: Bring
+  items:
+  - item: Doctor's prescription
+    where: RHU / hospital / private doctor
+  - item: ID for registered patients
+    where: Patient / medical staff
+steps:
+- client: If you are not yet registered, present your prescription at the OPD for assessment.
+  agency:
+  - Interviews you and fills out the assessment form
+  fee: None
+  time: 5 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Go to the Non-Communicable Disease room. Registered patients present their ID.
+  agency:
+  - Registers you on the masterlist
+  - Retrieves your record using your ID
+  - Gives your maintenance medicine and logs it
+  fee: None
+  time: 10 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 10 minutes

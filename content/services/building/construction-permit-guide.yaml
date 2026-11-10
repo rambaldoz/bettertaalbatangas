@@ -1,0 +1,47 @@
+# Construction Permit Guide
+# Page: /services/building/construction-permit-guide
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 162
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+type: guide
+title: Construction Permit Guide
+summary: Which permits you need, in order, to build or renovate in Taal
+description: An overview of the permits for building, renovating or demolishing in Taal, based
+  on the Engineering Office services in the Citizen's Charter. Each step links to the full service
+  page.
+icon: Route
+office: meo
+source:
+  page: 162
+classification: Guide
+whoMayAvail: Anyone planning to build, renovate, fence, demolish or put up a sign
+steps:
+- client: Prepare your land documents and plans.
+  agency:
+  - Certified true copy of the title (OCT/TCT), Tax Declaration and current real property tax
+    receipt; a notarized lease or deed of sale if you don't own the lot; a barangay clearance;
+    and five (5) sets of plans signed and sealed by the licensed professionals
+  link: /services/building/building-permit
+- client: Apply for a Building Permit at the Engineering Office.
+  agency:
+  - If the site is within the declared Heritage Village, you also need a clearance from the
+    Taal Heritage Preservation Council
+  link: /services/building/building-permit
+- client: Get the accessory permits you need before or during construction.
+  agency:
+  - Fencing Permit for fences, sidewalks and scaffolding; Demolition Permit before taking down
+    a structure; Sign Permit for signs
+  link: /services/building/fencing-permit
+- client: Get an Electrical Permit before BATELEC I installs your meter.
+  agency:
+  - Needed for a temporary or permanent electric service connection
+  link: /services/building/electrical-permit
+- client: Apply for an Occupancy Permit when construction is finished, before using the building.
+  agency:
+  - Also needed when you change the use of an existing building
+  link: /services/building/occupancy-permit
+notes:
+- A building permit becomes void if work does not start within one year of issue, or if work
+  is abandoned or suspended for 120 days.

@@ -1,0 +1,54 @@
+# Medical Consultation (OPD)
+# Page: /services/health/medical-consultation
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 135
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Medical Consultation (OPD)
+fullTitle: Provision of Medical Consultation (OPD)
+summary: Free check-up and medicines at the Rural Health Unit
+description: Free medical consultation and medicines for the general public at the Rural Health
+  Unit.
+icon: Stethoscope
+office: mho
+source:
+  page: 135
+classification: Simple
+whoMayAvail: General public
+requirements:
+- group: Bring
+  items:
+  - item: PhilHealth number
+    where: Patient
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Rural Health Unit information desk to register (Individual Treatment Record).
+  agency:
+  - Interviews you and records your medical data
+  - Refers you to the medical officer on duty
+  fee: None
+  time: 5 minutes
+  responsible: Nurse / medical personnel in charge
+- client: Go to the Medical Officer for your check-up.
+  agency:
+  - Conducts a physical examination
+  - Gives medical advice, a prescription or a referral
+  fee: None
+  time: 10 minutes
+  responsible: Municipal Health Officer / medical personnel in charge
+- client: Present the prescription at the pharmacy.
+  agency:
+  - Gives you the medicine if available at the pharmacy; otherwise gives you a prescription
+  fee: None
+  time: 5 minutes
+  responsible: Medical personnel at the Health Center pharmacy
+- client: Sign the logbook when you receive the medicines.
+  agency:
+  - Asks you to sign the logbook
+  fee: None
+  time: 5 minutes
+  responsible: Medical personnel at the Health Center pharmacy
+totalFee: None
+totalTime: 25 minutes

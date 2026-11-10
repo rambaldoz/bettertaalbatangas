@@ -1,0 +1,44 @@
+# Permit to Open a Grave
+# Page: /services/health/permit-to-open-grave
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 159
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Permit to Open a Grave
+fullTitle: Permit to Open the Grave
+summary: Permit for exhumation or opening a grave or niche
+description: A permit from the Municipal Health Office is required to open a grave, as required
+  by P.D. 856 (Code of Sanitation) on the disposal of the dead.
+icon: Shovel
+office: mho
+source:
+  page: 159
+classification: Simple
+whoMayAvail: General public
+requirements:
+- group: Requirements
+  items:
+  - item: 1 photocopy of the death certificate
+    where: Client
+  - item: Official receipt
+    where: Client
+steps:
+- client: Get the list of requirements.
+  agency:
+  - Prepares the list of requirements
+  - Prepares the billing statement
+  fee: None
+  time: 10 minutes
+  responsible: Sanitation Inspector
+- client: Pay the billing statement.
+  agency:
+  - Endorses it to the Treasury Office for payment
+  fee: ₱1,000.00
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+totalFee: ₱1,000.00
+totalTime: 15 minutes
+notes:
+- The Charter lists "Municipal Health Office" under who may avail, and mentions a "Franchising
+  Permit" in the payment step. Both look like copy errors.

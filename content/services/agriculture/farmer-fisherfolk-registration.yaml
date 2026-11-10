@@ -1,0 +1,50 @@
+# Farmer and Fisherfolk Registration
+# Page: /services/agriculture/farmer-fisherfolk-registration
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 129
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Farmer and Fisherfolk Registration
+fullTitle: Farmers and Fisherfolks Registration
+summary: Register under Ani at Kita to get access to agricultural programs
+description: Registration collects information on farmers and fisherfolk for planning and for delivering
+  agricultural support. Most services of the Agriculturist's Office need the Ani at Kita reference code
+  you get here.
+icon: IdCard
+office: agriculture
+source:
+  page: 129
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Farmers and fisherfolk
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Fully accomplished Ani at Kita enrollment form
+    where: Municipal Agriculturist's Office
+  - item: One 2x2 ID picture
+    where: Applicant
+  - item: Photocopy of one valid ID
+    where: Applicant
+  - item: Certification (livestock, crops or fisherfolk)
+    where: Barangay Captain
+steps:
+- client: Ask the Municipal Agriculturist's Office for the Ani at Kita enrollment form.
+  agency:
+  - Gives you the enrollment form
+  fee: None
+  time: 5 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Fill out the form and complete the other requirements.
+  fee: None
+  time: 15 minutes, depending on the availability of the Barangay Captain
+  responsible: Applicant
+- client: Submit the completed form and requirements.
+  agency:
+  - Checks that the enrollment is complete and encodes it in the database
+  fee: None
+  time: 15 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+totalFee: None
+totalTime: 35 minutes

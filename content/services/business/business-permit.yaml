@@ -1,0 +1,91 @@
+# Business Permit (New and Renewal)
+# Page: /services/business/business-permit
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 15
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Business Permit (New and Renewal)
+fullTitle: Business Permit (New and Renewal)
+summary: Mayor's permit to operate a business in Taal, new or renewal
+description: The Business Permit and Licensing Office keeps client records and issues business
+  permits to every person, natural or juridical, operating a business or service establishment,
+  trade activity or commercial undertaking in Taal. Renewals are due January 1 to 20 every year.
+icon: BriefcaseBusiness
+office: bplo
+source:
+  page: 15
+classification: Simple, Complex or Highly Technical (depending on the business)
+transactionType: G2B (Government to Business), G2C (Government to Citizen), G2G (Government
+  to Government)
+whoMayAvail: Owners of business establishments
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Community Tax Certificate (cedula)
+    where: Treasurer's Office
+  - item: Location sketch (for new business)
+    where: Applicant
+  - item: DTI, SEC or CDA certificate
+    where: Department of Trade and Industry (or SEC / CDA)
+  - item: BIR certificate
+    where: Bureau of Internal Revenue
+  - item: SSS and PhilHealth certificates
+    where: SSS and PhilHealth
+- group: 1 copy of the following clearances
+  items:
+  - item: BIR clearance
+    where: Bureau of Internal Revenue
+  - item: Real property tax clearance
+    where: Assessor's Office
+  - item: Zoning clearance
+    where: MPDC
+  - item: Occupancy permit
+    where: Engineering Office
+  - item: Sanitary permit
+    where: Rural Health Unit (Sanitation Inspector)
+  - item: MENRO clearance
+    where: MENRO
+  - item: Market clearance (market occupants)
+    where: Market Office
+  - item: Fire Safety Inspection Certificate
+    where: Bureau of Fire Protection
+steps:
+- client: 'Encoding and assessment: file your business application with the documents for verification
+    and assessment. Simple transactions go to step 2; complex and highly technical transactions
+    submit additional requirements.'
+  agency:
+  - 'Simple: verifies the requirements and computes the business tax'
+  - 'Complex or highly technical: verifies the requirements, refers you to other agencies for
+    additional requirements, and computes the business tax'
+  fee:
+  - Occupation and calling fee ₱200.00 or ₱300.00 (depending on the occupation)
+  - Clearance fee ₱200.00
+  - Weights and measures ₱200.00 (businesses using a weighing scale)
+  - Medical fee ₱200.00
+  - Sanitary fee ₱1,000.00
+  - Business plate fee ₱200.00
+  - 'Mayor''s permit fee: depends on the line of business (Revenue Code of Taal)'
+  - 'Garbage fee: depends on the line of business (Revenue Code of Taal)'
+  - Barangay business clearance fee ₱300.00 (may change with new barangay ordinances; businesses
+    in the Taal Public Market are exempt)
+  - Documentary stamp ₱30.00 for each barangay business clearance
+  - 'Business tax: based on gross sales (Revenue Code of Taal)'
+  time: 'Simple: 15 minutes. Complex: up to 7 working days. Highly technical: up to 20 working
+    days.'
+  responsible: Business Permit and Licensing Officer
+- client: 'Payment and release: pay the approved tax order of payment or assessment, and the
+    BFP assessment. Claim the business permit and sign the logbook.'
+  agency:
+  - Collects payment and issues an official receipt
+  - Releases the business permit
+  fee: None
+  time: 25 minutes
+  responsible: Revenue Collection Clerk / Business Permit and Licensing Officer
+totalFee: Based on the Revenue Code of Taal
+totalTime: 1 day (under normal conditions)
+notes:
+- A 25% surcharge applies after the deadline, plus a 2% penalty every month, not exceeding 36
+  months.
+- Processing times for complex and highly technical transactions may be extended to allow applicants
+  to submit missing requirements.

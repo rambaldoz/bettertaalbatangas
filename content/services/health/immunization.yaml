@@ -1,0 +1,49 @@
+# Childhood Immunization
+# Page: /services/health/immunization
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 146
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Childhood Immunization
+fullTitle: National Immunization Program Services (NIP)
+summary: Free vaccines for children against preventable diseases
+description: A core Department of Health program under maternal and child care that gives free
+  vaccines against preventable diseases to eligible children.
+icon: Syringe
+office: mho
+source:
+  page: 146
+classification: Complex
+whoMayAvail: Eligible children
+requirements:
+- group: Bring
+  items:
+  - item: Immunization record book
+    where: Rural Health Unit / midwife
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Health Center or Barangay Health Station and register with the midwife on
+    duty. If your child has had vaccines before, bring the under-five card or immunization record.
+  agency:
+  - Records your child's information and immunization record
+  fee: None
+  time: 2 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Have your child checked (physical examination and vital signs).
+  agency:
+  - Conducts the physical examination and checks vital signs
+  fee: None
+  time: 2 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: After the vaccine, ask the midwife or nurse for after-care instructions and the next
+    schedule.
+  agency:
+  - Gives the vaccine
+  - Gives instructions and the next schedule
+  fee: None
+  time: 10 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 14 minutes

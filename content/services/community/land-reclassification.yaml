@@ -1,0 +1,77 @@
+# Land Reclassification
+# Page: /services/community/land-reclassification
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 37
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Land Reclassification
+fullTitle: Reclassification
+summary: Reclassify agricultural land for residential, commercial or industrial use
+description: Reclassification specifies how agricultural land will be used for non-agricultural purposes,
+  such as residential, industrial and commercial use, as set in the land use plan.
+icon: Map
+office: mpdc
+source:
+  page: 37
+classification: Complex
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Applicants with a complete set of requirements
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Letter of request
+    where: Applicant
+  - item: Tax declaration
+    where: Applicant
+  - item: Tax receipt
+    where: Applicant
+  - item: Picture with geographic coordinates
+    where: Applicant
+  - item: LUR Form 1
+    where: MPDC Office
+  - item: Picture of the lot with geographic coordinates
+    where: MPDC Office
+steps:
+- client: Submit your letter of request and all requirements to the MPDC Office.
+  agency:
+  - Receives the letter and evaluates the documents (15 minutes)
+  - Schedules the inspection (5 minutes)
+  fee: None
+  time: 20 minutes
+  responsible: Computer Maintenance Technologist
+- client: Go with the MPDC staff to inspect the lot.
+  agency:
+  - Conducts an on-site inspection of the lot (20 minutes)
+  - Submits all reclassification documents to the Department of Agriculture once complete
+  fee: None
+  time: 20 minutes
+  responsible: Computer Maintenance Technologist
+- client: Receive the reclassification certificate from the Department of Agriculture.
+  agency:
+  - Endorses the certificate and requirements to the Sangguniang Bayan, with the computation of fees
+  fee: Depends on the computation
+  time: 1 day after receiving the DA certificate
+  responsible: MPDO
+- client: Attend the public hearing at the Sangguniang Bayan.
+  agency:
+  - Calls a public hearing for the applicant to attend
+  fee: None
+  time: 1 week after the first reading
+  responsible: Sangguniang Bayan
+- client: Pay the fees at the Treasurer's Office.
+  agency:
+  - If approved, collects the fees
+  fee:
+  - 'Agricultural to residential: ₱15.00 per square meter'
+  - 'Agricultural to commercial: ₱20.00 per square meter'
+  time: To be confirmed
+  responsible: Administrative Officer I / Treasurer's Office
+- client: Get the Sangguniang Bayan resolution on the reclassification.
+  agency:
+  - Releases the SB resolution on reclassification
+  fee: None
+  time: To be confirmed
+  responsible: Sangguniang Bayan
+totalFee: ₱15.00 (residential) or ₱20.00 (commercial) per square meter
+totalTime: 1 month or more

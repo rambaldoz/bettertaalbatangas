@@ -1,0 +1,52 @@
+# Swine and Cattle Dispersal
+# Page: /services/agriculture/animal-dispersal
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 126
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Swine and Cattle Dispersal
+fullTitle: Animal Dispersal Program
+summary: Receive a piglet or calf to raise, then pass on its offspring to other farmers
+description: Qualified farmers receive one piglet to raise as a breeder. When the sow gives birth, two
+  piglets are passed on to two other farmers. Cattle dispersal works the same way, except only the first
+  female calf is passed on.
+icon: PiggyBank
+office: agriculture
+source:
+  page: 126
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered farmers
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Ani at Kita reference code
+    where: Municipal Agriculturist's Office
+  - item: Updated Community Tax Certificate (cedula)
+    where: Treasurer's Office
+  - item: Two 2x2 ID pictures
+    where: Applicant
+steps:
+- client: Apply at the Municipal Agriculturist's Office and submit the requirements.
+  agency:
+  - Sets a schedule for swine or cattle dispersal
+  fee: None
+  time: 20 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Wait for the visit and assessment.
+  agency:
+  - The agricultural technician assesses your ability to raise swine or cattle
+  fee: None
+  time: 2 hours
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Attend the briefing on the dispersal contract.
+  agency:
+  - Conducts the contract briefing
+  fee: None
+  time: 1 hour
+  responsible: MAO Staff / Municipal Agriculturist
+totalFee: None
+totalTime: 3 hours and 20 minutes
+notes:
+- The Charter gives a total of 4 hours and 20 minutes, but its three steps add up to 3 hours and 20 minutes.

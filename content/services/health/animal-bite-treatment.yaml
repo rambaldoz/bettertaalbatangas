@@ -1,0 +1,50 @@
+# Animal Bite Treatment
+# Page: /services/health/animal-bite-treatment
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 147
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Animal Bite Treatment
+fullTitle: Animal Bite Treatment Program
+summary: Free assessment and anti-rabies vaccination after an animal bite
+description: Assessment and vaccination at the Rural Health Unit for people bitten or scratched
+  by animals.
+icon: PawPrint
+office: mho
+source:
+  page: 147
+classification: Complex
+whoMayAvail: General public
+requirements:
+- group: Bring
+  items:
+  - item: ABTC card
+    where: Rural Health Unit / nurse
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Rural Health Unit information desk to register.
+  agency:
+  - Records your information
+  fee: None
+  time: 2 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Have your vital signs and the bite assessed.
+  agency:
+  - Conducts the physical examination and assessment
+  fee: None
+  time: 5 minutes
+  responsible: Municipal Health Officer
+- client: After the vaccine, ask the nurse for after-care instructions and your next schedule.
+  agency:
+  - Gives the vaccine
+  - Gives instructions and your next schedule
+  fee: None
+  time: 15 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 22 minutes
+notes:
+- The Charter's description for this service repeats the one for the Immunization Program. We
+  show a short description of the bite treatment instead.

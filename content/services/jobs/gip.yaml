@@ -1,0 +1,64 @@
+# Government Internship Program (GIP)
+# Page: /services/jobs/gip
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 110
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Government Internship Program (GIP)
+summary: Paid short-term work in government offices for students and new graduates
+description: GIP is a youth employment program that gives college students and recent graduates short-term
+  work experience in government offices, with financial support and practical exposure to public service.
+icon: Building2
+office: peso
+source:
+  page: 110
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: College students and new graduates
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Accomplished GIP form
+    where: Applicant
+  - item: School registration or certificate of enrollment
+    where: Applicant
+  - item: Transcript of records or diploma
+    where: Applicant
+  - item: Valid ID
+    where: Applicant
+  - item: Barangay clearance
+    where: Barangay where you live
+steps:
+- client: Ask PESO about GIP.
+  agency:
+  - Explains the program and checks your eligibility
+  fee: None
+  time: 10 minutes
+  responsible: PESO Officer
+- client: Submit your completed GIP requirements.
+  agency:
+  - Reviews and validates the documents
+  fee: None
+  time: 15 minutes
+  responsible: PESO Officer
+- client: Register in the GIP database.
+  agency:
+  - Registers you in the GIP database
+  fee: None
+  time: 15 minutes
+  responsible: PESO Officer
+- client: Receive your job assignment and orientation schedule.
+  agency:
+  - Issues placement and orientation details
+  fee: None
+  time: 5 minutes
+  responsible: PESO Officer
+- client: Attend the orientation and report for work.
+  agency:
+  - Coordinates with the partner office
+  fee: None
+  time: 1 hour
+  responsible: PESO Officer
+totalFee: None
+totalTime: 1 hour and 45 minutes

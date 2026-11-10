@@ -1,0 +1,45 @@
+# Organizing a Farmers' Association
+# Page: /services/agriculture/farmers-association
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 121
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Organizing a Farmers' Association
+fullTitle: Organizing and Capability Building of Farmers into an Organization
+summary: Help forming a farmers' association that can deal with government agencies
+description: The Agriculturist's Office helps organize farmers' associations, so they can gain legal personality
+  and transact with government agencies.
+icon: Users
+office: agriculture
+source:
+  page: 121
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered farmers
+requirements:
+- group: 1 copy
+  items:
+  - item: Ani at Kita reference code
+    where: Municipal Agriculturist's Office
+steps:
+- client: Submit a request letter to the Municipal Agriculturist's Office.
+  agency:
+  - Receives the request and schedules a validation
+  fee: None
+  time: 15 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Join the validation and scouting of possible members.
+  agency:
+  - Visits the barangay and, once validated, sets an initial meeting with the Barangay Captain and farmers
+  fee: None
+  time: 4 hours
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Attend the initial meeting.
+  agency:
+  - Conducts the meeting and helps elect officers
+  fee: None
+  time: 3 hours
+  responsible: MAO Staff / Municipal Agriculturist
+totalFee: None
+totalTime: 7 hours and 15 minutes

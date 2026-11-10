@@ -1,0 +1,45 @@
+# Vegetable and Crop Seeds
+# Page: /services/agriculture/hvcc-seeds
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 122
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Vegetable and Crop Seeds
+fullTitle: Distribution of High Value Commercial Crops
+summary: Free quality seeds for backyard farming, as part of food security
+description: The Agriculturist's Office gives quality seeds to farmers who want to start backyard farming,
+  as part of its food security program.
+icon: Sprout
+office: agriculture
+source:
+  page: 122
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered farmers
+requirements:
+- group: 1 copy
+  items:
+  - item: Ani at Kita reference code
+    where: Municipal Agriculturist's Office
+steps:
+- client: Submit a request letter to the Mayor through the Municipal Agriculturist's Office.
+  agency:
+  - Receives the request and schedules a site validation
+  fee: None
+  time: 15 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Wait for the site validation.
+  agency:
+  - Checks if the area is suitable for the crop
+  fee: None
+  time: 1 hour and 30 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Receive your seeds.
+  agency:
+  - Gives you the seeds
+  fee: None
+  time: 5 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+totalFee: None
+totalTime: 1 hour and 50 minutes

@@ -1,0 +1,70 @@
+# Insurance Claim Assistance
+# Page: /services/agriculture/insurance-claim-assistance
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 132
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Insurance Claim Assistance
+fullTitle: Assistance in Insurance Indemnification
+summary: Help filing a claim for insured crops, livestock or boats that were lost
+description: The Agriculturist's Office helps farmers and fisherfolk file claims when insured crops, livestock
+  or fishing boats are lost.
+icon: HandCoins
+office: agriculture
+source:
+  page: 132
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered farmers and fisherfolk
+variants:
+- name: Crops
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Notice of loss
+      where: Municipal Agriculturist's Office
+    - item: Photocopy of valid ID
+      where: Applicant
+- name: Livestock
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Notice of loss
+      where: Municipal Agriculturist's Office
+    - item: Photocopy of valid ID
+      where: Applicant
+    - item: Loss report
+      where: Municipal Agriculturist's Office
+    - item: Veterinary disease report
+      where: Municipal Agriculturist's Office
+    - item: Necropsy report
+      where: Municipal Agriculturist's Office
+    - item: Livestock death certificate
+      where: Municipal Agriculturist's Office
+    - item: Picture of the dead animal
+      where: Applicant
+- name: Boat
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Notice of loss
+      where: Municipal Agriculturist's Office
+    - item: Picture of the damaged fishing boat
+      where: Applicant
+    - item: Photocopy of valid ID
+      where: Applicant
+steps:
+- client: File a notice of loss at the Municipal Agriculturist's Office.
+  agency:
+  - Sends the notice of loss to the Philippine Crop Insurance Corporation
+  - Helps prepare the other required documents
+  fee: None
+  time: 2 hours
+  responsible: Municipal Agriculturist
+- client: Send the completed requirements for the claim by courier.
+  fee: None
+  time: To be confirmed
+  responsible: Farmer or fisherfolk
+totalFee: None
+totalTime: 2 hours

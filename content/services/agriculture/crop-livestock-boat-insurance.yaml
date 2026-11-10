@@ -1,0 +1,74 @@
+# Crop, Livestock and Boat Insurance
+# Page: /services/agriculture/crop-livestock-boat-insurance
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 131
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Crop, Livestock and Boat Insurance
+fullTitle: Crops, Livestock, Boat Insurance
+summary: Insure crops, livestock and fishing boats against natural losses
+description: 'Crops (vegetables and fruit trees on at least 5,000 square meters), livestock and fishing
+  boats can be insured, so farmers and fisherfolk are paid if they lose them to natural causes. Livestock
+  that can be insured: swine fatteners (45 days to 6 months, 1 to 20 heads), swine breeders (6 months
+  to 4 years, 1 to 10 heads), cattle or carabao (7 months to 17 years, 1 to 5 heads), horses (1 to 17
+  years, 1 to 5 heads) and goats (4 months to 7 years, 1 to 20 heads).'
+icon: ShieldPlus
+office: agriculture
+source:
+  page: 131
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered farmers and fisherfolk
+variants:
+- name: Crops
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Fully accomplished application form
+      where: Municipal Agriculturist's Office
+    - item: Photocopy of valid ID
+      where: Applicant
+    - item: Ani at Kita reference code
+      where: Municipal Agriculturist's Office
+- name: Livestock
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Fully accomplished application form
+      where: Municipal Agriculturist's Office
+    - item: Photocopy of valid ID
+      where: Applicant
+    - item: Ani at Kita reference code
+      where: Municipal Agriculturist's Office
+    - item: Picture of the animal to be insured
+      where: Applicant
+- name: Boat
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Fully accomplished application form
+      where: Municipal Agriculturist's Office
+    - item: Photocopy of valid ID
+      where: Applicant
+    - item: Ani at Kita reference code
+      where: Municipal Agriculturist's Office
+    - item: Photocopy of updated boat permit
+      where: Municipal Agriculturist's Office
+    - item: Picture of the fishing boat
+      where: Applicant
+steps:
+- client: Submit the requirements to the Municipal Agriculturist's Office.
+  agency:
+  - Checks that the requirements are complete
+  fee: None
+  time: 15 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Sign the application form.
+  agency:
+  - Processes the insurance application
+  fee: None
+  time: 15 minutes
+  responsible: Municipal Agriculturist
+totalFee: None
+totalTime: 30 minutes

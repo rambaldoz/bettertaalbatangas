@@ -1,0 +1,71 @@
+# Occupancy Permit
+# Page: /services/building/occupancy-permit
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 177
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Occupancy Permit
+summary: Required before a new building can be used
+description: An occupancy permit is required before any building or structure is used or occupied,
+  usually after construction is finished. It is also required when the use or occupancy classification
+  of an existing building, or part of it, changes.
+icon: KeyRound
+office: meo
+source:
+  page: 177
+classification: Simple
+transactionType: G2B, G2C (Government to Business, Government to Citizen)
+whoMayAvail: All residents of Taal
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Certificate of Completion
+  - item: Official receipt of occupancy
+steps:
+- client: Request the checklist of requirements for the Occupancy Permit.
+  agency:
+  - Gives the checklist
+  - Briefs you on the process
+  fee: None
+  time: 5 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: Submit the required documents.
+  agency:
+  - Receives the documents
+  fee: None
+  time: 5 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: Accompany the Building Official or staff during the inspection.
+  agency:
+  - Inspects whether the structure follows the approved plans and specifications
+  fee: None
+  time: 30 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: If there are deficiencies, make the corrections or submit the additional requirements.
+  agency:
+  - Tells you if the documents are complete or need corrections or additional requirements
+  fee: None
+  time: 20 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: Get the order of payment once the application is complete.
+  agency:
+  - Issues the order of payment
+  fee: None
+  time: 10 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: Pay the fees at the Treasurer's Office and get the official receipt.
+  agency:
+  - Receives payment and issues the official receipt
+  fee: Based on the National Building Code fee schedule and the Local Revenue Code
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: Return to the Engineering Office, submit the official receipt, receive the permit
+    and sign the logbook.
+  agency:
+  - Processes and releases the approved Occupancy Permit
+  fee: None
+  time: 5 minutes
+  responsible: Municipal Engineer and Engineering Staff
+totalFee: Based on the National Building Code fee schedule and the Local Revenue Code
+totalTime: 1 hour and 25 minutes

@@ -1,0 +1,56 @@
+# Prenatal and Postpartum Care
+# Page: /services/health/maternal-care
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 145
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Prenatal and Postpartum Care
+fullTitle: Maternal Care Services
+summary: Check-ups for pregnant women and new mothers
+description: Maternal health covers the health of women during pregnancy, childbirth and after
+  giving birth, so that mothers and their babies can be healthy.
+icon: HeartPulse
+office: mho
+source:
+  page: 145
+classification: Complex
+whoMayAvail: Pregnant and postpartum mothers
+requirements:
+- group: Bring
+  items:
+  - item: Home-based maternal record booklet
+    where: Rural Health Unit / attending obstetrician
+  - item: Laboratory results
+    where: RHU / clinic / hospital
+  - item: Ultrasound
+    where: RHU / clinic / hospital
+  - item: PhilHealth
+    where: PhilHealth office
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Rural Health Unit or Barangay Health Station.
+  agency:
+  - Asks the purpose of your visit and records your data in the patient logbook
+  fee: None
+  time: 2 minutes
+  responsible: Midwife / medical personnel in charge / RHU staff on duty
+- client: Go to the nurse or midwife on duty.
+  agency:
+  - Interviews and assesses you
+  - Asks for the requirements for the maternal consultation
+  fee: None
+  time: 3 minutes
+  responsible: Midwife / medical personnel in charge / RHU staff on duty
+- client: Go to the Maternal and Child Care room.
+  agency:
+  - Takes your vital signs and history
+  - Gives tetanus toxoid and vitamins if needed
+  - Does an abdominal examination if needed
+  - Gives counseling and health teaching, and referrals if needed
+  fee: None
+  time: 20 minutes
+  responsible: Midwife / medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 25 minutes

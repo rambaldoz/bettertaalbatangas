@@ -1,0 +1,58 @@
+# Building Permit in the Heritage Village
+# Page: /services/building/heritage-building-permit
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 165
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Building Permit in the Heritage Village
+fullTitle: Building Permit (Within the Declared Heritage Village)
+summary: Extra clearance for building or renovating in Taal's Heritage Village
+description: A building permit for any construction, renovation or repair within the declared
+  Heritage Village follows the Taal Heritage Conservation, Preservation and Restoration Code
+  together with the National Building Code. This step is handled by the Taal Heritage Preservation
+  Council, on top of the regular building permit.
+icon: Landmark
+office: heritage
+source:
+  page: 165
+classification: Simple or Highly Technical
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Any person, firm, corporation or government agency applying for a building permit
+  within the Heritage Village
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Clearance or certificate from the Engineering Office
+    where: Office of the Municipal Engineer
+  - item: Official receipt
+    where: Municipal Treasurer's Office
+  - item: Plumbing permit
+    where: Applicant
+  - item: Application for Building Permit
+    where: Applicant
+  - item: Electrical permit
+    where: Applicant
+  - item: Certification from the MPDC on the area classification
+    where: MPDC
+steps:
+- client: Prepare all the requirements and submit them. Simple transactions go to step 2; complex
+    and highly technical transactions submit additional requirements.
+  agency:
+  - 'Simple: checks the requirements and computes the fees'
+  - 'Complex or highly technical: checks the requirements, refers you to other agencies for
+    additional requirements, and computes the fees'
+  fee: Based on the National Building Code fee schedule and the Local Revenue Code
+  time: 'Simple: 5 minutes. Highly technical: up to 20 working days.'
+  responsible: Municipal Engineer
+- client: Go to the Licensing Section and get your copy of the Building Permit.
+  agency:
+  - Issues the building permit
+  fee: None
+  time: 5 minutes
+  responsible: Mayor's Office Staff
+totalFee: Based on the National Building Code fee schedule and the Local Revenue Code
+totalTime: 15 minutes (under normal conditions)
+notes:
+- In the Charter, the agency actions for this service mention "business tax". We show them as
+  fee computation, since the fees are building permit fees.

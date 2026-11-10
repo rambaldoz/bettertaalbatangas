@@ -1,0 +1,57 @@
+# Property Reassessment
+# Page: /services/property/property-reassessment
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 96
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Property Reassessment
+fullTitle: Re-assessment, Revision or Cancellation of Assessment of Real Properties
+summary: Request a new assessment after damage, a change in use, or an error
+description: The Assessor's records are the basis for computing annual real property tax. Owners
+  can request a reassessment when the property was partly or totally destroyed, its actual use
+  changed, its value changed suddenly, or the assessment needs correcting.
+icon: Scale
+office: assessor
+source:
+  page: 96
+classification: Complex
+transactionType: G2C, G2B (Government to Citizen, Government to Business)
+whoMayAvail: Real property owner or representative
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Request letter from the owner
+    where: Real property owner
+  - item: Updated real property tax payment
+    where: Municipal Treasurer's Office
+  - item: Certificate of Non-Delinquency
+    where: Municipal Treasurer's Office
+steps:
+- client: Go to the Assessor's Office and present your request letter.
+  agency:
+  - Assigns an inspection team and schedules the ocular inspection
+  fee: None
+  time: 40 minutes
+  responsible: Municipal Assessor
+- client: Be present during the ocular inspection.
+  agency:
+  - Tells you when to get the corrected assessment
+  fee: None
+  time: 10 minutes
+  responsible: Assessment Clerk I / II / III
+- client: Make sure your real property tax payment is updated.
+  agency:
+  - Issues the Certificate of Non-Delinquency
+  fee: None
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: On the scheduled date, receive the document at the Assessor's Office and sign the
+    logbook.
+  agency:
+  - Issues the requested document
+  fee: None
+  time: 5 minutes
+  responsible: Assessment Clerk I / II / III
+totalFee: None
+totalTime: Complex transaction (the Charter gives no total time)

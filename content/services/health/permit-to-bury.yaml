@@ -1,0 +1,53 @@
+# Burial Permit
+# Page: /services/health/permit-to-bury
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 160
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Burial Permit
+fullTitle: Permit to Bury
+summary: Required for every burial in Taal
+description: A permit is required for every burial in the municipality, as required by P.D.
+  856 (Code of Sanitation) on the disposal of the dead.
+icon: Flower2
+office: mho
+source:
+  page: 160
+classification: Simple
+whoMayAvail: Everyone
+requirements:
+- group: Requirements
+  items:
+  - item: Application form signed by the family of the deceased
+    where: Client
+  - item: 1 photocopy of the death certificate
+    where: Client
+  - item: Official receipt
+    where: Client
+steps:
+- client: Get the list of requirements.
+  agency:
+  - Prepares the list of requirements
+  fee: None
+  time: 5 minutes
+  responsible: Sanitary Inspector I
+- client: Get the billing statement.
+  agency:
+  - Prepares the billing statement
+  fee: None
+  time: 5 minutes
+  responsible: Sanitary Inspector I
+- client: Pay the billing statement.
+  agency:
+  - Endorses it to the Treasury Office for payment
+  fee:
+  - ₱100.00 for Taal residents
+  - ₱200.00 for non-residents
+  time: 5 minutes
+  responsible: Treasury Office
+totalFee: ₱100.00 (Taal resident); ₱200.00 (non-resident)
+totalTime: 15 minutes
+notes:
+- The Charter's steps for this permit mention "tricycle operators" and a "Franchising Permit",
+  which look like copy errors. We show them as the burial permit billing.

@@ -1,0 +1,51 @@
+# Permit to Transfer Remains
+# Page: /services/health/permit-to-transfer-remains
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 158
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Permit to Transfer Remains
+fullTitle: Permit to Transfer the Remains
+summary: Permit to move remains within or outside Taal
+description: A permit from the Municipal Health Office is required to transfer remains, as required
+  by P.D. 856 (Code of Sanitation) on the disposal of the dead.
+icon: Truck
+office: mho
+source:
+  page: 158
+classification: Simple
+whoMayAvail: General public
+requirements:
+- group: Requirements
+  items:
+  - item: Application form signed by the Municipal Health Officer
+    where: Client
+  - item: Photocopy of the death certificate
+    where: Client
+  - item: Official receipt
+    where: Client
+steps:
+- client: Get the list of requirements.
+  agency:
+  - Prepares the list of requirements and interviews the informant
+  - Prepares the billing statement
+  fee: None
+  time: 5 minutes
+  responsible: Sanitation Inspector / RHU staff on duty
+- client: Pay the billing statement.
+  agency:
+  - Endorses it to the Treasury Office for payment
+  fee:
+  - ₱300.00 within Taal
+  - ₱500.00 outside Taal
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Receive the permit.
+  agency:
+  - Issues the permit signed by the Municipal Health Officer
+  fee: None
+  time: 3 minutes
+  responsible: Sanitation Inspector / Municipal Health Officer
+totalFee: ₱300.00 within Taal; ₱500.00 outside Taal
+totalTime: 13 minutes

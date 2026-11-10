@@ -1,0 +1,39 @@
+# Report a Disease Case
+# Page: /services/health/disease-reporting
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 154
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Report a Disease Case
+fullTitle: Disease Surveillance, Investigation and Response
+summary: Report a disease case in your community for investigation
+description: Disease surveillance, investigation and response are done to prevent the spread
+  of disease.
+icon: Siren
+office: mho
+source:
+  page: 154
+classification: Complex
+whoMayAvail: General public
+requirements:
+- group: Information to give
+  items:
+  - item: Number and names of the affected individuals
+    where: Barangay
+steps:
+- client: Go to the Health Center to report the disease.
+  agency:
+  - Interviews you and records the information
+  fee: None
+  time: 15 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Follow the instructions and prepare the community for the surveillance team's visit.
+  agency:
+  - Interviews, consults and evaluates the spread of the disease
+  - Consolidates the data and reports to the Provincial Health Office
+  fee: None
+  time: Up to 2 days
+  responsible: Medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 2 days and 15 minutes

@@ -1,0 +1,56 @@
+# Tourism Data Request
+# Page: /services/tourism/tourism-data-request
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 186
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Tourism Data Request
+fullTitle: Request Tourism Data
+summary: Tourism information for students, companies and agencies
+description: Students and organizations can request tourism data and related information from the Tourism
+  Office.
+icon: BarChart3
+office: tourism
+source:
+  page: 186
+classification: Simple
+transactionType: Government-to-Citizen (G2C), Government-to-Government (G2G), Government-to-Business (G2B)
+whoMayAvail: Students, private companies and government agencies
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Letter of request
+    where: School, company or government agency
+  - item: Identification card
+    where: Applicant
+steps:
+- client: Submit your letter of request, by email or in person.
+  agency:
+  - Accepts and checks the request (6 minutes)
+  - Checks if the materials are available (5 minutes)
+  - Tells you the status of the materials (5 minutes)
+  fee: None
+  time: 16 minutes
+  responsible: Tourism Office staff
+- client: Register in the logbook and state the purpose of your visit.
+  agency:
+  - Gives you the logbook
+  fee: None
+  time: 5 minutes
+  responsible: Tourism Office staff
+- client: Get the materials.
+  agency:
+  - If materials must be photocopied outside the office, asks you to leave an ID (15 minutes)
+  - Or sends them by email or saves them on a flash drive (7 minutes)
+  fee: None
+  time: 7 to 15 minutes
+  responsible: Tourism Office staff
+- client: Return the materials and claim your ID.
+  agency:
+  - Checks that the materials are complete and returns your ID
+  fee: None
+  time: 7 minutes
+  responsible: Tourism Office staff
+totalFee: None
+totalTime: 43 minutes

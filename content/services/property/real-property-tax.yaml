@@ -1,0 +1,52 @@
+# Pay Real Property Tax
+# Page: /services/property/real-property-tax
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 74
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Pay Real Property Tax
+fullTitle: Collection of Real Property Taxes
+summary: Pay amilyar (land and building tax), annually or quarterly
+description: Taxes on real property (land, buildings and machinery) assessed by the Municipal
+  Assessor accrue every January 1 and are paid at the Real Property Tax section of the Municipal
+  Treasurer's Office, annually or quarterly. Pay in January for a 15% discount or in February
+  for 10%. Full payment in March gets a discount on the 2nd to 4th quarter dues only. Penalties
+  apply from April.
+icon: Landmark
+office: mto
+source:
+  page: 74
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Owners of real property in Taal, and heirs of a deceased owner if applicable
+requirements:
+- group: Requirements
+  items:
+  - item: 1 copy of your Community Tax Certificate
+    where: Municipality of Taal
+steps:
+- client: 'Fill out the information sheet: name of the declared owner, location of the property,
+    tax declaration number, date of last payment, and mode of payment (annual or quarterly).'
+  agency:
+  - Checks the last payment in the RPT system or index card
+  - Checks that you have a Community Tax Certificate
+  - Computes the tax due for your chosen mode of payment
+  fee: None
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: Pay the assessed amount and get your official receipt.
+  agency:
+  - Issues the official receipt (Accountable Form No. 56)
+  fee:
+  - Basic tax 1% of the assessed value
+  - Special Education Fund tax 1% of the assessed value
+  - 15% discount if paid on or before January 31
+  - 10% discount if paid on or before February 28
+  - 'Paid in March: no discount and no penalty on the 1st quarter; 10% discount on the 2nd to
+    4th quarter'
+  - Penalties from April onwards, based on the Provincial Government of Batangas table
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+totalFee: As computed
+totalTime: 20 minutes

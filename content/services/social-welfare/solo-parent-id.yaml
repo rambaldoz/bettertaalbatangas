@@ -1,0 +1,52 @@
+# Solo Parent ID
+# Page: /services/social-welfare/solo-parent-id
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 86
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Solo Parent ID
+fullTitle: Provision of Solo Parent Identification Card
+summary: ID for solo parents under the Solo Parent Welfare Act
+description: The MSWD Office implements R.A. 8972, the Solo Parent Welfare Act, and issues the
+  Solo Parent ID. ID holders can avail of programs and services from various government agencies.
+icon: UserRound
+office: mswdo
+source:
+  page: 86
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Solo parents and guardians
+requirements:
+- group: Requirements
+  items:
+  - item: Requirements depend on your solo parent category. The staff will discuss them with
+      you.
+steps:
+- client: Write your name and purpose in the client logbook.
+  agency:
+  - Asks you to fill in the logbook
+  fee: None
+  time: 2 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+- client: Discuss your situation as a solo parent with the staff.
+  agency:
+  - Determines your category using the tools provided by law
+  - Gives a short orientation on the benefits and use of the ID
+  fee: None
+  time: 20 minutes
+  responsible: Social Welfare Officer II / MSWD Officer
+- client: Submit the documents discussed with you.
+  agency:
+  - Fills out the Solo Parent form
+  fee: None
+  time: 15 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+- client: Go to the MSWDO on the release date, get your Solo Parent ID and sign the logbook.
+  agency:
+  - Releases the Solo Parent ID
+  fee: None
+  time: 2 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+totalFee: None
+totalTime: 39 minutes

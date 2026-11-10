@@ -1,0 +1,71 @@
+# Business Tax and Regulatory Fees
+# Page: /services/taxes/business-tax
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 71
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Business Tax and Regulatory Fees
+fullTitle: Collection of Business Tax and Other Regulatory Fees
+summary: Pay business tax and fees for your Mayor's Permit
+description: All businesses must get a Business License and Mayor's Permit and pay business
+  tax and regulatory fees under Municipal Ordinance No. 218, series of 2022 (Revised Revenue
+  Code of Taal, Batangas of 2022) before starting operations. Renewal is from January 1 to 20
+  every year unless the Sangguniang Bayan grants an extension. New businesses pay no business
+  tax; renewals are based on the previous year's sales. Payments can be quarterly, due within
+  the first 20 days of each quarter.
+icon: Receipt
+office: mto
+source:
+  page: 71
+classification: Simple
+transactionType: G2C, G2B (Government to Citizen, Government to Business)
+whoMayAvail: Business owners in Taal
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: DTI registration certificate
+    where: DTI Office / client's file copy
+  - item: Completed application form
+    where: Client / taxpayer
+  - item: Tax order of payment
+    where: Business Permit and Licensing Office
+  - item: Other clearances and documents
+    where: Other departments
+steps:
+- client: Get your Community Tax Certificate (cedula) from the cashier.
+  agency:
+  - See the steps for the Community Tax Certificate
+  fee: Based on the previous year's sales or revenue (Revenue Code of Taal)
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: Get a real property tax clearance for the property rented or owned and used for the
+    business.
+  agency:
+  - Checks that the property tax payments are updated
+  - Signs the clearance form
+  fee: None
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: Process the other clearances listed in the application form.
+  agency: []
+  fee: None
+  time: To be confirmed
+  responsible: Other departments and agencies
+- client: Request the order of payment.
+  agency:
+  - Computes the taxes and fees
+  fee: Based on the Local Revenue Code of 2022
+  time: 15 minutes
+  responsible: Revenue Collection Clerk
+- client: Pay at the cashier.
+  agency:
+  - Receives payment
+  fee: Based on the tax order of payment
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+totalFee: As assessed
+totalTime: 45 minutes
+notes:
+- 'Late renewals: 25% surcharge after the deadline, plus a 2% penalty every month, not exceeding
+  36 months.'

@@ -1,0 +1,57 @@
+# PSA Copies (BREQS)
+# Page: /services/civil-registry/psa-documents-breqs
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 64
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: PSA Copies (BREQS)
+fullTitle: Batch Request Entry Query System (BREQS)
+summary: Request PSA birth, marriage, death certificates and CENOMAR at the municipal hall
+description: BREQS is a Philippine Statistics Authority (PSA) program that lets the municipality
+  process requests for PSA-issued civil registry documents (birth, marriage, death and CENOMAR)
+  for you, so you don't have to travel to a PSA office. Requests are sent to PSA in batches
+  for printing on security paper.
+icon: Printer
+office: mcr
+source:
+  page: 64
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Document owners and authorized representatives
+requirements:
+- group: Requirements
+  items:
+  - item: 1 photocopy of a valid ID (owner, spouse or parents)
+  - item: 1 original authorization letter if someone else is requesting for the owner
+    where: Municipal Civil Registrar's Office
+steps:
+- client: Fill out the request form.
+  agency:
+  - Checks that the form is complete and correct
+  - Tells you the release date
+  fee: None
+  time: 5 minutes
+  responsible: Registration Officer I / Administrative Assistant II
+- client: Pay the fees.
+  agency:
+  - Payment is received by the Municipal Treasurer's Office
+  fee:
+  - 'LGU fee: birth, marriage, death ₱100.00; CENOMAR ₱100.00'
+  - 'PSA fee: birth, marriage, death ₱155.00; CENOMAR ₱210.00'
+  time: 5 minutes
+  responsible: Treasurer's Office / Liaison to PSA
+- client: Submit the form.
+  agency:
+  - Records it in the registry book and encodes it in BREQS
+  fee: None
+  time: 10 minutes
+  responsible: Administrative Assistant II
+- client: Receive the PSA copy and sign the logbook.
+  agency:
+  - Releases the PSA copy and checks the valid ID or authorization letter
+  fee: None
+  time: 5 minutes
+  responsible: Administrative Aide VI / Administrative Assistant II
+totalFee: Birth, marriage or death certificate ₱255.00; CENOMAR ₱310.00
+totalTime: 25 minutes

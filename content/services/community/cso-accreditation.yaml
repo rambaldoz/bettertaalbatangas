@@ -1,0 +1,78 @@
+# CSO Accreditation
+# Page: /services/community/cso-accreditation
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 21
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: CSO Accreditation
+fullTitle: Accreditation of Civil Society Organization
+summary: Accreditation of civil society organizations and NGOs by the Sangguniang Bayan
+description: Under the Local Government Code, the Sangguniang Bayan is empowered to accredit CSOs and
+  NGOs. Accreditation qualifies these organizations to sit as representatives in the Special Bodies of
+  the municipality.
+icon: Users
+office: sb-secretariat
+source:
+  page: 21
+classification: Complex
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: All residents in Taal
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Letter of application
+    where: Applicant
+  - item: Duly accomplished form
+    where: Applicant
+  - item: Board resolution
+    where: Applicant
+  - item: Certificate of registration
+    where: Applicant or accrediting agency
+  - item: List of current officers, members and board of directors
+    where: Applicant
+  - item: Annual accomplishment report
+    where: Applicant
+  - item: Financial statement
+    where: Applicant
+  - item: Profile showing the purpose and objectives of the organization
+    where: Applicant
+  - item: Copy of the minutes of the meeting of the organization
+    where: Applicant
+  - item: 'For CSOs applying to the Local School or Health Board: photocopy of the profiles of at least
+      three (3) members that show their involvement'
+    where: Applicant
+steps:
+- client: Get the list of requirements from the Sangguniang Bayan Office.
+  agency:
+  - Gives the list of requirements and explains the process
+  fee: None
+  time: 10 minutes
+  responsible: Administrative Aide VI (Clerk III)
+- client: Submit your application for accreditation.
+  agency:
+  - Receives and evaluates the documents (1 minute)
+  - Refers the application to the concerned committee for the session agenda (7 days)
+  fee: None
+  time: 7 days and 1 minute
+  responsible: Administrative Aide VI (Clerk III)
+- client: Appear at the Sangguniang Bayan session.
+  agency:
+  - Enacts the resolution of approval
+  fee: None
+  time: 1 hour
+  responsible: SB Members
+- client: Pay the certification fee at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee: ₱200.00
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Claim the Certificate of Accreditation.
+  agency:
+  - Releases the approved resolution and Certificate of Accreditation to the organization
+  fee: None
+  time: 5 minutes
+  responsible: Administrative Aide VI (Clerk III)
+totalFee: ₱200.00
+totalTime: 7 days, 1 hour and 25 minutes

@@ -1,0 +1,56 @@
+# Boat Permit
+# Page: /services/agriculture/boat-permit
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 130
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Boat Permit
+fullTitle: Issuance of Boat Permit
+summary: License for fishing boats below 3 gross tons in municipal waters
+description: Fishing boats below 3 gross tons are licensed to regulate fishing in the municipal waters
+  of Taal.
+icon: Sailboat
+office: agriculture
+source:
+  page: 130
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered fisherfolk
+requirements:
+- group: For new fishing boats, 1 copy of the following
+  items:
+  - item: Ani at Kita reference code
+    where: Municipal Agriculturist's Office
+  - item: Boat measurement
+    where: Applicant
+  - item: Community Tax Certificate (cedula)
+    where: Treasurer's Office
+  - item: Proof of ownership (barangay certificate or deed of sale)
+    where: Barangay Captain
+  - item: Barangay clearance
+    where: Barangay Captain
+steps:
+- client: Present the requirements at the Municipal Agriculturist's Office.
+  agency:
+  - Checks that the requirements are complete
+  fee: None
+  time: 10 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Pay the fee at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee:
+  - '10 hp and up: ₱1,000.00'
+  - '9 hp and below: ₱600.00'
+  - 'Non-motorized: ₱200.00'
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: Submit the official receipt to the Agriculturist's Office.
+  agency:
+  - Processes the boat permit for the Municipal Mayor
+  fee: None
+  time: 1 day
+  responsible: Municipal Agriculturist and Municipal Mayor
+totalFee: ₱1,000.00 (10 hp and up), ₱600.00 (9 hp and below) or ₱200.00 (non-motorized)
+totalTime: 1 day and 20 minutes

@@ -1,0 +1,41 @@
+# Seminars and Livelihood Training
+# Page: /services/agriculture/farm-seminars
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 128
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Seminars and Livelihood Training
+fullTitle: Seminars and Livelihood Trainings
+summary: Request seminars and livelihood training for farmers and fisherfolk
+description: Farmers and fisherfolk in the barangays can request seminars and livelihood training to help
+  improve their lives.
+icon: Presentation
+office: agriculture
+source:
+  page: 128
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered farmers and fisherfolk
+requirements:
+- group: 1 copy
+  items:
+  - item: Ani at Kita reference code
+    where: Municipal Agriculturist's Office
+steps:
+- client: Submit a request letter to the Municipal Mayor asking for a seminar or livelihood training.
+  agency:
+  - Accepts the request (10 minutes)
+  - Prepares the needed documents (15 minutes)
+  - Coordinates with the concerned agencies (8 hours, may vary)
+  fee: None
+  time: 8 hours and 25 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Follow up on the training schedule.
+  agency:
+  - Sets the schedule once all agencies have confirmed
+  fee: None
+  time: 15 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+totalFee: None
+totalTime: 1 day and 40 minutes (may vary depending on the response of the agencies contacted)

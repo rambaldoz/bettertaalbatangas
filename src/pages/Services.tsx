@@ -1,164 +1,389 @@
-import Section from '../components/ui/Section';
-import { useParams, Link } from 'react-router';
-import { Heading } from '../components/ui/Heading';
-import { Text } from '../components/ui/Text';
-import {
-  serviceCategories,
-  getCategorySubcategories,
-  type Subcategory,
-  type CategoryIndex,
-} from '../data/yamlLoader';
-import * as LucideIcons from 'lucide-react';
-import Breadcrumbs from '../components/ui/Breadcrumbs';
-import ServicesSection from '../components/home/ServicesSection';
+import { useState } from 'react';
+import { Link, useParams, useSearchParams } from 'react-router';
+import { ArrowRight, ChevronRight, Search, X } from 'lucide-react';
 import SEO from '../components/SEO';
-import { Card, CardContent } from '@bettergov/kapwa/card';
-import { Banner } from '@bettergov/kapwa/banner';
-import { useState, useEffect } from 'react';
+import { useTranslation } from '../hooks/useTranslation';
+import {
+  getAllServices,
+  getCategoryServices,
+  getPopularServices,
+  getServiceCategory,
+  serviceCategories,
+  type Service,
+} from '../data/yamlLoader';
+import { OFFICES, getOffice } from '../data/offices';
+import { cardValue } from '../lib/services';
+import { Value } from '../components/services/ServiceUI';
+import {
+  LucideIcon,
+  PageBody,
+  PageHeader,
+  Panel,
+  PanelHeading,
+  SideNav,
+} from '../components/layout/PageLayout';
 
-const Services: React.FC = () => {
+// /services             Services directory
+// /services?office=mcr  Services of one office
+// /services/:category   Services under one category
+export default function Services() {
   const { category } = useParams();
-  const [categoryIndex, setCategoryIndex] = useState<CategoryIndex>({
-    layout: 'list',
-    pages: [],
-  });
-  const [loading, setLoading] = useState(false);
-  const subcategories: Subcategory[] = categoryIndex.pages;
+  return category ? <CategoryPage slug={category} /> : <Directory />;
+}
 
-  const getCategory = () => {
-    return serviceCategories.categories.find(c => c.slug === category);
-  };
+/** Left sidebar: every category, with counts; empty ones are "Coming soon". */
+function CategoryNav({ active }: { active?: string }) {
+  const { t } = useTranslation();
+  return (
+    <SideNav
+      title={t('servicesPage.categoriesTitle')}
+      items={[
+        {
+          key: 'all',
+          label: t('servicesPage.allServices'),
+          href: '/services',
+          icon: 'LayoutGrid',
+          active: !active,
+        },
+        ...serviceCategories.categories.map(c => ({
+          key: c.slug,
+          label: c.category,
+          href: `/services/${c.slug}`,
+          icon: c.icon,
+          active: c.slug === active,
+          disabled: c.services.length === 0,
+          badge:
+            c.services.length === 0
+              ? t('servicesPage.soon')
+              : c.services.length,
+        })),
+      ]}
+    />
+  );
+}
 
-  const categoryData = getCategory();
-  const Icon = LucideIcons[
-    categoryData?.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>;
+function CardValue({ value }: { value: string | null | undefined }) {
+  const { t } = useTranslation();
+  if (value === null) return <>{t('servicesPage.varies')}</>;
+  // Long fee notes (e.g. the Building Code fee schedule) stay on the page.
+  if (value && value.length > 40) return <>{t('servicesPage.seeDetails')}</>;
+  return <Value value={value} short />;
+}
 
-  useEffect(() => {
-    if (category && categoryData) {
-      setLoading(true);
-      getCategorySubcategories(category)
-        .then(setCategoryIndex)
-        .catch(console.error)
-        .finally(() => setLoading(false));
-    }
-  }, [category, categoryData]);
+function ServiceCard({
+  service,
+  showCategory = false,
+}: {
+  service: Service;
+  showCategory?: boolean;
+}) {
+  const { t } = useTranslation();
+  return (
+    <Link
+      to={service.href}
+      className="group flex h-full items-start gap-4 rounded-lg border border-gray-200 bg-white p-5 transition-colors hover:border-primary-300 hover:bg-primary-50"
+    >
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary-50 text-primary-700">
+        <LucideIcon name={service.icon} />
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="block text-lg font-bold text-gray-900">
+          {service.title}
+        </span>
+        <span className="mt-1 block text-base text-gray-700">
+          {service.summary}
+        </span>
+        {service.type !== 'guide' && (
+          <span className="mt-3 block space-y-1 text-base text-gray-900">
+            <span className="block">
+              <span className="font-bold">{t('servicesPage.fee')}:</span>{' '}
+              <CardValue value={cardValue(service, 'totalFee')} />
+            </span>
+            <span className="block">
+              <span className="font-bold">{t('servicesPage.time')}:</span>{' '}
+              <CardValue value={cardValue(service, 'totalTime')} />
+            </span>
+          </span>
+        )}
+        {showCategory && (
+          <span className="mt-1 block text-base text-gray-700">
+            {service.categoryName}
+          </span>
+        )}
+        <span className="mt-3 inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 group-hover:text-accent-800">
+          {t('servicesPage.learnMore')}
+          <ChevronRight className="h-4 w-4" aria-hidden="true" />
+        </span>
+      </span>
+    </Link>
+  );
+}
 
-  if (!category) {
-    return (
-      <>
-        <SEO
-          title="Services"
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
-          keywords="government services, public services, local government, civic services"
+function ServiceGrid({
+  services,
+  showCategory,
+}: {
+  services: Service[];
+  showCategory?: boolean;
+}) {
+  return (
+    <ul className="mt-6 grid grid-cols-1 gap-4 xl:grid-cols-2">
+      {services.map(s => (
+        <li key={s.href}>
+          <ServiceCard service={s} showCategory={showCategory} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Directory() {
+  const { t } = useTranslation();
+  const [query, setQuery] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const office = getOffice(searchParams.get('office') ?? undefined);
+
+  const all = getAllServices();
+  const words = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const results =
+    words.length === 0
+      ? []
+      : all.filter(s => {
+          const text =
+            `${s.title} ${s.fullTitle ?? ''} ${s.summary} ${s.categoryName} ${getOffice(s.office)?.name ?? ''}`.toLowerCase();
+          return words.every(w => text.includes(w));
+        });
+
+  const officesWithServices = OFFICES.map(o => ({
+    office: o,
+    count: all.filter(s => s.office === o.key).length,
+  })).filter(o => o.count > 0);
+
+  let body;
+  if (words.length > 0) {
+    body = (
+      <Panel>
+        <PanelHeading
+          title={t('servicesPage.resultsTitle', { query: query.trim() })}
+          text={t('servicesPage.resultsCount', { count: results.length })}
         />
-        <ServicesSection
-          title={`All local government services`}
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
-        />
-      </>
+        {results.length === 0 ? (
+          <p className="mt-4 text-base text-gray-800">
+            {t('servicesPage.noResults')}
+          </p>
+        ) : (
+          <ServiceGrid services={results} showCategory />
+        )}
+      </Panel>
     );
-  }
-  if (!categoryData) {
-    return (
-      <Section className="p-3 mb-12">
-        <Breadcrumbs className="mb-8" />
-        <Banner
-          type="error"
-          title="Category not found"
-          description="The category you are looking for does not exist."
-          icon
+  } else if (office) {
+    body = (
+      <Panel>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <PanelHeading
+            eyebrow={t('servicesPage.byOffice')}
+            title={office.name}
+          />
+          <button
+            type="button"
+            onClick={() => setSearchParams({})}
+            className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:bg-accent-50"
+          >
+            <X className="h-4 w-4" aria-hidden="true" />
+            {t('servicesPage.showAll')}
+          </button>
+        </div>
+        <ServiceGrid
+          services={all.filter(s => s.office === office.key)}
+          showCategory
         />
-      </Section>
+      </Panel>
+    );
+  } else {
+    body = (
+      <>
+        <Panel>
+          <PanelHeading
+            eyebrow={t('servicesPage.services')}
+            title={t('servicesPage.popularTitle')}
+            text={t('servicesPage.popularText')}
+          />
+          <ServiceGrid services={getPopularServices()} showCategory />
+        </Panel>
+
+        <Panel>
+          <PanelHeading
+            eyebrow={t('servicesPage.quickGuide')}
+            title={t('servicesPage.byLifeEvent')}
+            text={t('servicesPage.byLifeEventText')}
+          />
+          <ul className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3">
+            {serviceCategories.lifeEvents.map(e => (
+              <li key={e.title}>
+                <Link
+                  to={e.href}
+                  className="flex h-full flex-col items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 text-center text-base font-bold text-gray-900 transition-colors hover:border-primary-300 hover:bg-primary-50"
+                >
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-50 text-primary-700">
+                    <LucideIcon name={e.icon} className="h-6 w-6" />
+                  </span>
+                  {e.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Panel>
+
+        <Panel>
+          <PanelHeading
+            eyebrow={t('servicesPage.offices')}
+            title={t('servicesPage.byOffice')}
+            text={t('servicesPage.byOfficeText')}
+          />
+          <ul className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2">
+            {officesWithServices.map(({ office: o, count }) => (
+              <li key={o.key}>
+                <Link
+                  to={`/services?office=${o.key}`}
+                  className="flex h-full items-center gap-3 rounded-lg border border-gray-200 bg-white p-4 transition-colors hover:border-primary-300 hover:bg-primary-50"
+                >
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary-50 text-primary-700">
+                    <LucideIcon name={o.icon} />
+                  </span>
+                  <span className="flex-1 text-base font-bold text-gray-900">
+                    {o.name}
+                  </span>
+                  <span className="text-sm text-gray-700">
+                    {t('servicesPage.serviceCount', { count })}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Panel>
+      </>
     );
   }
 
   return (
-    <>
+    <main className="flex-grow">
       <SEO
-        title={categoryData.category || category}
-        description={categoryData.description}
-        keywords={`${categoryData.category}, government services, public services, local government`}
+        title={t('servicesPage.directoryTitle')}
+        description={t('servicesPage.directorySubtitle')}
+        keywords="Taal services, citizen's charter, business permit, birth certificate, building permit, cedula, real property tax"
       />
-      <Section className="p-3 mb-12">
-        <Breadcrumbs className="mb-8" />
-        <Icon className="h-8 w-8 mb-4 text-primary-600 rounded-md" />
-        <Heading>{categoryData.category || category}</Heading>
-        <Text className="text-gray-600 mb-6">{categoryData.description}</Text>
-
-        {loading ? (
-          <div className="flex justify-center items-center p-8">
-            <Text>Loading services...</Text>
+      <PageHeader
+        crumbs={[
+          { label: t('servicesPage.home'), href: '/' },
+          { label: t('servicesPage.services') },
+        ]}
+        title={t('servicesPage.directoryTitle')}
+        subtitle={t('servicesPage.directorySubtitle')}
+      >
+        <form
+          role="search"
+          onSubmit={e => e.preventDefault()}
+          className="mx-auto mt-8 max-w-xl"
+        >
+          <label htmlFor="service-search" className="sr-only">
+            {t('servicesPage.searchPlaceholder')}
+          </label>
+          <div className="relative">
+            <Search
+              className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-700"
+              aria-hidden="true"
+            />
+            <input
+              id="service-search"
+              type="search"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              placeholder={t('servicesPage.searchPlaceholder')}
+              className="w-full rounded-full border border-white bg-white py-3 pl-12 pr-4 text-base text-gray-900 placeholder:text-gray-600 focus:outline-none focus:ring-4 focus:ring-white/50"
+            />
           </div>
-        ) : (
-          <>
-            {categoryIndex.title && (
-              <Heading level={3}>{categoryIndex.title}</Heading>
-            )}
-            {categoryIndex.description && (
-              <Text className="text-gray-600 mb-4">
-                {categoryIndex.description}
-              </Text>
-            )}
-            {categoryIndex.layout === 'grid' ? (
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {subcategories.map(subcategory => (
-                  <Link
-                    key={subcategory.slug}
-                    to={`/services/${category}/${subcategory.slug}`}
-                  >
-                    <Card
-                      hoverable
-                      className="h-full border-t-4 border-primary-500"
-                    >
-                      <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
-                          {subcategory.name}
-                        </h4>
-                        {subcategory.description && (
-                          <p className="mt-2 text-sm text-gray-600">
-                            {subcategory.description}
-                          </p>
-                        )}
-                        <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
-                          {categoryData.category || category}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {subcategories.map(subcategory => (
-                  <Link
-                    key={subcategory.slug}
-                    to={`/services/${category}/${subcategory.slug}`}
-                  >
-                    <Card hoverable className="mb-4">
-                      <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
-                          {subcategory.name}
-                        </h4>
-                        {subcategory.description && (
-                          <p className="mt-2 text-sm text-gray-600">
-                            {subcategory.description}
-                          </p>
-                        )}
-                        <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
-                          {categoryData.category || category}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </>
-        )}
-      </Section>
-    </>
+        </form>
+      </PageHeader>
+      <PageBody sidebar={<CategoryNav />}>{body}</PageBody>
+    </main>
   );
-};
+}
 
-export default Services;
+function CategoryPage({ slug }: { slug: string }) {
+  const { t } = useTranslation();
+  const category = getServiceCategory(slug);
+
+  if (!category) {
+    return (
+      <main className="flex-grow">
+        <PageHeader
+          crumbs={[
+            { label: t('servicesPage.home'), href: '/' },
+            { label: t('servicesPage.services'), href: '/services' },
+          ]}
+          title={t('servicesPage.notFound')}
+        />
+        <PageBody sidebar={<CategoryNav />}>
+          <Panel>
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+            >
+              {t('servicesPage.backToServices')}
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          </Panel>
+        </PageBody>
+      </main>
+    );
+  }
+
+  const services = getCategoryServices(category.slug);
+  const offices = [
+    ...new Set(services.map(s => getOffice(s.office)?.name).filter(Boolean)),
+  ];
+
+  return (
+    <main className="flex-grow">
+      <SEO title={category.category} description={category.description} />
+      <PageHeader
+        crumbs={[
+          { label: t('servicesPage.home'), href: '/' },
+          { label: t('servicesPage.services'), href: '/services' },
+          { label: category.category },
+        ]}
+        title={category.category}
+        subtitle={category.description}
+      />
+      <PageBody sidebar={<CategoryNav active={category.slug} />}>
+        <Panel>
+          <PanelHeading
+            title={t('servicesPage.available')}
+            text={t('servicesPage.availableText', {
+              category: category.category,
+            })}
+          />
+          <dl className="mt-4 space-y-1 text-base text-gray-900">
+            <div className="flex gap-1.5">
+              <dt className="font-bold">{t('servicesPage.servicesLabel')}:</dt>
+              <dd>{services.length}</dd>
+            </div>
+            {offices.length > 0 && (
+              <div className="flex gap-1.5">
+                <dt className="font-bold">{t('servicesPage.handledBy')}:</dt>
+                <dd>{offices.join('; ')}</dd>
+              </div>
+            )}
+          </dl>
+          {services.length === 0 ? (
+            <p className="mt-4 text-base text-gray-800">
+              {t('servicesPage.comingSoonText')}
+            </p>
+          ) : (
+            <ServiceGrid services={services} />
+          )}
+        </Panel>
+      </PageBody>
+    </main>
+  );
+}

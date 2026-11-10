@@ -1,0 +1,57 @@
+# Certified Copy of Tax Declaration
+# Page: /services/property/certified-tax-declaration
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 94
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Certified Copy of Tax Declaration
+fullTitle: Issuance of a Certified Copy of Tax Declaration
+summary: Get a certified copy of your property's tax declaration
+description: A Tax Declaration is the record of every real property unit (land, building and
+  machinery) and the basis for real property tax. Owners can get a certified copy for their
+  records.
+icon: FileCheck
+office: assessor
+source:
+  page: 94
+classification: Simple
+transactionType: G2C, G2B (Government to Citizen, Government to Business)
+whoMayAvail: Real property owner or representative
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Authorization letter from the owner (if you are not the owner)
+    where: Real property owner
+  - item: Valid ID of the owner and the authorized person
+    where: Owner / authorized person
+  - item: Updated real property tax payment
+    where: Municipal Treasurer's Office
+steps:
+- client: Request the certified copy of the Tax Declaration.
+  agency:
+  - Checks the authorization letter
+  - ID and RPT payment
+  fee: None
+  time: 5 minutes
+  responsible: Assessment Clerk I / II / III
+- client: Pay the service fee at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee: ₱200.00 per tax declaration and ₱30.00 documentary stamp
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Go back to the Assessor's Office and present the receipt.
+  agency:
+  - Reviews the official receipt
+  fee: None
+  time: 3 minutes
+  responsible: Assessment Clerk I / II / III
+- client: Receive the certified copy and sign the logbook.
+  agency:
+  - Issues the certified copy of the Tax Declaration
+  fee: None
+  time: 2 minutes
+  responsible: Assessment Clerk I / II / III
+totalFee: ₱230.00
+totalTime: 15 minutes

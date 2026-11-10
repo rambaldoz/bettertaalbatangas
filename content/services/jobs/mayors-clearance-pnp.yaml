@@ -1,0 +1,43 @@
+# Mayor's Clearance (PNP Applicants)
+# Page: /services/jobs/mayors-clearance-pnp
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 12
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Mayor's Clearance (PNP Applicants)
+fullTitle: Mayor's Clearance (PNP)
+summary: Mayor's clearance for applicants to the Philippine National Police
+description: The Office of the Mayor issues a Mayor's clearance to people applying as uniformed personnel
+  of the Philippine National Police.
+icon: ShieldCheck
+office: mayor
+source:
+  page: 12
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Applicants for PNP uniformed personnel
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Community Tax Certificate (cedula)
+    where: Treasurer's Office
+  - item: Barangay clearance
+    where: Barangay where you live
+  - item: Police clearance
+    where: Municipal Police Station
+steps:
+- client: Bring all requirements and pay for the Mayor's clearance at the Treasurer's Office.
+  agency:
+  - Collects payment
+  fee: ₱200.00
+  time: 2 minutes
+  responsible: Revenue Collection Clerk II
+- client: Go to the Mayor's Office.
+  agency:
+  - Checks the requirements and issues the Mayor's clearance
+  fee: None
+  time: 10 minutes
+  responsible: Mayor's Office Staff
+totalFee: ₱200.00
+totalTime: 12 minutes

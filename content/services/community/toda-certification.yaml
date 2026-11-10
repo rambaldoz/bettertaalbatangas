@@ -1,0 +1,32 @@
+# TODA Certification
+# Page: /services/community/toda-certification
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 25
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: TODA Certification
+summary: Authentication of the list of officers and members of a TODA
+description: The Sangguniang Bayan Office authenticates the list of officers and members of a Tricycle
+  Operators and Drivers' Association (TODA).
+icon: BadgeCheck
+office: sb-secretariat
+source:
+  page: 25
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: All
+requirements:
+- group: 1 copy
+  items:
+  - item: List of officers and members of the TODA, signed by the TODA President
+    where: Applicant
+steps:
+- client: Submit a photocopy of the list of officers and members from your TODA President for authentication.
+  agency:
+  - Seals the documents for authentication
+  fee: None
+  time: 5 minutes
+  responsible: Administrative Aide VI (Clerk III)
+totalFee: None
+totalTime: 5 minutes

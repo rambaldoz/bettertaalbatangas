@@ -1,0 +1,59 @@
+# Complaint Against Barangay Officials
+# Page: /services/community/complaint-against-barangay-officials
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 26
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Complaint Against Barangay Officials
+fullTitle: Filing of Administrative Complaint against Elective Barangay Officials
+summary: File an administrative complaint against an elected barangay official
+description: Under the Local Government Code (RA 7160), the Sangguniang Bayan hears administrative complaints
+  filed against elective barangay officials.
+icon: Gavel
+office: sb-secretariat
+source:
+  page: 26
+classification: Highly Technical
+transactionType: Government-to-Citizen (G2C), Government-to-Government (G2G)
+whoMayAvail: Any citizen
+requirements:
+- group: 1 copy
+  items:
+  - item: Verified complaint for an administrative case against an elective barangay official
+    where: Complainant
+steps:
+- client: File the verified complaint at the Sangguniang Bayan Office.
+  agency:
+  - Receives and calendars the complaint for referral at the Sangguniang Bayan session
+  fee: None
+  time: 5 minutes
+  responsible: Administrative Aide VI (Clerk III)
+- client: Pay the filing fee at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee: ₱500.00
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Take part in the investigation and hearings.
+  agency:
+  - Refers the complaint to the concerned committee (5 minutes)
+  - Sends a letter to the respondents within 7 days; they answer with a counter-affidavit within 15 days
+    (22 days)
+  - Starts the investigation within 10 days after receiving the respondents' answer (3 hours)
+  - Holds a committee hearing with the respondents (3 hours)
+  - Holds a preliminary conference with the complainants and respondents (3 hours)
+  - Conducts the investigation proper, which ends within 90 days (3 hours)
+  - Deliberates on the resolution of the case in plenary (2 hours)
+  fee: None
+  time: 22 days, 14 hours and 5 minutes
+  responsible: Administrative Aide VI (Clerk III) / Sangguniang Bayan
+- client: Claim the resolution of the case.
+  agency:
+  - Issues the written decision to the parties and concerned offices within 30 days after the investigation
+    ends
+  fee: None
+  time: 5 minutes
+  responsible: Administrative Aide VI
+totalFee: ₱500.00
+totalTime: 22 days, 14 hours and 20 minutes

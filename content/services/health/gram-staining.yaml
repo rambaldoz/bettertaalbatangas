@@ -1,0 +1,39 @@
+# Gram Staining (Social Hygiene Clinic)
+# Page: /services/health/gram-staining
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 152
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Gram Staining (Social Hygiene Clinic)
+fullTitle: Gram Staining
+summary: Scheduled check-ups for registered entertainment workers
+description: Gram staining is done regularly for registered night club entertainers to reduce
+  infections, complications and the spread of HIV.
+icon: Microscope
+office: mho
+source:
+  page: 152
+classification: Complex
+whoMayAvail: Registered workers of night club establishments
+requirements:
+- group: Bring
+  items:
+  - item: Pink card (registered health card)
+    where: RHU
+steps:
+- client: Go to the Health Center as scheduled, register and present your health card.
+  agency:
+  - Interviews you, records your medical data, and checks your health card
+  fee: None
+  time: 15 minutes
+  responsible: Nurse III
+- client: Have the physical examination and gram staining done.
+  agency:
+  - Conducts the examination and gram staining
+  - Gives medical advice
+  fee: ₱100.00
+  time: 20 minutes
+  responsible: Admin Aide III
+totalFee: ₱100.00
+totalTime: 35 minutes

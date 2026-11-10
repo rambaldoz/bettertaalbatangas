@@ -1,0 +1,90 @@
+# Marriage Registration
+# Page: /services/civil-registry/marriage-registration
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 47, 48
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Marriage Registration
+fullTitle: Registration of Marriage
+summary: On-time or late registration of a marriage held in Taal
+description: The Certificate of Marriage must be submitted within fifteen (15) days after the
+  wedding for ordinary marriages, or within thirty (30) days for marriages exempt from the license
+  requirement, at the place where the marriage was held.
+icon: HeartHandshake
+office: mcr
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: All couples married in Taal, Batangas
+variants:
+- name: On-time registration
+  source:
+    page: 47
+  classification: Simple
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Accomplished and signed Certificate of Marriage (4 copies)
+      where: Solemnizing officer
+  steps:
+  - client: Submit the completed Certificate of Marriage (4 copies) to the Civil Registrar's
+      Office.
+    agency:
+    - Checks the entries and signatures
+    - Signs the Certificate of Marriage for registration
+    - Assigns the registry number
+    fee: None
+    time: 20 minutes
+    responsible: LCR Staff
+  - client: Claim the registered Marriage Certificate.
+    agency:
+    - Releases the owner's copy
+    fee: None
+    time: 5 minutes
+    responsible: LCR Staff
+  totalFee: None
+  totalTime: 25 minutes
+- name: Late registration
+  source:
+    page: 48
+  classification: Highly Technical
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Accomplished and signed Certificate of Marriage (4 copies)
+      where: Solemnizing officer
+    - item: Affidavit for Late Registration of Marriage
+      where: Notary Public / Public Attorney's Office
+    - item: Declaration of Real Property
+      where: Assessor's Office
+    - item: Original birth certificates of the children
+      where: Document owner
+  steps:
+  - client: Submit the completed Certificate of Marriage (4 copies) and supporting documents
+      to the Civil Registrar's Office.
+    agency:
+    - Reviews the documents for completeness
+    - Issues an order of payment
+    fee: None
+    time: 10 minutes
+    responsible: Registration Officer I / Administrative Assistant II / LCR Staff / Municipal
+      Civil Registrar
+  - client: Pay the fees at the Treasurer's Office.
+    agency:
+    - Issues an official receipt
+    fee: ₱1,000.00
+    time: 5 minutes
+    responsible: Revenue Collection Clerk
+  - client: Present the official receipt to the Registration Officer or Civil Registrar.
+    agency:
+    - Tells you the release date, after the 10-day posting period
+    fee: None
+    time: 5 minutes
+    responsible: LCR Staff
+  - client: Claim the registered Marriage Certificate.
+    agency:
+    - Issues the registered Certificate of Marriage
+    fee: None
+    time: 5 minutes
+    responsible: Municipal Civil Registrar / LCR Staff
+  totalFee: ₱1,000.00
+  totalTime: 25 minutes, plus the 10-day posting period

@@ -1,0 +1,52 @@
+# Soil Analysis
+# Page: /services/agriculture/soil-analysis
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 122
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Soil Analysis
+fullTitle: Soil Sample Collection and Analysis
+summary: Free soil testing and fertilizer recommendations for your farm
+description: Soil samples are analyzed to find out the fertilizer needs of an area, so fertilizer is used
+  more efficiently and farmers spend less.
+icon: FlaskConical
+office: agriculture
+source:
+  page: 122
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered farmers
+requirements:
+- group: 1 copy
+  items:
+  - item: Ani at Kita reference code
+    where: Municipal Agriculturist's Office
+steps:
+- client: Request a soil analysis at the Municipal Agriculturist's Office.
+  agency:
+  - Receives the request and schedules the site visit and soil collection
+  fee: None
+  time: 15 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Wait for the field visit.
+  agency:
+  - Collects soil samples (2 hours)
+  - Air-dries the samples (8 hours)
+  fee: None
+  time: 10 hours
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Wait for the soil analysis.
+  agency:
+  - Analyzes the samples and prepares the fertilizer recommendation
+  fee: None
+  time: 3 hours
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Receive the results.
+  agency:
+  - The agricultural technician brings the results and explains the fertilizer recommendation
+  fee: None
+  time: 2 hours
+  responsible: MAO Staff / Municipal Agriculturist
+totalFee: None
+totalTime: 1 day, 7 hours and 15 minutes

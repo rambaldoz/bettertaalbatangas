@@ -1,0 +1,40 @@
+# Social Hygiene Registration
+# Page: /services/health/social-hygiene-registration
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 153
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Social Hygiene Registration
+fullTitle: Social Hygiene
+summary: Registration and health cards for entertainment establishment workers
+description: Registration of entertainment establishment workers and staff with the Rural Health
+  Unit's social hygiene program.
+icon: IdCard
+office: mho
+source:
+  page: 153
+classification: Complex
+whoMayAvail: Workers of night club and entertainment establishments
+requirements:
+- group: Bring
+  items:
+  - item: Pink card
+    where: RHU
+steps:
+- client: Go to the RHU social hygiene personnel in charge.
+  agency:
+  - Interviews you
+  fee: None
+  time: 5 minutes
+  responsible: Nurse / RHU staff on duty
+- client: Present your medical requirements.
+  agency:
+  - Reviews your medical data and gives advice or referrals if needed
+  - Issues a pink card (workers) or white card (establishment staff)
+  - Schedules your next visit
+  fee: None
+  time: 15 minutes
+  responsible: Municipal Health Officer / medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 20 minutes

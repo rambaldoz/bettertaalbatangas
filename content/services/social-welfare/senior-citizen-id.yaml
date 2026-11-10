@@ -1,0 +1,50 @@
+# Senior Citizen ID
+# Page: /services/social-welfare/senior-citizen-id
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 89
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Senior Citizen ID
+fullTitle: Provision of Senior Citizen Identification Card
+summary: OSCA ID for senior citizens to avail of statutory benefits
+description: Under R.A. 9994 (Expanded Senior Citizens Act), OSCA issues IDs to qualified senior
+  citizens so they can avail of their statutory benefits.
+icon: Armchair
+office: mswdo
+source:
+  page: 89
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Senior citizens
+requirements:
+- group: 1 photocopy of the following
+  items:
+  - item: Birth certificate
+  - item: Any valid ID showing your birthdate
+steps:
+- client: Fill out the application form.
+  agency:
+  - Briefs you on the service and its requirements
+  fee: None
+  time: 2 minutes
+  responsible: DSWD Staff / Social Welfare Officer II
+- client: Wait while your documents are verified.
+  agency:
+  - Fills out the senior citizen form and encodes it
+  - Prints the ID
+  - Sends the ID for the Mayor's signature
+  fee: None
+  time: 2 days and 17 minutes
+  responsible: DSWD Staff / Social Welfare Officer II
+- client: Receive your ID.
+  agency:
+  - Releases the ID
+  fee: None
+  time: 2 minutes
+  responsible: DSWD Staff / Social Welfare Officer II
+totalFee: None
+totalTime: 2 days and 25 minutes
+notes:
+- The Charter cites "Republic Act No. 994". The Expanded Senior Citizens Act is R.A. 9994, which
+  we show here.

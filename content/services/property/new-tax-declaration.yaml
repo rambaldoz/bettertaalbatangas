@@ -1,0 +1,81 @@
+# New Tax Declaration (Transfer of Ownership)
+# Page: /services/property/new-tax-declaration
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 92
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: New Tax Declaration (Transfer of Ownership)
+fullTitle: Issuance of New Tax Declaration and Preparation of FAAS
+summary: Transfer, subdivide or consolidate a property's tax declaration
+description: The Field Appraisal and Assessment Sheet (FAAS) is encoded in the Electronic Real
+  Property Tax Assessment (eRPTA) System before a new Tax Declaration is issued for a transfer
+  of ownership, subdivision or segregation, or consolidation of lots.
+icon: FileSignature
+office: assessor
+source:
+  page: 92
+classification: Highly Technical
+transactionType: G2C, G2B, G2G
+whoMayAvail: Property owners and buyers
+requirements:
+- group: Requirements
+  items:
+  - item: 1 photocopy of the Deed of Sale, Extrajudicial Settlement of Estate or Deed of Donation,
+      with the Register of Deeds registry number
+    where: Client
+  - item: Certified copy of the title (if titled)
+    where: Registry of Deeds
+  - item: eCAR (BIR clearance)
+    where: BIR Batangas
+  - item: Certificate of Non-Delinquency or tax clearance
+    where: Municipal Treasurer's Office
+  - item: Original Certificate of Transfer Tax Payment
+    where: Provincial or Municipal Treasurer's Office
+  - item: Official receipt or certified copy of the transfer tax payment
+    where: Municipal Treasurer's Office / Register of Deeds
+  - item: Official receipt or photocopy of the transfer of ownership payment
+    where: Municipal Treasurer's Office
+  - item: Certified true copy of the Tax Declaration
+    where: Municipal Assessor's Office
+  - item: Certificate of No Improvement (if there is no building)
+    where: Municipal Assessor's Office
+  - item: Survey or sketch plan (if subdivided or consolidated)
+    where: Client
+  - item: Segregation fee (if subdivided)
+    where: Municipal Treasurer's Office
+steps:
+- client: If it is your first time, go to the Assessor's Office and get the list of requirements
+    for transfer of ownership.
+  agency:
+  - Gives a short briefing on the service and its requirements
+  fee: None
+  time: 40 minutes
+  responsible: Assessment Clerk I / II / III
+- client: Go to the Treasurer's Office and pay the service or ownership fee.
+  agency:
+  - Issues an official receipt
+  fee: ₱200.00 per real property unit
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: Submit all the requirements to the Assessor's Office for verification and preparation
+    of the FAAS.
+  agency:
+  - Checks that the property is free from liens and encumbrances
+  - Prepares the FAAS and recommends approval
+  - Approves the FAAS
+  - Encodes and prints the FAAS in eRPTA
+  - Signs the FAAS
+  - Prints the Tax Declaration and Notice of Assessment
+  fee: None
+  time: 1 hour
+  responsible: Assessment Clerk I / II / III / Local Assessment Operations Officer III / Municipal
+    Assessor
+- client: Receive the approved Tax Declaration and sign the logbook.
+  agency:
+  - Releases the new Tax Declaration
+  fee: None
+  time: 10 minutes
+  responsible: Assessment Clerk I / II / III
+totalFee: ₱200.00 per real property unit
+totalTime: 2 hours

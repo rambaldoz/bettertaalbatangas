@@ -1,0 +1,68 @@
+# Medical Certificate
+# Page: /services/health/medical-certificate
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 138
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Medical Certificate
+fullTitle: Issuance of Medical Certificate
+summary: For work or school absences, school, employment, medico-legal and other uses
+description: Residents can get a medical certificate for absences from work or school due to
+  sickness, school requirements, employment, medico-legal cases and other purposes.
+icon: FileHeart
+office: mho
+source:
+  page: 138
+classification: Simple
+whoMayAvail: General public
+requirements:
+- group: Medical requirements (1 copy of the results)
+  items:
+  - item: Chest X-ray (for employment)
+    where: RHU / hospital
+  - item: Complete blood count (for employment)
+    where: RHU / hospital
+  - item: Urinalysis (for employment)
+    where: RHU / hospital
+  - item: Drug test (for government agencies)
+    where: Accredited laboratory / hospital
+- group: Also bring
+  items:
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Municipal Health Office information desk.
+  agency:
+  - Asks the purpose of your visit and records your data in the patient logbook
+  fee: None
+  time: 2 minutes
+  responsible: Nurse / medical personnel in charge / RHU staff on duty
+- client: Go to the nurse or midwife on duty.
+  agency:
+  - Interviews and assesses you
+  - Asks for the requirements for the medical certificate
+  fee: None
+  time: 5 minutes
+  responsible: Nurse / medical personnel in charge / RHU staff on duty
+- client: If your requirements are complete, pay at the cashier.
+  agency:
+  - Collects payment and releases the official receipt
+  fee: ₱230.00
+  time: 3 minutes
+  responsible: Cashier / RHU staff on duty
+- client: Go back to the nurse or midwife on duty.
+  agency:
+  - Prepares the medical certificate and sends you to the Municipal Health Officer
+  fee: None
+  time: 5 minutes
+  responsible: Nurse / medical personnel in charge / RHU staff on duty
+- client: Go to the Municipal Health Officer.
+  agency:
+  - Conducts the physical examination
+  - Signs and issues the medical certificate
+  fee: None
+  time: 10 minutes
+  responsible: Municipal Health Officer / medical personnel in charge
+totalFee: ₱230.00
+totalTime: 25 minutes

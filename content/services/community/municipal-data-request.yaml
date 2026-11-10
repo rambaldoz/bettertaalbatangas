@@ -1,0 +1,38 @@
+# Municipal Data Request
+# Page: /services/community/municipal-data-request
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 34
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Municipal Data Request
+fullTitle: Provision of Information or Data of the Municipality
+summary: Data about Taal for students, researchers and businesses
+description: The Municipal Planning and Development Office is the databank of the municipality. Researchers,
+  such as students and prospective businesses, can request the data they need.
+icon: Database
+office: mpdc
+source:
+  page: 34
+classification: Simple
+transactionType: Government-to-Citizen (G2C), Government-to-Business (G2B)
+whoMayAvail: Researchers
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Letter of request
+    where: Researcher
+  - item: Valid ID of the researcher
+    where: Researcher
+steps:
+- client: Submit your letter of request to the MPDC Office.
+  agency:
+  - Receives the letter of request (1 minute)
+  - Checks if the requested data is available (5 minutes)
+  - Prints the requested data (5 minutes)
+  - Asks you to sign the logbook to acknowledge receipt (1 minute)
+  fee: None
+  time: 12 minutes
+  responsible: MPDC Office Staff
+totalFee: None
+totalTime: 12 minutes

@@ -1,0 +1,71 @@
+# Zoning Clearance
+# Page: /services/community/zoning-clearance
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 35, 36
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Zoning Clearance
+fullTitle: Issuance of Zoning Clearance
+summary: Required before a building or business permit, to confirm zoning conformity
+description: A Zoning Clearance is required before a building or business permit is issued. It confirms
+  that the use of the land conforms to the Zoning Ordinance.
+icon: MapPinned
+office: mpdc
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Applicants with a complete set of requirements
+variants:
+- name: Own property
+  source:
+    page: 35
+  classification: Simple
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Letter of request
+      where: Applicant
+    - item: Tax declaration
+      where: Applicant
+    - item: Tax receipt
+      where: Applicant
+  steps:
+  - client: Submit your letter of request to the MPDC Office.
+    agency:
+    - Receives the letter of request (1 minute)
+    - Evaluates the documents (5 minutes)
+    - Prints the zoning certification (5 minutes)
+    - Asks you to acknowledge receipt of the zoning certification (1 minute)
+    fee: ₱130.00
+    time: 12 minutes
+    responsible: MPDC Office Staff
+  totalFee: ₱130.00
+  totalTime: 12 minutes
+- name: Land owned by another person
+  source:
+    page: 36
+  classification: Complex
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Letter of request
+      where: Applicant
+    - item: Tax declaration
+      where: Applicant
+    - item: Tax receipt
+      where: Applicant
+    - item: Notarized consent to use the land, or deed of sale
+      where: Applicant
+    - item: Other proof of relationship to the owner (marriage contract, death certificate)
+      where: Applicant
+  steps:
+  - client: Submit your letter of request to the MPDC Office.
+    agency:
+    - Receives the letter of request
+    - Evaluates the documents
+    - Tells you of any additional documents needed
+    - Asks you to come back once the documents are complete
+    fee: ₱130.00
+    time: 15 minutes, but not more than 7 working days
+    responsible: MPDC Office Staff
+  totalFee: ₱130.00
+  totalTime: 15 minutes, but not more than 7 working days

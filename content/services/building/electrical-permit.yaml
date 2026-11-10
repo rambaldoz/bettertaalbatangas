@@ -1,0 +1,61 @@
+# Electrical Permit (Power Connection)
+# Page: /services/building/electrical-permit
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 179
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Electrical Permit (Power Connection)
+fullTitle: Permit for Temporary or Permanent Electric Service Connection
+summary: Needed before BATELEC I can install your electric meter
+description: A permit for a temporary or permanent electric connection is required before the
+  electric service provider (BATELEC I) can install an electric meter.
+icon: Zap
+office: meo
+source:
+  page: 179
+classification: Simple or Highly Technical
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Any person, firm, corporation or government agency applying for a temporary or
+  permanent electric connection
+requirements:
+- group: Requirements
+  items:
+  - item: Clearance or certificate from the Engineering Office
+    where: Office of the Municipal Engineer
+  - item: Order of payment
+    where: Office of the Municipal Engineer
+  - item: Official receipt
+    where: Municipal Treasurer's Office
+  - item: Rural house wiring plan and data
+    where: Applicant
+  - item: Application for electric service connection
+    where: Applicant
+  - item: Declaration of Real Property or receipt
+    where: Applicant (Assessor's Office)
+  - item: Barangay clearance
+    where: Barangay where the building is located
+steps:
+- client: Prepare all the requirements and submit them. Simple transactions go to step 2; complex
+    and highly technical transactions submit additional requirements.
+  agency:
+  - 'Simple: checks the requirements and computes the fees'
+  - 'Complex or highly technical: checks the requirements, refers you to other agencies for
+    additional requirements, and computes the fees'
+  fee: Based on the National Building Code fee schedule and the Local Revenue Code
+  time: 'Simple: 5 minutes. Complex: up to 7 working days. Highly technical: up to 20 working
+    days.'
+  responsible: Administrative Aide IV
+- client: Go to the Licensing Section and get your copy of the Electrical Permit.
+  agency:
+  - Issues the electrical permit
+  fee: None
+  time: 5 minutes
+  responsible: Administrative Aide IV
+totalFee: Based on the National Building Code fee schedule and the Local Revenue Code
+totalTime: 10 minutes (under normal conditions)
+notes:
+- Processing times for complex and highly technical transactions may be extended to allow applicants
+  to submit missing requirements.
+- In the Charter, the agency actions for this service mention "business tax". We show them as
+  fee computation.

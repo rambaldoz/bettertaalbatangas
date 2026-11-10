@@ -1,0 +1,82 @@
+# Marriage License
+# Page: /services/civil-registry/marriage-license
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 53
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Marriage License
+fullTitle: Issuance of Marriage License
+summary: Apply for a license before getting married
+description: Where a marriage license is required, each of the contracting parties files a separate
+  sworn application with the Civil Registrar of the place where either or both of them live.
+  The license is valid for one hundred twenty (120) days from the date of issue and is automatically
+  cancelled if not used within that period.
+icon: Gem
+office: mcr
+source:
+  page: 53
+classification: Highly Technical
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: The contracting parties (bride and groom)
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Birth certificate
+    where: PSA
+  - item: 2x2 picture
+    where: Applicant
+  - item: CENOMAR (Certificate of No Marriage Record)
+    where: PSA
+  - item: Cedula (Community Tax Certificate)
+    where: Treasurer's Office
+  - item: Pre-Marriage Counseling Certificate and Family Planning
+    where: DSWD / Rural Health Unit
+  - item: Father's consent (ages 18 to 20)
+    where: LCRO
+  - item: Parent's advice (ages 21 to 24)
+    where: LCRO
+- group: For foreign nationals
+  items:
+  - item: Certificate of Legal Capacity to Contract Marriage
+    where: Embassy of the applicant's country
+- group: If a previous spouse has died
+  items:
+  - item: Death certificate
+    where: PSA
+steps:
+- client: Both parties submit the requirements, answer the interview and sign the application
+    form.
+  agency:
+  - Reviews the documents
+  - Interviews both parties
+  - Prints the application for marriage license (3 copies)
+  - Issues an order of payment
+  fee: None
+  time: 35 minutes
+  responsible: LCR Staff
+- client: Pay the fees at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee: ₱850.00 (marriage license)
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Return to the Civil Registrar's Office, present the official receipt and leave the
+    documents for the 10-day posting period.
+  agency:
+  - Tells you when the marriage license will be released
+  fee: None
+  time: 5 minutes
+  responsible: Registration Officer I / Administrative Assistant II / LCR Staff
+- client: Return as instructed and claim the marriage license.
+  agency:
+  - Assigns the registry number
+  - Signs and issues the license and its attachments
+  fee: None
+  time: 5 minutes
+  responsible: Municipal Civil Registrar
+totalFee: ₱850.00
+totalTime: 50 minutes, plus the 10-day posting period
+notes:
+- The Charter's requirements table lists "Philippine Embassy" as the source of the Certificate
+  of Legal Capacity. It is issued by the foreign applicant's own embassy or consulate.

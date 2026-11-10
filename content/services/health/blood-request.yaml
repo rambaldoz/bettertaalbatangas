@@ -1,0 +1,39 @@
+# Blood Request
+# Page: /services/health/blood-request
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 154
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Blood Request
+summary: Help getting blood from the blood bank for a patient
+description: The Rural Health Unit coordinates with the blood bank on blood requests from a
+  physician or hospital.
+icon: Droplet
+office: mho
+source:
+  page: 154
+classification: Complex
+whoMayAvail: General public
+requirements:
+- group: Bring
+  items:
+  - item: 1 copy of the request from the physician or hospital
+    where: Requesting physician
+  - item: Patient number
+    where: Patient
+steps:
+- client: Go to the RHU blood donation personnel in charge.
+  agency:
+  - Interviews you
+  fee: None
+  time: 5 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Present the blood request form.
+  agency:
+  - Coordinates with the BATMC blood bank on availability and gives you instructions
+  fee: None
+  time: 7 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 12 minutes

@@ -1,0 +1,114 @@
+# Social Case Study Report
+# Page: /services/social-welfare/social-case-study
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 82, 83
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Social Case Study Report
+fullTitle: Provision of a Social Case Study Report
+summary: Case study report for hospitals, charities, adoption or court cases
+description: A social case study is required by charitable institutions, government and private
+  hospitals, and private and non-government organizations that help indigent clients and patients.
+  It is also used for case management and court-related cases. Social Welfare Officers also
+  assist in special cases such as children in conflict with the law, child abuse, violence against
+  women and children, human trafficking, and referrals from probation and parole. Processing
+  time may vary by case.
+icon: ClipboardList
+office: mswdo
+transactionType: G2G, G2C (Government to Government, Government to Citizen)
+whoMayAvail: Clients in difficult circumstances and relatives of patients
+variants:
+- name: Medical assistance
+  source:
+    page: 82
+  classification: Simple
+  requirements:
+  - group: For medical assistance
+    items:
+    - item: Medical certificate or abstract
+      where: Attending physician, RHU, hospital or clinic
+    - item: Quotation (for chemotherapy and dialysis)
+      where: Hospital or clinic
+    - item: Request letter from the hospital (in some cases; may be waived after the initial
+        assessment)
+      where: Hospital
+  steps:
+  - client: Write your name and purpose in the logbook. For court-related or non-urgent cases,
+      the interview may be scheduled.
+    agency:
+    - Asks you to fill in the logbook
+    fee: None
+    time: 2 minutes
+    responsible: Social Welfare Officer II / DSWD Staff
+  - client: Answer the interview and give the needed information.
+    agency:
+    - Conducts the interview
+    fee: None
+    time: 20 minutes
+    responsible: Social Welfare Officer II / DSWD Staff
+  - client: Wait for the case study report and get a copy for the agency concerned.
+    agency:
+    - Prepares the case study report and gives you a copy
+    fee: None
+    time: 45 minutes
+    responsible: Social Welfare Officer II / DSWD Staff / MSWDO
+  totalFee: None
+  totalTime: 1 hour and 7 minutes
+- name: Adoption, court and special cases
+  source:
+    page: 83
+  classification: Complex
+  requirements:
+  - group: For comprehensive case studies (as needed)
+    items:
+    - item: Birth certificates of the children
+      where: Local Civil Registrar
+    - item: Police report
+      where: Municipal Police Station
+    - item: Referral letter
+      where: Agency concerned
+    - item: Subpoena
+      where: Municipal Trial Court
+  steps:
+  - client: Write your name and purpose in the logbook. For court-related or non-urgent cases,
+      the interview may be scheduled.
+    agency:
+    - Asks you to fill in the logbook
+    fee: None
+    time: 2 minutes
+    responsible: Social Welfare Officer II / DSWD Staff
+  - client: Answer the interview and give the needed information.
+    agency:
+    - Conducts the interview and decides if a home visit is needed
+    fee: None
+    time: 30 minutes
+    responsible: Social Welfare Officer II / MSWD Officer
+  - client: If no home visit is needed, wait for the case study report and get a copy for the
+      agency concerned.
+    agency:
+    - Prepares the case study report and gives you a copy
+    fee: None
+    time: 1 hour and 30 minutes
+    responsible: Social Welfare Officer II / MSWD Officer
+  - client: If a home visit is needed, give a sketch of your house location and note the schedule.
+    agency:
+    - Schedules the home visit
+    fee: None
+    time: 2 minutes
+    responsible: Social Welfare Officer II / MSWD Officer
+  - client: Assist the social worker during the home visit.
+    agency:
+    - Visits your home to check your situation
+    - Tells you when the report will be released
+    fee: None
+    time: 2 hours
+    responsible: Social Welfare Officer II / MSWD Officer
+  - client: Go to the MSWDO on the release date, get the case study report and sign the logbook.
+    agency:
+    - Releases the case study
+    fee: None
+    time: 5 minutes
+    responsible: Social Welfare Officer II / MSWD Officer
+  totalFee: None
+  totalTime: 1 day and 39 minutes

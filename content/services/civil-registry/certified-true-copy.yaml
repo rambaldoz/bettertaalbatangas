@@ -1,0 +1,60 @@
+# Certified True Copy
+# Page: /services/civil-registry/certified-true-copy
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 40
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Certified True Copy
+fullTitle: Issuance of Civil Registry Certificates (Birth, Marriage, Death)
+summary: Certified copies of birth, marriage and death records registered in Taal
+description: Get a certified true transcription copy of a birth, marriage or death certificate,
+  or another registrable document, kept by the Municipal Civil Registrar.
+icon: Copy
+office: mcr
+source:
+  page: 40
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail:
+- 'Birth and marriage certificates: the document owner, or any person authorized'
+- 'Death certificate: the nearest relative of the deceased'
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Valid ID of the requester
+    where: Applicant
+  - item: 'If requesting for someone else: authorization and ID of the document owner, together
+      with the requester''s ID'
+    where: Applicant
+steps:
+- client: Fill out the request form and submit it to the receiving clerk or researcher.
+  agency:
+  - Checks if the document is available and tells you its status
+  - Issues an order of payment
+  fee: None
+  time: 25 minutes
+  responsible: LCR Staff
+- client: Pay the fees at the Municipal Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee:
+  - ₱100.00 per copy
+  - Documentary stamp ₱30.00
+  time: 10 minutes
+  responsible: Revenue Collection Officer II
+- client: Return to the Civil Registrar's Office and present the official receipt to the researcher.
+  agency:
+  - Records the official receipt number below the requested copies
+  - Verifies and signs the documents
+  fee: None
+  time: 15 minutes
+  responsible: LCR Staff
+- client: Claim the certified true transcription copies.
+  agency:
+  - Issues the document
+  fee: None
+  time: 3 minutes
+  responsible: Municipal Civil Registrar
+totalFee: ₱130.00
+totalTime: 53 minutes

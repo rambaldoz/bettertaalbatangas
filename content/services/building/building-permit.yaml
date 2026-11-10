@@ -1,0 +1,88 @@
+# Building Permit
+# Page: /services/building/building-permit
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 162
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Building Permit
+summary: Permit to build, renovate, alter or add to a building
+description: Under Section 301 of the National Building Code (P.D. 1096), no one may construct,
+  alter, convert, use, occupy, move, demolish or add to a building without first getting a Building
+  Permit from the Building Official. Ancillary permits are filed together with the building
+  permit. The permit becomes void if work does not start within one year, or if the building
+  is abandoned or work is suspended for 120 days.
+icon: HardHat
+office: meo
+source:
+  page: 162
+classification: Simple
+transactionType: G2C, G2B (Government to Citizen, Government to Business)
+whoMayAvail: All residents of Taal
+requirements:
+- group: If you are the registered owner of the lot (1 copy each)
+  items:
+  - item: Certified true copy of the OCT/TCT on file with the Registry of Deeds
+    where: Registry of Deeds
+  - item: Tax Declaration
+    where: Taal Assessor's Office
+  - item: Current real property tax receipt
+- group: If you are not the registered owner, in addition to the above
+  items:
+  - item: Notarized Contract of Lease or Sale
+    where: Client
+  - item: Notarized Deed of Absolute Sale
+    where: Client
+- group: For everyone
+  items:
+  - item: Barangay clearance
+    where: Designated barangay hall
+  - item: Five (5) sets of survey plans, design plans, specifications and forms, signed and
+      sealed by the architect, civil engineer, electrical, mechanical, sanitary and electronics
+      engineers, master plumber, environmental planner, interior designer and geodetic engineer,
+      as applicable
+    where: Client
+steps:
+- client: Go to the Engineering Office and get the application forms and checklist of requirements.
+  agency:
+  - Gives the checklist and forms
+  - Briefs you on the process
+  fee: None
+  time: 15 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: Submit the plans and other requirements for initial checking. If anything is lacking,
+    submit the missing documents or corrected plans.
+  agency:
+  - Checks if the requirements are complete
+  - Tells you if they are complete or need corrections
+  fee: None
+  time: 10 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: Get the order of payment once the application is complete.
+  agency:
+  - Issues the order of payment
+  fee: None
+  time: 10 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: Pay the fees at the Treasurer's Office and get the official receipt.
+  agency:
+  - Receives payment and issues the official receipt
+  fee: Based on the National Building Code fee schedule and the Local Revenue Code
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Return to the Engineering Office and submit the official receipt.
+  agency:
+  - Receives the receipt and tells you the release date
+  - Processes the permit
+  fee: None
+  time: 30 minutes
+  responsible: Municipal Engineer and Engineering Staff
+- client: On the scheduled date, receive the permit at the Engineering Office and sign the logbook.
+  agency:
+  - Releases the approved Building Permit
+  fee: None
+  time: 5 minutes
+  responsible: Municipal Engineer and Engineering Staff
+totalFee: Based on the Revised National Building Code 2005 (NBCDO Memorandum Circular No. 1,
+  s. 2004, schedule of building permit fees) and the Local Revenue Code
+totalTime: 1 hour and 15 minutes

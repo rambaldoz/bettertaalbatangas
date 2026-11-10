@@ -1,0 +1,45 @@
+# Career Coaching
+# Page: /services/jobs/career-coaching
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 111
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Career Coaching
+fullTitle: Career Coaching at Gabay sa Pagtatrabaho
+summary: Free career guidance and job search coaching for young jobseekers
+description: Gabay sa Pagtatrabaho offers mentoring, career guidance and employment coaching to young
+  jobseekers, helping them build skills, confidence and strategies for finding work.
+icon: Compass
+office: peso
+source:
+  page: 111
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Students and graduates
+requirements:
+- group: 1 copy
+  items:
+  - item: Resume
+    where: Applicant
+steps:
+- client: Ask PESO for career coaching.
+  agency:
+  - Conducts an initial assessment and identifies your needs
+  fee: None
+  time: 10 minutes
+  responsible: PESO Officer
+- client: Join the career coaching session.
+  agency:
+  - Gives guidance on career options, job search strategies and skills development
+  fee: None
+  time: 40 minutes
+  responsible: PESO Officer
+- client: Receive recommendations and follow-up.
+  agency:
+  - Advises on next steps toward employment
+  fee: None
+  time: 10 minutes
+  responsible: PESO Officer
+totalFee: None
+totalTime: 1 hour

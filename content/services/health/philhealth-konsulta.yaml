@@ -1,0 +1,43 @@
+# PhilHealth Konsulta Registration
+# Page: /services/health/philhealth-konsulta
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 155
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: PhilHealth Konsulta Registration
+fullTitle: Registration on PhilHealth Konsulta
+summary: Register for PhilHealth's free primary care package
+description: Register with PhilHealth Konsulta at the Rural Health Unit for free medical consultation
+  and medicines.
+icon: ClipboardPlus
+office: mho
+source:
+  page: 155
+classification: Simple
+whoMayAvail: General public
+requirements:
+- group: Bring
+  items:
+  - item: PhilHealth number
+    where: Patient
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Rural Health Unit information desk to register your data in the Electronic
+    Medical Record.
+  agency:
+  - Interviews you and encodes your data in the Electronic Medical Record
+  fee: None
+  time: 7 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Go to the PhilHealth office.
+  agency:
+  - Conducts the first patient encounter and medical interview
+  - Reviews your data and gives advice or referrals
+  - Prints your Konsulta registration form
+  fee: None
+  time: 10 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 17 minutes

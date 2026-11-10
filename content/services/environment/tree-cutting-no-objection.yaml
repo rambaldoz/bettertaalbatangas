@@ -1,0 +1,58 @@
+# Cutting Non-Fruit-Bearing Trees
+# Page: /services/environment/tree-cutting-no-objection
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 118
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Cutting Non-Fruit-Bearing Trees
+fullTitle: Issuance of Certificate of No Objection to Cut Down Non-Fruit Bearing Trees
+summary: Certificate of no objection to cut down non-fruit-bearing trees
+description: MENRO issues a Certificate of No Objection to property owners who need to cut down non-fruit-bearing
+  trees for unavoidable reasons. For fruit-bearing trees, see the certificates issued by the Municipal
+  Agriculturist.
+icon: Axe
+office: menro
+source:
+  page: 118
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Owners of properties within Taal
+requirements:
+- group: 1 copy each
+  items:
+  - item: Request letter
+    where: Applicant
+  - item: Land title (OCT/TCT), for private property
+    where: Applicant
+  - item: Photographs of the trees to be removed
+    where: Applicant
+  - item: Site development plan and ECC, if available
+    where: Applicant
+steps:
+- client: Sign the client logbook and submit your request.
+  agency:
+  - Accepts the request letter and schedules a site visit
+  fee: None
+  time: 30 minutes
+  responsible: MENRO / MENRO Staff
+- client: Wait for the site visit.
+  agency:
+  - Assesses whether the endorsement can be issued
+  fee: None
+  time: 1 day
+  responsible: MENRO / MENRO Staff
+- client: Pay at the Treasurer's Office.
+  agency:
+  - Waits for the official receipt of payment
+  fee: ₱100.00
+  time: 1 day
+  responsible: MENRO / MENRO Staff
+- client: Present the official receipt to MENRO.
+  agency:
+  - Issues the Certificate of No Objection
+  fee: None
+  time: 5 minutes
+  responsible: MENRO / MENRO Staff
+totalFee: ₱100.00
+totalTime: 2 days and 35 minutes

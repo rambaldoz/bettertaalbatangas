@@ -1,0 +1,54 @@
+# MENRO Clearance for Business Permit
+# Page: /services/environment/menro-business-clearance
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 116
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: MENRO Clearance for Business Permit
+fullTitle: Endorsement/Recommending Approval for Application for Business Permit
+summary: Environmental sign-off needed for a business permit application
+description: A business permit needs clearances from several offices. MENRO uses its clearance to orient
+  applicants on proper solid waste management, like segregation at source and segregated collection, and
+  on other environmental laws.
+icon: Recycle
+office: menro
+source:
+  page: 116
+classification: Simple
+transactionType: Government-to-Business (G2B)
+whoMayAvail: Business permit applicants in Taal
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Business permit application form
+    where: BPLO
+  - item: If applicable, Environmental Compliance Certificate (ECC) or Certificate of Non-Coverage (CNC)
+    where: DENR-EMB
+steps:
+- client: Submit your business permit application form and attachments to MENRO.
+  agency:
+  - Receives and assesses the application and supporting documents
+  fee: None
+  time: 5 minutes
+  responsible: MENRO / MENRO Staff
+- client: Attend a short orientation.
+  agency:
+  - Orients you on proper solid waste management, such as segregation at source and segregated collection
+  fee: None
+  time: 15 minutes
+  responsible: MENRO / MENRO Staff
+- client: Learn the requirements of other environmental laws.
+  agency:
+  - Explains requirements such as the ECC or CNC, whichever applies
+  fee: None
+  time: 15 minutes
+  responsible: MENRO / MENRO Staff
+- client: Receive your signed form and documents.
+  agency:
+  - Signs the clearance part of the business permit application form
+  fee: None
+  time: 5 minutes
+  responsible: MENRO / MENRO Staff
+totalFee: None
+totalTime: 40 minutes

@@ -1,0 +1,71 @@
+# Laboratory Tests
+# Page: /services/health/laboratory-tests
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 142
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Laboratory Tests
+fullTitle: Laboratory Examination Services
+summary: Basic blood, urine and stool tests at about half the usual price
+description: Basic hematology and chemistry tests are available at the Rural Health Unit. Prices
+  are about half of those at independent laboratories and hospitals.
+icon: FlaskConical
+office: mho
+source:
+  page: 142
+classification: Simple
+whoMayAvail: General public
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Physician's laboratory request
+    where: Attending physician
+  - item: PhilHealth MDR
+    where: PhilHealth officer
+steps:
+- client: Go to the Municipal Health Office information desk for laboratory services.
+  agency:
+  - Asks the purpose of your visit and records your data in the patient logbook
+  fee: None
+  time: 3 minutes
+  responsible: RHU staff on duty
+- client: Go to the laboratory and present your request.
+  agency:
+  - Reviews the request and prepares you for extraction or other instructions
+  fee: None
+  time: 5 minutes
+  responsible: Medical Technologist
+- client: Pay at the cashier.
+  agency:
+  - Issues an official receipt
+  fee:
+  - FBS ₱100.00; creatinine ₱100.00; lipid profile ₱390.00
+  - CBC with platelet ₱130.00; blood typing ₱130.00
+  - Urinalysis ₱65.00; fecalysis ₱65.00
+  - 'Not covered by PhilHealth: BUA, BUN, cholesterol ₱100.00; pregnancy test, triglycerides,
+    gram stain ₱130.00; SGPT ₱160.00; HBsAg and RPR/VDRL ₱260.00; NaKCl ₱550.00'
+  time: 5 minutes
+  responsible: Cashier / RHU staff on duty
+- client: Go back to the laboratory and present the official receipt.
+  agency:
+  - Checks the receipt
+  - Does the test
+  - Tells you when the result will be ready
+  fee: None
+  time: 15 minutes
+  responsible: Medical Technologist
+- client: Wait for, or come back for, the result.
+  agency:
+  - Releases the result
+  fee: None
+  time: 1 to 3 hours, depending on the test
+  responsible: Medical Technologist
+- client: Show the result to your attending physician or the Municipal Health Officer.
+  agency:
+  - Evaluates the result and gives instructions, medicines and counseling
+  fee: None
+  time: 7 minutes
+  responsible: Municipal Health Officer / medical personnel in charge
+totalFee: Depends on the tests (see fees above)
+totalTime: 1 to 3 hours depending on the test, plus 35 minutes

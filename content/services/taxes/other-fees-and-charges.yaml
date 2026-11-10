@@ -1,0 +1,47 @@
+# Other Fees and Charges
+# Page: /services/taxes/other-fees-and-charges
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 77
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Other Fees and Charges
+fullTitle: Collection of Other Regulatory Fees, Charges and Miscellaneous Fees
+summary: Pay fees for civil registry documents, permits, clearances and certifications
+description: 'The Municipal Treasurer''s Office collects fees for civil registry documents (birth,
+  death, burial and marriage certificates, marriage applications and licenses, solemnization,
+  corrections, late registrations and other certifications) and for other permits and charges:
+  building permit, zoning clearance, reclassification, Mayor''s clearance, tax clearance, transfer
+  tax, and certifications for tax declarations, no improvement, property holdings, no property
+  and non-delinquency.'
+icon: Wallet
+office: mto
+source:
+  page: 77
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Anyone paying for a municipal document, permit or certification
+requirements:
+- group: Requirements
+  items:
+  - item: 1 copy of your Community Tax Certificate
+    where: Municipality of Taal
+steps:
+- client: Request the document or certification from the office concerned.
+  agency:
+  - Receives the request and issues an order of payment
+  fee: Refer to the Revenue Code of Taal
+  time: 10 minutes
+  responsible: Office concerned
+- client: Present the order of payment to the collection officer at the Municipal Treasurer's
+    Office and pay the amount due.
+  agency:
+  - Prepares and issues the official receipt
+  fee: As computed in the order of payment, verified with the Revenue Code of Taal
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+totalFee: As assessed
+totalTime: 20 minutes
+notes:
+- The Charter's "Who may avail" line for this service repeats the one for real property tax
+  (property owners and heirs). We show a general description here.

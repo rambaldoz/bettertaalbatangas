@@ -1,0 +1,63 @@
+# Property Certifications and Maps
+# Page: /services/property/property-certifications-and-maps
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 95
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Property Certifications and Maps
+fullTitle: Certification of No Improvement / No Property, Other Certifications and Location
+  Maps
+summary: Certificate of No Improvement, No Property, and vicinity or terrain maps
+description: Issued on request of the property owner or an authorized representative, covering
+  the Certification of No Improvement, Certification of No Property, other assessment records,
+  and vicinity or terrain maps.
+icon: MapPinned
+office: assessor
+source:
+  page: 95
+classification: Simple
+transactionType: G2C, G2B (Government to Citizen, Government to Business)
+whoMayAvail: Real property owner or representative
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Request letter from the owner (with authorization if someone else is transacting)
+    where: Real property owner
+  - item: Valid ID of the owner and the authorized person
+    where: Owner / authorized person
+  - item: Updated real property tax payment
+    where: Municipal Treasurer's Office
+steps:
+- client: Request the certification, or the vicinity or terrain map.
+  agency:
+  - Checks the authorization letter
+  - ID and RPT payment
+  fee: None
+  time: 10 minutes
+  responsible: Assessment Clerk I / II / III
+- client: Pay the service fee at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee:
+  - ₱200.00 per certification and ₱30.00 documentary stamp
+  - ₱250.00 per terrain map
+  - ₱100.00 per vicinity map
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Go back to the Assessor's Office and present the receipt.
+  agency:
+  - Reviews the official receipt
+  fee: None
+  time: 3 minutes
+  responsible: Assessment Clerk I / II / III
+- client: Receive the requested certification.
+  agency:
+  - Issues the certification
+  fee: None
+  time: 2 minutes
+  responsible: Assessment Clerk I / II / III
+totalFee: Depends on the document (see fees above)
+totalTime: 20 minutes
+notes:
+- The Charter's total fee line for this service says "None", while its steps list the fees above.

@@ -17,12 +17,14 @@ export default function SEO({
   image,
   url,
   type = 'website',
-  siteName = import.meta.env.VITE_GOVERNMENT_NAME || 'Local Government Website',
+  // The portal's own name, not the municipality's, so pages are not mistaken
+  // for the official government website.
+  siteName = 'BetterTaalBatangas.org',
 }: SEOProps) {
-  const defaultTitle = `${siteName} - Official Government Website`;
+  const defaultTitle = `${siteName} | Community Portal for Taal, Batangas`;
   const defaultDescription =
     import.meta.env.VITE_SITE_DESCRIPTION ||
-    `Official website of ${siteName}. Access government services, information, and resources.`;
+    'A volunteer-run guide to the services, offices and officials of the Municipality of Taal, Batangas.';
   const defaultKeywords =
     import.meta.env.VITE_SITE_KEYWORDS ||
     'government, local government, services, public services, civic services';
@@ -68,7 +70,7 @@ export default function SEO({
       {/* Additional Meta Tags */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="theme-color" content="#0066eb" />
+      <meta name="theme-color" content="#606c38" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={fullUrl} />

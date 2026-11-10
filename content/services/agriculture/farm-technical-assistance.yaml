@@ -1,0 +1,40 @@
+# Technical Assistance to Farmers
+# Page: /services/agriculture/farm-technical-assistance
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 124
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Technical Assistance to Farmers
+summary: Advice and on-site help for problems on your farm
+description: Farmers who come to the office for consultation get technical assistance, including an on-site
+  visit to assess and address their problems.
+icon: Wrench
+office: agriculture
+source:
+  page: 124
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Registered farmers
+requirements:
+- group: 1 copy
+  items:
+  - item: Ani at Kita reference code
+    where: Municipal Agriculturist's Office
+steps:
+- client: Ask the Agriculturist for technical assistance.
+  agency:
+  - Accepts the request and schedules a site visit
+  fee: None
+  time: 15 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Wait for the site visit.
+  agency:
+  - Assesses and addresses the problems on your farm
+  fee: None
+  time: 2 hours
+  responsible: MAO Staff / Municipal Agriculturist
+totalFee: None
+totalTime: 2 hours and 15 minutes
+notes:
+- The Charter gives a total of 3 hours and 15 minutes, but its two steps add up to 2 hours and 15 minutes.

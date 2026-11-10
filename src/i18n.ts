@@ -9,6 +9,9 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
+    load: 'languageOnly',
+    // Only English and Tagalog are offered; anything else falls back to English.
+    supportedLngs: ['en', 'fil'],
     debug: import.meta.env.DEV,
     defaultNS: 'common',
     ns: ['common'],

@@ -1,0 +1,88 @@
+# Legitimation & Use of Father's Surname
+# Page: /services/civil-registry/legitimation-and-ausf
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 62
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Legitimation & Use of Father's Surname
+fullTitle: Registering Legal Instruments (Legitimation, Acknowledgment of Paternity, AUSF)
+summary: Register legitimation, acknowledgment of paternity, or use of the father's surname
+  (R.A. 9255)
+description: Legal instruments are registered with the Civil Registrar where the child's birth
+  is registered. They include the Affidavit of Acknowledgment or Admission of Paternity (signed
+  by the biological father), Legitimation (when parents who were not married at the child's
+  birth later marry) and the Affidavit to Use the Surname of the Father under R.A. 9255.
+icon: Users
+office: mcr
+source:
+  page: 62
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Civil registry document owners
+requirements:
+- group: Legitimation (1 original copy each)
+  items:
+  - item: Certificate of Live Birth
+    where: LCRO / PSA
+  - item: Affidavit for Legitimation, signed by the parents
+    where: Notary Public / Public Attorney's Office
+  - item: Certificate of Marriage with certified copy
+    where: Place where the marriage was held
+  - item: CENOMAR (Certificate of No Marriage Record)
+    where: PSA
+- group: Legitimation, if the father is not on the birth certificate (1 original copy each)
+  items:
+  - item: Certificate of Live Birth
+    where: LCRO / PSA
+  - item: Affidavit for Legitimation, signed by the parents
+    where: Notary Public / Public Attorney's Office
+  - item: Certificate of Marriage with certified copy
+    where: Place where the marriage was held
+  - item: CENOMAR (Certificate of No Marriage Record)
+    where: PSA
+  - item: Affidavit of Acknowledgment/Admission of Paternity and Non-Appearance
+    where: Notary Public / Public Attorney's Office
+- group: Affidavit to Use the Surname of the Father
+  items:
+  - item: 1 original copy of the Certificate of Live Birth
+    where: LCRO / PSA
+- group: AUSF, if the father is not on the birth certificate (1 original copy each)
+  items:
+  - item: Certificate of Live Birth
+    where: LCRO / PSA
+  - item: Affidavit of Acknowledgment of Paternity and Non-Appearance
+    where: Notary Public / Public Attorney's Office
+steps:
+- client: Submit the requirements and answer the interview.
+  agency:
+  - Reviews the requirements and interviews you
+  - Issues an order of payment
+  fee: None
+  time: 20 minutes
+  responsible: Registration Officer I / Administrative Assistant II / LCR Staff
+- client: Pay the fees at the Municipal Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee:
+  - Legitimation ₱500.00
+  - Certified photocopies ₱20.00 x 12 (₱240.00)
+  - Endorsement ₱100.00
+  - Certification ₱230.00
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Return to the Civil Registrar's Office and present the official receipt.
+  agency:
+  - Records the documents and tells you the release date
+  fee: None
+  time: 10 minutes
+  responsible: Registration Officer I / Administrative Assistant II / LCR Staff
+- client: Claim the certified true copies of the child's Certificate of Live Birth on the date
+    given, and sign the logbook.
+  agency:
+  - Releases the certified true copies
+  fee: None
+  time: 5 minutes
+  responsible: Municipal Civil Registrar
+totalFee: ₱1,070.00
+totalTime: 40 minutes

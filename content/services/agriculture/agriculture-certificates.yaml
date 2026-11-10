@@ -1,0 +1,70 @@
+# Animal Inspection and Fruit Tree Certificates
+# Page: /services/agriculture/agriculture-certificates
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 124
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Animal Inspection and Fruit Tree Certificates
+fullTitle: Issuance of Certificates
+summary: Animal Inspection Certificate and certificate to cut fruit-bearing trees
+description: The Agriculturist's Office issues the Animal Inspection Certificate, required to transport
+  animals, and the Certificate of No Objection, required to cut down fruit-bearing trees.
+icon: FileCheck
+office: agriculture
+source:
+  page: 124
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Animal haulers or owners transporting animals; owners of fruit-bearing trees or their authorized
+  representatives
+variants:
+- name: Animal Inspection Certificate
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Trader's pass
+      where: PROVET and BAI
+    - item: Livestock handler's license
+      where: PROVET and BAI
+    - item: Transport carrier accreditation
+      where: PROVET and BAI
+    - item: Certificate of vaccination
+      where: PROVET and BAI
+    - item: Laboratory results
+      where: PROVET and BAI
+- name: Cutting fruit-bearing trees
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Picture of the fruit-bearing tree showing its location
+      where: Owner
+    - item: Proof of ownership (tax declaration or certificate of title)
+      where: Owner
+    - item: Authorization, for representatives
+      where: Owner
+    - item: Certificate of no objection from the barangay where the tree is located
+      where: Barangay
+steps:
+- client: Submit the requirements to the Municipal Agriculturist's Office.
+  agency:
+  - Receives and processes the application
+  fee: None
+  time: 5 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+- client: Pay the fee at the Treasurer's Office.
+  agency:
+  - Processes the payment and issues an official receipt
+  fee:
+  - 'Certification: ₱200.00'
+  - 'Documentary stamp: ₱30.00'
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Go back to the Agriculturist's Office.
+  agency:
+  - Logs and releases the certificate
+  fee: None
+  time: 5 minutes
+  responsible: MAO Staff / Municipal Agriculturist
+totalFee: ₱230.00
+totalTime: 15 minutes

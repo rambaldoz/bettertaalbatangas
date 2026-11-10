@@ -1,0 +1,72 @@
+# Tricycle Permit (New and Renewal)
+# Page: /services/business/tricycle-permit
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 18
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Tricycle Permit (New and Renewal)
+summary: Mayor's permit for tricycle owners, new or renewal
+description: The licensing office keeps the records of tricycle owners and issues tricycle permits.
+icon: Bike
+office: bplo
+source:
+  page: 18
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Tricycle owners
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Community Tax Certificate (cedula)
+    where: Treasurer's Office
+  - item: LTO official receipt of the previous year's payment
+    where: Applicant (Land Transportation Office)
+  - item: LTO Certificate of Registration
+    where: Applicant (Land Transportation Office)
+  - item: Franchise certificate
+    where: Sangguniang Bayan Office
+  - item: Barangay clearance
+    where: Barangay where the owner lives
+  - item: Driver's license
+    where: Applicant (Land Transportation Office)
+steps:
+- client: Get and fill out the application form.
+  agency:
+  - Checks that the requirements are complete
+  fee:
+  - Mayor's permit fee ₱650.00
+  - Police clearance ₱100.00
+  - Miscellaneous ₱100.00
+  - Plate ₱250.00
+  time: 5 minutes
+  responsible: Business Permit and Licensing Officer or staff
+- client: Go to the Traffic Management Group (TMG) for inspection of the application form, requirements,
+    muffler, lights and trash can.
+  agency:
+  - Checks that the tricycle was properly inspected
+  fee: None
+  time: 20 minutes
+  responsible: Traffic Management Group
+- client: Go back to the Licensing Officer for checking and encoding.
+  agency:
+  - Final verification and encoding
+  fee: None
+  time: 15 minutes
+  responsible: Business Permit and Licensing Officer or staff
+- client: Pay at the Municipal Treasurer's Office.
+  agency:
+  - Collects payment and issues an official receipt
+  fee: None
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Get your tricycle permit from the Licensing Officer.
+  agency:
+  - Releases the tricycle permit, plate and sticker
+  fee: None
+  time: 3 minutes
+  responsible: Business Permit and Licensing Officer or staff
+totalFee: ₱1,100.00
+totalTime: 48 minutes
+notes:
+- Fees may increase. A 25% surcharge applies after the deadline.

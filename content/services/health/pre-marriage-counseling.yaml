@@ -1,0 +1,43 @@
+# Pre-Marriage Counseling
+# Page: /services/health/pre-marriage-counseling
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 150
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Pre-Marriage Counseling
+fullTitle: Conduct of Pre-Marital Counseling
+summary: Counseling required before getting a marriage license
+description: Under P.D. 965, couples must attend pre-marital counseling before they can marry.
+  It covers family planning and responsible parenthood, and other health programs.
+icon: MessagesSquare
+office: mho
+source:
+  page: 150
+classification: Simple
+whoMayAvail: Couples about to marry
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Certificate from the Local Civil Registrar
+    where: Local Civil Registrar
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Rural Health Unit together and present the pre-marital counseling certificate
+    from the Civil Registrar.
+  agency:
+  - Records the information from the certificate
+  fee: None
+  time: 15 minutes
+  responsible: RHU staff on duty
+- client: Attend the pre-marital counseling.
+  agency:
+  - Conducts counseling on maternal and child care, responsible parenthood, family planning
+    and STIs
+  - Certifies your attendance
+  fee: None
+  time: 2 hours and 10 minutes
+  responsible: RHU staff on duty
+totalFee: None
+totalTime: 2 hours and 25 minutes

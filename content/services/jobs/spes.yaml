@@ -1,0 +1,63 @@
+# SPES (Student Employment)
+# Page: /services/jobs/spes
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 109
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: SPES (Student Employment)
+fullTitle: Special Program for Employment of Students (SPES)
+summary: Short-term jobs for poor but deserving students and out-of-school youth
+description: Republic Act 7323 requires local governments to provide short-term employment to poor but
+  deserving students and out-of-school youth, so they can earn and support their education.
+icon: GraduationCap
+office: peso
+source:
+  page: 109
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Out-of-school youth and poor but deserving students
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Accomplished SPES application form
+    where: Applicant
+  - item: School registration or certificate of enrollment
+    where: Applicant
+  - item: Barangay clearance
+    where: Barangay where you live
+  - item: Valid ID
+    where: Applicant
+steps:
+- client: Ask PESO about SPES.
+  agency:
+  - Explains the program and checks your eligibility
+  fee: None
+  time: 10 minutes
+  responsible: PESO Officer
+- client: Submit your completed SPES requirements.
+  agency:
+  - Reviews and validates the documents
+  fee: None
+  time: 15 minutes
+  responsible: PESO Officer
+- client: Register in the SPES database.
+  agency:
+  - Registers you in the SPES database
+  fee: None
+  time: 15 minutes
+  responsible: PESO Officer
+- client: Receive your job assignment and orientation schedule.
+  agency:
+  - Issues placement and orientation details
+  fee: None
+  time: 5 minutes
+  responsible: PESO Officer
+- client: Attend the orientation and report for work.
+  agency:
+  - Coordinates with the partner office or employer
+  fee: None
+  time: 1 hour
+  responsible: PESO Officer
+totalFee: None
+totalTime: 1 hour and 45 minutes

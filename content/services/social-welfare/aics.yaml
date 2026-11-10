@@ -1,0 +1,73 @@
+# Assistance in Crisis Situation (AICS)
+# Page: /services/social-welfare/aics
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 80
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Assistance in Crisis Situation (AICS)
+fullTitle: Provision of Assistance to Individuals in Crisis Situation (AICS)
+summary: Burial, medical, transportation and other emergency assistance
+description: Financial assistance and referrals to hospitals, charitable institutions and other
+  agencies for indigent individuals and families. It covers burial, medical, educational and
+  housing assistance, food allowance for indigents, and transportation allowance for people
+  stranded in town.
+icon: HandHeart
+office: mswdo
+source:
+  page: 80
+classification: Simple
+transactionType: G2G, G2C (Government to Government, Government to Citizen)
+whoMayAvail: Clients in difficult circumstances
+requirements:
+- group: Burial assistance (1 copy each)
+  items:
+  - item: Certificate of Indigency
+    where: Barangay
+  - item: Photocopy of the death certificate (the claimant should be an immediate family member)
+    where: Local Civil Registrar
+  - item: Certificate of relationship (for non-immediate family members)
+  - item: Funeral contract
+    where: Funeral service
+- group: Medical assistance (1 copy each)
+  items:
+  - item: Certificate of Indigency
+    where: Barangay
+  - item: Doctor's prescription or medical certificate
+    where: Attending physician, RHU, hospital or clinic
+  - item: Valid ID of the person interviewed
+- group: Transportation assistance (1 copy each)
+  items:
+  - item: Police blotter, if you were a victim of pickpockets
+    where: PNP
+  - item: Certificate of Indigency
+    where: Barangay
+  - item: Request letter to the Mayor
+    where: Written by the client
+steps:
+- client: Write your name and purpose in the client logbook, submit the requirements, and answer
+    the interview.
+  agency:
+  - Fills out the intake sheet
+  - Reviews the documents
+  fee: None
+  time: 15 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+- client: Sign the AICS form. The staff will get the other signatures and advise you to claim
+    at the Treasurer's Office after 7 working days.
+  agency:
+  - Gets the other signatures needed for the AICS form
+  fee: None
+  time: 5 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+- client: Wait while the office prepares the assistance.
+  agency:
+  - 'Burial and financial assistance: prepares a disbursement voucher and refers you to the
+    Treasurer''s Office for release'
+  - 'Transportation: requests free transportation from transport companies'
+  - 'Referrals: prepares the papers and sends them to the agencies concerned'
+  fee: None
+  time: 30 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+totalFee: None
+totalTime: 50 minutes (release at the Treasurer's Office after 7 working days)

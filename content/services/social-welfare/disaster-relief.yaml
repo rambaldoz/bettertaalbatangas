@@ -1,0 +1,60 @@
+# Disaster Relief Assistance
+# Page: /services/social-welfare/disaster-relief
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 85
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Disaster Relief Assistance
+fullTitle: Provision of Disaster Relief Assistance
+summary: Relief goods, housing materials and financial help after a calamity
+description: The MSWD Office leads relief assistance during natural or man-made calamities such
+  as typhoons, fires and earthquakes. It distributes relief goods, gives housing materials to
+  families whose houses were destroyed, and provides financial assistance and referrals.
+icon: LifeBuoy
+office: mswdo
+source:
+  page: 85
+classification: Complex
+transactionType: G2G, G2C (Government to Government, Government to Citizen)
+whoMayAvail: Individuals and families affected by natural and man-made calamities
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Barangay certification of residency stating that you were affected by the disaster
+    where: Barangay
+  - item: Police blotter or certification that you were a victim of the incident
+    where: Police station and/or Bureau of Fire Protection
+  - item: Photos of the house and place of the incident
+    where: Client
+  - item: Request letter to the Mayor
+    where: Client
+steps:
+- client: Write your name and purpose in the client logbook.
+  agency:
+  - Briefs you on the service and its requirements
+  fee: None
+  time: 3 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+- client: Answer the interview while the staff fills out the AICS or ESA form.
+  agency:
+  - Interviews you and fills out the AICS or ESA form
+  fee: None
+  time: 15 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+- client: Sign the AICS or ESA form.
+  agency:
+  - Gets the other needed information
+  fee: None
+  time: 5 minutes
+  responsible: Social Welfare Officer II / DSWD Staff
+- client: Wait to be told when the assistance is ready.
+  agency:
+  - Coordinates with the MDRRMO
+  - Prepares the voucher for the Budget and Accounting Office
+  - Tells you when the assistance is ready
+  fee: None
+  time: 7 working days
+  responsible: Social Welfare Officer II / DSWD Staff
+totalFee: None
+totalTime: 7 days and 28 minutes

@@ -1,0 +1,45 @@
+# Special Garbage Collection
+# Page: /services/environment/special-garbage-collection
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 115
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Special Garbage Collection
+fullTitle: Special Garbage Collection Service
+summary: Garbage pickup outside the regular collection schedule
+description: MENRO collects solid waste from homes and businesses on a regular schedule. Businesses and
+  other residents can request a special collection outside the schedule.
+icon: Truck
+office: menro
+source:
+  page: 115
+classification: Simple
+transactionType: Government-to-Citizen (G2C), Government-to-Business (G2B)
+whoMayAvail: Businesses and residents in Taal
+requirements:
+- group: 1 copy
+  items:
+  - item: Written request to the Municipal Mayor, or through MENRO
+    where: Applicant
+steps:
+- client: Submit your request, written or verbal, to the Mayor or through MENRO.
+  agency:
+  - Discusses the request with you and gets the Mayor's approval
+  fee: None
+  time: 15 minutes
+  responsible: MENRO / MENRO Staff
+- client: Wait for confirmation of the schedule.
+  agency:
+  - Arranges the schedule and informs the garbage collection crew
+  fee: None
+  time: 30 minutes
+  responsible: MENRO and MENRO Driver
+- client: Guide the crew to the site.
+  agency:
+  - Dispatches the crew and garbage truck to the collection area
+  fee: None
+  time: 15 minutes
+  responsible: MENRO Driver and Garbage Collector
+totalFee: None
+totalTime: 1 hour

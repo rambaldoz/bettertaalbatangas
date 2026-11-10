@@ -1,0 +1,53 @@
+# Dental Services
+# Page: /services/health/dental-services
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 136
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Dental Services
+summary: Dental check-up, cleaning advice, fillings and extractions
+description: Oral health care for residents, including dental consultation or check-up, oral
+  health education, dental restoration and extraction.
+icon: Smile
+office: mho
+source:
+  page: 136
+classification: Simple
+whoMayAvail: General public
+requirements:
+- group: Bring
+  items:
+  - item: Individual Treatment Record
+    where: Patient
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Register at the information desk.
+  agency:
+  - Asks the purpose of your visit and records your data in the patient logbook
+  fee: None
+  time: 2 minutes
+  responsible: RHU staff on duty
+- client: Go to the dental assistant on duty in the dental area.
+  agency:
+  - Retrieves your dental record using your family number
+  - Takes your vital signs
+  - Directs you to the dentist
+  fee: None
+  time: 30 minutes
+  responsible: RHU staff on duty
+- client: Go to the dental room.
+  agency:
+  - Gives dental advice and care, prescribes medicines, and discharges you
+  fee: None
+  time: 15 minutes to 1 hour, depending on the procedure
+  responsible: Municipal Dentist
+- client: Go to the pharmacy.
+  agency:
+  - Gives the prescribed medicines and logs them
+  fee: None
+  time: 3 minutes
+  responsible: Medical personnel at the Health Center pharmacy
+totalFee: None
+totalTime: 50 minutes to 1 hour, depending on the procedure

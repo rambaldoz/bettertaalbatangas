@@ -1,0 +1,59 @@
+# Local Recruitment Activity
+# Page: /services/jobs/local-recruitment
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 109
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Local Recruitment Activity
+summary: Job matching and referrals to private companies for Taaleños
+description: PESO helps Taaleños get hired by private companies through job matching, referrals and interview
+  coordination.
+icon: BriefcaseBusiness
+office: peso
+source:
+  page: 109
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: All
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Updated resume or bio data
+    where: Applicant
+  - item: Valid ID
+    where: Applicant
+steps:
+- client: Ask PESO for job assistance and fill out the registration form.
+  agency:
+  - Registers you in the PESO jobseeker database
+  fee: None
+  time: 10 minutes
+  responsible: PESO Officer
+- client: Submit your resume and ID.
+  agency:
+  - Conducts an initial interview and assessment (15 minutes)
+  - Helps match you with available jobs (5 minutes)
+  fee: None
+  time: 20 minutes
+  responsible: PESO Officer
+- client: Receive your job referral and interview schedule.
+  agency:
+  - Issues the referral
+  fee: None
+  time: 5 minutes
+  responsible: PESO Officer
+- client: Attend the interview.
+  agency:
+  - Coordinates with the employer
+  fee: None
+  time: Depends on the employer
+  responsible: PESO Officer
+- client: Receive your application status.
+  agency:
+  - Records and updates your status
+  fee: None
+  time: 10 minutes
+  responsible: PESO Officer
+totalFee: None
+totalTime: 45 minutes

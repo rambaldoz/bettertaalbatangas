@@ -1,0 +1,41 @@
+# Family Planning
+# Page: /services/health/family-planning
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 141
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Family Planning
+fullTitle: Family Planning Services
+summary: Family planning methods, supplies and counseling
+description: Family planning services provide family planning supplies, education on family
+  planning methods, and counseling for women of reproductive age, towards responsible parenthood.
+icon: Users
+office: mho
+source:
+  page: 141
+classification: Simple
+whoMayAvail: Women of reproductive age (15 to 49 years old)
+requirements:
+- group: Bring
+  items:
+  - item: Family Planning record book
+    where: RHU / hospital
+steps:
+- client: Go to the Municipal Health Office information desk for family planning services.
+  agency:
+  - Asks the purpose of your visit and records your data in the patient logbook
+  fee: None
+  time: 5 minutes
+  responsible: Midwife / medical personnel in charge
+- client: Go to the family planning room.
+  agency:
+  - Interviews you and checks your FP record book (or gives a new one)
+  - Checks your vital signs
+  - Gives the FP method
+  - Counsels you and schedules your next visit
+  fee: None
+  time: 20 minutes
+  responsible: Midwife / medical personnel in charge
+totalFee: None
+totalTime: 25 minutes

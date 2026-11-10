@@ -6,40 +6,64 @@
 @import '@bettergov/kapwa/styles';
 
 @theme {
+  /* Colors: coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25, chosen to
+     suit Taal's ancestral, heritage character. Text pairings are checked
+     for WCAG AA contrast. */
+  /* Accessibility: 14px is the smallest text size on the site. Only photo
+     credits go smaller (text-[12px]). */
+  --text-xs: 0.875rem;
+  --text-xs--line-height: 1.25rem;
+
+  /* Only two font weights on the site: normal (400) and bold (700). Other
+     weight utilities map to these, including those used by Kapwa styles. */
+  --font-weight-thin: 400;
+  --font-weight-extralight: 400;
+  --font-weight-light: 400;
+  --font-weight-normal: 400;
+  --font-weight-medium: 700;
+  --font-weight-semibold: 700;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 700;
+  --font-weight-black: 700;
+
   --font-serif: Georgia, 'Times New Roman', serif;
 
-  --color-primary-50: #e6f0fd;
-  --color-primary-100: #cce0fb;
-  --color-primary-200: #99c2f7;
-  --color-primary-300: #66a3f3;
-  --color-primary-400: #3385ef;
-  --color-primary-500: #0066eb;
-  --color-primary-600: #0052bc;
-  --color-primary-700: #003d8d;
-  --color-primary-800: #00295e;
-  --color-primary-900: #00142f;
+  /* Moss green (#606c38) to dark forest (#283618) */
+  --color-primary-50: #f3f5ea;
+  --color-primary-100: #e4e9cf;
+  --color-primary-200: #cbd4a5;
+  --color-primary-300: #aab877;
+  --color-primary-400: #8a9a52;
+  --color-primary-500: #6e7a3f;
+  --color-primary-600: #606c38;
+  --color-primary-700: #4d572c;
+  --color-primary-800: #3a4221;
+  --color-primary-900: #283618;
+  --color-primary-950: #1a2410;
 
-  --color-secondary-50: #ffede6;
-  --color-secondary-100: #ffdbcc;
-  --color-secondary-200: #ffb799;
-  --color-secondary-300: #ff9466;
-  --color-secondary-400: #ff7033;
-  --color-secondary-500: #ff4d00;
-  --color-secondary-600: #cc3e00;
-  --color-secondary-700: #992e00;
-  --color-secondary-800: #661f00;
-  --color-secondary-900: #330f00;
+  /* Same earth tones as accent */
+  --color-secondary-50: #fcf6ec;
+  --color-secondary-100: #f8e9d2;
+  --color-secondary-200: #f1d4a8;
+  --color-secondary-300: #e9bd83;
+  --color-secondary-400: #dda15e;
+  --color-secondary-500: #cf8c45;
+  --color-secondary-600: #bc6c25;
+  --color-secondary-700: #985620;
+  --color-secondary-800: #73411a;
+  --color-secondary-900: #4d2c12;
 
-  --color-accent-50: #fef3e6;
-  --color-accent-100: #fde7cc;
-  --color-accent-200: #fbd099;
-  --color-accent-300: #f9b866;
-  --color-accent-400: #f7a133;
-  --color-accent-500: #f58900;
-  --color-accent-600: #c46e00;
-  --color-accent-700: #935200;
-  --color-accent-800: #623700;
-  --color-accent-900: #311b00;
+  /* Earth yellow (#dda15e) to tiger's eye (#bc6c25) */
+  --color-accent-50: #fcf6ec;
+  --color-accent-100: #f8e9d2;
+  --color-accent-200: #f1d4a8;
+  --color-accent-300: #e9bd83;
+  --color-accent-400: #dda15e;
+  --color-accent-500: #cf8c45;
+  --color-accent-600: #bc6c25;
+  --color-accent-700: #985620;
+  --color-accent-800: #73411a;
+  --color-accent-900: #4d2c12;
 
   --color-success-50: #e6f7ef;
   --color-success-100: #ccefdf;
@@ -74,16 +98,17 @@
   --color-error-800: #5a1212;
   --color-error-900: #2d0909;
 
-  --color-gray-50: #f8f9fa;
-  --color-gray-100: #f1f3f5;
-  --color-gray-200: #e9ecef;
-  --color-gray-300: #dee2e6;
-  --color-gray-400: #ced4da;
-  --color-gray-500: #adb5bd;
-  --color-gray-600: #868e96;
-  --color-gray-700: #495057;
-  --color-gray-800: #343a40;
-  --color-gray-900: #212529;
+  /* Warm neutrals; gray-50/100 are light grays for page backgrounds */
+  --color-gray-50: #f5f5f4;
+  --color-gray-100: #ebebe8;
+  --color-gray-200: #e6e0c3;
+  --color-gray-300: #d3cdb0;
+  --color-gray-400: #b5b098;
+  --color-gray-500: #8f8b77;
+  --color-gray-600: #6f6c5c;
+  --color-gray-700: #4e4c40;
+  --color-gray-800: #353429;
+  --color-gray-900: #22231a;
 
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-in: slideIn 0.5s ease-out;
@@ -141,4 +166,20 @@
 
 .sticky-table tbody tr:hover td:first-child {
   background-color: #f3f4f6;
+}
+
+/* Two font weights only: keep long-form text (Markdown pages) in line. */
+.prose
+  :where(h1, h2, h3, h4, h5, h6, strong, b, th, dt, a, code):not(
+    :where(.not-prose *)
+  ) {
+  font-weight: 700;
+}
+.prose :where(blockquote, kbd):not(:where(.not-prose *)) {
+  font-weight: 400;
+}
+
+/* Links in long-form text use the copper link color (WCAG AA on white). */
+.prose {
+  --tw-prose-links: var(--color-accent-700);
 }

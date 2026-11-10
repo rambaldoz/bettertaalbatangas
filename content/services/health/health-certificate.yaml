@@ -1,0 +1,57 @@
+# Sanitary Permit and Health Certificate
+# Page: /services/health/health-certificate
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 139
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Sanitary Permit and Health Certificate
+fullTitle: Issuance of Sanitary Permit and Health Certificate
+summary: Health certificate for food handlers and food establishment workers
+description: Under Chapter III of the Code of Sanitation, no one may operate a food establishment
+  without a sanitary permit, and everyone involved in food preparation must have a health certificate.
+icon: ShieldCheck
+office: mho
+source:
+  page: 139
+classification: Simple
+whoMayAvail: Food establishment workers
+requirements:
+- group: Medical requirements (1 copy of the results)
+  items:
+  - item: Complete blood count (CBC)
+    where: Rural Health Unit / hospital
+  - item: Chest X-ray
+    where: Rural Health Unit / hospital
+  - item: Urinalysis
+    where: Rural Health Unit / hospital
+  - item: Fecalysis
+    where: Rural Health Unit / hospital
+  - item: HBsAg
+    where: Rural Health Unit / hospital
+- group: Also bring
+  items:
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Municipal Health Office and ask for the Sanitary Inspector.
+  agency:
+  - Asks the purpose of your visit and records your data in the patient logbook
+  fee: None
+  time: 3 minutes
+  responsible: Nurse / medical personnel in charge / RHU staff on duty
+- client: If your results are normal, pay at the cashier. If your results have findings, see
+    the Municipal Health Officer.
+  agency:
+  - Receives payment and issues the official receipt
+  fee: ₱230.00
+  time: 5 minutes
+  responsible: Cashier / RHU staff on duty / Municipal Health Officer
+- client: Go back to the Sanitary Inspector and present the receipt.
+  agency:
+  - Releases the health certificate
+  fee: None
+  time: 5 minutes
+  responsible: Sanitation Inspector
+totalFee: ₱230.00
+totalTime: 18 minutes

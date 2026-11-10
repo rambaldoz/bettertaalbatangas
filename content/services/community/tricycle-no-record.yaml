@@ -1,0 +1,50 @@
+# Certificate of No Record (Tricycle)
+# Page: /services/community/tricycle-no-record
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 23
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Certificate of No Record (Tricycle)
+fullTitle: Certificate of No Record (Tricycle Franchising)
+summary: Certifies that a tricycle has no franchise on record
+description: The Sangguniang Bayan Office issues a certification that a tricycle has no franchise on record.
+icon: FileSearch
+office: sb-secretariat
+source:
+  page: 23
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: All
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Certificate of registration
+    where: Applicant
+  - item: Official receipt
+    where: Applicant
+steps:
+- client: Get the list of requirements from the Sangguniang Bayan Office.
+  agency:
+  - Gives the list of requirements
+  fee: None
+  time: 3 minutes
+  responsible: Administrative Aide VI
+- client: Pay the certification fee at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee: ₱100.00
+  time: 5 minutes
+  responsible: Administrative Aide VI
+- client: Claim the certification.
+  agency:
+  - Prepares the certification (5 minutes)
+  - Issues the certification of no record (3 minutes)
+  fee: None
+  time: 8 minutes
+  responsible: Administrative Aide VI / SB Secretary
+totalFee: ₱100.00
+totalTime: 16 minutes
+notes:
+- The Charter also lists ₱100.00 on the claiming step. This is the same fee paid at the Treasurer's Office,
+  so we show it once.

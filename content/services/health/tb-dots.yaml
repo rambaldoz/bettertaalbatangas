@@ -1,0 +1,65 @@
+# TB Treatment (DOTS)
+# Page: /services/health/tb-dots
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 149
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: TB Treatment (DOTS)
+fullTitle: Provision of the TB DOTS (Free Medicines and Services)
+summary: Free TB testing, medicines and treatment support
+description: The municipality, with national and international partners, runs an anti-tuberculosis
+  program to prevent the spread of TB and treat TB patients with free medicines and services.
+icon: Pill
+office: mho
+source:
+  page: 149
+classification: Complex
+whoMayAvail: People with TB symptoms or in contact with TB patients
+requirements:
+- group: Bring
+  items:
+  - item: Individual Treatment Record or TB drugs booklet
+    where: Rural Health Unit / midwife
+  - item: Family number or patient number
+    where: Patient / medical staff
+steps:
+- client: Go to the Rural Health Unit, ask about TB treatment, and give your information and
+    medical history.
+  agency:
+  - Answers your questions
+  - Records your medical history
+  - Counsels you on TB
+  - Explains how to collect a sputum sample
+  fee: None
+  time: 15 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Submit your sputum sample for microscopy.
+  agency:
+  - Takes the samples
+  - Tells you when the results will be released
+  fee: None
+  time: 15 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Wait for the result as instructed.
+  agency:
+  - Counsels you
+  - Requests anti-TB medicines from the Provincial Health Office
+  fee: None
+  time: 15 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: Follow the TB counselor's instructions.
+  agency:
+  - Explains the treatment procedure to you and your barangay health worker
+  fee: None
+  time: 30 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+- client: If you are already enrolled and due for a refill, go to the DOTS room and present
+    your treatment card.
+  agency:
+  - Gives your medicine dose based on your record
+  fee: None
+  time: 15 minutes
+  responsible: Medical personnel in charge / RHU staff on duty
+totalFee: None
+totalTime: 1 hour and 30 minutes

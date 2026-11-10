@@ -1,0 +1,64 @@
+# Guided Heritage Tour (Walk-in)
+# Page: /services/tourism/guided-tour-walk-in
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 185
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Guided Heritage Tour (Walk-in)
+fullTitle: Guided Tour for Walk-in Tourists/Visitors
+summary: Walk-in guided tour of Taal's ancestral houses and museums
+description: Walk-in tourists and visitors can join a guided tour of Taal's ancestral houses and museums.
+icon: Landmark
+office: tourism
+source:
+  page: 185
+classification: Simple
+transactionType: Government-to-Citizen (G2C), Government-to-Government (G2G), Government-to-Business (G2B)
+whoMayAvail: General public, government agencies and companies
+requirements:
+- group: At the Tourism Office
+  items:
+  - item: Sign the visitors' registry book
+    where: Tourism Office
+steps:
+- client: Register in the logbook and state the purpose of your visit.
+  agency:
+  - Welcomes you and asks you to register
+  fee: None
+  time: 3 minutes
+  responsible: Tourism Office staff
+- client: Ask for a guided tour.
+  agency:
+  - Gives you a brochure and explains the itinerary (2 minutes)
+  - 'Explains the fees: ₱70.00 per person for the guided tour; private museums charge their own entrance
+    fees (5 minutes)'
+  fee: None
+  time: 7 minutes
+  responsible: Tourism Office staff
+- client: Choose the museums to visit.
+  agency:
+  - Sets the tour itinerary and explains the procedure
+  fee: None
+  time: 5 minutes
+  responsible: Tourism Office staff
+- client: Pay the tour fee to the tourism personnel.
+  agency:
+  - Collects the payment and remits it to the Treasurer's Office
+  fee: ₱70.00 per person
+  time: 10 minutes
+  responsible: Revenue Collection Clerk
+- client: Start the tour.
+  agency:
+  - Welcomes the guests and starts the tour
+  fee: None
+  time: 3 hours
+  responsible: Tourism Office staff
+- client: End of the tour.
+  agency:
+  - Thanks you for visiting
+  fee: None
+  time: 5 minutes
+  responsible: Tourism Office staff
+totalFee: ₱70.00 per person (private museums charge their own entrance fees)
+totalTime: 3 hours and 35 minutes

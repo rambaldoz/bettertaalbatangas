@@ -1,0 +1,48 @@
+# OJT and Immersion
+# Page: /services/jobs/ojt-immersion
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 106
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: OJT and Immersion
+fullTitle: On the Job Training/Immersion
+summary: On-the-job training and immersion in LGU offices for students
+description: The Municipality of Taal accepts graduating high school and college students for on-the-job
+  training and immersion in its offices, so they can gain practical experience in public service and prepare
+  for work.
+icon: School
+office: hr
+source:
+  page: 106
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Students
+requirements:
+- group: 1 copy of the following
+  items:
+  - item: Request letter
+    where: Applicant
+  - item: Signed MOA between the school and the Municipal Mayor
+    where: Applicant
+  - item: Endorsement letter
+    where: School
+  - item: School ID
+    where: Applicant
+steps:
+- client: Submit your application and requirements to the Human Resource Office.
+  agency:
+  - Receives and evaluates the documents; if complete, gives you a date to come back (10 minutes)
+  - Prepares the list of students and their office assignments (30 minutes)
+  fee: None
+  time: 40 minutes
+  responsible: HRMO staff
+- client: Report for OJT or immersion on your scheduled date.
+  agency:
+  - Gives an orientation (30 minutes)
+  - Brings students to their assigned offices (30 minutes)
+  fee: None
+  time: 1 hour
+  responsible: MGDH I (HRMO) / HRM Assistant
+totalFee: None
+totalTime: 1 hour and 40 minutes

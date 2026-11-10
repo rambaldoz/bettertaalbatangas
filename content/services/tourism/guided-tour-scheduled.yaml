@@ -1,0 +1,34 @@
+# Scheduled Guided Tour
+# Page: /services/tourism/guided-tour-scheduled
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 184
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Scheduled Guided Tour
+summary: Book a guided heritage tour ahead for groups, schools and companies
+description: Request a scheduled guided tour of Taal's ancestral houses and museums for your group.
+icon: CalendarCheck
+office: tourism
+source:
+  page: 184
+classification: Simple
+transactionType: Government-to-Citizen (G2C), Government-to-Government (G2G), Government-to-Business (G2B)
+whoMayAvail: General public, government agencies and companies
+requirements:
+- group: 1 copy
+  items:
+  - item: Letter of request for a tour
+    where: Applicant
+steps:
+- client: Send a letter of request to the Mayor through the Tourism Officer, by email to taaltourismoffice@gmail.com
+    or by mail to the Municipal Tourism Office, Calle MM Agoncillo, Poblacion Zone 7, Taal, Batangas 4208.
+  agency:
+  - Accepts the letter and tells you the details of the tour, including the itinerary and fees
+  fee:
+  - ₱70.00 per person
+  - Receipts are issued on the day of the visit
+  time: 20 minutes
+  responsible: Tourism Office staff
+totalFee: ₱70.00 per person
+totalTime: 20 minutes

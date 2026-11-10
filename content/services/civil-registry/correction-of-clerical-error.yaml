@@ -1,0 +1,116 @@
+# Correct a Clerical Error
+# Page: /services/civil-registry/correction-of-clerical-error
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 55
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Correct a Clerical Error
+fullTitle: Petition for Correction of Clerical Error (R.A. 9048)
+summary: Fix typing or spelling mistakes in a birth, marriage or death certificate
+description: Republic Act No. 9048 allows the Municipal Civil Registrar to correct a clerical
+  or typographical error in a civil registry entry without a court order. It is an administrative
+  remedy meant to be a faster and cheaper way to correct mistakes in your record.
+icon: PencilLine
+office: mcr
+source:
+  page: 55
+classification: Highly Technical
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: Civil registry document owners
+requirements:
+- group: Mandatory (1 copy of the document to be corrected)
+  items:
+  - item: PSA Birth Certificate
+    where: PSA / LCRO
+  - item: PSA Marriage Certificate
+    where: PSA / LCRO
+  - item: PSA Death Certificate
+    where: PSA / LCRO
+- group: At least five (5) of these supporting documents (1 copy each)
+  items:
+  - item: Baptismal certificate
+    where: Church
+  - item: Voter's affidavit
+    where: COMELEC
+  - item: Employment record
+    where: Employer
+  - item: GSIS or SSS record
+    where: Document owner
+  - item: Medical record
+    where: Hospital / clinic
+  - item: Business record
+    where: Document owner
+  - item: School record
+    where: School attended
+  - item: Driver's license
+    where: LTO
+  - item: Insurance
+    where: Document owner
+  - item: Civil registry records of ascendants
+    where: LCRO / PSA
+  - item: Land titles
+    where: Document owner
+  - item: Certificate of Land Transfer
+    where: Document owner
+  - item: Bank passbook
+    where: Bank
+  - item: NBI and police clearance
+    where: NBI / Police station
+steps:
+- client: Get the checklist of documents at the Civil Registrar's Office.
+  agency:
+  - Gives a briefing about the service
+  fee: None
+  time: 15 minutes
+  responsible: Registration Officer I / Administrative Assistant II
+- client: Submit the required documents and answer the interview.
+  agency:
+  - Reviews the documents and interviews you
+  fee: None
+  time: 25 minutes
+  responsible: Registration Officer I / Administrative Assistant II
+- client: Pay the fees at the Treasurer's Office.
+  agency:
+  - Issues an official receipt
+  fee: ₱1,000.00 (correction of clerical error)
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Submit the official receipt.
+  agency:
+  - Tells you the release date, after the 10-day posting and 5 days for the decision
+  fee: None
+  time: 5 minutes
+  responsible: Municipal Civil Registrar
+- client: Mail the approved petition to the Office of the Civil Registrar General, and keep
+    the courier receipt and a duplicate of the mailed documents.
+  agency: []
+  fee: None
+  time: 30 minutes
+  responsible: Courier (LBC / JRS)
+- client: Follow up at the Civil Registrar's Office after two to three months for the Certificate
+    of Finality.
+  agency:
+  - Tells you the decision of the Civil Registrar General
+  fee: None
+  time: After 2 to 3 months
+  responsible: Registration Officer I / Administrative Assistant II / Municipal Civil Registrar
+- client: 'If the petition is affirmed: mail the Certificate of Finality, record sheet, annotated
+    certificate and endorsement letter to the Office of the Civil Registrar General. If it is
+    impugned: file a motion through the Civil Registrar''s Office within 15 days of receiving
+    the decision.'
+  agency:
+  - Issues the Certificate of Finality, record sheet, annotated certificate and endorsement,
+    or receives the motion and sends it to the OCRG
+  fee: None
+  time: 30 minutes
+  responsible: Registration Officer I / Administrative Assistant II / Municipal Civil Registrar
+- client: Three (3) days after mailing, follow up at PSA Manila for the annotated certificate
+    on security paper. Bring certified copies of the Certificate of Finality, record sheet,
+    annotated certificate, endorsement letter and the mailing receipt.
+  agency: []
+  fee: None
+  time: To be confirmed
+  responsible: Municipal Civil Registrar
+totalFee: ₱1,000.00
+totalTime: 2 to 3 months, 1 hour and 50 minutes

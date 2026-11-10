@@ -1,0 +1,78 @@
+# Tricycle Franchise
+# Page: /services/community/tricycle-franchise
+# Source: Taal Citizen's Charter 2026 (1st Edition), p. 22
+#
+# Keep wording, fees and times as printed in the Charter. Fix only obvious
+# typos, and explain any correction in "notes". See content/services/README.md.
+
+title: Tricycle Franchise
+fullTitle: Tricycle Franchising
+summary: Franchise to operate a tricycle in Taal, new, renewal or second hand
+description: Under Section 447 of the Local Government Code (RA 7160), and following the guidelines of
+  the Department of Transportation, the Sangguniang Bayan regulates the operation of tricycles and grants
+  franchises to operate them within Taal.
+icon: Bike
+office: sb-secretariat
+source:
+  page: 22
+classification: Simple
+transactionType: Government-to-Citizen (G2C)
+whoMayAvail: All residents of Taal
+variants:
+- name: New
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Notarized contract of sale
+      where: Applicant
+    - item: Certification from the supplier
+      where: Applicant
+    - item: Delivery receipt or sales invoice
+      where: Applicant
+- name: Renewal
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: LTO official receipt
+      where: Applicant (Land Transportation Office)
+    - item: Certificate of registration
+      where: Applicant (Land Transportation Office)
+    - item: Photocopy of the old or expired franchise
+      where: Applicant
+- name: Second hand
+  requirements:
+  - group: 1 copy of the following
+    items:
+    - item: Notarized deed of sale
+      where: Applicant
+    - item: LTO official receipt
+      where: Applicant (Land Transportation Office)
+    - item: Certificate of registration
+      where: Applicant (Land Transportation Office)
+steps:
+- client: Get the list of requirements from the Sangguniang Bayan Office.
+  agency:
+  - Gives the list of requirements (2 minutes)
+  - Issues the order of payment slip (2 minutes)
+  fee: None
+  time: 4 minutes
+  responsible: Administrative Aide VI
+- client: Present the order of payment slip at the Treasurer's Office and pay.
+  agency:
+  - Issues an official receipt
+  fee:
+  - ₱250.00 per year
+  - Up to two (2) years only
+  time: 5 minutes
+  responsible: Revenue Collection Clerk
+- client: Claim your tricycle franchising permit.
+  agency:
+  - Prepares the franchise documents (7 minutes)
+  - Issues the tricycle franchising permit (3 minutes)
+  fee: None
+  time: 10 minutes
+  responsible: Administrative Aide VI
+totalFee: ₱250.00 per year (up to two years only)
+totalTime: 19 minutes
+notes:
+- The Charter gives a total of 22 minutes, but its steps add up to 19 minutes.
