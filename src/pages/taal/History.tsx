@@ -44,7 +44,7 @@ export default function TaalHistory() {
                   <span className="absolute -left-[3.95rem] md:-left-[4.95rem] top-0 flex h-11 w-11 items-center justify-center rounded-full border-2 border-primary-600 bg-white text-primary-600">
                     <TaalIcon name={item.icon} className="h-5 w-5" />
                   </span>
-                  <div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+                  <div className="overflow-hidden rounded-lg border border-gray-200 bg-white">
                     <div className="bg-primary-50 px-6 py-3 text-sm font-bold text-primary-700">
                       {item.period}
                     </div>

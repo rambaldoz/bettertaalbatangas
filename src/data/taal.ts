@@ -358,9 +358,9 @@ export interface Hotline {
   description: string;
   category: HotlineCategory;
   numbers: string[];
-  // Set to show this hotline in the red emergency strip under the header.
-  // `icon` is a lucide-react icon name used by EmergencyStrip.tsx.
-  strip?: { label: string; icon: string };
+  // Set to show this hotline in the Emergency Hotlines section on the home page.
+  // `icon` is a lucide-react icon name used by EmergencyHotlines.tsx.
+  featured?: { label: string; icon: string };
 }
 
 // Placeholder for local numbers until each office confirms its number.
@@ -380,21 +380,21 @@ export const HOTLINES: Hotline[] = [
       'Municipal disaster response, rescue, evacuation and ambulance.',
     category: 'Taal',
     numbers: ['0908 930 4167', '(043) 706-3504', '(043) 706-4492 (Ambulance)'],
-    strip: { label: 'MDRRMO', icon: 'Siren' },
+    featured: { label: 'Rescue (MDRRMO)', icon: 'Siren' },
   },
   {
     name: 'PNP Taal Municipal Police Station',
     description: 'Local police assistance and crime reports.',
     category: 'Taal',
     numbers: ['(043) 740-0010'],
-    strip: { label: 'Police', icon: 'Shield' },
+    featured: { label: 'Police', icon: 'Shield' },
   },
   {
     name: 'BFP Taal Fire Station',
     description: 'Local fire emergencies and rescue.',
     category: 'Taal',
     numbers: ['0921 726 2470 (Hotline)', '(043) 408-1806'],
-    strip: { label: 'Fire', icon: 'Flame' },
+    featured: { label: 'Fire', icon: 'Flame' },
   },
   {
     name: 'Philippine Coast Guard Station Batangas',
@@ -402,7 +402,7 @@ export const HOTLINES: Hotline[] = [
       'Sea rescue and maritime emergencies along Balayan Bay. Taal has no Coast Guard sub-station of its own.',
     category: 'Taal',
     numbers: ['0956 904 6652'],
-    strip: { label: 'Coast Guard', icon: 'Ship' },
+    featured: { label: 'Coast Guard', icon: 'Ship' },
   },
   {
     name: 'Taal Polymedic Hospital and Medical Center',
@@ -410,7 +410,7 @@ export const HOTLINES: Hotline[] = [
       'Hospital in Barangay Carsuche, Diversion Road, Taal, with an emergency room.',
     category: 'Taal',
     numbers: ['(043) 740-6283', '(043) 706-5117 (Emergency Room)'],
-    strip: { label: 'Hospital', icon: 'Hospital' },
+    featured: { label: 'Hospital', icon: 'Hospital' },
   },
   {
     name: 'Taal Rural Health Unit',

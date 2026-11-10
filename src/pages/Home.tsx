@@ -2,6 +2,7 @@ import HomeHero from '../components/home/HomeHero';
 import ServicesGrid from '../components/home/ServicesGrid';
 import WeatherForex from '../components/home/WeatherForex';
 import PhilSysBanner from '../components/home/PhilSysBanner';
+import EmergencyHotlines from '../components/home/EmergencyHotlines';
 import SEO from '../components/SEO';
 
 // Sections left out for now (to add later): CivicTech call to action,
@@ -17,8 +18,9 @@ const Home: React.FC = () => {
       <main className="flex-grow">
         <HomeHero />
         <ServicesGrid />
-        <WeatherForex />
         <PhilSysBanner />
+        <EmergencyHotlines />
+        <WeatherForex />
       </main>
     </>
   );

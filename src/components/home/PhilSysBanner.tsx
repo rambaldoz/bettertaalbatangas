@@ -3,9 +3,9 @@ import { ArrowUpRight, BadgeCheck, IdCard, Users } from 'lucide-react';
 // PhilSys National ID: a contained card instead of a full-width color band.
 export default function PhilSysBanner() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 overflow-hidden rounded-2xl border border-gray-200 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+        <div className="grid grid-cols-1 overflow-hidden rounded-2xl border border-gray-200 bg-white lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           <div className="p-6 md:p-10">
             <p className="text-sm font-bold uppercase tracking-wider text-accent-700">
               Philippine Identification System

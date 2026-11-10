@@ -45,7 +45,7 @@ export default function InfoBar() {
 
   return (
     <div className="bg-primary-900 text-xs font-bold text-white">
-      <div className="container mx-auto flex h-8 items-center justify-end gap-4 overflow-hidden whitespace-nowrap px-4">
+      <div className="container mx-auto flex h-8 items-center justify-center gap-4 overflow-hidden whitespace-nowrap px-4">
         {rate && (
           <Link
             to="/forex"

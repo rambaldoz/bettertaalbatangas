@@ -48,7 +48,7 @@ export default function BarangayDirectory() {
 
         <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {filtered.map(b => (
-            <Card key={b.name} className="flex gap-4 p-5 shadow-none">
+            <Card key={b.name} className="flex gap-4 p-5">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary-50 text-primary-700">
                 <Building2 className="h-5 w-5" aria-hidden="true" />
               </div>

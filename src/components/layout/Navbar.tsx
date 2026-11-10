@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import InfoBar from './InfoBar';
 import SiteSearch from './SiteSearch';
-import EmergencyStrip from './EmergencyStrip';
+import LanguageToggle from './LanguageToggle';
 import ErrorBoundary from '../ui/ErrorBoundary';
 
 const Navbar: React.FC = () => {
@@ -31,14 +31,11 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
-      {/* Red emergency strip with Taal hotlines */}
-      <EmergencyStrip />
-
       {/* Main navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center">
+        <div className="flex justify-between items-center gap-4 py-4">
+          <div className="flex min-w-0 items-center">
+            <Link to="/" className="flex min-w-0 items-center">
               <img
                 src="/images/taal-seal-192.webp"
                 alt="Official seal of the Municipality of Taal"
@@ -46,24 +43,21 @@ const Navbar: React.FC = () => {
                 height={84}
                 className="mr-3 h-12 w-12 sm:h-16 sm:w-16 xl:mr-4 xl:h-21 xl:w-21"
               />
-              <div>
+              <div className="min-w-0">
                 <div className="text-base font-bold text-black sm:text-lg xl:text-xl">
                   BetterTaalBatangas.org
-                </div>
-                <div className="text-xs text-gray-800">
-                  {t('site_description')}
                 </div>
               </div>
             </Link>
           </div>
 
           {/* Desktop navigation */}
-          <div className="hidden items-center space-x-6 lg:flex xl:space-x-8 xl:pr-24">
+          <div className="hidden items-center space-x-4 lg:flex xl:space-x-7">
             {mainNavigation.map(item => (
               <div key={item.label} className="relative group">
                 <Link
                   to={item.href}
-                  className="flex items-center text-gray-700 hover:text-primary-600 font-bold transition-colors"
+                  className="flex items-center whitespace-nowrap text-gray-700 hover:text-primary-600 font-bold transition-colors"
                 >
                   {t(`navbar.${item.label.replace(' ', '').toLowerCase()}`)}
                   {item.children && (
@@ -93,15 +87,19 @@ const Navbar: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className="hidden lg:flex items-center">
+          <div className="hidden shrink-0 lg:flex items-center gap-3 xl:gap-5">
             <SiteSearch
               label={t('navbar.search')}
-              className="flex items-center text-gray-700 hover:text-primary-600 font-bold transition-colors"
+              labelClassName="sr-only xl:not-sr-only"
+              className="flex items-center whitespace-nowrap text-gray-700 hover:text-primary-600 font-bold transition-colors"
             />
+            <span className="h-5 w-px bg-gray-300" aria-hidden="true" />
+            <LanguageToggle />
           </div>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden flex items-center">
+          <div className="lg:hidden flex shrink-0 items-center gap-2">
+            <LanguageToggle />
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"

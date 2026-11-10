@@ -29,7 +29,7 @@ export default function ServicesGrid() {
           </Link>
         </div>
 
-        <ul className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map(service => (
             <li key={service.href}>
               <Link
@@ -46,7 +46,10 @@ export default function ServicesGrid() {
                   <span className="mt-1 block text-sm text-gray-700">
                     {service.summary}
                   </span>
-                  <span className="mt-1 block text-xs text-gray-700">
+                  <span className="mt-2 block text-sm text-gray-900">
+                    <span className="font-bold">
+                      {t('servicesPage.category')}:
+                    </span>{' '}
                     {service.categoryName}
                   </span>
                 </span>

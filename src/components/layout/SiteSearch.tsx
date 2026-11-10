@@ -35,10 +35,12 @@ function buildIndex(): Entry[] {
 // searches the site's pages in the browser.
 export default function SiteSearch({
   label,
+  labelClassName,
   onOpen,
   className,
 }: {
   label: string;
+  labelClassName?: string; // e.g. hide the word on small screens
   onOpen?: () => void;
   className?: string;
 }) {
@@ -98,7 +100,7 @@ export default function SiteSearch({
         className={className}
       >
         <Search className="mr-1.5 h-4 w-4" aria-hidden="true" />
-        {label}
+        <span className={labelClassName}>{label}</span>
       </button>
 
       {open &&

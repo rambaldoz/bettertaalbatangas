@@ -79,7 +79,7 @@ export default function Weather() {
             </Card>
 
             <div className="space-y-6 lg:col-span-2">
-              <div className="rounded-lg bg-gradient-to-br from-gray-200 to-gray-300 p-8 shadow-sm">
+              <div className="rounded-lg bg-gradient-to-br from-gray-200 to-gray-300 p-8">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="text-3xl font-bold uppercase text-gray-900">

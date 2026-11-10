@@ -144,8 +144,17 @@
     "amount": "Halaga",
     "currency": "Pera",
     "equals": "katumbas ng",
+    "nextDays": "Susunod na 3 araw",
     "today": "Ngayon",
-    "forecastTitle": "Taya ng panahon sa {{count}} araw"
+    "forecastTitle": "Taya ng panahon sa {{count}} araw",
+    "hotlinesTitle": "Mga Emergency Hotline",
+    "hotlinesText": "Pindutin ang numero para tumawag. I-save ang mga numerong ito sa iyong telepono.",
+    "allHotlines": "Lahat ng hotline",
+    "call": "Tumawag",
+    "national": "Pambansang Emergency",
+    "nationalText": "Pulis, bumbero at ambulansya, saanman sa Pilipinas",
+    "high": "Pinakamataas",
+    "low": "Pinakamababa"
   },
   "servicesPage": {
     "home": "Home",
@@ -247,6 +256,7 @@
     "serviceCount_other": "{{count}} serbisyo",
     "handledBy": "Hinahawakan ng",
     "seeDetails": "Tingnan ang detalye",
-    "servicesLabel": "Mga serbisyo"
+    "servicesLabel": "Mga serbisyo",
+    "category": "Kategorya"
   }
 }

@@ -11,7 +11,7 @@ BetterTaalBatangas.org is part of the [BetterGov.ph](https://bettergov.ph) movem
 | Services          | 90 step-by-step guides in 12 categories: requirements, steps, fees, processing times and the office in charge | Taal Citizen's Charter 2026 (1st Edition)                          |
 | Government        | 2025 to 2028 elected officials, municipal offices and department heads, the 42 barangays                      | Election results, Citizen's Charter                                |
 | About Taal        | History, culture, holidays                                                                                    | PhilAtlas, Wikipedia, news reports (credited on each page)         |
-| Hotlines          | Local and national emergency numbers, also in the red strip on every page                                     | Public directories (confirm before relying on them)                |
+| Hotlines          | Local and national emergency numbers, also on the home page                                                   | Public directories (confirm before relying on them)                |
 | Weather and Forex | Current weather and 5-day forecast for Taal and nearby cities; peso exchange rates                            | [Open-Meteo](https://open-meteo.com), BSP via the BetterGov.ph API |
 | Portal pages      | About, FAQs, Contact, Terms of Use, Privacy Policy, Accessibility, Sitemap                                    | Written for this project                                           |
 

@@ -106,7 +106,8 @@ function ServiceCard({
           </span>
         )}
         {showCategory && (
-          <span className="mt-1 block text-base text-gray-700">
+          <span className="mt-1 block text-base text-gray-900">
+            <span className="font-bold">{t('servicesPage.category')}:</span>{' '}
             {service.categoryName}
           </span>
         )}

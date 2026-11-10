@@ -3,7 +3,7 @@
   "site_description": "Community portal for the Municipality of Taal, Batangas",
   "hero": {
     "title": "Welcome to Better Taal",
-    "subtitle": "The volunteer-run portal for the Municipality of Taal, Batangas. Find information, access local government services, and stay updated with the latest news.",
+    "subtitle": "Find information, access local government services, and stay updated with the latest news.",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
     "businessRegistration": "Business Registration",
@@ -131,8 +131,17 @@
     "amount": "Amount",
     "currency": "Currency",
     "equals": "equals",
+    "nextDays": "Next 3 days",
     "today": "Today",
-    "forecastTitle": "{{count}}-day forecast"
+    "forecastTitle": "{{count}}-day forecast",
+    "hotlinesTitle": "Emergency Hotlines",
+    "hotlinesText": "Tap a number to call. Save these numbers on your phone.",
+    "allHotlines": "All hotlines",
+    "call": "Call",
+    "national": "National Emergency",
+    "nationalText": "Police, fire and ambulance, anywhere in the Philippines",
+    "high": "High",
+    "low": "Low"
   },
   "servicesPage": {
     "home": "Home",
@@ -234,6 +243,7 @@
     "serviceCount_other": "{{count}} services",
     "handledBy": "Handled by",
     "seeDetails": "See details",
-    "servicesLabel": "Services"
+    "servicesLabel": "Services",
+    "category": "Category"
   }
 }
