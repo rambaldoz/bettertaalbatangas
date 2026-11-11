@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
+import { Trans } from 'react-i18next';
 import SEO from '../../components/SEO';
+import { useContent } from '../../lib/useContent';
 import {
   FOREX_API_URL,
   flagEmoji,
@@ -11,7 +13,10 @@ import {
 import { Card } from '../../components/taal/TaalUI';
 import { cn } from '../../lib/utils';
 
+// Text: forexPage in public/locales/<lang>/common.json
 export default function Forex() {
+  const c = useContent();
+  const { t } = c;
   const { data, loading, error } = useForex();
   const [selected, setSelected] = useState('USD');
   const [query, setQuery] = useState('');
@@ -24,10 +29,13 @@ export default function Forex() {
       ? rates.filter(
           r =>
             r.symbol.toLowerCase().includes(q) ||
-            r.country.toLowerCase().includes(q)
+            r.country.toLowerCase().includes(q) ||
+            c.country(r.countryCode, r.country).toLowerCase().includes(q)
         )
       : rates;
-  }, [rates, query]);
+  }, [rates, query, c]);
+  const countryName = (r: { countryCode: string; country: string }) =>
+    c.country(r.countryCode, titleCase(r.country));
 
   const rate = rates.find(r => r.symbol === selected) ?? rates[0];
   const converted =
@@ -35,42 +43,39 @@ export default function Forex() {
       ? (Number(php) / rate.phpEquivalent).toFixed(2)
       : '';
   const published = rate?.publishedDate
-    ? new Date(rate.publishedDate).toLocaleDateString('en-PH', {
-        dateStyle: 'long',
-      })
+    ? c.date(new Date(rate.publishedDate))
     : null;
 
   return (
     <main className="bg-gray-50">
       <SEO
-        title="Foreign Exchange Rates"
-        description="Peso exchange rates from the Bangko Sentral ng Pilipinas."
+        title={t('forexPage.title')}
+        description={t('forexPage.seoDescription')}
       />
       <div className="container mx-auto px-4 py-10">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">
-            Foreign Exchange Rates
+            {t('forexPage.title')}
           </h1>
           <p className="mt-2 text-lg text-gray-700">
-            Value of foreign currencies in Philippine pesos, from the Bangko
-            Sentral ng Pilipinas.
+            {t('forexPage.subtitle')}
           </p>
         </div>
-        {loading && <p className="text-gray-700">Loading exchange rates...</p>}
+        {loading && <p className="text-gray-700">{t('forexPage.loading')}</p>}
         {error && (
-          <p className="text-error-600">
-            Exchange rates are unavailable right now. Please try again later.
-          </p>
+          <p className="text-error-600">{t('forexPage.unavailable')}</p>
         )}
 
         {rate && (
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
             <Card className="lg:max-h-[36rem] flex flex-col">
               <div className="flex items-center justify-between border-b border-gray-200 p-5">
-                <h2 className="text-lg font-bold text-gray-900">Currencies</h2>
+                <h2 className="text-lg font-bold text-gray-900">
+                  {t('forexPage.currencies')}
+                </h2>
               </div>
               <label className="relative mx-5 mt-4 block">
-                <span className="sr-only">Search currencies</span>
+                <span className="sr-only">{t('forexPage.searchLabel')}</span>
                 <Search
                   className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-700"
                   aria-hidden="true"
@@ -79,7 +84,7 @@ export default function Forex() {
                   type="search"
                   value={query}
                   onChange={e => setQuery(e.target.value)}
-                  placeholder="Search currency..."
+                  placeholder={t('forexPage.searchPlaceholder')}
                   className="w-full rounded-md border border-gray-300 py-2 pl-9 pr-3 text-sm focus:border-primary-600 focus:outline-none focus:ring-1 focus:ring-primary-600"
                 />
               </label>
@@ -103,8 +108,8 @@ export default function Forex() {
                         <span className="block font-bold text-gray-900">
                           {r.symbol}
                         </span>
-                        <span className="block text-xs text-gray-700">
-                          {titleCase(r.country)}
+                        <span className="block text-sm text-gray-700">
+                          {countryName(r)}
                         </span>
                       </span>
                       <span className="font-bold text-gray-900">
@@ -127,27 +132,34 @@ export default function Forex() {
                       {rate.symbol}
                     </div>
                     <div className="text-gray-800">
-                      {titleCase(rate.country)} {titleCase(rate.currency)}
+                      {c.currencyName(
+                        rate.symbol,
+                        `${titleCase(rate.country)} ${titleCase(rate.currency)}`
+                      )}
                     </div>
                   </div>
                 </div>
                 <div className="rounded-lg bg-gray-100 px-5 py-4">
-                  <div className="text-sm text-gray-700">Current Rate</div>
+                  <div className="text-sm text-gray-700">
+                    {t('forexPage.currentRate')}
+                  </div>
                   <div className="text-3xl font-bold text-gray-900">
                     {formatPeso(rate.phpEquivalent, 4)}
                   </div>
-                  <div className="text-xs text-gray-700">Philippine Peso</div>
+                  <div className="text-sm text-gray-700">
+                    {t('forexPage.peso')}
+                  </div>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h2 className="text-lg font-bold text-gray-900">
-                  Currency Converter
+                  {t('forexPage.converter')}
                 </h2>
                 <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
                   <label className="block">
                     <span className="text-sm text-gray-800">
-                      Philippine Peso (PHP)
+                      {t('forexPage.pesoCode')}
                     </span>
                     <input
                       type="number"
@@ -160,7 +172,7 @@ export default function Forex() {
                   </label>
                   <div>
                     <span className="text-sm text-gray-800">
-                      {rate.symbol} ({titleCase(rate.country)})
+                      {rate.symbol} ({countryName(rate)})
                     </span>
                     <output className="mt-1 block rounded-md bg-gray-100 px-3 py-2 text-gray-900">
                       {converted || '0.00'}
@@ -168,17 +180,21 @@ export default function Forex() {
                   </div>
                 </div>
                 <p className="mt-4 text-sm text-gray-700">
-                  Exchange rates are provided by Bangko Sentral ng Pilipinas
-                  (BSP) through the{' '}
-                  <a
-                    href={FOREX_API_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent-700 underline hover:text-accent-800"
-                  >
-                    BetterGov.ph API
-                  </a>
-                  .{published && ` Published: ${published}.`}
+                  <Trans
+                    i18nKey="forexPage.providedBy"
+                    components={{
+                      link: (
+                        <a
+                          href={FOREX_API_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-accent-700 underline hover:text-accent-800"
+                        />
+                      ),
+                    }}
+                  />
+                  {published &&
+                    ` ${t('forexPage.published', { date: published })}`}
                 </p>
               </Card>
             </div>
@@ -187,38 +203,38 @@ export default function Forex() {
 
         <Card className="mt-10 p-6">
           <h2 className="text-2xl font-bold text-gray-900">
-            About Foreign Exchange Rates
+            {t('forexPage.aboutTitle')}
           </h2>
           <p className="mt-3 leading-relaxed text-gray-800">
-            The rates on this page come from the Bangko Sentral ng Pilipinas
-            (BSP), the central bank of the Philippines. They are official
-            reference rates for the Philippine Peso against major world
-            currencies.
+            {t('forexPage.aboutText')}
           </p>
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="border-l-4 border-primary-600 pl-4">
               <h3 className="font-bold text-gray-900">
-                Understanding Exchange Rates
+                {t('forexPage.understandingTitle')}
               </h3>
               <p className="mt-2 text-gray-800">
-                Each rate shows how many Philippine Pesos buy one unit of the
-                foreign currency. Banks and money changers in Taal may charge a
-                different rate.
+                {t('forexPage.understandingText')}
               </p>
             </div>
             <div className="border-l-4 border-primary-600 pl-4">
-              <h3 className="font-bold text-gray-900">Official BSP Rates</h3>
+              <h3 className="font-bold text-gray-900">
+                {t('forexPage.officialTitle')}
+              </h3>
               <p className="mt-2 text-gray-800">
-                For official reference rates and more detail, visit the{' '}
-                <a
-                  href="https://www.bsp.gov.ph"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent-700 underline hover:text-accent-800"
-                >
-                  Bangko Sentral ng Pilipinas website
-                </a>
-                .
+                <Trans
+                  i18nKey="forexPage.officialText"
+                  components={{
+                    link: (
+                      <a
+                        href="https://www.bsp.gov.ph"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent-700 underline hover:text-accent-800"
+                      />
+                    ),
+                  }}
+                />
               </p>
             </div>
           </div>

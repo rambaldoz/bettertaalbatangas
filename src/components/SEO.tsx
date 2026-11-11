@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 
 interface SEOProps {
   title?: string;
@@ -21,10 +22,12 @@ export default function SEO({
   // for the official government website.
   siteName = 'BetterTaalBatangas.org',
 }: SEOProps) {
-  const defaultTitle = `${siteName} | Community Portal for Taal, Batangas`;
-  const defaultDescription =
-    import.meta.env.VITE_SITE_DESCRIPTION ||
-    'A volunteer-run guide to the services, offices and officials of the Municipality of Taal, Batangas.';
+  const { t, i18n } = useTranslation('common');
+  const isFil = (i18n.resolvedLanguage ?? 'en').startsWith('fil');
+  const defaultTitle = `${siteName} | ${t('seo.defaultTitle')}`;
+  const defaultDescription = isFil
+    ? t('seo.defaultDescription')
+    : import.meta.env.VITE_SITE_DESCRIPTION || t('seo.defaultDescription');
   const defaultKeywords =
     import.meta.env.VITE_SITE_KEYWORDS ||
     'government, local government, services, public services, civic services';
@@ -45,7 +48,7 @@ export default function SEO({
       <meta name="keywords" content={fullKeywords} />
       <meta name="author" content={siteName} />
       <meta name="robots" content="index, follow" />
-      <meta name="language" content="English" />
+      <meta name="language" content={isFil ? 'Filipino' : 'English'} />
       <meta name="revisit-after" content="7 days" />
 
       {/* Open Graph / Facebook */}
@@ -55,7 +58,7 @@ export default function SEO({
       <meta property="og:description" content={fullDescription} />
       <meta property="og:image" content={fullImage} />
       <meta property="og:site_name" content={siteName} />
-      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale" content={isFil ? 'fil_PH' : 'en_US'} />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />

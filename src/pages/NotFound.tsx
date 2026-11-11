@@ -7,59 +7,40 @@ import {
   Phone,
   Home as HomeIcon,
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import { PageBody, PageHeader, Panel } from '../components/layout/PageLayout';
 
+// Labels and text: notFound.links.<key>.label / .text
 const LINKS = [
-  {
-    label: 'Home',
-    href: '/',
-    text: 'Start from the main page',
-    icon: HomeIcon,
-  },
-  {
-    label: 'Services',
-    href: '/services',
-    text: 'Guides to all 90 municipal services',
-    icon: LayoutGrid,
-  },
-  {
-    label: 'Government',
-    href: '/government',
-    text: 'Officials, offices and barangays',
-    icon: Landmark,
-  },
-  {
-    label: 'Hotlines',
-    href: '/taal/hotlines',
-    text: 'Emergency and public service numbers',
-    icon: Phone,
-  },
-  {
-    label: 'Sitemap',
-    href: '/sitemap',
-    text: 'Every page on this site',
-    icon: Map,
-  },
+  { key: 'home', href: '/', icon: HomeIcon },
+  { key: 'services', href: '/services', icon: LayoutGrid },
+  { key: 'government', href: '/government', icon: Landmark },
+  { key: 'hotlines', href: '/taal/hotlines', icon: Phone },
+  { key: 'sitemap', href: '/sitemap', icon: Map },
 ];
 
 // Shown for any address that does not match a page.
 export default function NotFound() {
+  const { t } = useTranslation('common');
   return (
     <main className="flex-grow">
       <SEO
-        title="Page Not Found"
-        description="The page you are looking for does not exist on BetterTaalBatangas.org."
+        title={t('notFound.title')}
+        description={t('notFound.seoDescription')}
       />
       <PageHeader
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Page not found' }]}
-        title="Page not found"
-        subtitle="The page you are looking for may have moved or no longer exists. Try one of these instead."
+        crumbs={[
+          { label: t('common.home'), href: '/' },
+          { label: t('notFound.title') },
+        ]}
+        title={t('notFound.title')}
+        subtitle={t('notFound.subtitle')}
       />
       <PageBody>
         <Panel>
           <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {LINKS.map(({ label, href, text, icon: Icon }) => (
+            {LINKS.map(({ key, href, icon: Icon }) => (
               <li key={href}>
                 <Link
                   to={href}
@@ -70,11 +51,11 @@ export default function NotFound() {
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="flex items-center gap-1 text-lg font-bold text-gray-900 group-hover:text-accent-700">
-                      {label}
+                      {t(`notFound.links.${key}.label`)}
                       <ArrowRight className="h-4 w-4" aria-hidden="true" />
                     </span>
                     <span className="mt-1 block text-base text-gray-700">
-                      {text}
+                      {t(`notFound.links.${key}.text`)}
                     </span>
                   </span>
                 </Link>

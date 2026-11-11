@@ -10,7 +10,7 @@ import {
   Siren,
   type LucideIcon,
 } from 'lucide-react';
-import { useTranslation } from '../../hooks/useTranslation';
+import { useContent } from '../../lib/useContent';
 import { HOTLINES, isPlaceholderNumber, type Hotline } from '../../data/taal';
 
 const ICONS: Record<string, LucideIcon> = {
@@ -32,7 +32,8 @@ const mainNumber = (h: Hotline) => h.numbers[0]?.replace(/\s*\(\D+\)$/, '');
  * right. Calm palette colors, big numbers, whole rows tap-to-call.
  */
 export default function EmergencyHotlines() {
-  const { t } = useTranslation();
+  const c = useContent();
+  const { t } = c;
   const featured = HOTLINES.filter(
     (h): h is Hotline & { featured: NonNullable<Hotline['featured']> } =>
       !!h.featured
@@ -106,10 +107,10 @@ export default function EmergencyHotlines() {
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block text-lg font-bold text-gray-900">
-                      {h.featured.label}
+                      {c.hotlineFeatured(h)}
                     </span>
                     <span className="block text-sm text-gray-700">
-                      {h.name}
+                      {c.hotlineName(h)}
                     </span>
                     {/* Phones: number under the name */}
                     <span className="mt-1 flex items-center justify-between gap-3 sm:hidden">
@@ -130,11 +131,11 @@ export default function EmergencyHotlines() {
               const cls =
                 'group flex items-center gap-4 px-5 py-4 transition-colors sm:px-6';
               return (
-                <li key={h.name}>
+                <li key={c.hotlineName(h)}>
                   {usable ? (
                     <a
                       href={telHref(number)}
-                      aria-label={`${t('home.call')} ${h.featured.label}: ${number}`}
+                      aria-label={`${t('home.call')} ${c.hotlineFeatured(h)}: ${number}`}
                       className={`${cls} hover:bg-primary-50`}
                     >
                       {row}

@@ -1,18 +1,13 @@
 {
   "site_name": "BetterTaalBatangas",
-  "site_description": "Portal ng komunidad para sa Bayan ng Taal, Batangas",
   "hero": {
-    "title": "Maligayang pagdating sa Better Taal",
-    "subtitle": "Ang portal ng mga boluntaryo para sa Bayan ng Taal, Batangas. Maghanap ng impormasyon, gamitin ang mga serbisyo ng lokal na pamahalaan, at alamin ang mga pinakabagong balita.",
-    "nationalId": "National ID",
-    "birthCertificate": "Birth Certificate",
-    "businessRegistration": "Pagpaparehistro ng Negosyo",
+    "subtitle": "Maghanap ng impormasyon, gamitin ang mga serbisyo ng lokal na pamahalaan, at alamin ang mga pinakabagong balita.",
     "greeting": "Mabuhay! Maligayang pagdating sa",
     "brand": "BetterTaalBatangas.org",
     "browseServices": "Tingnan ang mga Serbisyo",
     "started": "Magsimula tayo",
     "whereNext": "Saan ka pupunta?",
-    "helpFind": "Tulungan akong mahanap ang tamang serbisyo",
+    "helpFind": "Tulungan akong mahanap ng tamang serbisyo",
     "links": {
       "services": {
         "title": "Gabay sa Serbisyo",
@@ -27,7 +22,7 @@
         "text": "Mga halal na opisyal at ang 42 barangay"
       },
       "hotlines": {
-        "title": "Emergency Hotlines",
+        "title": "Mga Emergency Hotline",
         "text": "Mga numero ng MDRRMO, pulis, bumbero at ospital"
       }
     }
@@ -39,26 +34,13 @@
     "viewAll": "Tingnan ang Lahat ng Serbisyo",
     "viewAllCategory": "Tingnan Lahat"
   },
-  "governmentActivity": {
-    "title": "Mga Gawain ng Pamahalaan",
-    "description": "Alamin ang mga pinakabagong gawain at anunsyo ng pamahalaan."
-  },
-  "weather": {
-    "title": "Ulat Panahon"
-  },
-  "forex": {
-    "title": "Palitan ng Dayuhang Pera"
-  },
-  "news": {
-    "title": "Mga Balita at Update"
-  },
   "footer": {
     "copyright": "© {{year}} BetterTaalBatangas.org. Ang lahat ng nilalaman ay pampublikong domain maliban kung may ibang nakasaad.",
-    "tagline": "BetterTaalBatangas.org Portal",
     "subText": "Ang BetterTaalBatangas.org ay isang portal na pinapatakbo ng komunidad para sa Bayan ng Taal, Batangas. Tinutulungan nito ang mga residente na makuha ang mga serbisyo ng pamahalaan, mga balita, at mga lokal na impormasyon.",
+    "tagline": "BetterTaalBatangas.org Portal",
     "language": "Wika",
     "contributeGithub": "Mag-ambag sa GitHub",
-    "sitemap": "Sitemap",
+    "sitemap": "Mapa ng Site",
     "sections": {
       "about": "Tungkol",
       "services": "Mga Serbisyo",
@@ -70,7 +52,7 @@
       "contactUs": "Makipag-ugnayan",
       "allServices": "Lahat ng Serbisyo",
       "hotlines": "Mga Hotline",
-      "holidays": "Mga Holiday",
+      "holidays": "Mga Pista Opisyal",
       "forex": "Palitan ng Pera",
       "weather": "Ulat Panahon",
       "officialGovPh": "Opisyal na Gov.ph",
@@ -78,52 +60,23 @@
       "foi": "Freedom of Information",
       "contactCenter": "Contact Center ng Bayan",
       "officialGazette": "Official Gazette",
-      "health-services": "Mga Serbisyong Pangkalusugan",
-      "education": "Edukasyon",
-      "business": "Negosyo at mga Permit",
-      "social-welfare": "Kapakanang Panlipunan",
-      "agriculture-fisheries": "Agrikultura at Pangisdaan",
-      "infrastructure-public-works": "Imprastruktura at Pampublikong Gawain",
-      "civil-registry": "Civil Registry",
-      "assessor": "Ari-arian at Assessor",
-      "infrastructure": "Imprastruktura",
-      "property": "Ari-arian at Amilyar",
-      "taxes": "Buwis at Bayarin",
-      "building": "Gusali at Konstruksyon",
-      "health": "Kalusugan",
       "faq": "Mga Madalas Itanong",
       "terms": "Mga Tuntunin ng Paggamit",
       "privacy": "Patakaran sa Privacy"
     },
-    "reportTitle": "May nakita ka bang mali o lumang impormasyon sa pahinang ito?",
-    "reportText": "Tulungan kaming panatilihing tama ang BetterTaalBatangas.org. I-report ang mali at itatama namin ito.",
-    "reportButton": "Mag-report ng Isyu",
     "costBuild": "Gastos sa pagbuo ng site hanggang ngayon:",
     "costVolunteers": "Binuo at ginastusan ng mga boluntaryo.",
     "costPeople": "Gastos ng Mamamayan at Pamahalaan ng Taal:",
     "bettergov": "Bahagi ng BetterGov.ph"
   },
   "navbar": {
-    "home": "Home",
+    "home": "Umpisa",
     "taal": "Taal",
     "government": "Pamahalaan",
     "services": "Mga Serbisyo",
     "hotlines": "Mga Hotline",
-    "holidays": "Mga Holiday",
+    "holidays": "Mga Pista Opisyal",
     "search": "Maghanap"
-  },
-  "joinUs": {
-    "stripTitle": "🚀 Sumali sa #CivicTech Revolution",
-    "stripSubtitle": "Tumulong na buuin ang kinabukasan ng Pilipinas at ng pamamahala gamit ang teknolohiya",
-    "joinNow": "Sumali Na",
-    "discord": "Discord",
-    "bannerTitle": "Sumali sa #CivicTech Revolution",
-    "bannerSubtitle": "Tumulong na buuin ang kinabukasan ng Pilipinas at ng pamamahala gamit ang teknolohiya.",
-    "bannerHighlight": "Pinamumunuan ng boluntaryo. Open source. Mula sa komunidad.",
-    "joinMovement": "Sumali sa Aming Kilusan",
-    "or": "o",
-    "joinDiscord": "Sumali sa Discord",
-    "features": "🚀 Imprastruktura • 💡 Mentorship • 🤝 Komunidad • 🏢 Opisina"
   },
   "home": {
     "weatherForexTitle": "Panahon at Palitan ng Pera",
@@ -133,7 +86,7 @@
     "feelsLike": "Pakiramdam",
     "humidity": "Halumigmig",
     "wind": "Hangin",
-    "detailedForecast": "Detalyadong forecast",
+    "detailedForecast": "Detalyadong taya ng panahon",
     "forexTitle": "Palitan ng Piso",
     "forexNote": "Halaga ng 1 yunit ng banyagang pera sa piso",
     "moreCurrencies": "Iba pang pera",
@@ -157,7 +110,7 @@
     "low": "Pinakamababa"
   },
   "servicesPage": {
-    "home": "Home",
+    "home": "Umpisa",
     "services": "Mga Serbisyo",
     "directoryTitle": "Direktoryo ng mga Serbisyo ng Bayan",
     "directorySubtitle": "Tingnan ang lahat ng serbisyong iniaalok ng Bayan ng Taal",
@@ -173,15 +126,15 @@
     "byLifeEventText": "Hanapin ang serbisyo ayon sa nangyayari sa buhay mo",
     "available": "Mga Serbisyo",
     "availableText": "Mga serbisyo sa ilalim ng {{category}}.",
-    "categoryNotice": "Kinukumpirma pa namin sa Bayan ng Taal ang mga bayarin, tagal ng proseso at requirements. Makipag-ugnayan muna sa opisina bago pumunta.",
-    "serviceNotice": "Kinukumpirma pa namin sa Bayan ng Taal ang detalye ng serbisyong ito. Pupunan sa lalong madaling panahon ang mga nakamarkang \"Kukumpirmahin pa\". Makipag-ugnayan muna sa opisina bago pumunta.",
+    "categoryNotice": "Kinukumpirma pa namin sa Bayan ng Taal ang mga bayarin, tagal ng proseso at requirements. Makipag-ugnayan muna sa tanggapan bago pumunta.",
+    "serviceNotice": "Kinukumpirma pa namin sa Bayan ng Taal ang detalye ng serbisyong ito. Pupunan sa lalong madaling panahon ang mga nakamarkang \"Kukumpirmahin pa\". Makipag-ugnayan muna sa tanggapan bago pumunta.",
     "fee": "Bayad",
     "time": "Tagal",
     "learnMore": "Alamin pa",
     "notFound": "Hindi nahanap ang serbisyo",
     "backToServices": "Bumalik sa mga serbisyo",
     "tbc": "Kukumpirmahin pa",
-    "tbcShort": "TBC",
+    "tbcShort": "Kukumpirmahin",
     "onThisPage": "Sa pahinang ito",
     "jumpTo": "Pumunta sa seksyon",
     "overview": "Buod",
@@ -195,44 +148,44 @@
     "processTitle": "Hakbang-hakbang na Proseso",
     "processText": "Sundin ang mga hakbang na ito para matapos ang serbisyo.",
     "finalStep": "Huling hakbang",
-    "checklist": "Checklist",
+    "checklist": "Mga Dapat Ihanda",
     "requirements": "Mga Requirement",
     "requirementsText": "Ihanda ang mga dokumentong ito bago mag-apply.",
     "itemsToPrepare_one": "{{count}} dokumentong ihahanda",
     "itemsToPrepare_other": "{{count}} dokumentong ihahanda",
     "help": "Tulong",
-    "faqs": "FAQs",
+    "faqs": "Mga Tanong",
     "faqTitle": "Mga Madalas Itanong",
     "faqText": "Mabilis na sagot sa mga karaniwang tanong tungkol sa serbisyong ito.",
-    "office": "Opisina",
-    "officeTitle": "Impormasyon ng Opisina",
-    "officeText": "Tawagan o puntahan ang opisinang may hawak ng serbisyo.",
+    "office": "Tanggapan",
+    "officeTitle": "Impormasyon ng Tanggapan",
+    "officeText": "Tawagan o puntahan ang tanggapang may hawak ng serbisyo.",
     "support": "Suporta",
     "moreInfo": "Karagdagang Impormasyon",
     "moreInfoText": "Kaugnay na serbisyo, tulong, at opisyal na sanggunian.",
     "verified": "Mula sa Citizen's Charter",
     "verifiedText": "Batay ang impormasyong ito sa opisyal na dokumento o publikasyon ng LGU.",
     "unverified": "Hindi pa beripikado",
-    "unverifiedText": "Sinusuri pa ang pahinang ito laban sa opisyal na impormasyon ng LGU. Kumpirmahin muna sa opisina bago pumunta.",
+    "unverifiedText": "Sinusuri pa ang pahinang ito laban sa opisyal na impormasyon ng LGU. Kumpirmahin muna sa tanggapan bago pumunta.",
     "lastVerified": "Huling beripikasyon",
     "needHelp": "Kailangan ng tulong?",
-    "needHelpText": "Makipag-ugnayan sa opisinang may kinalaman sa serbisyong ito o iba pang usapin ng bayan.",
+    "needHelpText": "Makipag-ugnayan sa tanggapang may kinalaman sa serbisyong ito o iba pang usapin ng bayan.",
     "hotlines": "Mga Hotline",
     "related": "Iba pa sa {{category}}",
     "varies": "Depende sa uri",
     "comingSoon": "Malapit na",
     "comingSoonText": "Idadagdag sa lalong madaling panahon ang mga serbisyo sa kategoryang ito, mula sa Citizen's Charter.",
     "showAll": "Ipakita ang lahat ng serbisyo",
-    "offices": "Mga Opisina",
-    "byOffice": "Ayon sa Opisina",
-    "byOfficeText": "Alam mo na ba kung aling opisina ang kailangan mo? Magsimula rito.",
+    "offices": "Mga Tanggapan",
+    "byOffice": "Ayon sa Tanggapan",
+    "byOfficeText": "Alam mo na ba kung aling tanggapan ang kailangan mo? Magsimula rito.",
     "chooseType": "Piliin ang uri na angkop sa iyo",
     "classification": "Klasipikasyon",
     "totalFee": "Kabuuang bayad",
     "totalTime": "Kabuuang tagal",
     "notes": "Mga paalala",
     "whereToSecure": "Saan kukunin",
-    "officeAction": "Gagawin ng opisina",
+    "officeAction": "Gagawin ng tanggapan",
     "responsible": "Taong responsable",
     "none": "Wala",
     "guide": "Gabay",
@@ -240,9 +193,9 @@
     "guideTitle": "Mga Permit, Ayon sa Pagkakasunod",
     "guideText": "Sundin ang mga hakbang na ito, at buksan ang bawat serbisyo para sa kumpletong requirements at bayarin.",
     "openService": "Buksan ang serbisyong ito",
-    "noEmail": "Walang nakalistang email ng opisina",
-    "officeServices": "Lahat ng serbisyo ng opisinang ito",
-    "charterText": "Batay ang pahinang ito sa {{title}}, pahina {{pages}}. Maaaring magbago ang bayarin at tagal ng proseso; kumpirmahin sa opisina kung hindi sigurado.",
+    "noEmail": "Walang nakalistang email ng tanggapan",
+    "officeServices": "Lahat ng serbisyo ng tanggapang ito",
+    "charterText": "Batay ang pahinang ito sa {{title}}, pahina {{pages}}. Maaaring magbago ang bayarin at tagal ng proseso; kumpirmahin sa tanggapan kung hindi sigurado.",
     "charterPdf": "Citizen's Charter (PDF)",
     "charterPost": "Anunsyo sa Facebook",
     "categoriesTitle": "Mga Kategorya",
@@ -257,6 +210,1645 @@
     "handledBy": "Hinahawakan ng",
     "seeDetails": "Tingnan ang detalye",
     "servicesLabel": "Mga serbisyo",
-    "category": "Kategorya"
+    "category": "Kategorya",
+    "keywords": "serbisyo sa Taal, citizen's charter, business permit, birth certificate, building permit, sedula, amilyar",
+    "englishNote": "Ang mga requirements, hakbang at bayarin sa ibaba ay nasa Ingles, ayon sa pagkakalimbag sa opisyal na Citizen's Charter ng Bayan ng Taal. Kung may hindi malinaw, magtanong sa tanggapang nakalista sa pahinang ito."
+  },
+  "common": {
+    "home": "Umpisa",
+    "tbc": "Kukumpirmahin pa",
+    "tbcLower": "kukumpirmahin pa",
+    "lastUpdated": "Huling binago: {{date}}",
+    "onThisPage": "Sa pahinang ito",
+    "breadcrumb": "Breadcrumb",
+    "openMenu": "Buksan ang menu",
+    "seal": "Opisyal na selyo ng Bayan ng Taal",
+    "municipalHall": "Munisipyo ng Taal",
+    "chooseLanguage": "Pumili ng wika",
+    "exchangeRate": "Palitan ng pera"
+  },
+  "hotlinesPage": {
+    "title": "Mga Emergency Hotline ng Taal",
+    "crumb": "Mga Hotline",
+    "seoDescription": "Mga emergency at public service hotline para sa Taal, Batangas.",
+    "subtitle": "Mahahalagang numero para sa emergency at serbisyong pampubliko",
+    "searchLabel": "Maghanap ng hotline",
+    "searchPlaceholder": "Maghanap ng hotline...",
+    "categoriesTitle": "Mga Kategorya ng Hotline",
+    "categories": {
+      "All": "Lahat ng Hotline",
+      "Taal": "Taal",
+      "Emergency": "Emergency",
+      "Disaster": "Sakuna",
+      "Security": "Seguridad",
+      "Transport": "Transportasyon",
+      "Weather": "Panahon",
+      "Social Services": "Serbisyong Panlipunan"
+    },
+    "count_one": "{{count}} hotline",
+    "count_other": "{{count}} hotline",
+    "matches_one": "{{count}} hotline ang tugma sa \"{{query}}\"",
+    "matches_other": "{{count}} hotline ang tugma sa \"{{query}}\"",
+    "numberTbc": "Kukumpirmahin pa ang numero",
+    "noResults": "Walang hotline na tugma sa iyong hinanap.",
+    "sourcesNote": "Ang mga pambansang hotline ay mula sa <link>BetterGov.ph</link>. Ang mga numero ng Taal ay kinuha mula sa mga pampublikong sanggunian noong Nobyembre 2026, kabilang ang listahan ng MDRRMO ng lalawigan ng Batangas, ang telephone directory ng PNP at ang directory ng LGU ng Taal, kaya maaaring may nagbago na. Kung hindi makakonekta ang isang numero sa oras ng emergency, tumawag sa 911."
+  },
+  "holidaysPage": {
+    "seoTitle": "Mga Pista Opisyal sa Taal {{year}}",
+    "seoDescription": "Mga pambansang pista opisyal at lokal na pagdiriwang sa Taal.",
+    "title": "Mga Pista Opisyal {{year}}",
+    "subtitle": "Mga pambansang araw na walang pasok at mga lokal na pagdiriwang sa Taal",
+    "notice": "Ang mga pambansang pista opisyal ay batay sa listahang idineklara para sa {{year}}. Nagiging araw na walang pasok ang mga lokal na pagdiriwang kapag idineklara lamang sa proklamasyon o ordinansa ng bayan. Maaaring magbago ang mga petsa ayon sa opisyal na anunsyo.",
+    "regular": "A. Mga Regular na Pista Opisyal",
+    "special": "B. Mga Espesyal na Araw na Walang Pasok",
+    "local": "C. Mga Lokal na Pagdiriwang sa Taal",
+    "event": "Okasyon",
+    "date": "Petsa",
+    "day": "Araw",
+    "sourcesNote": "Pambansang listahan mula sa <bettergov>BetterGov.ph</bettergov>; mga lokal na pista mula sa <wikipedia>Wikipedia</wikipedia>.",
+    "events": {
+      "newYear": "Bagong Taon",
+      "maundyThursday": "Huwebes Santo",
+      "goodFriday": "Biyernes Santo",
+      "kagitingan": "Araw ng Kagitingan",
+      "labor": "Araw ng Paggawa",
+      "independence": "Araw ng Kalayaan",
+      "heroes": "Araw ng mga Bayani",
+      "bonifacio": "Araw ni Bonifacio",
+      "christmas": "Araw ng Pasko",
+      "rizal": "Araw ni Rizal",
+      "chineseNewYear": "Bagong Taon ng mga Tsino",
+      "blackSaturday": "Sabado de Gloria",
+      "ninoy": "Araw ni Ninoy Aquino",
+      "allSaints": "Araw ng mga Santo",
+      "allSouls": "Araw ng mga Kaluluwa",
+      "immaculate": "Pista ng Kalinis-linisang Paglilihi kay Maria",
+      "christmasEve": "Bisperas ng Pasko",
+      "lastDay": "Huling Araw ng Taon",
+      "founding": "Anibersaryo ng Pagkakatatag ng Taal",
+      "stMartin": "Pista ni San Martin de Tours",
+      "caysasay": "Pista ng Mahal na Birhen ng Caysasay"
+    }
+  },
+  "forexPage": {
+    "title": "Palitan ng Dayuhang Pera",
+    "seoDescription": "Palitan ng piso mula sa Bangko Sentral ng Pilipinas.",
+    "subtitle": "Halaga ng mga dayuhang pera sa piso, mula sa Bangko Sentral ng Pilipinas.",
+    "loading": "Kinukuha ang palitan ng pera...",
+    "unavailable": "Hindi makuha ang palitan ng pera ngayon. Subukan muli mamaya.",
+    "currencies": "Mga Pera",
+    "searchLabel": "Maghanap ng pera",
+    "searchPlaceholder": "Maghanap ng pera...",
+    "currentRate": "Kasalukuyang Palitan",
+    "peso": "Piso ng Pilipinas",
+    "converter": "Pang-convert ng Pera",
+    "pesoCode": "Piso ng Pilipinas (PHP)",
+    "providedBy": "Ang palitan ng pera ay mula sa Bangko Sentral ng Pilipinas (BSP) sa pamamagitan ng <link>BetterGov.ph API</link>.",
+    "published": "Inilathala: {{date}}.",
+    "aboutTitle": "Tungkol sa Palitan ng Dayuhang Pera",
+    "aboutText": "Ang mga palitan sa pahinang ito ay mula sa Bangko Sentral ng Pilipinas (BSP), ang sentral na bangko ng Pilipinas. Ito ang opisyal na reference rate ng piso laban sa mga pangunahing pera sa mundo.",
+    "understandingTitle": "Pag-unawa sa Palitan",
+    "understandingText": "Ipinapakita ng bawat palitan kung ilang piso ang katumbas ng isang yunit ng dayuhang pera. Maaaring iba ang singil ng mga bangko at money changer sa Taal.",
+    "officialTitle": "Opisyal na Palitan ng BSP",
+    "officialText": "Para sa opisyal na reference rate at iba pang detalye, bisitahin ang <link>website ng Bangko Sentral ng Pilipinas</link>."
+  },
+  "weatherPage": {
+    "seoTitle": "Ulat Panahon",
+    "seoDescription": "Kasalukuyang panahon at 5-araw na taya ng panahon para sa Taal at mga kalapit na lungsod.",
+    "title": "Panahon sa Taal at mga Kalapit na Lungsod",
+    "subtitle": "Kasalukuyang lagay ng panahon at 5-araw na taya mula sa Open-Meteo.",
+    "loading": "Kinukuha ang ulat panahon...",
+    "unavailable": "Hindi makuha ang datos ng panahon ngayon. Subukan muli mamaya.",
+    "locations": "Mga Lugar",
+    "pressure": "Presyon ng hangin",
+    "visibility": "Visibility",
+    "aboutTitle": "Tungkol sa Datos ng Panahon",
+    "aboutText": "Ang panahon sa pahinang ito ay mula sa <link>{{source}}</link>, isang open-source na weather API na pinagsasama ang mga taya ng mga pambansang ahensya ng panahon. Ang mga sukat para sa Taal ay batay sa lokasyon ng sentro ng bayan at nag-a-update tuwing mga 15 minuto.",
+    "understandingTitle": "Pag-unawa sa Datos",
+    "understandingText": "Ang temperatura ay nasa Celsius (°C) at ang bilis ng hangin ay nasa kilometro bawat oras. Mga taya ito mula sa modelo, hindi opisyal na babala.",
+    "advisoriesTitle": "Mga Abiso sa Panahon",
+    "advisoriesText": "Para sa opisyal na babala at bulletin tungkol sa bagyo, bisitahin ang <pagasa>website ng PAGASA</pagasa>. Para sa bulletin tungkol sa Bulkang Taal, bisitahin ang <phivolcs>PHIVOLCS</phivolcs>.",
+    "credit": "Datos ng panahon mula sa <link>{{source}}</link> (CC BY 4.0)"
+  },
+  "governmentPage": {
+    "seoDescription": "Direktoryo ng mga opisyal ng Bayan ng Taal, Batangas.",
+    "title": "Direktoryo ng Pamahalaan ng Taal",
+    "subtitle": "Kilalanin ang mga opisyal at tanggapan ng Bayan ng Taal, termino {{term}}",
+    "officials_one": "{{count}} opisyal",
+    "officials_other": "{{count}} opisyal",
+    "asOf": "Mga opisyal hanggang {{date}}, batay sa resulta ng halalan noong Mayo 2025. Mga sanggunian:",
+    "spotError": "May nakitang mali? Ipaalam sa amin para maitama namin."
+  },
+  "barangaysPage": {
+    "eyebrow": "Mga Barangay",
+    "title": "Mga Barangay ng Taal",
+    "count": "{{total}} barangay, {{poblacion}} dito ang nasa poblacion (sentro ng bayan).",
+    "searchLabel": "Maghanap ng barangay",
+    "searchPlaceholder": "Maghanap ng barangay...",
+    "poblacion": "Sentro ng bayan (poblacion)",
+    "barangay": "Barangay",
+    "comingSoon": "Malapit nang idagdag ang mga opisyal at contact",
+    "noResults": "Walang barangay na tugma sa “{{query}}”.",
+    "overview": "Tungkol sa mga Barangay",
+    "total": "Kabuuang Barangay",
+    "poblacionLabel": "Poblacion (sentro ng bayan)",
+    "outside": "Labas ng poblacion",
+    "nBarangays_one": "{{count}} barangay",
+    "nBarangays_other": "{{count}} barangay",
+    "population": "Populasyon (2020 Census)"
+  },
+  "search": {
+    "label": "Maghanap sa site",
+    "placeholder": "Maghanap ng serbisyo, permit, hotline...",
+    "close": "Isara ang paghahanap",
+    "noResults": "Walang pahinang tugma sa “{{query}}”.",
+    "unavailable": "Hindi magamit ang paghahanap ngayon. Subukan muli mamaya.",
+    "searching": "Naghahanap...",
+    "results_one": "{{count}} resulta para sa “{{query}}”",
+    "results_other": "{{count}} resulta para sa “{{query}}”",
+    "startTyping": "Mag-type para maghanap sa mga serbisyo at impormasyon ng pamahalaan"
+  },
+  "notFound": {
+    "title": "Hindi nahanap ang pahina",
+    "seoDescription": "Wala sa BetterTaalBatangas.org ang pahinang hinahanap mo.",
+    "subtitle": "Maaaring nailipat na o wala na ang pahinang hinahanap mo. Subukan ang isa sa mga ito.",
+    "links": {
+      "home": {
+        "label": "Umpisa",
+        "text": "Magsimula sa pangunahing pahina"
+      },
+      "services": {
+        "label": "Mga Serbisyo",
+        "text": "Gabay sa lahat ng 90 serbisyo ng bayan"
+      },
+      "government": {
+        "label": "Pamahalaan",
+        "text": "Mga opisyal, tanggapan at barangay"
+      },
+      "hotlines": {
+        "label": "Mga Hotline",
+        "text": "Mga numero para sa emergency at serbisyong pampubliko"
+      },
+      "sitemap": {
+        "label": "Mapa ng Site",
+        "text": "Lahat ng pahina sa site na ito"
+      }
+    }
+  },
+  "sitemap": {
+    "subtitle": "Kumpletong gabay sa lahat ng pahina at serbisyo sa BetterTaalBatangas.org.",
+    "serviceCount": "{{services}} serbisyo sa {{categories}} kategorya.",
+    "browseAll": "Tingnan ang lahat ng serbisyo",
+    "sections": {
+      "main": "Mga Pangunahing Pahina",
+      "taal": "Tungkol sa Taal",
+      "services": "Mga Serbisyo",
+      "government": "Pamahalaan",
+      "data": "Live na Datos",
+      "national": "Pambansang Pamahalaan",
+      "portal": "Tungkol sa Portal na Ito"
+    },
+    "pages": {
+      "home": {
+        "label": "Umpisa",
+        "description": "Pangunahing pahina"
+      },
+      "services": {
+        "label": "Mga Serbisyo",
+        "description": "Hakbang-hakbang na gabay sa mga serbisyo ng bayan"
+      },
+      "government": {
+        "label": "Pamahalaan",
+        "description": "Mga halal na opisyal, tanggapan at barangay"
+      },
+      "hotlines": {
+        "label": "Mga Hotline",
+        "description": "Mga numero para sa emergency at serbisyong pampubliko"
+      },
+      "aboutTaal": {
+        "label": "Tungkol sa Taal",
+        "description": "Pangkalahatang-ideya ng Heritage Town"
+      },
+      "history": {
+        "label": "Kasaysayan",
+        "description": "Kasaysayan ng Taal mula 1572"
+      },
+      "culture": {
+        "label": "Kultura",
+        "description": "Mga gawang-kamay, pagkain, simbahan at pista"
+      },
+      "holidays": {
+        "label": "Mga Pista Opisyal",
+        "description": "Mga pambansang pista opisyal at lokal na pista"
+      },
+      "weather": {
+        "label": "Panahon",
+        "description": "Kasalukuyang panahon at 5-araw na taya"
+      },
+      "forex": {
+        "label": "Palitan ng Pera",
+        "description": "Palitan ng piso mula sa BSP"
+      },
+      "aboutPortal": {
+        "label": "Tungkol sa Portal",
+        "description": "Sino kami at bakit namin binuo ang site na ito"
+      },
+      "faq": {
+        "label": "Mga Madalas Itanong",
+        "description": "Mga karaniwang tanong tungkol sa portal"
+      },
+      "contact": {
+        "label": "Makipag-ugnayan",
+        "description": "Mag-report ng isyu o makipag-ugnayan sa mga boluntaryo"
+      },
+      "terms": {
+        "label": "Mga Tuntunin ng Paggamit",
+        "description": "Mga patakaran sa paggamit ng site"
+      },
+      "privacy": {
+        "label": "Patakaran sa Privacy",
+        "description": "Anong datos ang kinukuha at hindi kinukuha"
+      },
+      "accessibility": {
+        "label": "Accessibility",
+        "description": "Ang aming pangako sa accessibility at mga alam na limitasyon"
+      },
+      "directory": {
+        "label": "Direktoryo ng Pamahalaan",
+        "description": "Lahat ng sangay, tanggapan at opisyal"
+      }
+    },
+    "national": {
+      "officialGovPh": "Opisyal na portal ng Republika ng Pilipinas",
+      "openData": "Mga bukas na dataset mula sa mga pambansang ahensya",
+      "foi": "Humingi ng impormasyon sa mga ahensya ng pamahalaan",
+      "contactCenter": "Hotline at puna sa Contact Center ng Bayan",
+      "officialGazette": "Mga batas, kautusan at opisyal na dokumento"
+    }
+  },
+  "philsys": {
+    "eyebrow": "Philippine Identification System",
+    "title": "Kumuha ng PhilSys National ID",
+    "text": "Ang national ID ay iisang ID na inilalabas ng pamahalaan para sa lahat ng mamamayan. Magagamit ito sa mga serbisyo ng pamahalaan, pagbubukas ng bank account at iba pang transaksyon.",
+    "free": "Libre ang pagpaparehistro.",
+    "open": "Bukas sa lahat ng mamamayang Pilipino at mga dayuhang residente.",
+    "button": "Magparehistro sa philsys.gov.ph"
+  },
+  "taal": {
+    "ui": {
+      "relatedLinks": "Kaugnay na Pahina",
+      "sources": "Mga sanggunian:",
+      "photo": "Larawan:",
+      "by": "ni",
+      "viaCommons": "mula sa Wikimedia Commons",
+      "changes": {
+        "cropped": "ginupit"
+      }
+    },
+    "about": {
+      "seoTitle": "Tungkol sa Taal",
+      "seoDescription": "Mabilisang impormasyon at pangkalahatang-ideya tungkol sa Bayan ng Taal, Batangas.",
+      "title": "Tungkol sa Taal",
+      "subtitle": "Kilalanin ang Heritage Town ng Batangas, tahanan ng balisong at Barong Tagalog, sa pagitan ng Lawa ng Taal at Balayan Bay.",
+      "photoNote": "Lalagyan ng larawan: sentro ng heritage town ng Taal",
+      "quickFacts": "Mabilisang Impormasyon",
+      "overview": "Pangkalahatang-ideya",
+      "keyInformation": "Mahahalagang Impormasyon",
+      "facts": {
+        "geography": {
+          "title": "Heograpiya",
+          "text": "Isang bayan sa baybayin ng Batangas, nakaharap sa Balayan Bay at mga 79 km sa timog ng Metro Manila."
+        },
+        "population": {
+          "title": "Populasyon",
+          "text": "May 61,460 na naninirahan batay sa 2020 Census of Population and Housing."
+        },
+        "heritage": {
+          "title": "Heritage Town",
+          "text": "Ang poblacion nito ay isang National Historical Landmark, na may daan-daang istrukturang mula pa sa panahon ng Kastila."
+        },
+        "landscape": {
+          "title": "Kalupaan",
+          "text": "Nasa pagitan ng Lawa ng Taal at Balayan Bay, na pinagdudugtong ng Ilog Pansipit."
+        },
+        "barangays": {
+          "title": "Mga Barangay",
+          "text": "42 barangay, kasama ang 14 na barangay ng poblacion sa sentro ng bayan."
+        }
+      },
+      "info": {
+        "province": {
+          "label": "Lalawigan",
+          "value": "Batangas"
+        },
+        "region": {
+          "label": "Rehiyon",
+          "value": "Rehiyon IV-A (CALABARZON)"
+        },
+        "founded": {
+          "label": "Itinatag",
+          "value": "Abril 26, 1572"
+        },
+        "language": {
+          "label": "Wika",
+          "value": "Tagalog (Batangueño), Ingles"
+        },
+        "landArea": {
+          "label": "Sukat ng Lupa",
+          "value": "29.76 km²"
+        },
+        "zip": {
+          "label": "ZIP Code",
+          "value": "4208"
+        },
+        "incomeClass": {
+          "label": "Klase ng Kita",
+          "value": "Kukumpirmahin pa"
+        }
+      },
+      "paragraphs": [
+        "Ang Taal ay isang bayan sa baybayin ng lalawigan ng Batangas, sa rehiyon ng CALABARZON. Itinatag ito ng mga prayleng Agustino noong 1572, kaya isa ito sa pinakamatatandang bayan sa Batangas, at minsan itong naging kabisera ng lalawigan.",
+        "Lumipat ang bayan sa kasalukuyang lugar nito na tanaw ang Balayan Bay matapos ang malaking pagputok ng Bulkang Taal noong 1754. Hanggang ngayon, makikita sa sentro ng bayan ang makikitid na kalsada mula pa sa panahon ng Kastila, ang mga lumang bahay at ang Basilica de San Martin de Tours.",
+        "Kilala ang Taal bilang kabisera ng balisong at Barong Tagalog ng Pilipinas. Ipinagdiriwang tuwing Abril sa El Pasubat Festival ang burda, mga gawang-kamay at pagkain nito, mula tapang Taal hanggang sinaing na tulingan."
+      ]
+    },
+    "history": {
+      "seoTitle": "Kasaysayan ng Taal",
+      "seoDescription": "Ang kasaysayan ng Taal, Batangas mula nang itatag ito noong 1572 hanggang ngayon.",
+      "title": "Kasaysayan ng Taal",
+      "subtitle": "Balikan ang mahigit 450 taon ng bayang minsang naging kabisera ng Batangas at nagbigay sa bansa ng una nitong watawat.",
+      "photoNote": "Lalagyan ng larawan: Basilica de San Martin de Tours",
+      "timelineTitle": "Mga Pangyayari sa Kasaysayan",
+      "overview": "Buod ng Kasaysayan",
+      "figuresTitle": "Mahahalagang Tao sa Kasaysayan",
+      "datesTitle": "Mahahalagang Petsa",
+      "timeline": {
+        "2020": {
+          "title": "Pagputok ng Bulkang Taal",
+          "description": "Inilikas ang bayan nang ilang linggo noong unang bahagi ng 2020. Napinsala ng abo at pagyanig ng bulkan ang ilang pamanang istruktura.",
+          "image": "Larawan: Bulkang Taal at Lawa ng Taal"
+        },
+        "1898": {
+          "title": "Ang Watawat ng Pilipinas",
+          "description": "Si Marcela Agoncillo, na taga-Taal, ang nagtahi ng unang watawat ng Pilipinas na iwinagayway sa pagpapahayag ng kalayaan sa Kawit noong Hunyo 12, 1898.",
+          "image": "Larawan: Marcela Agoncillo Museum"
+        },
+        "1754": {
+          "title": "Ang Malaking Pagputok",
+          "description": "Winasak ng ilang buwang pagputok ng Bulkang Taal ang bayan sa tabi ng lawa. Lumipat ang mga residente sa Caysasay at kalaunan sa kasalukuyang lugar sa itaas ng Balayan Bay.",
+          "image": "Larawan: Guho ng lumang simbahan ng Taal, San Nicolas"
+        },
+        "1732": {
+          "title": "Kabisera ng Batangas",
+          "description": "Naging kabisera ng lalawigan ang Taal at isang abalang daungan sa lawa at ilog na nag-uugnay sa Lawa ng Taal at Balayan Bay.",
+          "image": "Larawan: Ilog Pansipit"
+        },
+        "1572": {
+          "title": "Pagkakatatag ng Taal",
+          "description": "Itinatag ng mga prayleng Agustino ang Taal noong Abril 26, 1572 bilang unang misyong Kristiyano sa Batangas. Noong 1575, lumipat ito sa gilid ng lawa.",
+          "image": "Larawan: Basilica de San Martin de Tours"
+        }
+      },
+      "figures": {
+        "marcela": "Gumawa ng unang watawat ng Pilipinas",
+        "felipe": "Diplomatiko sa pag-uusap para sa Treaty of Paris (1898)",
+        "galicano": "Kasamang nagtatag ng La Solidaridad, Gobernador ng Batangas",
+        "gliceria": "Tagasuporta ng mga rebolusyonaryo"
+      },
+      "dates": {
+        "founding": {
+          "date": "Abril 26, 1572",
+          "event": "Pagkakatatag ng Taal"
+        },
+        "capital": {
+          "date": "1732",
+          "event": "Naging kabisera ng Batangas ang Taal"
+        },
+        "eruption": {
+          "date": "Mayo hanggang Disyembre 1754",
+          "event": "Malaking pagputok ng Bulkang Taal"
+        },
+        "flag": {
+          "date": "Hunyo 12, 1898",
+          "event": "Iwinagayway ang watawat ni Agoncillo sa Kawit"
+        }
+      },
+      "paragraphs": [
+        "Itinatag ang Taal noong 1572 ng mga misyonerong Agustino sa Balangon, malapit sa Ilog Pansipit, at lumago ito bilang daungan sa lawa at ilog. Kabilang sa unang parokya nito ang Balayan at Bauan bilang mga misyon.",
+        "Noong 1732, naging kabisera ng Batangas ang Taal. Sinalanta ng malaking pagputok noong 1754 ang mga bayan sa tabi ng lawa, kaya napilitang lumipat ang Taal palapit sa Balayan Bay at ang kabisera ng lalawigan sa kinaroroonan ngayon ng Batangas City.",
+        "Noong ika-19 at ika-20 siglo, nabuo mula sa mga bahagi ng Taal ang ilang bayan, kabilang ang Lemery, San Luis, San Nicolas at Santa Teresita. Malaki ang naging bahagi ng mga anak nito, mula sa mga Agoncillo hanggang kay Galicano Apacible, sa rebolusyon at sa unang republika."
+      ]
+    },
+    "culture": {
+      "seoTitle": "Kultura ng Taal",
+      "seoDescription": "Mga gawang-kamay, pagkain, pista at tradisyon ng pananampalataya sa Taal, Batangas.",
+      "title": "Kultura ng Taal",
+      "subtitle": "Tuklasin ang burda, balisong, pagkain at pista na nagpapakilala sa Taal bilang heritage capital ng Batangas.",
+      "photoNote": "Lalagyan ng larawan: El Pasubat Festival",
+      "heritageTitle": "Pamanang Kultural",
+      "identityTitle": "Pagkakakilanlang Kultural",
+      "festivalsTitle": "Mga Pangunahing Pista",
+      "artsTitle": "Tradisyonal na Sining",
+      "heritage": {
+        "barong": {
+          "title": "Barong Tagalog at Burdang Taal",
+          "text": "Burdang-kamay sa telang piña at jusi para sa barong at camisa, isang industriyang pantahanan na ipinapasa sa bawat henerasyon.",
+          "image": "Larawan: Burdang Taal"
+        },
+        "balisong": {
+          "title": "Balisong",
+          "text": "Ang Filipinong lanseta na gawang-kamay sa Taal, lalo na sa Barangay Balisong.",
+          "image": "Larawan: Mga gumagawa ng balisong"
+        },
+        "cuisine": {
+          "title": "Pagkain",
+          "text": "Tapang Taal, longganisang Taal, empanada, sinaing na tulingan, adobo sa dilaw, suman at panutsa.",
+          "image": "Larawan: Tapang Taal at longganisa"
+        },
+        "festivals": {
+          "title": "Mga Pista",
+          "text": "Ang El Pasubat Festival tuwing Abril at ang pista ng bayan bilang parangal kay San Martin de Tours at sa Mahal na Birhen ng Caysasay.",
+          "image": "Larawan: Parada ng El Pasubat Festival"
+        },
+        "churches": {
+          "title": "Mga Simbahan at Lumang Bahay",
+          "text": "Ang Basilica de San Martin de Tours, ang dambana ng Caysasay at mga lumang bahay tulad ng bahay ni Marcela Agoncillo, na ngayon ay isang museo.",
+          "image": "Larawan: Mga lumang bahay sa Taal"
+        }
+      },
+      "festivals": {
+        "founding": {
+          "name": "Anibersaryo ng Pagkakatatag",
+          "when": "Abril 26"
+        },
+        "elPasubat": {
+          "name": "El Pasubat Festival",
+          "when": "Abril"
+        },
+        "stMartin": {
+          "name": "Pista ni San Martin de Tours",
+          "when": "Nobyembre 11"
+        },
+        "caysasay": {
+          "name": "Pista ng Mahal na Birhen ng Caysasay",
+          "when": "Disyembre 8"
+        }
+      },
+      "arts": {
+        "embroidery": {
+          "name": "Pagbuburda",
+          "detail": "Burdang Taal sa piña at jusi"
+        },
+        "knives": {
+          "name": "Paggawa ng Lanseta",
+          "detail": "Balisong"
+        },
+        "garments": {
+          "name": "Kasuotan",
+          "detail": "Barong Tagalog, camisa"
+        },
+        "food": {
+          "name": "Mga Kakanin at Pagkain",
+          "detail": "Panutsa, suman, tapa, longganisa"
+        }
+      },
+      "paragraphs": [
+        "Tinaguriang kabisera ng balisong at Barong Tagalog ng Pilipinas ang Taal. Pinananatiling buhay ng mga mananahi ng burda at gumagawa ng lanseta ang mga gawang-kamay na nagsimula bilang industriyang pantahanan sa bayan.",
+        "Ang pangalang El Pasubat ay hango sa mga ipinagmamalaki ng Taal: empanada, longganisa, panutsa, suman, balisong, barong at tapa. Idinagdag kalaunan ang tamales, tawilis at tulingan.",
+        "Sentro ng buhay sa bayan ang pananampalataya. Taon-taon, ibinabalik ng mga pista ni San Martin de Tours at ng Mahal na Birhen ng Caysasay ang mga prusisyon at lumang tradisyon sa mga lansangan."
+      ]
+    },
+    "barangays": {
+      "paragraphs": [
+        "Nahahati ang Taal sa 42 barangay. Ang labing-apat na barangay ng poblacion ang bumubuo sa heritage na sentro ng bayan, habang ang iba ay nakakalat patungo sa Lawa ng Taal, Ilog Pansipit at Balayan Bay.",
+        "Binubuo ng mga purok ang bawat barangay, at may mga sitio ang ilan. Idadagdag sa bawat pahina ng barangay ang mga opisyal, contact details at health station nito."
+      ]
+    },
+    "pages": {
+      "about": "Tungkol sa Taal",
+      "history": "Kasaysayan",
+      "culture": "Kultura",
+      "hotlines": "Mga Hotline",
+      "holidays": "Mga Pista Opisyal",
+      "forex": "Palitan ng Pera",
+      "weather": "Panahon"
+    }
+  },
+  "portal": {
+    "about": {
+      "title": "Tungkol sa Portal",
+      "subtitle": "Gabay na binuo ng mga boluntaryo tungkol sa mga serbisyo, tanggapan at mga tao ng Bayan ng Taal, Batangas.",
+      "sections": [
+        {
+          "id": "what",
+          "title": "Ano Ito",
+          "body": [
+            "Inilalagay ng BetterTaalBatangas.org sa iisang lugar ang impormasyong pinakakailangan ng mga taga-Taal: kung paano kumuha ng permit o sertipiko, ano ang dapat dalhin, magkano ang bayad, saang tanggapan pupunta, sino ang ating mga halal na opisyal at aling numero ang tatawagan sa oras ng emergency.",
+            "Isinulat ang lahat sa simpleng pananalita at inayos ayon sa kung ano ang gustong gawin ng mga tao, hindi ayon sa pagkakaayos ng pamahalaan."
+          ]
+        },
+        {
+          "id": "why",
+          "title": "Bakit Namin Ito Ginawa",
+          "body": [
+            "Madalas na nakakalat ang impormasyon ng pamahalaan sa mga post sa Facebook, mga na-scan na dokumento at mga paskil sa munisipyo. Naniniwala kami na ang pag-alam kung paano iparehistro ang kapanganakan o i-renew ang business permit ay dapat tumagal lang ng isang minuto, hindi ng isang lakad.",
+            "Ang portal na ito ay isang paglilingkod-bayan. Binuo ito ng mga boluntaryong nagmamalasakit sa Taal, sa sarili nilang oras, nang walang gastos sa mamamayan o sa pamahalaan ng Taal."
+          ]
+        },
+        {
+          "id": "not-official",
+          "title": "Hindi Opisyal na Website ng Pamahalaan",
+          "body": [
+            "<strong>Hindi pinapatakbo ng Bayan ng Taal o ng anumang ahensya ng pamahalaan ang BetterTaalBatangas.org.</strong> Kami ay mga independiyenteng boluntaryo. Hindi kami makapagpoproseso ng aplikasyon, tumanggap ng bayad o sumagot para sa anumang tanggapan.",
+            "Para sa mga opisyal na transaksyon, pumunta sa Munisipyo ng Taal o makipag-ugnayan sa kinauukulang tanggapan. Nakalista ang email ng mga tanggapan sa <gov>Direktoryo ng Pamahalaan</gov>, at nasa pahina ng <hotlines>Mga Hotline</hotlines> ang mga numerong pang-emergency."
+          ]
+        },
+        {
+          "id": "sources",
+          "title": "Saan Galing ang Impormasyon",
+          "body": [
+            [
+              "<strong>Mga serbisyo, bayarin at tanggapan:</strong> ang <charter>{{charterTitle}}</charter> na inilathala ng Bayan ng Taal.",
+              "<strong>Mga halal na opisyal:</strong> ang resulta ng halalan noong Mayo 2025 at mga pampublikong rekord.",
+              "<strong>Panahon:</strong> <meteo>Open-Meteo.com</meteo>.",
+              "<strong>Palitan ng pera:</strong> ang Bangko Sentral ng Pilipinas, sa pamamagitan ng BetterGov.ph API.",
+              "<strong>Kasaysayan at kultura:</strong> mga nailathalang sanggunian, na nakasaad sa bawat pahina."
+            ],
+            "Sinusuri namin ang aming gawa, pero maaaring may magbago bago namin ito mapansin. Kung may pag-aalinlangan, kumpirmahin sa kinauukulang tanggapan."
+          ]
+        },
+        {
+          "id": "bettergov",
+          "title": "Bahagi ng BetterGov.ph",
+          "body": [
+            "Binuo ang site na ito gamit ang open-source na template ng <bettergov>BetterGov.ph</bettergov>, isang kilusan ng mga boluntaryo na nagpapadali sa paghahanap at paggamit ng impormasyon ng pamahalaan ng Pilipinas. Marami nang bayan at lungsod ang may sariling Better LGU portal, na pinangangalagaan ng mga lokal na boluntaryo."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Paano Ka Makakatulong",
+          "body": [
+            [
+              "<strong>Mag-ulat ng mali.</strong> May nakitang mali o luma na? <report>Mag-report ng isyu</report> at itatama namin ito.",
+              "<strong>Ibahagi ang alam mo.</strong> Laging malugod naming tinatanggap ang mga opisyal ng barangay, bagong bayarin at oras ng tanggapan.",
+              "<strong>Mag-ambag.</strong> Bukas ang code sa <repo>GitHub</repo>. Makakatulong ang mga developer, designer, manunulat at tagasalin.",
+              "<strong>Ipalaganap.</strong> Ibahagi ang site sa pamilya at kapitbahay na nangangailangan nito."
+            ]
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Makipag-ugnayan",
+      "subtitle": "Makipag-ugnayan sa mga boluntaryo ng BetterTaalBatangas.org, o hanapin ang tamang tanggapan para sa mga opisyal na usapin.",
+      "openForm": "Buksan ang report form",
+      "sections": [
+        {
+          "id": "report",
+          "title": "Mag-report ng Isyu",
+          "body": [
+            "May nakitang mali o luma na? Sabihin sa amin sa maikling report form: aling pahina ang may problema at ano ang tamang impormasyon, kasama ang sanggunian kung mayroon ka.",
+            {
+              "slot": "form"
+            },
+            "Huwag ilagay ang sensitibong personal na impormasyon tulad ng numero ng ID. Kailangan lang namin ang iyong contact details kung gusto mong makatanggap ng sagot."
+          ]
+        },
+        {
+          "id": "email",
+          "title": "Email",
+          "if": "email",
+          "body": [
+            "Maaari ka ring sumulat sa amin sa <contactEmail>{{contactEmail}}</contactEmail>. Mga boluntaryo kami, kaya maaaring abutin ng ilang araw ang sagot."
+          ]
+        },
+        {
+          "id": "official",
+          "title": "Mga Opisyal na Usapin ng Bayan",
+          "body": [
+            "<strong>Hindi kami ang Bayan ng Taal at hindi kami makapagpoproseso ng aplikasyon, bayad, reklamo o paghingi ng dokumento.</strong> Para sa mga ito, direktang makipag-ugnayan sa pamahalaang bayan:",
+            [
+              "Pumunta sa Munisipyo ng Taal, Taal, Batangas, sa oras ng opisina.",
+              "Mag-email sa Tanggapan ng Punong Bayan sa <mayorEmail>{{mayorEmail}}</mayorEmail>.",
+              "Hanapin ang email ng isang partikular na tanggapan sa <offices>Direktoryo ng Pamahalaan</offices>.",
+              "Para sa emergency, tingnan ang pahina ng <hotlines>Mga Hotline</hotlines>."
+            ]
+          ]
+        },
+        {
+          "id": "contribute",
+          "title": "Maging Boluntaryo",
+          "body": [
+            "Gusto mo bang tumulong na panatilihing tama at kapaki-pakinabang ang site na ito? Open source ang proyekto sa <repo>GitHub</repo>. Maaari kang magmungkahi ng pagbabago, ayusin ang nilalaman, pagandahin ang salin sa Tagalog o tumulong sa disenyo at code."
+          ]
+        }
+      ],
+      "formSoon": "<strong>Malapit nang ilabas ang report form.</strong> Pakibalikan sa lalong madaling panahon."
+    },
+    "faq": {
+      "title": "Mga Madalas Itanong",
+      "subtitle": "Mga sagot tungkol sa kung sino ang nagpapatakbo ng site, saan galing ang impormasyon at paano ito gamitin.",
+      "sections": [
+        {
+          "id": "project",
+          "title": "Tungkol sa Proyekto",
+          "body": [
+            {
+              "faq": [
+                {
+                  "q": "Ito ba ang opisyal na website ng Bayan ng Taal?",
+                  "a": "Hindi. Ang BetterTaalBatangas.org ay isang independiyenteng portal na pinapatakbo ng mga boluntaryo. Hindi ito pinapatakbo o ineendorso ng Bayan ng Taal o ng anumang ahensya ng pamahalaan."
+                },
+                {
+                  "q": "Sino ang gumawa at nangangalaga sa website na ito?",
+                  "a": "Mga boluntaryo mula sa Taal at kanilang mga kaibigan, bilang bahagi ng kilusang BetterGov.ph. Kahit sino ay maaaring tumulong; tingnan ang pahinang <about>Tungkol sa Portal</about>."
+                },
+                {
+                  "q": "Paano pinopondohan ang website?",
+                  "a": "Ang mga boluntaryo ang sumasagot sa maliliit na gastos, tulad ng domain. Walang gastos ang site sa mamamayan at pamahalaan ng Taal. Hindi kami naglalagay ng ads o tumatanggap ng pondo mula sa pulitika."
+                },
+                {
+                  "q": "Sumusuporta ba ang website na ito sa anumang pulitiko o partido?",
+                  "a": "Hindi. Walang kinikilingang partido ang portal. Nakalista ang mga opisyal dahil sila ang nasa puwesto, hindi bilang pag-endorso."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "information",
+          "title": "Impormasyon at Katumpakan",
+          "body": [
+            {
+              "faq": [
+                {
+                  "q": "Saan galing ang impormasyon?",
+                  "a": "Ang mga serbisyo, bayarin at tanggapan ay mula sa <charter>{{charterTitle}}</charter>. Ang mga opisyal ay mula sa resulta ng halalan noong Mayo 2025. Ang panahon ay mula sa Open-Meteo, at ang palitan ng pera ay mula sa Bangko Sentral ng Pilipinas."
+                },
+                {
+                  "q": "Laging bago ba ang impormasyon?",
+                  "a": "Ina-update namin ito tuwing may nalalaman kaming pagbabago, pero maaaring magbago ang bayarin, requirements at oras ng tanggapan nang walang abiso. Bago pumunta, kumpirmahin muna sa kinauukulang tanggapan."
+                },
+                {
+                  "q": "May nakita akong mali. Ano ang dapat kong gawin?",
+                  "a": "Pakiusap, <report>mag-report ng isyu</report>: aling pahina, ano ang mali, at ang tamang impormasyon kung alam mo. Inaayos namin ang mga ulat sa lalong madaling panahon."
+                },
+                {
+                  "q": "Puwede ba akong mag-apply ng permit o magbayad dito?",
+                  "a": "Hindi. Ipinaliliwanag ng site kung paano gumagana ang bawat serbisyo, pero ang lahat ng aplikasyon at bayad ay ginagawa sa munisipyo o sa mga opisyal na paraan."
+                },
+                {
+                  "q": "Puwede ko bang gamitin muli ang nilalaman ng website na ito?",
+                  "a": "Oo. Pampublikong domain ang sarili naming nilalaman maliban kung may ibang nakasaad. Ang nilalaman mula sa ibang sanggunian, tulad ng mga larawan, ay pag-aari ng may-ari nito at nakasaad ang pinagmulan sa bawat pahina."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "using",
+          "title": "Paggamit ng Website",
+          "body": [
+            {
+              "faq": [
+                {
+                  "q": "Kailangan ko ba ng account?",
+                  "a": "Hindi. Walang account o pag-sign up. Libreng basahin ang lahat."
+                },
+                {
+                  "q": "Kumukuha ba ang website na ito ng aking personal na impormasyon?",
+                  "a": "Hindi. Hindi kami gumagamit ng analytics, ads o tracking cookies. Tingnan ang aming <privacy>Patakaran sa Privacy</privacy> para sa detalye."
+                },
+                {
+                  "q": "Mayroon bang Tagalog ang website?",
+                  "a": "Oo. Piliin ang Tagalog sa menu ng wika sa itaas ng anumang pahina. Mananatili sa Ingles ang detalyadong requirements at mga hakbang ng bawat serbisyo, ayon sa pagkakalimbag sa opisyal na Citizen's Charter."
+                },
+                {
+                  "q": "Magagamit ko ba ang website na ito sa aking cellphone?",
+                  "a": "Oo. Gumagana ang bawat pahina sa cellphone, tablet at computer."
+                },
+                {
+                  "q": "Paano ako makakatulong?",
+                  "a": "Mag-ulat ng mali, magbahagi ng bagong impormasyon o mag-ambag sa <repo>GitHub</repo>. Malugod ding tinatanggap ang mga hindi developer."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Mga Tuntunin ng Paggamit",
+      "subtitle": "Ang mga patakaran sa paggamit ng BetterTaalBatangas.org, isang civic portal na pinapatakbo ng mga boluntaryo.",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "Panimula",
+          "body": [
+            "Ang BetterTaalBatangas.org (“ang portal”, “kami”) ay isang libreng website na pinapatakbo ng komunidad na nagpapaliwanag ng mga serbisyo at tanggapan ng Bayan ng Taal, Batangas. Saklaw ng mga tuntuning ito ang lahat ng gumagamit nito."
+          ]
+        },
+        {
+          "id": "acceptance",
+          "title": "Pagtanggap sa mga Tuntunin",
+          "body": [
+            "Sa paggamit ng portal, sumasang-ayon ka sa mga tuntuning ito. Kung hindi ka sang-ayon, huwag gamitin ang portal."
+          ]
+        },
+        {
+          "id": "not-official",
+          "title": "Hindi Opisyal na Website ng Pamahalaan",
+          "body": [
+            "Pinapatakbo ang portal ng mga independiyenteng boluntaryo. Hindi ito pag-aari, pinapatakbo o ineendorso ng Bayan ng Taal, ng Lalawigan ng Batangas o ng anumang ahensya ng pamahalaan. Walang anuman sa portal ang opisyal na pahayag, abiso o desisyon ng pamahalaan."
+          ]
+        },
+        {
+          "id": "content",
+          "title": "Nilalaman at Lisensya",
+          "body": [
+            "Ang nilalamang isinusulat namin ay inilalaan sa pampublikong domain maliban kung may ibang nakasaad. Malaya mo itong kopyahin, ibahagi at gamitin muli.",
+            "May ilang nilalaman, tulad ng mga larawan at sinipi, na pag-aari ng iba at nakasaad ang pinagmulan kung saan ito lumalabas. Nananatili ang mga ito sa ilalim ng tuntunin ng kanilang may-ari. Makukuha ang source code sa <repo>GitHub</repo> sa ilalim ng nakasaad na lisensya nito."
+          ]
+        },
+        {
+          "id": "as-is",
+          "title": "Pagtatatwa: “Kung Ano Ito”",
+          "body": [
+            "Sinisikap naming panatilihing tama ang portal, pero ibinibigay ito “kung ano ito”, nang walang anumang garantiya. Maaaring magbago ang bayarin, requirements, iskedyul at mga opisyal nang walang abiso. Laging kumpirmahin ang mahahalagang detalye sa kinauukulang tanggapan bago kumilos."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "Limitasyon ng Pananagutan",
+          "body": [
+            "Hangga't pinahihintulutan ng batas, walang pananagutan ang mga boluntaryo ng portal sa anumang pagkalugi o pinsala dahil sa iyong paggamit o pag-asa sa portal o sa mga site na naka-link dito."
+          ]
+        },
+        {
+          "id": "responsibilities",
+          "title": "Ang Iyong mga Pananagutan",
+          "body": [
+            [
+              "Gamitin ang portal nang naaayon sa batas at nang may mabuting loob.",
+              "Huwag subukang guluhin, pabigatin o pasukin nang walang pahintulot ang portal.",
+              "Huwag ipakita ang nilalaman ng portal bilang opisyal na pahayag ng pamahalaan.",
+              "Sa pag-uulat ng mali, magbahagi ng tamang impormasyon at huwag ilathala ang personal na datos ng sinuman."
+            ]
+          ]
+        },
+        {
+          "id": "no-advice",
+          "title": "Hindi Propesyonal na Payo",
+          "body": [
+            "Pangkalahatang impormasyon lamang ang ibinibigay ng portal. Hindi ito legal, pinansyal, medikal o iba pang propesyonal na payo. Para sa payo tungkol sa iyong sitwasyon, kumonsulta sa kwalipikadong propesyonal o sa kinauukulang tanggapan."
+          ]
+        },
+        {
+          "id": "links",
+          "title": "Mga Link sa Labas",
+          "body": [
+            "Nagli-link ang portal sa mga website ng pamahalaan, pinagkukunan ng datos at iba pang site na hindi namin kontrolado. Wala kaming pananagutan sa kanilang nilalaman, pagiging available o paraan ng pangangalaga sa privacy."
+          ]
+        },
+        {
+          "id": "availability",
+          "title": "Pagiging Available",
+          "body": [
+            "Bilang proyekto ng mga boluntaryo, maaaring baguhin, pansamantalang ihinto o itigil ang portal anumang oras nang walang abiso."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Mga Pagbabago sa mga Tuntuning Ito",
+          "body": [
+            "Maaari naming i-update ang mga tuntuning ito. Ipinapakita ng petsa sa ibaba ng pahinang ito ang pinakabagong bersyon. Ang patuloy na paggamit sa portal ay nangangahulugang tinatanggap mo ang mga na-update na tuntunin."
+          ]
+        },
+        {
+          "id": "law",
+          "title": "Batas na Umiiral",
+          "body": ["Ang mga tuntuning ito ay sakop ng mga batas ng Pilipinas."]
+        },
+        {
+          "id": "contact",
+          "title": "Makipag-ugnayan",
+          "body": [
+            "May tanong tungkol sa mga tuntuning ito? Tingnan ang pahinang <contact>Makipag-ugnayan</contact>."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Patakaran sa Privacy",
+      "subtitle": "Kakaunti hangga't maaari ang kinukuha namin. Narito kung ano mismo ang nangyayari kapag ginamit mo ang BetterTaalBatangas.org.",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "Panimula",
+          "body": [
+            "Ang BetterTaalBatangas.org ay isang portal ng impormasyon na pinapatakbo ng mga boluntaryo. Iginagalang namin ang iyong privacy at sinusunod ang mga prinsipyo ng Data Privacy Act of 2012 (Republic Act No. 10173): kunin lamang ang kailangan, gamitin lamang sa malinaw na layunin at panatilihin itong ligtas."
+          ]
+        },
+        {
+          "id": "approach",
+          "title": "Ang Aming Paraan",
+          "body": [
+            [
+              "Walang account, pag-sign up o pag-log in.",
+              "Walang form na kumukuha ng personal na impormasyon.",
+              "Walang analytics, advertising o tracking cookies.",
+              "Hindi kami kailanman nagbebenta o nagpapaupa ng impormasyon tungkol sa aming mga bisita."
+            ]
+          ]
+        },
+        {
+          "id": "collected",
+          "title": "Impormasyong Pinoproseso",
+          "body": [
+            "<strong>Sa iyong device.</strong> Kapag pinalitan mo ang wika, nase-save ang iyong pinili sa local storage ng iyong browser para maalala ito ng site. Hindi ito umaalis sa iyong device, at maaari mo itong burahin sa settings ng iyong browser.",
+            "<strong>Ng aming hosting provider.</strong> Tulad ng anumang website, maaaring magtala ang server na naghahatid ng aming mga pahina ng pangunahing teknikal na datos, tulad ng iyong IP address, uri ng browser at mga pahinang binuksan, para sa seguridad at para tumakbo nang maayos ang site.",
+            "<strong>Ng mga serbisyong nagbibigay ng nilalaman.</strong> Para maipakita ang mga font, panahon at palitan ng pera, kumukuha ang iyong browser ng datos mula sa Google Fonts, Open-Meteo at BetterGov.ph API. Natatanggap ng mga serbisyong ito ang iyong IP address bilang bahagi ng request at pinangangasiwaan ito ayon sa sarili nilang patakaran sa privacy."
+          ]
+        },
+        {
+          "id": "contact-us",
+          "title": "Kapag Nakipag-ugnayan Ka sa Amin",
+          "body": [
+            "Kung gagamitin mo ang aming report form, kinokolekta ang iyong mga sagot sa pamamagitan ng Google Forms at pinangangasiwaan ayon sa patakaran sa privacy ng Google. Ang mga boluntaryong nangangalaga sa portal lamang ang makakakita nito. Ginagamit lang namin ang iyong ipinadala para itama at pagandahin ang portal. Kung mag-email ka sa amin, ginagamit lang namin ang iyong mensahe at address para sumagot at pagandahin ang portal, at hindi namin ito ibinabahagi. Huwag magpadala ng sensitibong personal na impormasyon."
+          ]
+        },
+        {
+          "id": "cookies",
+          "title": "Cookies",
+          "body": [
+            "Hindi kami naglalagay ng cookies. Ang tanging iniimbak namin ay ang piniling wika na nabanggit sa itaas."
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Seguridad ng Datos",
+          "body": [
+            "Ang portal ay isang static na website na inihahatid sa pamamagitan ng HTTPS. Dahil wala kaming database ng impormasyon ng mga bisita, napakakaunting personal na datos ang kailangang protektahan o maaaring mawala."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "Ang Iyong mga Karapatan",
+          "body": [
+            "Sa ilalim ng Data Privacy Act, may karapatan kang malaman, makita, itama at burahin ang iyong personal na datos, at tumutol sa pagproseso nito. Para gamitin ang mga karapatang ito sa anumang mensaheng ipinadala mo sa amin, tingnan ang pahinang <contact>Makipag-ugnayan</contact>.",
+            "Maaari ka ring magsampa ng reklamo sa <npc>National Privacy Commission</npc>."
+          ]
+        },
+        {
+          "id": "children",
+          "title": "Privacy ng mga Bata",
+          "body": [
+            "Ang portal ay para sa pangkalahatang publiko at hindi sinasadyang kumukuha ng impormasyon mula sa mga bata."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "Mga Link ng Ibang Site",
+          "body": [
+            "Nagli-link kami sa mga website ng pamahalaan at iba pa. Sila ang may pananagutan sa sarili nilang paraan ng pangangalaga sa privacy, kaya basahin ang kanilang mga patakaran."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Mga Pagbabago sa Patakarang Ito",
+          "body": [
+            "Kung magbabago ang aming paraan, halimbawa kung magdaragdag kami ng analytics, ia-update muna namin ang pahinang ito. Ipinapakita ng petsa sa ibaba ang pinakabagong bersyon."
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "title": "Pahayag sa Accessibility",
+      "subtitle": "Dapat magamit ng lahat sa Taal ang impormasyon ng pamahalaan, kabilang ang mga nakatatanda at mga taong may kapansanan.",
+      "sections": [
+        {
+          "id": "commitment",
+          "title": "Ang Aming Pangako",
+          "body": [
+            "Layunin naming matugunan ng BetterTaalBatangas.org ang Web Content Accessibility Guidelines (WCAG) 2.1 sa Level AA. Sinusuri namin ang mga pahina habang ginagawa ang mga ito at inaayos ang mga problemang makikita namin."
+          ]
+        },
+        {
+          "id": "features",
+          "title": "Ang Aming Ginagawa",
+          "body": [
+            [
+              "<strong>Madaling basahin:</strong> hindi bababa sa 14 pixel ang laki ng teksto, at pasado sa WCAG AA ang contrast ng kulay ng teksto at background.",
+              "<strong>Simpleng pananalita:</strong> isinulat nang simple ang mga hakbang, requirements at bayarin, isang item bawat linya.",
+              "<strong>Magagamit sa keyboard:</strong> magagamit ang mga menu, link at button kahit walang mouse, at may nakikitang outline kapag naka-focus.",
+              "<strong>Suporta sa screen reader:</strong> may tamang heading, label at alternatibong teksto para sa mga icon at larawan ang mga pahina.",
+              "<strong>Anumang laki ng screen:</strong> gumagana ang bawat pahina sa cellphone, tablet at computer, at kahit naka-zoom ang browser.",
+              "<strong>Dalawang wika:</strong> mababasa ang bawat pahina sa Ingles o Tagalog.",
+              "<strong>Magaang na pahina:</strong> walang kusang tumutugtog na media at walang mabibigat na download, kaya bumubukas ang mga pahina kahit mabagal ang koneksyon."
+            ]
+          ]
+        },
+        {
+          "id": "limitations",
+          "title": "Mga Alam na Limitasyon",
+          "body": [
+            [
+              "Ang ilang dokumentong naka-link, tulad ng Citizen’s Charter, ay mga na-scan na PDF na inilathala ng bayan at maaaring hindi gumana sa screen reader.",
+              "Nasa Ingles lamang ang detalyadong requirements at mga hakbang ng bawat serbisyo, ayon sa pagkakalimbag sa opisyal na Citizen’s Charter.",
+              "Nakadepende sa mga provider ang nilalamang mula sa ibang serbisyo, tulad ng panahon at palitan ng pera."
+            ]
+          ]
+        },
+        {
+          "id": "alternative",
+          "title": "Ibang Paraan ng Pagkuha ng Impormasyon",
+          "body": [
+            "Kung hindi mo magamit ang ilang bahagi ng site, makukuha ang parehong impormasyon sa kinauukulang tanggapan sa Munisipyo ng Taal. Nakalista ang email ng mga tanggapan sa <offices>Direktoryo ng Pamahalaan</offices>."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Puna",
+          "body": [
+            "Kung may mahirap basahin o gamitin, sabihin sa amin sa pahinang <contact>Makipag-ugnayan</contact>. Isama kung aling pahina at ano ang naging problema, at aayusin namin ito."
+          ]
+        }
+      ]
+    }
+  },
+  "seo": {
+    "defaultTitle": "Portal ng Komunidad para sa Taal, Batangas",
+    "defaultDescription": "Gabay na pinapatakbo ng mga boluntaryo sa mga serbisyo, tanggapan at opisyal ng Bayan ng Taal, Batangas.",
+    "homeDescription": "Portal na pinapatakbo ng komunidad para sa Bayan ng Taal, Batangas. Hanapin ang mga serbisyo ng lokal na pamahalaan, hotline, panahon at palitan ng pera.",
+    "homeKeywords": "Taal, Batangas, lokal na pamahalaan, serbisyo, hotline"
+  },
+  "content": {
+    "categories": {
+      "business": {
+        "name": "Negosyo at mga Permit",
+        "description": "Business permit, permit sa tricycle at paglilisensya"
+      },
+      "civil-registry": {
+        "name": "Civil Registry",
+        "description": "Pagpaparehistro ng kapanganakan, kasal at pagkamatay, pagtatama at kopya mula sa PSA"
+      },
+      "property": {
+        "name": "Ari-arian at Amilyar",
+        "description": "Amilyar, tax declaration, sertipikasyon at muling pagtatasa"
+      },
+      "taxes": {
+        "name": "Buwis at Bayarin",
+        "description": "Sedula, buwis sa negosyo at iba pang bayarin sa Tanggapan ng Ingat-Yaman"
+      },
+      "building": {
+        "name": "Pagpapatayo at Konstruksyon",
+        "description": "Building, heritage, fencing, demolition, sign, electrical at occupancy permit"
+      },
+      "health": {
+        "name": "Kalusugan",
+        "description": "Konsultasyon, sertipiko, pagsusuri sa laboratoryo, bakuna at permit sa paglilibing"
+      },
+      "social-welfare": {
+        "name": "Kapakanang Panlipunan",
+        "description": "Tulong sa krisis, case study, at ID para sa Senior Citizen, PWD at Solo Parent"
+      },
+      "jobs": {
+        "name": "Trabaho at Hanapbuhay",
+        "description": "Paghahanap ng trabaho sa PESO, SPES, internship sa pamahalaan, TUPAD, OJT at work endorsement ng Mayor"
+      },
+      "agriculture": {
+        "name": "Agrikultura at Pangisdaan",
+        "description": "Pagpaparehistro ng magsasaka at mangingisda, permit sa bangka, insurance, binhi, pagsusuri ng lupa at bakuna laban sa rabies"
+      },
+      "environment": {
+        "name": "Kapaligiran",
+        "description": "Espesyal na pangongolekta ng basura, reklamo sa polusyon, pagputol ng puno at clearance sa negosyo"
+      },
+      "tourism": {
+        "name": "Turismo",
+        "description": "Guided heritage tour at datos sa turismo"
+      },
+      "community": {
+        "name": "Lehislatibo at Komunidad",
+        "description": "Prangkisa ng tricycle, akreditasyon ng CSO, zoning clearance, reclassification ng lupa at datos ng bayan"
+      }
+    },
+    "services": {
+      "business": {
+        "business-permit": {
+          "title": "Business Permit (Bago at Renewal)",
+          "summary": "Mayor's permit para makapagnegosyo sa Taal, bago man o pag-renew"
+        },
+        "tricycle-permit": {
+          "title": "Permit sa Tricycle (Bago at Renewal)",
+          "summary": "Mayor's permit para sa may-ari ng tricycle, bago man o pag-renew"
+        }
+      },
+      "civil-registry": {
+        "certified-true-copy": {
+          "title": "Certified True Copy",
+          "summary": "Mga certified copy ng birth, marriage at death record na nakarehistro sa Taal"
+        },
+        "birth-registration": {
+          "title": "Pagpaparehistro ng Kapanganakan",
+          "summary": "Napapanahon o huling pagpaparehistro ng kapanganakan ng isang bata"
+        },
+        "marriage-registration": {
+          "title": "Pagpaparehistro ng Kasal",
+          "summary": "Napapanahon o huling pagpaparehistro ng kasal na ginanap sa Taal"
+        },
+        "death-registration": {
+          "title": "Pagpaparehistro ng Pagkamatay",
+          "summary": "Napapanahon o huling pagpaparehistro ng pagkamatay"
+        },
+        "marriage-license": {
+          "title": "Marriage License",
+          "summary": "Kumuha ng lisensya bago magpakasal"
+        },
+        "correction-of-clerical-error": {
+          "title": "Pagtatama ng Clerical Error",
+          "summary": "Itama ang mali sa pagkaka-type o baybay sa birth, marriage o death certificate"
+        },
+        "change-of-first-name-sex-dob": {
+          "title": "Pagpapalit ng Pangalan, Kaarawan o Kasarian",
+          "summary": "Palitan ang unang pangalan, o itama ang araw o buwan ng kapanganakan o ang kasarian sa birth certificate"
+        },
+        "legitimation-and-ausf": {
+          "title": "Legitimation at Paggamit ng Apelyido ng Ama",
+          "summary": "Iparehistro ang legitimation, pagkilala ng ama, o paggamit ng apelyido ng ama (R.A. 9255)"
+        },
+        "psa-documents-breqs": {
+          "title": "Mga Kopya mula sa PSA (BREQS)",
+          "summary": "Humiling ng PSA birth, marriage at death certificate at CENOMAR sa munisipyo"
+        }
+      },
+      "property": {
+        "real-property-tax": {
+          "title": "Pagbabayad ng Amilyar",
+          "summary": "Bayaran ang amilyar (buwis sa lupa at gusali), taunan o kada tatlong buwan"
+        },
+        "new-tax-declaration": {
+          "title": "Bagong Tax Declaration (Paglipat ng May-ari)",
+          "summary": "Ilipat, hatiin o pagsamahin ang tax declaration ng ari-arian"
+        },
+        "certified-tax-declaration": {
+          "title": "Certified Copy ng Tax Declaration",
+          "summary": "Kumuha ng certified copy ng tax declaration ng iyong ari-arian"
+        },
+        "property-certifications-and-maps": {
+          "title": "Mga Sertipikasyon at Mapa ng Ari-arian",
+          "summary": "Certificate of No Improvement, No Property, at mapa ng lokasyon o lupain"
+        },
+        "property-reassessment": {
+          "title": "Muling Pagtatasa ng Ari-arian",
+          "summary": "Humiling ng bagong pagtatasa kapag nasira, nagbago ang gamit, o may mali"
+        }
+      },
+      "taxes": {
+        "business-tax": {
+          "title": "Buwis sa Negosyo at Regulatory Fees",
+          "summary": "Bayaran ang buwis at bayarin para sa iyong Mayor's Permit"
+        },
+        "community-tax-certificate": {
+          "title": "Community Tax Certificate (Sedula)",
+          "summary": "Kumuha ng sedula, para sa indibidwal o korporasyon"
+        },
+        "other-fees-and-charges": {
+          "title": "Iba pang Bayarin",
+          "summary": "Bayarin para sa mga dokumento ng civil registry, permit, clearance at sertipikasyon"
+        }
+      },
+      "building": {
+        "construction-permit-guide": {
+          "title": "Gabay sa mga Permit sa Pagpapatayo",
+          "summary": "Ang mga permit na kailangan, ayon sa pagkakasunod, para magpatayo o magpaayos sa Taal"
+        },
+        "building-permit": {
+          "title": "Building Permit",
+          "summary": "Permit para magpatayo, magpaayos, magbago o magdagdag sa isang gusali"
+        },
+        "heritage-building-permit": {
+          "title": "Building Permit sa Heritage Village",
+          "summary": "Karagdagang clearance para magpatayo o magpaayos sa loob ng Heritage Village ng Taal"
+        },
+        "fencing-permit": {
+          "title": "Fencing Permit",
+          "summary": "Karagdagang permit para sa bakod, bangketa at scaffolding"
+        },
+        "demolition-permit": {
+          "title": "Demolition Permit",
+          "summary": "Permit para gibain ang buo o bahagi ng gusali o istruktura"
+        },
+        "sign-permit": {
+          "title": "Sign Permit",
+          "summary": "Permit para maglagay, magkumpuni o magtanggal ng karatula"
+        },
+        "occupancy-permit": {
+          "title": "Occupancy Permit",
+          "summary": "Kailangan bago magamit ang bagong gusali"
+        },
+        "electrical-permit": {
+          "title": "Electrical Permit (Pagkakabit ng Kuryente)",
+          "summary": "Kailangan bago makapagkabit ng metro ng kuryente ang BATELEC I"
+        }
+      },
+      "health": {
+        "medical-consultation": {
+          "title": "Konsultasyong Medikal (OPD)",
+          "summary": "Libreng check-up at gamot sa Rural Health Unit"
+        },
+        "dental-services": {
+          "title": "Serbisyong Dental",
+          "summary": "Dental check-up, payo sa paglilinis ng ngipin, pasta at bunot"
+        },
+        "medical-certificate": {
+          "title": "Medical Certificate",
+          "summary": "Para sa pagliban sa trabaho o paaralan, pag-aaral, trabaho, medico-legal at iba pang gamit"
+        },
+        "health-certificate": {
+          "title": "Sanitary Permit at Health Certificate",
+          "summary": "Health certificate para sa mga humahawak ng pagkain at manggagawa sa kainan"
+        },
+        "family-planning": {
+          "title": "Family Planning",
+          "summary": "Mga paraan, gamit at pagpapayo sa family planning"
+        },
+        "laboratory-tests": {
+          "title": "Mga Pagsusuri sa Laboratoryo",
+          "summary": "Pangunahing pagsusuri ng dugo, ihi at dumi sa halos kalahati ng karaniwang presyo"
+        },
+        "maternal-care": {
+          "title": "Pangangalaga Bago at Pagkatapos Manganak",
+          "summary": "Check-up para sa mga buntis at bagong panganak na ina"
+        },
+        "immunization": {
+          "title": "Bakuna para sa mga Bata",
+          "summary": "Libreng bakuna para sa mga bata laban sa mga sakit na naiiwasan"
+        },
+        "animal-bite-treatment": {
+          "title": "Gamutan sa Kagat ng Hayop",
+          "summary": "Libreng pagsusuri at bakuna laban sa rabies matapos makagat ng hayop"
+        },
+        "tb-dots": {
+          "title": "Gamutan sa TB (DOTS)",
+          "summary": "Libreng pagsusuri, gamot at suporta sa gamutan para sa TB"
+        },
+        "pre-marriage-counseling": {
+          "title": "Pre-Marriage Counseling",
+          "summary": "Pagpapayong kailangan bago makakuha ng marriage license"
+        },
+        "social-hygiene-registration": {
+          "title": "Pagpaparehistro sa Social Hygiene",
+          "summary": "Pagpaparehistro at health card para sa mga manggagawa sa entertainment establishment"
+        },
+        "gram-staining": {
+          "title": "Gram Staining (Social Hygiene Clinic)",
+          "summary": "Nakatakdang check-up para sa mga rehistradong entertainment worker"
+        },
+        "blood-request": {
+          "title": "Paghingi ng Dugo",
+          "summary": "Tulong sa pagkuha ng dugo mula sa blood bank para sa pasyente"
+        },
+        "disease-reporting": {
+          "title": "Pag-uulat ng Kaso ng Sakit",
+          "summary": "Iulat ang kaso ng sakit sa inyong komunidad para masuri"
+        },
+        "philhealth-konsulta": {
+          "title": "Pagpaparehistro sa PhilHealth Konsulta",
+          "summary": "Magparehistro sa libreng primary care package ng PhilHealth"
+        },
+        "maintenance-medicines": {
+          "title": "Libreng Maintenance na Gamot",
+          "summary": "Libreng maintenance na gamot para sa mga pasyenteng nasa masterlist"
+        },
+        "permit-to-bury": {
+          "title": "Permit sa Paglilibing",
+          "summary": "Kailangan sa bawat paglilibing sa Taal"
+        },
+        "permit-to-transfer-remains": {
+          "title": "Permit sa Paglilipat ng Labi",
+          "summary": "Permit para ilipat ang labi sa loob o labas ng Taal"
+        },
+        "permit-to-open-grave": {
+          "title": "Permit sa Pagbubukas ng Libingan",
+          "summary": "Permit para sa paghukay o pagbubukas ng libingan o nitso"
+        }
+      },
+      "social-welfare": {
+        "aics": {
+          "title": "Tulong sa Panahon ng Krisis (AICS)",
+          "summary": "Tulong sa pagpapalibing, pagpapagamot, pamasahe at iba pang emergency"
+        },
+        "social-case-study": {
+          "title": "Social Case Study Report",
+          "summary": "Case study report para sa ospital, charity, pag-ampon o kaso sa korte"
+        },
+        "disaster-relief": {
+          "title": "Tulong sa Panahon ng Kalamidad",
+          "summary": "Relief goods, materyales sa bahay at tulong pinansyal matapos ang kalamidad"
+        },
+        "solo-parent-id": {
+          "title": "Solo Parent ID",
+          "summary": "ID para sa mga solo parent sa ilalim ng Solo Parent Welfare Act"
+        },
+        "pwd-id": {
+          "title": "PWD ID",
+          "summary": "ID para sa mga taong may kapansanan sa ilalim ng Magna Carta for Disabled Persons"
+        },
+        "certificate-of-indigency": {
+          "title": "Certificate of Indigency",
+          "summary": "Kailangan para makahingi ng tulong sa charity, tanggapan ng pamahalaan at NGO"
+        },
+        "senior-citizen-id": {
+          "title": "Senior Citizen ID",
+          "summary": "OSCA ID para makuha ng mga senior citizen ang mga benepisyong itinakda ng batas"
+        }
+      },
+      "jobs": {
+        "local-recruitment": {
+          "title": "Local Recruitment Activity",
+          "summary": "Paghahanap ng trabaho at referral sa mga pribadong kompanya para sa mga Taaleño"
+        },
+        "spes": {
+          "title": "SPES (Trabaho para sa Estudyante)",
+          "summary": "Panandaliang trabaho para sa mahihirap ngunit karapat-dapat na estudyante at out-of-school youth"
+        },
+        "gip": {
+          "title": "Government Internship Program (GIP)",
+          "summary": "Bayad na panandaliang trabaho sa tanggapan ng pamahalaan para sa estudyante at bagong graduate"
+        },
+        "tupad": {
+          "title": "TUPAD (Emergency na Trabaho)",
+          "summary": "Panandaliang bayad na trabaho sa komunidad para sa mga disadvantaged at nawalan ng trabaho"
+        },
+        "career-coaching": {
+          "title": "Career Coaching",
+          "summary": "Libreng gabay sa karera at paghahanap ng trabaho para sa mga batang naghahanap ng trabaho"
+        },
+        "ojt-immersion": {
+          "title": "OJT at Immersion",
+          "summary": "On-the-job training at immersion sa mga tanggapan ng LGU para sa mga estudyante"
+        },
+        "work-endorsement": {
+          "title": "Occupational Permit (Work Endorsement)",
+          "summary": "Endorsement ng Mayor para sa mga naghahanap ng trabaho"
+        },
+        "mayors-clearance-pnp": {
+          "title": "Mayor's Clearance (Aplikante sa PNP)",
+          "summary": "Mayor's clearance para sa mga aplikante sa Philippine National Police"
+        }
+      },
+      "agriculture": {
+        "farmer-fisherfolk-registration": {
+          "title": "Pagpaparehistro ng Magsasaka at Mangingisda",
+          "summary": "Magparehistro sa Ani at Kita para makasali sa mga programang pang-agrikultura"
+        },
+        "boat-permit": {
+          "title": "Permit sa Bangka",
+          "summary": "Lisensya para sa bangkang pangisda na mas mababa sa 3 gross ton sa municipal waters"
+        },
+        "crop-livestock-boat-insurance": {
+          "title": "Insurance sa Pananim, Hayop at Bangka",
+          "summary": "I-insure ang pananim, alagang hayop at bangkang pangisda laban sa natural na pagkalugi"
+        },
+        "insurance-claim-assistance": {
+          "title": "Tulong sa Insurance Claim",
+          "summary": "Tulong sa pag-file ng claim para sa nasirang pananim, hayop o bangkang naka-insure"
+        },
+        "agriculture-certificates": {
+          "title": "Sertipiko sa Inspeksyon ng Hayop at Punong Namumunga",
+          "summary": "Animal Inspection Certificate at sertipiko para pumutol ng punong namumunga"
+        },
+        "anti-rabies-vaccination": {
+          "title": "Bakuna Laban sa Rabies",
+          "summary": "Libreng maramihang bakuna sa mga aso sa barangay, o walk-in tuwing Biyernes"
+        },
+        "hvcc-seeds": {
+          "title": "Mga Binhi ng Gulay at Pananim",
+          "summary": "Libreng de-kalidad na binhi para sa pagtatanim sa bakuran, bahagi ng food security"
+        },
+        "soil-analysis": {
+          "title": "Pagsusuri ng Lupa",
+          "summary": "Libreng pagsusuri ng lupa at rekomendasyon sa pataba para sa iyong sakahan"
+        },
+        "farm-technical-assistance": {
+          "title": "Teknikal na Tulong sa Magsasaka",
+          "summary": "Payo at tulong sa mismong sakahan para sa mga problema sa pagsasaka"
+        },
+        "animal-dispersal": {
+          "title": "Dispersal ng Baboy at Baka",
+          "summary": "Tumanggap ng biik o guya na aalagaan, saka ipasa ang anak nito sa ibang magsasaka"
+        },
+        "farmers-association": {
+          "title": "Pagbuo ng Samahan ng Magsasaka",
+          "summary": "Tulong sa pagbuo ng samahan ng magsasaka na makikipag-ugnayan sa mga ahensya ng pamahalaan"
+        },
+        "farm-seminars": {
+          "title": "Seminar at Pagsasanay sa Kabuhayan",
+          "summary": "Humiling ng seminar at pagsasanay sa kabuhayan para sa magsasaka at mangingisda"
+        }
+      },
+      "environment": {
+        "special-garbage-collection": {
+          "title": "Espesyal na Pangongolekta ng Basura",
+          "summary": "Pangongolekta ng basura sa labas ng regular na iskedyul"
+        },
+        "environmental-complaint": {
+          "title": "Reklamo sa Polusyon at Kapaligiran",
+          "summary": "Iulat ang polusyon, problema sa kalinisan at paglabag sa batas pangkapaligiran"
+        },
+        "tree-cutting-no-objection": {
+          "title": "Pagputol ng Punong Hindi Namumunga",
+          "summary": "Certificate of no objection para pumutol ng punong hindi namumunga"
+        },
+        "menro-business-clearance": {
+          "title": "MENRO Clearance para sa Business Permit",
+          "summary": "Pag-apruba pangkapaligiran na kailangan sa aplikasyon ng business permit"
+        }
+      },
+      "tourism": {
+        "guided-tour-walk-in": {
+          "title": "Guided Heritage Tour (Walk-in)",
+          "summary": "Walk-in na guided tour sa mga lumang bahay at museo ng Taal"
+        },
+        "guided-tour-scheduled": {
+          "title": "Naka-iskedyul na Guided Tour",
+          "summary": "Mag-book nang maaga ng guided heritage tour para sa grupo, paaralan at kompanya"
+        },
+        "tourism-data-request": {
+          "title": "Paghingi ng Datos sa Turismo",
+          "summary": "Impormasyon sa turismo para sa estudyante, kompanya at ahensya"
+        }
+      },
+      "community": {
+        "cso-accreditation": {
+          "title": "CSO Accreditation",
+          "summary": "Akreditasyon ng mga civil society organization at NGO ng Sangguniang Bayan"
+        },
+        "tricycle-franchise": {
+          "title": "Prangkisa ng Tricycle",
+          "summary": "Prangkisa para makapagpatakbo ng tricycle sa Taal: bago, renewal o second hand"
+        },
+        "tricycle-no-record": {
+          "title": "Certificate of No Record (Tricycle)",
+          "summary": "Patunay na walang nakatalang prangkisa ang isang tricycle"
+        },
+        "tricycle-franchise-cancellation": {
+          "title": "Pagkansela ng Prangkisa ng Tricycle",
+          "summary": "Ikansela ang prangkisa ng tricycle at kumuha ng certificate of cancellation"
+        },
+        "toda-certification": {
+          "title": "TODA Certification",
+          "summary": "Pagpapatunay sa listahan ng mga opisyal at miyembro ng isang TODA"
+        },
+        "complaint-against-barangay-officials": {
+          "title": "Reklamo Laban sa Opisyal ng Barangay",
+          "summary": "Magsampa ng administratibong reklamo laban sa halal na opisyal ng barangay"
+        },
+        "zoning-clearance": {
+          "title": "Zoning Clearance",
+          "summary": "Kailangan bago ang building o business permit, para matiyak na tugma sa zoning"
+        },
+        "land-reclassification": {
+          "title": "Reclassification ng Lupa",
+          "summary": "Baguhin ang klasipikasyon ng lupang agrikultural para sa tirahan, komersyo o industriya"
+        },
+        "municipal-data-request": {
+          "title": "Paghingi ng Datos ng Bayan",
+          "summary": "Datos tungkol sa Taal para sa estudyante, mananaliksik at negosyo"
+        }
+      }
+    },
+    "lifeEvents": {
+      "Starting a Business": "Pagsisimula ng Negosyo",
+      "Getting Married": "Pagpapakasal",
+      "Having a Baby": "Pagkakaroon ng Anak",
+      "Building or Renovating": "Pagpapatayo o Pagpapaayos",
+      "Losing a Loved One": "Pagpanaw ng Mahal sa Buhay",
+      "Turning 60": "Pagsapit sa Edad 60"
+    },
+    "offices": {
+      "mayor": {
+        "name": "Tanggapan ng Punong Bayan",
+        "headTitle": "Punong Bayan"
+      },
+      "administrator": {
+        "name": "Tanggapan ng Municipal Administrator",
+        "headTitle": "Municipal Administrator"
+      },
+      "bplo": {
+        "name": "Tanggapan ng Business Permit at Paglilisensya",
+        "headTitle": "Business Permit and Licensing Officer",
+        "note": "Nakalista ang pinuno sa Committee on Anti-Red Tape (p. 209)."
+      },
+      "mcr": {
+        "name": "Tanggapan ng Municipal Civil Registrar",
+        "headTitle": "Municipal Civil Registrar (Officer-in-Charge)"
+      },
+      "mto": {
+        "name": "Tanggapan ng Ingat-Yaman ng Bayan",
+        "headTitle": "Ingat-Yaman ng Bayan"
+      },
+      "assessor": {
+        "name": "Tanggapan ng Tagatasa ng Bayan",
+        "headTitle": "Tagatasa ng Bayan"
+      },
+      "meo": {
+        "name": "Tanggapan ng Inhinyero ng Bayan",
+        "headTitle": "Inhinyero ng Bayan"
+      },
+      "heritage": {
+        "name": "Taal Heritage Preservation Council",
+        "headTitle": "Konseho"
+      },
+      "mho": {
+        "name": "Tanggapang Pangkalusugan ng Bayan (Rural Health Unit)",
+        "headTitle": "Municipal Health Officer"
+      },
+      "mswdo": {
+        "name": "Tanggapan ng Kagalingang Panlipunan at Pagpapaunlad",
+        "headTitle": "Municipal Social Welfare and Development Officer"
+      },
+      "mpdc": {
+        "name": "Tanggapan ng Pagpaplano at Pagpapaunlad ng Bayan",
+        "headTitle": "Municipal Planning and Development Coordinator"
+      },
+      "budget": {
+        "name": "Tanggapan ng Badyet ng Bayan",
+        "headTitle": "Municipal Budget Officer",
+        "note": "Sa listahan ng Charter, si Atty. Jecah Grace F. Nieva ang nakalagay sa hanay na ito, pero siya ang pinuno ng BPLO sa ibang bahagi. Kukumpirmahin pa."
+      },
+      "accounting": {
+        "name": "Tanggapan ng Accounting ng Bayan",
+        "headTitle": "Municipal Accountant"
+      },
+      "hr": {
+        "name": "Tanggapan ng Human Resource Management",
+        "headTitle": "Human Resource Management Officer"
+      },
+      "gso": {
+        "name": "Tanggapan ng General Services",
+        "headTitle": "General Services Officer"
+      },
+      "agriculture": {
+        "name": "Tanggapan ng Agrikultura ng Bayan",
+        "headTitle": "Municipal Agriculturist"
+      },
+      "menro": {
+        "name": "Tanggapan ng Kapaligiran at Likas na Yaman ng Bayan",
+        "headTitle": "Municipal Environment and Natural Resources Officer"
+      },
+      "tourism": {
+        "name": "Tanggapan ng Turismo ng Bayan",
+        "headTitle": "Municipal Tourism Officer"
+      },
+      "peso": {
+        "name": "Public Employment Service Office",
+        "headTitle": "Pinuno ng Tanggapan"
+      },
+      "sb-secretariat": {
+        "name": "Tanggapan ng Sangguniang Bayan",
+        "headTitle": "Pinuno ng Tanggapan"
+      },
+      "mdrrmo": {
+        "name": "Tanggapan ng Pamamahala sa Panganib ng Sakuna",
+        "headTitle": "MDRRM Officer",
+        "note": "Hindi nakalista sa Citizen's Charter."
+      }
+    },
+    "branches": {
+      "executive": {
+        "name": "Sangay Tagapagpaganap",
+        "description": "Ang Punong Bayan at ang mga tanggapang nagpapatupad ng mga programa at naghahatid ng serbisyo.",
+        "categoryLabel": "Mga Kategorya ng Tagapagpaganap"
+      },
+      "legislative": {
+        "name": "Sangay Tagapagbatas",
+        "description": "Ang Sangguniang Bayan, na nagpapasa ng mga ordinansa at resolusyon para sa bayan.",
+        "categoryLabel": "Mga Kategorya ng Tagapagbatas"
+      },
+      "offices": {
+        "name": "Mga Tanggapan ng Bayan",
+        "description": "Mga departamento ng pamahalaang bayan at ang mga opisyal na namumuno sa mga ito.",
+        "categoryLabel": "Mga Kategorya ng Tanggapan"
+      },
+      "barangays": {
+        "name": "Mga Barangay",
+        "description": "Ang 42 barangay ng Taal at ang kanilang mga lokal na opisyal.",
+        "categoryLabel": ""
+      }
+    },
+    "branchOffices": {
+      "office-of-the-mayor": "Tanggapan ng Punong Bayan",
+      "office-of-the-vice-mayor": "Tanggapan ng Pangalawang Punong Bayan",
+      "sangguniang-bayan": "Sangguniang Bayan ng Taal"
+    },
+    "roles": {
+      "Municipal Mayor": "Punong Bayan",
+      "Municipal Vice Mayor": "Pangalawang Punong Bayan",
+      "Presiding Officer": "Tagapangulo ng Sesyon",
+      "Sangguniang Bayan Member": "Kagawad ng Sangguniang Bayan",
+      "Liga ng mga Barangay President": "Pangulo ng Liga ng mga Barangay",
+      "SK Federation President": "Pangulo ng SK Federation"
+    },
+    "groups": {
+      "Municipal Councilors": "Mga Kagawad ng Bayan",
+      "Ex Officio Members": "Mga Ex Officio na Kasapi"
+    },
+    "hotlines": {
+      "taal-mdrrmo": {
+        "description": "Pagtugon sa sakuna, pagliligtas, paglikas at ambulansya ng bayan.",
+        "featured": "Rescue (MDRRMO)"
+      },
+      "taal-police": {
+        "description": "Tulong ng pulis at pag-uulat ng krimen sa bayan.",
+        "name": "PNP Taal Municipal Police Station",
+        "featured": "Pulis"
+      },
+      "taal-fire": {
+        "description": "Sunog at pagliligtas sa bayan.",
+        "name": "BFP Taal Fire Station",
+        "featured": "Bumbero"
+      },
+      "pcg-batangas": {
+        "description": "Pagliligtas sa dagat at mga emergency sa Balayan Bay. Walang sariling Coast Guard sub-station ang Taal.",
+        "name": "Philippine Coast Guard Station Batangas",
+        "featured": "Coast Guard"
+      },
+      "taal-polymedic": {
+        "description": "Ospital sa Barangay Carsuche, Diversion Road, Taal, na may emergency room.",
+        "featured": "Ospital"
+      },
+      "taal-rhu": {
+        "description": "Tanggapang Pangkalusugan ng Bayan sa Barangay Carsuche.",
+        "name": "Rural Health Unit ng Taal"
+      },
+      "taal-mswdo": {
+        "description": "Tulong pangkapakanang panlipunan para sa mga residente.",
+        "name": "MSWDO ng Taal"
+      },
+      "taal-municipal-hall": {
+        "description": "Tanggapan ng Punong Bayan at iba pang usapin ng bayan.",
+        "name": "Munisipyo ng Taal"
+      },
+      "national-emergency": {
+        "description": "Pambansang hotline para sa pulis, bumbero at tulong medikal.",
+        "name": "Pambansang Emergency Hotline"
+      },
+      "red-cross": {
+        "description": "Pagtugon sa emergency, tulong sa sakuna at pagbibigay ng dugo."
+      },
+      "ndrrmc": {
+        "description": "Nag-uugnay sa pambansang paghahanda, pagtugon at pagbangon mula sa sakuna."
+      },
+      "phivolcs": {
+        "description": "Babala sa lindol, tsunami at pagputok ng bulkan, kasama ang Bulkang Taal."
+      },
+      "pnp": {
+        "description": "Hotline ng pulisya para sa krimen at kaligtasan ng publiko."
+      },
+      "bfp": {
+        "description": "Pag-iwas sa sunog, pagliligtas at kaugnay na emergency."
+      },
+      "pcg": {
+        "description": "Kaligtasan sa dagat, pagliligtas at pagpapatupad ng batas sa karagatan."
+      },
+      "dotr": {
+        "description": "Serbisyo sa pampublikong transportasyon at reklamo ng pasahero."
+      },
+      "lto": {
+        "description": "Pagpaparehistro ng sasakyan, lisensya at kaligtasan sa kalsada."
+      },
+      "ltfrb": {
+        "description": "Mga pampublikong sasakyan at reklamo sa transportasyon."
+      },
+      "pagasa": {
+        "description": "Taya ng panahon, babala sa baha at abiso sa bagyo."
+      },
+      "dswd": {
+        "description": "Serbisyong panlipunan at tulong sa mga pamilyang nasalanta."
+      },
+      "vawc": {
+        "description": "Mag-ulat at humingi ng tulong laban sa karahasan sa kababaihan at mga bata.",
+        "name": "Karahasan Laban sa Kababaihan at mga Bata (VAWC)"
+      },
+      "ncmh": {
+        "description": "24/7 na crisis hotline at suporta sa kalusugang pangkaisipan."
+      }
+    },
+    "weather": {
+      "clearSky": "Maaliwalas",
+      "mainlyClear": "Halos maaliwalas",
+      "partlyCloudy": "Bahagyang maulap",
+      "overcast": "Makulimlim",
+      "fog": "Hamog",
+      "drizzle": "Ambon",
+      "lightRain": "Mahinang ulan",
+      "moderateRain": "Katamtamang ulan",
+      "heavyRain": "Malakas na ulan",
+      "rainShowers": "Pag-ulan",
+      "thunderstorm": "Kulog at kidlat",
+      "cloudy": "Maulap"
+    }
   }
 }

@@ -1,6 +1,7 @@
 import { useLocation, useSearchParams } from 'react-router';
 import { ExternalLink, Mail, MapPin, Phone, Users } from 'lucide-react';
 import SEO from '../../components/SEO';
+import { useContent, type Content } from '../../lib/useContent';
 import BarangayDirectory from '../../components/government/BarangayDirectory';
 import {
   PageBody,
@@ -23,11 +24,21 @@ import {
   type OfficialGroup,
 } from '../../data/officials';
 
-const displayName = (p: Official) =>
-  p.name === TBC ? TBC : [p.honorific, p.name].filter(Boolean).join(' ');
+const displayName = (p: Official, c: Content) =>
+  p.name === TBC
+    ? c.t('common.tbc')
+    : [p.honorific, p.name].filter(Boolean).join(' ');
 
 // Head of an office: initial in a circle beside the role, name and nickname.
-function LeadCard({ person }: { person: Official }) {
+// `officeKey` picks the translated head title for department offices.
+function LeadCard({
+  person,
+  officeKey,
+}: {
+  person: Official;
+  officeKey?: string;
+}) {
+  const c = useContent();
   const tbc = person.name === TBC;
   const initial = tbc
     ? '?'
@@ -42,7 +53,7 @@ function LeadCard({ person }: { person: Official }) {
       </span>
       <div className="min-w-0">
         <p className="text-sm font-bold uppercase tracking-wide text-primary-700">
-          {person.role}
+          {c.role(person, officeKey)}
         </p>
         <h3
           className={cn(
@@ -50,7 +61,7 @@ function LeadCard({ person }: { person: Official }) {
             tbc ? 'italic text-gray-700' : 'text-gray-900'
           )}
         >
-          {displayName(person)}
+          {displayName(person, c)}
         </h3>
         {person.knownAs && (
           <p className="text-base text-gray-700">
@@ -63,6 +74,7 @@ function LeadCard({ person }: { person: Official }) {
 }
 
 function PersonRow({ person }: { person: Official }) {
+  const c = useContent();
   const tbc = person.name === TBC;
   return (
     <li className="border-b border-gray-200 py-3">
@@ -72,14 +84,14 @@ function PersonRow({ person }: { person: Official }) {
           tbc ? 'text-gray-700 italic' : 'text-gray-900'
         )}
       >
-        {displayName(person)}
+        {displayName(person, c)}
         {person.knownAs && (
           <span className="ml-1 text-gray-700">
             &ldquo;{person.knownAs}&rdquo;
           </span>
         )}
       </div>
-      <div className="text-base text-gray-700">{person.role}</div>
+      <div className="text-base text-gray-700">{c.role(person)}</div>
       {person.phone && (
         <div className="mt-1 flex items-center gap-1 text-sm text-gray-700">
           <Phone className="h-3 w-3" aria-hidden="true" />
@@ -93,6 +105,7 @@ function PersonRow({ person }: { person: Official }) {
 // Groups with many people (e.g. the 8 councilors) span two columns and
 // list their people in two columns.
 function GroupCard({ group }: { group: OfficialGroup }) {
+  const c = useContent();
   const wide = group.people.length > 4;
   return (
     <div
@@ -102,7 +115,7 @@ function GroupCard({ group }: { group: OfficialGroup }) {
       )}
     >
       <h3 className="mb-2 border-b border-gray-200 pb-3 text-lg font-bold text-gray-900">
-        {group.title}
+        {c.group(group.title)}
       </h3>
       <ul className={cn(wide && 'grid gap-x-8 sm:grid-cols-2')}>
         {group.people.map(p => (
@@ -114,6 +127,8 @@ function GroupCard({ group }: { group: OfficialGroup }) {
 }
 
 export default function GovernmentDirectory() {
+  const c = useContent();
+  const { t } = c;
   const branchSlug = useLocation().pathname.split('/')[2];
   const [params, setParams] = useSearchParams();
 
@@ -134,14 +149,14 @@ export default function GovernmentDirectory() {
     const active = !b.href && b.slug === branch.slug;
     return {
       key: b.slug,
-      label: b.name,
+      label: c.branchName(b),
       icon: b.icon,
       href: b.href ?? `/government/${b.slug}`,
       active,
       children: active
         ? b.offices.map(o => ({
             key: o.slug,
-            label: o.name,
+            label: c.directoryOfficeName(o),
             active: o.slug === office?.slug,
             onClick: () => setParams({ office: o.slug }),
           }))
@@ -149,29 +164,38 @@ export default function GovernmentDirectory() {
     };
   });
 
+  const branchName = c.branchName(branch);
+  const officeName = office ? c.directoryOfficeName(office) : '';
+  // Department offices use their office key as slug (see officials.ts).
+  const officeKey = branch.slug === 'offices' ? office?.slug : undefined;
+
   return (
     <main className="flex-grow">
       <SEO
-        title={office ? `${office.name} - ${branch.name}` : branch.name}
-        description="Directory of the officials of the Municipality of Taal, Batangas."
+        title={office ? `${officeName} - ${branchName}` : branchName}
+        description={t('governmentPage.seoDescription')}
       />
       <PageHeader
         crumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'Government', href: '/government' },
-          { label: branch.name },
+          { label: t('common.home'), href: '/' },
+          { label: t('navbar.government'), href: '/government' },
+          { label: branchName },
         ]}
-        title="Taal Government Directory"
-        subtitle={`Explore the officials and offices of the Municipality of Taal, term ${OFFICIALS_TERM}`}
+        title={t('governmentPage.title')}
+        subtitle={t('governmentPage.subtitle', { term: OFFICIALS_TERM })}
       />
-      <PageBody sidebar={<SideNav title="Government" items={branchItems} />}>
+      <PageBody
+        sidebar={<SideNav title={t('navbar.government')} items={branchItems} />}
+      >
         {office ? (
           <>
             <Panel>
               <PanelHeading
-                eyebrow={branch.name}
-                title={office.name}
-                text={office.description ?? branch.description}
+                eyebrow={branchName}
+                title={officeName}
+                text={
+                  c.directoryOfficeNote(office) ?? c.branchDescription(branch)
+                }
               />
               <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-base text-gray-800">
                 <li className="flex items-center gap-2">
@@ -179,8 +203,9 @@ export default function GovernmentDirectory() {
                     className="h-4 w-4 shrink-0 text-gray-700"
                     aria-hidden="true"
                   />
-                  {countOfficials(office)}{' '}
-                  {countOfficials(office) === 1 ? 'official' : 'officials'}
+                  {t('governmentPage.officials', {
+                    count: countOfficials(office),
+                  })}
                 </li>
                 {office.contact && (
                   <>
@@ -190,7 +215,7 @@ export default function GovernmentDirectory() {
                           className="h-4 w-4 shrink-0 text-gray-700"
                           aria-hidden="true"
                         />
-                        {office.contact.address}
+                        {c.address(office.contact.address)}
                       </li>
                     )}
                     {office.contact.phone && (
@@ -238,7 +263,7 @@ export default function GovernmentDirectory() {
 
               {(lead || groups.length > 0) && (
                 <div className="mt-6 space-y-5 border-t border-gray-200 pt-6">
-                  {lead && <LeadCard person={lead} />}
+                  {lead && <LeadCard person={lead} officeKey={officeKey} />}
                   {groups.length > 0 && (
                     <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
                       {groups.map(g => (
@@ -251,8 +276,12 @@ export default function GovernmentDirectory() {
             </Panel>
 
             <p className="text-sm text-gray-700">
-              Officials as of {OFFICIALS_AS_OF}, based on the May 2025 election
-              results. Sources:{' '}
+              {t('governmentPage.asOf', {
+                date: c.date(new Date(`${OFFICIALS_AS_OF}-01T12:00:00`), {
+                  month: 'long',
+                  year: 'numeric',
+                }),
+              })}{' '}
               {OFFICIALS_SOURCES.map((s, i) => (
                 <span key={s.url}>
                   <a
@@ -266,7 +295,7 @@ export default function GovernmentDirectory() {
                   {i < OFFICIALS_SOURCES.length - 1 ? '; ' : '.'}
                 </span>
               ))}{' '}
-              Spot an error? Let us know so we can correct it.
+              {t('governmentPage.spotError')}
             </p>
           </>
         ) : (

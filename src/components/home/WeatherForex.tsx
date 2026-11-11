@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { Link } from 'react-router';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from '../../hooks/useTranslation';
+import { useContent } from '../../lib/useContent';
 import {
   FOREX_API_URL,
   flagEmoji,
@@ -9,11 +10,7 @@ import {
   titleCase,
   useForex,
 } from '../../lib/bettergovApi';
-import {
-  OPEN_METEO_CREDIT,
-  describeWeatherCode,
-  useWeather,
-} from '../../lib/weather';
+import { OPEN_METEO_CREDIT, useWeather } from '../../lib/weather';
 import WeatherIcon from '../ui/WeatherIcon';
 import ErrorBoundary from '../ui/ErrorBoundary';
 
@@ -83,8 +80,8 @@ function Status({ loading }: { loading: boolean }) {
   );
 }
 
-const asOfTime = (iso: string) =>
-  new Date(iso).toLocaleString('en-PH', {
+const asOfTime = (iso: string, locale: string) =>
+  new Date(iso).toLocaleString(locale, {
     month: 'short',
     day: 'numeric',
     hour: 'numeric',
@@ -92,14 +89,15 @@ const asOfTime = (iso: string) =>
   });
 
 // "2026-11-11" -> "Wed" (or "Miy" in Tagalog), read as a calendar date.
-const dayName = (date: string, lang: string) =>
-  new Date(`${date}T12:00:00+08:00`).toLocaleDateString(
-    lang === 'fil' ? 'fil-PH' : 'en-PH',
-    { weekday: 'short', timeZone: 'Asia/Manila' }
-  );
+const dayName = (date: string, locale: string) =>
+  new Date(`${date}T12:00:00+08:00`).toLocaleDateString(locale, {
+    weekday: 'short',
+    timeZone: 'Asia/Manila',
+  });
 
 function WeatherCard() {
-  const { t, i18n } = useTranslation();
+  const c = useContent();
+  const { t, locale } = c;
   const { data, loading } = useWeather();
   const taal = data?.[0];
   const today = taal?.daily[0];
@@ -110,7 +108,9 @@ function WeatherCard() {
       <CardHeader
         title={t('home.weatherPlace')}
         meta={
-          taal?.time ? `${t('home.asOf')} ${asOfTime(taal.time)}` : undefined
+          taal?.time
+            ? `${t('home.asOf')} ${asOfTime(taal.time, locale)}`
+            : undefined
         }
       />
       {taal ? (
@@ -124,12 +124,17 @@ function WeatherCard() {
                 {Math.round(taal.temperature)}°C
               </p>
               <p className="mt-2 text-xl font-bold text-gray-900">
-                {describeWeatherCode(taal.code).label}
+                {c.weather(taal.code)}
               </p>
               {today && (
                 <p className="mt-1 text-base text-gray-800">
-                  {t('home.high')} {Math.round(today.max)}° · {t('home.low')}{' '}
-                  {Math.round(today.min)}°
+                  <span className="whitespace-nowrap">
+                    {t('home.high')} {Math.round(today.max)}°
+                  </span>{' '}
+                  ·{' '}
+                  <span className="whitespace-nowrap">
+                    {t('home.low')} {Math.round(today.min)}°
+                  </span>
                 </p>
               )}
             </div>
@@ -143,15 +148,13 @@ function WeatherCard() {
                 {next.map(d => (
                   <li key={d.date} className="flex items-center gap-3 py-2">
                     <span className="w-12 text-base font-bold text-gray-900">
-                      {dayName(d.date, i18n.language)}
+                      {dayName(d.date, locale)}
                     </span>
                     <WeatherIcon
                       code={d.code}
                       className="h-6 w-6 text-accent-700"
                     />
-                    <span className="sr-only">
-                      {describeWeatherCode(d.code).label}
-                    </span>
+                    <span className="sr-only">{c.weather(d.code)}</span>
                     <span className="ml-auto text-base tabular-nums text-gray-900">
                       <span className="font-bold">{Math.round(d.max)}°</span>{' '}
                       <span className="text-gray-700">
@@ -178,7 +181,8 @@ function WeatherCard() {
 }
 
 function ForexCard() {
-  const { t } = useTranslation();
+  const c = useContent();
+  const { t } = c;
   const { data, loading } = useForex();
   const rates = FOREX_SHOWN.map(code =>
     data?.rates.find(r => r.symbol === code)
@@ -191,10 +195,11 @@ function ForexCard() {
         title={t('home.forexTitle')}
         meta={
           published
-            ? `${t('home.asOf')} ${new Date(published).toLocaleDateString(
-                'en-PH',
-                { month: 'short', day: 'numeric', year: 'numeric' }
-              )}`
+            ? `${t('home.asOf')} ${c.date(new Date(published), {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+              })}`
             : undefined
         }
       />
@@ -207,7 +212,9 @@ function ForexCard() {
               </span>
               <span className="flex-1 text-base">
                 <span className="font-bold text-gray-900">1 {r.symbol}</span>{' '}
-                <span className="text-gray-700">{titleCase(r.country)}</span>
+                <span className="text-gray-700">
+                  {c.country(r.countryCode, titleCase(r.country))}
+                </span>
               </span>
               <span className="text-xl font-bold tabular-nums text-gray-900">
                 {formatPeso(r.phpEquivalent, r.phpEquivalent < 1 ? 4 : 2)}

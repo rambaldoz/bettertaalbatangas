@@ -1,7 +1,7 @@
+import { useTranslation } from 'react-i18next';
 import SEO from '../../components/SEO';
 import {
   HISTORICAL_FIGURES,
-  HISTORY_OVERVIEW,
   IMPORTANT_DATES,
   TAAL_SOURCES,
   TIMELINE,
@@ -20,24 +20,26 @@ import {
   TwoColumn,
 } from '../../components/taal/TaalUI';
 
+// Text: taal.history in public/locales/<lang>/common.json
 export default function TaalHistory() {
+  const { t } = useTranslation('common');
   return (
     <main>
       <SEO
-        title="History of Taal"
-        description="A timeline of Taal, Batangas from its founding in 1572 to today."
+        title={t('taal.history.seoTitle')}
+        description={t('taal.history.seoDescription')}
       />
       <PageHero
         image={HERO_PHOTOS.history.src}
         credit={HERO_PHOTOS.history.credit}
-        title="History of Taal"
-        subtitle="Journey through more than 450 years of the town that was once the capital of Batangas and gave the nation its first flag."
-        photoNote="Photo placeholder: Basilica de San Martin de Tours"
+        title={t('taal.history.title')}
+        subtitle={t('taal.history.subtitle')}
+        photoNote={t('taal.history.photoNote')}
       />
       <TwoColumn
         main={
           <>
-            <SectionTitle>Historical Timeline</SectionTitle>
+            <SectionTitle>{t('taal.history.timelineTitle')}</SectionTitle>
             <ol className="relative space-y-10 border-l-2 border-gray-200 pl-10 md:pl-14 ml-6">
               {TIMELINE.map(item => (
                 <li key={item.period} className="relative">
@@ -50,14 +52,14 @@ export default function TaalHistory() {
                     </div>
                     <div className="p-6">
                       <h3 className="text-xl font-bold text-gray-900">
-                        {item.title}
+                        {t(`taal.history.timeline.${item.period}.title`)}
                       </h3>
                       <p className="mt-2 text-sm leading-relaxed text-gray-800">
-                        {item.description}
+                        {t(`taal.history.timeline.${item.period}.description`)}
                       </p>
                       <TaalImage
                         src={item.photo}
-                        label={item.image}
+                        label={t(`taal.history.timeline.${item.period}.image`)}
                         className="mt-4 h-56 md:h-72"
                       />
                     </div>
@@ -67,8 +69,14 @@ export default function TaalHistory() {
             </ol>
 
             <div className="mt-12">
-              <SectionTitle>Historical Overview</SectionTitle>
-              <Prose paragraphs={HISTORY_OVERVIEW} />
+              <SectionTitle>{t('taal.history.overview')}</SectionTitle>
+              <Prose
+                paragraphs={
+                  t('taal.history.paragraphs', {
+                    returnObjects: true,
+                  }) as string[]
+                }
+              />
               <Sources
                 items={[
                   TAAL_SOURCES.wikipedia,
@@ -81,20 +89,24 @@ export default function TaalHistory() {
         }
         sidebar={
           <>
-            <SidebarCard title="Key Historical Figures">
+            <SidebarCard title={t('taal.history.figuresTitle')}>
               <NameList
                 items={HISTORICAL_FIGURES.map(f => ({
                   name: f.name,
-                  detail: f.role,
+                  detail: t(`taal.history.figures.${f.key}`),
                 }))}
               />
             </SidebarCard>
-            <SidebarCard title="Important Dates">
+            <SidebarCard title={t('taal.history.datesTitle')}>
               <ul className="space-y-4">
-                {IMPORTANT_DATES.map(d => (
-                  <li key={d.date}>
-                    <div className="text-xs text-gray-700">{d.date}</div>
-                    <div className="text-gray-900">{d.event}</div>
+                {IMPORTANT_DATES.map(key => (
+                  <li key={key}>
+                    <div className="text-sm text-gray-700">
+                      {t(`taal.history.dates.${key}.date`)}
+                    </div>
+                    <div className="text-gray-900">
+                      {t(`taal.history.dates.${key}.event`)}
+                    </div>
                   </li>
                 ))}
               </ul>

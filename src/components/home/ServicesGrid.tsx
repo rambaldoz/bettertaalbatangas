@@ -1,13 +1,14 @@
 import { Link } from 'react-router';
 import { ChevronRight } from 'lucide-react';
-import { useTranslation } from '../../hooks/useTranslation';
+import { useContent } from '../../lib/useContent';
 import { getPopularServices } from '../../data/yamlLoader';
 import { DynamicIcon } from '../services/ServiceUI';
 
 // Popular services in two columns, in the style of betterbinangonan.org.
 // Mark a service with "popular: true" in its YAML file to list it here.
 export default function ServicesGrid() {
-  const { t } = useTranslation();
+  const c = useContent();
+  const { t } = c;
   const services = getPopularServices();
 
   return (
@@ -41,16 +42,19 @@ export default function ServicesGrid() {
                 </span>
                 <span>
                   <span className="block font-bold text-gray-900">
-                    {service.title}
+                    {c.serviceTitle(service)}
                   </span>
                   <span className="mt-1 block text-sm text-gray-700">
-                    {service.summary}
+                    {c.serviceSummary(service)}
                   </span>
                   <span className="mt-2 block text-sm text-gray-900">
                     <span className="font-bold">
                       {t('servicesPage.category')}:
                     </span>{' '}
-                    {service.categoryName}
+                    {c.categoryNameBySlug(
+                      service.categorySlug,
+                      service.categoryName
+                    )}
                   </span>
                 </span>
               </Link>

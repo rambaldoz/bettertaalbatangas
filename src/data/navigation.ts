@@ -17,34 +17,45 @@ interface Category {
 export const mainNavigation: NavigationItem[] = [
   {
     label: 'Home',
+    labelKey: 'navbar.home',
     href: '/',
   },
   {
     label: 'Taal',
+    labelKey: 'navbar.taal',
     href: '/taal/about',
     // Hotlines has its own top-level menu item, so it is left out here.
     children: TAAL_PAGES.filter(page => page.href !== '/taal/hotlines').map(
-      page => ({ label: page.label, href: page.href })
+      page => ({
+        label: page.label,
+        labelKey: `taal.pages.${page.key}`,
+        href: page.href,
+      })
     ),
   },
   {
     label: 'Services',
+    labelKey: 'navbar.services',
     href: '/services',
     children: (activeServiceCategories as Category[]).map(category => ({
       label: category.category,
+      labelKey: `content.categories.${category.slug}.name`,
       href: `/services/${category.slug}`,
     })),
   },
   {
     label: 'Government',
+    labelKey: 'navbar.government',
     href: '/government',
     children: BRANCHES.map(b => ({
       label: b.name,
+      labelKey: `content.branches.${b.slug}.name`,
       href: b.href ?? `/government/${b.slug}`,
     })),
   },
   {
     label: 'Hotlines',
+    labelKey: 'navbar.hotlines',
     href: '/taal/hotlines',
   },
 ];
@@ -77,9 +88,9 @@ export const footerNavigation = {
         ...(activeServiceCategories as Category[])
           .slice(0, 6)
           .map(category => ({
-            // English comes from services.yaml; other languages can
-            // translate it under footer.links.<slug> in common.json.
-            key: category.slug,
+            // English comes from services.yaml; other languages translate
+            // it under content.categories.<slug>.name in common.json.
+            key: `content.categories.${category.slug}.name`,
             label: category.category,
             href: `/services/${category.slug}`,
           })),

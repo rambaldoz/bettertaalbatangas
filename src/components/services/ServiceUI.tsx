@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { Link } from 'react-router';
 import * as LucideIcons from 'lucide-react';
 import { ChevronRight, TriangleAlert } from 'lucide-react';
-import { useTranslation } from '../../hooks/useTranslation';
+import { useContent } from '../../lib/useContent';
 import { isTbc } from '../../lib/services';
 
 // Shared pieces for the Services directory, category and detail pages.
@@ -15,7 +15,7 @@ export function Value({
   value: string | undefined;
   short?: boolean;
 }) {
-  const { t } = useTranslation();
+  const { t, charterValue } = useContent();
   if (isTbc(value)) {
     return (
       <span className="italic text-gray-700">
@@ -23,7 +23,7 @@ export function Value({
       </span>
     );
   }
-  return <>{value}</>;
+  return <>{charterValue(value ?? '')}</>;
 }
 
 export function DynamicIcon({

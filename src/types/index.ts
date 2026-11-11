@@ -3,7 +3,8 @@ export type LanguageType =
   | 'fil'; // Filipino (Tagalog)
 
 export interface NavigationItem {
-  label: string;
+  label: string; // English
+  labelKey?: string; // translation key; `label` is the fallback
   href: string;
   children?: NavigationItem[];
 }

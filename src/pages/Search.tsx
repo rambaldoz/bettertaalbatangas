@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useQueryState } from 'nuqs';
 import { Search as SearchIcon } from 'lucide-react';
 import { searchClient, SEARCH_INDEX } from '../lib/meilisearch';
 import type { SearchHit } from '../lib/meilisearch';
 
 export default function Search() {
+  const { t } = useTranslation('common');
   const [query, setQuery] = useQueryState('q', { defaultValue: '' });
   const [results, setResults] = useState<SearchHit[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -25,7 +27,7 @@ export default function Search() {
         setResults(res.hits);
         setHasSearched(true);
       } catch {
-        setError('Search is unavailable. Please try again later.');
+        setError('unavailable');
         setResults([]);
       } finally {
         setIsLoading(false);
@@ -44,7 +46,9 @@ export default function Search() {
 
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">Search</h1>
+      <h1 className="text-2xl font-bold text-gray-900 mb-6">
+        {t('navbar.search')}
+      </h1>
 
       <div className="relative mb-8">
         <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-600" />
@@ -52,7 +56,7 @@ export default function Search() {
           type="search"
           value={query}
           onChange={e => setQuery(e.target.value || null)}
-          placeholder="Search services, departments, guides..."
+          placeholder={t('search.placeholder')}
           className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
           autoFocus
         />
@@ -60,29 +64,26 @@ export default function Search() {
 
       {shownError && (
         <div className="text-center py-12 text-red-500 text-sm">
-          {shownError}
+          {t('search.unavailable')}
         </div>
       )}
 
       {!shownError && isLoading && (
         <div className="text-center py-12 text-gray-700 text-sm">
-          Searching...
+          {t('search.searching')}
         </div>
       )}
 
       {!shownError && !isLoading && searched && shownResults.length === 0 && (
         <div className="text-center py-12 text-gray-700">
-          No results for{' '}
-          <span className="font-bold">&ldquo;{query}&rdquo;</span>
+          {t('search.noResults', { query })}
         </div>
       )}
 
       {!shownError && !isLoading && shownResults.length > 0 && (
         <div className="space-y-3">
           <p className="text-sm text-gray-700 mb-4">
-            {shownResults.length} result{shownResults.length !== 1 ? 's' : ''}{' '}
-            for &ldquo;
-            {query}&rdquo;
+            {t('search.results', { count: shownResults.length, query })}
           </p>
           {shownResults.map(hit => (
             <Link key={hit.id} to={hit.url} className="block group">
@@ -114,7 +115,7 @@ export default function Search() {
 
       {!searched && !isLoading && !shownError && (
         <div className="text-center py-12 text-gray-700 text-sm">
-          Start typing to search across services and government information
+          {t('search.startTyping')}
         </div>
       )}
     </main>

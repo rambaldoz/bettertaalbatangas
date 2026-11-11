@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { formatPeso, useForex } from '../../lib/bettergovApi';
 import { useWeather } from '../../lib/weather';
+import { useTranslation } from 'react-i18next';
 
 // "JPY" -> "¥", "USD" -> "$". Falls back to the code if unknown.
 function currencySymbol(code: string): string {
@@ -24,6 +25,7 @@ function currencySymbol(code: string): string {
 // at a time (sliding in every few seconds), then current temperatures.
 // Sources: BetterGov.ph forex API and Open-Meteo.
 export default function InfoBar() {
+  const { t } = useTranslation('common');
   const { data: forex } = useForex();
   const { data: weather } = useWeather();
   const [index, setIndex] = useState(0);
@@ -50,7 +52,7 @@ export default function InfoBar() {
           <Link
             to="/forex"
             className="flex min-w-[7.5rem] items-center justify-end overflow-hidden hover:underline"
-            aria-label={`Exchange rate: 1 ${rate.symbol} = ${formatPeso(rate.phpEquivalent)}`}
+            aria-label={`${t('common.exchangeRate')}: 1 ${rate.symbol} = ${formatPeso(rate.phpEquivalent)}`}
           >
             {/* key forces a remount so each new rate animates in */}
             <span

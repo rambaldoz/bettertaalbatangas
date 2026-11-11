@@ -1,12 +1,7 @@
 {
   "site_name": "BetterTaalBatangas",
-  "site_description": "Community portal for the Municipality of Taal, Batangas",
   "hero": {
-    "title": "Welcome to Better Taal",
     "subtitle": "Find information, access local government services, and stay updated with the latest news.",
-    "nationalId": "National ID",
-    "birthCertificate": "Birth Certificate",
-    "businessRegistration": "Business Registration",
     "greeting": "Mabuhay! Welcome to",
     "brand": "BetterTaalBatangas.org",
     "browseServices": "Browse Services",
@@ -39,19 +34,6 @@
     "viewAll": "View All Services",
     "viewAllCategory": "View All"
   },
-  "governmentActivity": {
-    "title": "Government Activity",
-    "description": "Stay updated with the latest government activities and announcements."
-  },
-  "weather": {
-    "title": "Weather Updates"
-  },
-  "forex": {
-    "title": "Foreign Exchange Rates"
-  },
-  "news": {
-    "title": "Latest News & Updates"
-  },
   "footer": {
     "copyright": "© {{year}} BetterTaalBatangas.org. All content is public domain unless otherwise specified.",
     "subText": "BetterTaalBatangas.org is a community-run portal for the Municipality of Taal, Batangas, helping residents find government services, news and local resources.",
@@ -82,9 +64,6 @@
       "terms": "Terms of Use",
       "privacy": "Privacy Policy"
     },
-    "reportTitle": "Found any wrong or outdated information on this page?",
-    "reportText": "Help us keep BetterTaalBatangas.org accurate. Report errors and we'll get them corrected.",
-    "reportButton": "Report an Issue",
     "costBuild": "Cost to build this site to date:",
     "costVolunteers": "Built and paid for by volunteers.",
     "costPeople": "Cost to the People and Government of Taal:",
@@ -98,19 +77,6 @@
     "hotlines": "Hotlines",
     "holidays": "Holidays",
     "search": "Search"
-  },
-  "joinUs": {
-    "stripTitle": "🚀 Join the #CivicTech Revolution",
-    "stripSubtitle": "Help build the future of the Philippines and governance through technology",
-    "joinNow": "Join Now",
-    "discord": "Discord",
-    "bannerTitle": "Join the #CivicTech Revolution",
-    "bannerSubtitle": "Help build the future of the Philippines and governance through technology.",
-    "bannerHighlight": "Volunteer-led. Open source. Community-driven.",
-    "joinMovement": "Join Our Movement",
-    "or": "or",
-    "joinDiscord": "Join Discord",
-    "features": "🚀 Infrastructure • 💡 Mentorship • 🤝 Community • 🏢 Office Space"
   },
   "home": {
     "weatherForexTitle": "Weather and Exchange Rates",
@@ -244,6 +210,953 @@
     "handledBy": "Handled by",
     "seeDetails": "See details",
     "servicesLabel": "Services",
-    "category": "Category"
+    "category": "Category",
+    "keywords": "Taal services, citizen's charter, business permit, birth certificate, building permit, cedula, real property tax",
+    "englishNote": ""
+  },
+  "common": {
+    "home": "Home",
+    "tbc": "To be confirmed",
+    "tbcLower": "to be confirmed",
+    "lastUpdated": "Last updated: {{date}}",
+    "onThisPage": "On this page",
+    "breadcrumb": "Breadcrumb",
+    "openMenu": "Open main menu",
+    "seal": "Official seal of the Municipality of Taal",
+    "municipalHall": "Taal Municipal Hall",
+    "chooseLanguage": "Choose a language",
+    "exchangeRate": "Exchange rate"
+  },
+  "hotlinesPage": {
+    "title": "Taal Emergency Hotlines",
+    "crumb": "Hotlines",
+    "seoDescription": "Emergency and public service hotlines for Taal, Batangas.",
+    "subtitle": "Important contact numbers for emergencies and public services",
+    "searchLabel": "Search hotlines",
+    "searchPlaceholder": "Search for hotlines...",
+    "categoriesTitle": "Hotline Categories",
+    "categories": {
+      "All": "All Hotlines",
+      "Taal": "Taal",
+      "Emergency": "Emergency",
+      "Disaster": "Disaster",
+      "Security": "Security",
+      "Transport": "Transport",
+      "Weather": "Weather",
+      "Social Services": "Social Services"
+    },
+    "count_one": "{{count}} hotline",
+    "count_other": "{{count}} hotlines",
+    "matches_one": "{{count}} hotline matches \"{{query}}\"",
+    "matches_other": "{{count}} hotlines match \"{{query}}\"",
+    "numberTbc": "Number to be confirmed",
+    "noResults": "No hotlines match your search.",
+    "sourcesNote": "National hotlines are from <link>BetterGov.ph</link>. Taal numbers were gathered from public sources in November 2026, including the Batangas provincial MDRRMO list, the PNP telephone directory and the Taal LGU directory, and some may have changed. If a number does not connect in an emergency, call 911."
+  },
+  "holidaysPage": {
+    "seoTitle": "Holidays in Taal {{year}}",
+    "seoDescription": "National holidays and local Taal observances.",
+    "title": "Public Holidays {{year}}",
+    "subtitle": "National non-working holidays and local observances in Taal",
+    "notice": "National holidays follow the list declared for {{year}}. Local observances become non-working days only when declared by proclamation or municipal ordinance. Dates may change based on official announcements.",
+    "regular": "A. Regular Holidays",
+    "special": "B. Special (Non-Working) Holidays",
+    "local": "C. Taal Local Observances",
+    "event": "Event",
+    "date": "Date",
+    "day": "Day",
+    "sourcesNote": "National list from <bettergov>BetterGov.ph</bettergov>; local feast days from <wikipedia>Wikipedia</wikipedia>."
+  },
+  "forexPage": {
+    "title": "Foreign Exchange Rates",
+    "seoDescription": "Peso exchange rates from the Bangko Sentral ng Pilipinas.",
+    "subtitle": "Value of foreign currencies in Philippine pesos, from the Bangko Sentral ng Pilipinas.",
+    "loading": "Loading exchange rates...",
+    "unavailable": "Exchange rates are unavailable right now. Please try again later.",
+    "currencies": "Currencies",
+    "searchLabel": "Search currencies",
+    "searchPlaceholder": "Search currency...",
+    "currentRate": "Current Rate",
+    "peso": "Philippine Peso",
+    "converter": "Currency Converter",
+    "pesoCode": "Philippine Peso (PHP)",
+    "providedBy": "Exchange rates are provided by Bangko Sentral ng Pilipinas (BSP) through the <link>BetterGov.ph API</link>.",
+    "published": "Published: {{date}}.",
+    "aboutTitle": "About Foreign Exchange Rates",
+    "aboutText": "The rates on this page come from the Bangko Sentral ng Pilipinas (BSP), the central bank of the Philippines. They are official reference rates for the Philippine Peso against major world currencies.",
+    "understandingTitle": "Understanding Exchange Rates",
+    "understandingText": "Each rate shows how many Philippine Pesos buy one unit of the foreign currency. Banks and money changers in Taal may charge a different rate.",
+    "officialTitle": "Official BSP Rates",
+    "officialText": "For official reference rates and more detail, visit the <link>Bangko Sentral ng Pilipinas website</link>."
+  },
+  "weatherPage": {
+    "seoTitle": "Weather Updates",
+    "seoDescription": "Current weather and 5-day forecast for Taal and nearby cities.",
+    "title": "Weather in Taal and Nearby Cities",
+    "subtitle": "Current conditions and a 5-day forecast from Open-Meteo.",
+    "loading": "Loading weather...",
+    "unavailable": "Weather data is unavailable right now. Please try again later.",
+    "locations": "Locations",
+    "pressure": "Pressure",
+    "visibility": "Visibility",
+    "aboutTitle": "About Weather Data",
+    "aboutText": "Weather on this page comes from <link>{{source}}</link>, an open-source weather API that combines forecasts from national weather services. Readings for Taal use the town proper's coordinates and update about every 15 minutes.",
+    "understandingTitle": "Understanding the Data",
+    "understandingText": "Temperature is shown in Celsius (°C) and wind speed in kilometers per hour. These are model forecasts, not official warnings.",
+    "advisoriesTitle": "Weather Advisories",
+    "advisoriesText": "For official warnings and typhoon bulletins, visit the <pagasa>PAGASA website</pagasa>. For Taal Volcano bulletins, visit <phivolcs>PHIVOLCS</phivolcs>.",
+    "credit": "Weather data by <link>{{source}}</link> (CC BY 4.0)"
+  },
+  "governmentPage": {
+    "seoDescription": "Directory of the officials of the Municipality of Taal, Batangas.",
+    "title": "Taal Government Directory",
+    "subtitle": "Explore the officials and offices of the Municipality of Taal, term {{term}}",
+    "officials_one": "{{count}} official",
+    "officials_other": "{{count}} officials",
+    "asOf": "Officials as of {{date}}, based on the May 2025 election results. Sources:",
+    "spotError": "Spot an error? Let us know so we can correct it."
+  },
+  "barangaysPage": {
+    "eyebrow": "Barangays",
+    "title": "Barangays of Taal",
+    "count": "{{total}} barangays, {{poblacion}} of them in the poblacion (town center).",
+    "searchLabel": "Search barangays",
+    "searchPlaceholder": "Search barangays...",
+    "poblacion": "Town center (poblacion)",
+    "barangay": "Barangay",
+    "comingSoon": "Officials and contacts coming soon",
+    "noResults": "No barangay matches “{{query}}”.",
+    "overview": "Barangay Overview",
+    "total": "Total Barangays",
+    "poblacionLabel": "Poblacion (town center)",
+    "outside": "Outside the poblacion",
+    "nBarangays_one": "{{count}} barangay",
+    "nBarangays_other": "{{count}} barangays",
+    "population": "Population (2020 Census)"
+  },
+  "search": {
+    "label": "Search the site",
+    "placeholder": "Search services, permits, hotlines...",
+    "close": "Close search",
+    "noResults": "No pages match “{{query}}”.",
+    "unavailable": "Search is unavailable. Please try again later.",
+    "searching": "Searching...",
+    "results_one": "{{count}} result for “{{query}}”",
+    "results_other": "{{count}} results for “{{query}}”",
+    "startTyping": "Start typing to search across services and government information"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "seoDescription": "The page you are looking for does not exist on BetterTaalBatangas.org.",
+    "subtitle": "The page you are looking for may have moved or no longer exists. Try one of these instead.",
+    "links": {
+      "home": {
+        "label": "Home",
+        "text": "Start from the main page"
+      },
+      "services": {
+        "label": "Services",
+        "text": "Guides to all 90 municipal services"
+      },
+      "government": {
+        "label": "Government",
+        "text": "Officials, offices and barangays"
+      },
+      "hotlines": {
+        "label": "Hotlines",
+        "text": "Emergency and public service numbers"
+      },
+      "sitemap": {
+        "label": "Sitemap",
+        "text": "Every page on this site"
+      }
+    }
+  },
+  "sitemap": {
+    "subtitle": "A complete guide to all pages and services on BetterTaalBatangas.org.",
+    "serviceCount": "{{services}} services in {{categories}} categories.",
+    "browseAll": "Browse all services",
+    "sections": {
+      "main": "Main Pages",
+      "taal": "About Taal",
+      "services": "Services",
+      "government": "Government",
+      "data": "Live Data",
+      "national": "National Government",
+      "portal": "About This Portal"
+    },
+    "pages": {
+      "home": {
+        "label": "Home",
+        "description": "Main landing page"
+      },
+      "services": {
+        "label": "Services",
+        "description": "Step-by-step guides for municipal services"
+      },
+      "government": {
+        "label": "Government",
+        "description": "Elected officials, offices and barangays"
+      },
+      "hotlines": {
+        "label": "Hotlines",
+        "description": "Emergency and public service numbers"
+      },
+      "aboutTaal": {
+        "label": "About Taal",
+        "description": "Overview of the Heritage Town"
+      },
+      "history": {
+        "label": "History",
+        "description": "Timeline of Taal since 1572"
+      },
+      "culture": {
+        "label": "Culture",
+        "description": "Crafts, food, churches and festivals"
+      },
+      "holidays": {
+        "label": "Holidays",
+        "description": "National holidays and local feast days"
+      },
+      "weather": {
+        "label": "Weather",
+        "description": "Current conditions and 5-day forecast"
+      },
+      "forex": {
+        "label": "Forex",
+        "description": "Peso exchange rates from the BSP"
+      },
+      "aboutPortal": {
+        "label": "About the Portal",
+        "description": "Who we are and why we built this site"
+      },
+      "faq": {
+        "label": "FAQs",
+        "description": "Common questions about the portal"
+      },
+      "contact": {
+        "label": "Contact Us",
+        "description": "Report an issue or reach the volunteers"
+      },
+      "terms": {
+        "label": "Terms of Use",
+        "description": "Rules for using this site"
+      },
+      "privacy": {
+        "label": "Privacy Policy",
+        "description": "What data is and is not collected"
+      },
+      "accessibility": {
+        "label": "Accessibility",
+        "description": "Our accessibility commitment and known limits"
+      },
+      "directory": {
+        "label": "Government Directory",
+        "description": "All branches, offices and officials"
+      }
+    },
+    "national": {
+      "officialGovPh": "Official portal of the Republic of the Philippines",
+      "openData": "Open datasets from national agencies",
+      "foi": "Request information from government agencies",
+      "contactCenter": "Contact Center ng Bayan hotline and feedback",
+      "officialGazette": "Laws, orders and official issuances"
+    }
+  },
+  "philsys": {
+    "eyebrow": "Philippine Identification System",
+    "title": "Get your PhilSys National ID",
+    "text": "The national ID is a single government-issued identification document for all citizens. Use it for government services, bank accounts and other transactions.",
+    "free": "Registration is free.",
+    "open": "Open to all Filipino citizens and resident aliens.",
+    "button": "Register at philsys.gov.ph"
+  },
+  "taal": {
+    "ui": {
+      "relatedLinks": "Related Links",
+      "sources": "Sources:",
+      "photo": "Photo:",
+      "by": "by",
+      "viaCommons": "via Wikimedia Commons",
+      "changes": {
+        "cropped": "cropped"
+      }
+    },
+    "about": {
+      "seoTitle": "About Taal",
+      "seoDescription": "Quick facts and an overview of the Municipality of Taal, Batangas.",
+      "title": "About Taal",
+      "subtitle": "Discover the Heritage Town of Batangas, home of the balisong and the Barong Tagalog, between Taal Lake and Balayan Bay.",
+      "photoNote": "Photo placeholder: Taal heritage town center",
+      "quickFacts": "Quick Facts",
+      "overview": "Overview",
+      "keyInformation": "Key Information",
+      "facts": {
+        "geography": {
+          "title": "Geography",
+          "text": "A coastal municipality in Batangas, facing Balayan Bay and about 79 km south of Metro Manila."
+        },
+        "population": {
+          "title": "Population",
+          "text": "Home to 61,460 people as of the 2020 Census of Population and Housing."
+        },
+        "heritage": {
+          "title": "Heritage Town",
+          "text": "Its poblacion is a National Historical Landmark, with hundreds of Spanish-era structures."
+        },
+        "landscape": {
+          "title": "Landscape",
+          "text": "Set between Taal Lake and Balayan Bay, linked by the Pansipit River."
+        },
+        "barangays": {
+          "title": "Barangays",
+          "text": "42 barangays, including 14 poblacion barangays in the town center."
+        }
+      },
+      "info": {
+        "province": {
+          "label": "Province",
+          "value": "Batangas"
+        },
+        "region": {
+          "label": "Region",
+          "value": "Region IV-A (CALABARZON)"
+        },
+        "founded": {
+          "label": "Founded",
+          "value": "April 26, 1572"
+        },
+        "language": {
+          "label": "Language",
+          "value": "Tagalog (Batangueño), English"
+        },
+        "landArea": {
+          "label": "Land Area",
+          "value": "29.76 km²"
+        },
+        "zip": {
+          "label": "ZIP Code",
+          "value": "4208"
+        },
+        "incomeClass": {
+          "label": "Income Class",
+          "value": "To be confirmed"
+        }
+      },
+      "paragraphs": [
+        "Taal is a coastal municipality in the province of Batangas, in the CALABARZON region. Founded by Augustinian friars in 1572, it is one of the oldest towns in Batangas and once served as the provincial capital.",
+        "The town moved to its present site overlooking Balayan Bay after the great eruption of Taal Volcano in 1754. Today its town center keeps a Spanish-era grid of narrow streets, ancestral houses and the Basilica de San Martin de Tours.",
+        "Taal is known as the balisong and Barong Tagalog capital of the Philippines. Its embroidery, crafts and food, from tapang Taal to sinaing na tulingan, are celebrated every April at the El Pasubat Festival."
+      ]
+    },
+    "history": {
+      "seoTitle": "History of Taal",
+      "seoDescription": "A timeline of Taal, Batangas from its founding in 1572 to today.",
+      "title": "History of Taal",
+      "subtitle": "Journey through more than 450 years of the town that was once the capital of Batangas and gave the nation its first flag.",
+      "photoNote": "Photo placeholder: Basilica de San Martin de Tours",
+      "timelineTitle": "Historical Timeline",
+      "overview": "Historical Overview",
+      "figuresTitle": "Key Historical Figures",
+      "datesTitle": "Important Dates",
+      "timeline": {
+        "2020": {
+          "title": "Taal Volcano Eruption",
+          "description": "The town was evacuated for several weeks in early 2020. Ashfall and volcanic tremors damaged several heritage structures.",
+          "image": "Photo: Taal Volcano and Taal Lake"
+        },
+        "1898": {
+          "title": "The Philippine Flag",
+          "description": "Taal-born Marcela Agoncillo sewed the first Philippine flag, unfurled at the declaration of independence in Kawit on June 12, 1898.",
+          "image": "Photo: Marcela Agoncillo Museum"
+        },
+        "1754": {
+          "title": "The Great Eruption",
+          "description": "A months-long eruption of Taal Volcano destroyed the lakeshore town. Residents moved to Caysasay and later to the present site above Balayan Bay.",
+          "image": "Photo: Ruins of the old Taal church, San Nicolas"
+        },
+        "1732": {
+          "title": "Capital of Batangas",
+          "description": "Taal became the provincial capital and a busy lake and river port linking Taal Lake to Balayan Bay.",
+          "image": "Photo: Pansipit River"
+        },
+        "1572": {
+          "title": "Founding of Taal",
+          "description": "Augustinian friars founded Taal on April 26, 1572 as the first Christian mission in Batangas. In 1575 it moved to the edge of the lake.",
+          "image": "Photo: Basilica de San Martin de Tours"
+        }
+      },
+      "figures": {
+        "marcela": "Maker of the first Philippine flag",
+        "felipe": "Diplomat at the Treaty of Paris talks (1898)",
+        "galicano": "Co-founder of La Solidaridad, Governor of Batangas",
+        "gliceria": "Supporter of the revolutionary forces"
+      },
+      "dates": {
+        "founding": {
+          "date": "April 26, 1572",
+          "event": "Founding of Taal"
+        },
+        "capital": {
+          "date": "1732",
+          "event": "Taal becomes capital of Batangas"
+        },
+        "eruption": {
+          "date": "May to December 1754",
+          "event": "Great eruption of Taal Volcano"
+        },
+        "flag": {
+          "date": "June 12, 1898",
+          "event": "Agoncillo flag unfurled in Kawit"
+        }
+      },
+      "paragraphs": [
+        "Taal was founded in 1572 by Augustinian missionaries at Balangon, near the Pansipit River, and grew into a lake and river port. Its early parish counted Balayan and Bauan as mission stations.",
+        "In 1732 Taal became the capital of Batangas. The great eruption of 1754 devastated the lakeshore towns, forcing Taal to move toward Balayan Bay and the provincial capital to move to what is now Batangas City.",
+        "In the 19th and 20th centuries several towns, including Lemery, San Luis, San Nicolas and Santa Teresita, were formed from parts of Taal. Its sons and daughters, from the Agoncillos to Galicano Apacible, played a large part in the revolution and the early republic."
+      ]
+    },
+    "culture": {
+      "seoTitle": "Culture of Taal",
+      "seoDescription": "Crafts, food, festivals and faith traditions of Taal, Batangas.",
+      "title": "Culture of Taal",
+      "subtitle": "Experience the embroidery, balisong, food and fiestas that make Taal the heritage capital of Batangas.",
+      "photoNote": "Photo placeholder: El Pasubat Festival",
+      "heritageTitle": "Cultural Heritage",
+      "identityTitle": "Cultural Identity",
+      "festivalsTitle": "Major Festivals",
+      "artsTitle": "Traditional Arts",
+      "heritage": {
+        "barong": {
+          "title": "Barong Tagalog and Burdang Taal",
+          "text": "Hand embroidery on piña and jusi fabric for barong and camisa, a home industry passed down for generations.",
+          "image": "Photo: Burdang Taal embroidery"
+        },
+        "balisong": {
+          "title": "Balisong",
+          "text": "The Filipino fan knife, crafted by hand in Taal, especially in Barangay Balisong.",
+          "image": "Photo: Balisong makers at work"
+        },
+        "cuisine": {
+          "title": "Cuisine",
+          "text": "Tapang Taal, longganisang Taal, empanada, sinaing na tulingan, adobo sa dilaw, suman and panutsa.",
+          "image": "Photo: Tapang Taal and longganisa"
+        },
+        "festivals": {
+          "title": "Festivals",
+          "text": "The El Pasubat Festival every April and the town fiesta honoring St. Martin of Tours and Our Lady of Caysasay.",
+          "image": "Photo: El Pasubat Festival parade"
+        },
+        "churches": {
+          "title": "Churches and Ancestral Houses",
+          "text": "The Basilica de San Martin de Tours, the Caysasay shrine and ancestral houses like the Marcela Agoncillo house, now a museum.",
+          "image": "Photo: Taal ancestral houses"
+        }
+      },
+      "festivals": {
+        "founding": {
+          "name": "Founding Anniversary",
+          "when": "April 26"
+        },
+        "elPasubat": {
+          "name": "El Pasubat Festival",
+          "when": "April"
+        },
+        "stMartin": {
+          "name": "Feast of St. Martin of Tours",
+          "when": "November 11"
+        },
+        "caysasay": {
+          "name": "Feast of Our Lady of Caysasay",
+          "when": "December 8"
+        }
+      },
+      "arts": {
+        "embroidery": {
+          "name": "Embroidery",
+          "detail": "Burdang Taal on piña and jusi"
+        },
+        "knives": {
+          "name": "Knife Making",
+          "detail": "Balisong"
+        },
+        "garments": {
+          "name": "Garments",
+          "detail": "Barong Tagalog, camisa"
+        },
+        "food": {
+          "name": "Food Crafts",
+          "detail": "Panutsa, suman, tapa, longganisa"
+        }
+      },
+      "paragraphs": [
+        "Taal is called the balisong and Barong Tagalog capital of the Philippines. Its embroiderers and knife makers keep crafts alive that started as home industries in the town.",
+        "The name El Pasubat comes from the things Taal is known for: empanada, longganisa, panutsa, suman, balisong, barong and tapa. Tamales, tawilis and tulingan were added later.",
+        "Faith is central to town life. The feasts of St. Martin of Tours and Our Lady of Caysasay bring processions and old traditions back to the streets each year."
+      ]
+    },
+    "barangays": {
+      "paragraphs": [
+        "Taal is divided into 42 barangays. Fourteen poblacion barangays make up the heritage town center, while the rest spread toward Taal Lake, the Pansipit River and Balayan Bay.",
+        "Each barangay is made up of puroks, and some have sitios. Barangay officials, contact details and health stations will be added to each barangay page."
+      ]
+    },
+    "pages": {
+      "about": "About",
+      "history": "History",
+      "culture": "Culture",
+      "hotlines": "Hotlines",
+      "holidays": "Holidays",
+      "forex": "Forex",
+      "weather": "Weather"
+    }
+  },
+  "portal": {
+    "about": {
+      "title": "About the Portal",
+      "subtitle": "A volunteer-built guide to the services, offices and people of the Municipality of Taal, Batangas.",
+      "sections": [
+        {
+          "id": "what",
+          "title": "What This Is",
+          "body": [
+            "BetterTaalBatangas.org puts the information residents of Taal need most in one place: how to get a permit or certificate, what to bring, how much it costs, which office to go to, who our elected officials are and which numbers to call in an emergency.",
+            "Everything is written in plain language and organized around what people are trying to do, not around how the government is organized."
+          ]
+        },
+        {
+          "id": "why",
+          "title": "Why We Built It",
+          "body": [
+            "Government information is often scattered across Facebook posts, scanned documents and notices at the municipal hall. We believe that finding out how to register a birth or renew a business permit should take a minute, not a trip.",
+            "This portal is an act of civic service. It is built by volunteers who care about Taal, in their own time, at no cost to the people or the government of Taal."
+          ]
+        },
+        {
+          "id": "not-official",
+          "title": "Not an Official Government Website",
+          "body": [
+            "<strong>BetterTaalBatangas.org is not run by the Municipality of Taal or any government agency.</strong> We are independent volunteers. We cannot process applications, accept payments or answer for any office.",
+            "For official transactions, please visit the Taal Municipal Hall or contact the office concerned. Office emails are listed in the <gov>Government Directory</gov>, and emergency numbers are on the <hotlines>Hotlines</hotlines> page."
+          ]
+        },
+        {
+          "id": "sources",
+          "title": "Where the Information Comes From",
+          "body": [
+            [
+              "<strong>Services, fees and offices:</strong> the <charter>{{charterTitle}}</charter> published by the Municipality of Taal.",
+              "<strong>Elected officials:</strong> the May 2025 election results and public records.",
+              "<strong>Weather:</strong> <meteo>Open-Meteo.com</meteo>.",
+              "<strong>Exchange rates:</strong> the Bangko Sentral ng Pilipinas, through the BetterGov.ph API.",
+              "<strong>History and culture:</strong> published sources, credited on each page."
+            ],
+            "We check our work, but details can change before we catch them. When in doubt, confirm with the office concerned."
+          ]
+        },
+        {
+          "id": "bettergov",
+          "title": "Part of BetterGov.ph",
+          "body": [
+            "This site is built on the open-source template of <bettergov>BetterGov.ph</bettergov>, a volunteer movement making Philippine government information easier to find and use. Many towns and cities now have their own Better LGU portal, each maintained by local volunteers."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "How You Can Help",
+          "body": [
+            [
+              "<strong>Report errors.</strong> Found something wrong or out of date? <report>Report an issue</report> and we will correct it.",
+              "<strong>Share what you know.</strong> Barangay officials, updated fees and office hours are always welcome.",
+              "<strong>Contribute.</strong> The code is open on <repo>GitHub</repo>. Developers, designers, writers and translators can all help.",
+              "<strong>Spread the word.</strong> Share the site with family and neighbors who need it."
+            ]
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Reach the volunteers behind BetterTaalBatangas.org, or find the right office for official concerns.",
+      "openForm": "Open the report form",
+      "sections": [
+        {
+          "id": "report",
+          "title": "Report an Issue",
+          "body": [
+            "Found something wrong or out of date? Tell us through our short report form: which page has the problem and what the correct information is, with a source if you have one.",
+            {
+              "slot": "form"
+            },
+            "Please do not include sensitive personal information such as ID numbers. We only need your contact details if you would like a reply."
+          ]
+        },
+        {
+          "id": "email",
+          "title": "Email",
+          "if": "email",
+          "body": [
+            "You can also write to us at <contactEmail>{{contactEmail}}</contactEmail>. We are volunteers, so replies may take a few days."
+          ]
+        },
+        {
+          "id": "official",
+          "title": "Official Municipal Concerns",
+          "body": [
+            "<strong>We are not the Municipality of Taal and cannot process applications, payments, complaints or requests for documents.</strong> For these, please contact the municipal government directly:",
+            [
+              "Visit the Taal Municipal Hall, Taal, Batangas, during office hours.",
+              "Email the Office of the Mayor at <mayorEmail>{{mayorEmail}}</mayorEmail>.",
+              "Find the email of a specific office in the <offices>Government Directory</offices>.",
+              "For emergencies, see the <hotlines>Hotlines</hotlines> page."
+            ]
+          ]
+        },
+        {
+          "id": "contribute",
+          "title": "Volunteer With Us",
+          "body": [
+            "Want to help keep this site accurate and useful? The project is open source on <repo>GitHub</repo>. You can suggest changes, fix content, improve the Tagalog translation or help with design and code."
+          ]
+        }
+      ],
+      "formSoon": "<strong>The report form is coming soon.</strong> Please check back shortly."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Answers about who runs this site, where the information comes from and how to use it.",
+      "sections": [
+        {
+          "id": "project",
+          "title": "About the Project",
+          "body": [
+            {
+              "faq": [
+                {
+                  "q": "Is this the official website of the Municipality of Taal?",
+                  "a": "No. BetterTaalBatangas.org is an independent, volunteer-run portal. It is not operated or endorsed by the Municipality of Taal or any government agency."
+                },
+                {
+                  "q": "Who built and maintains this website?",
+                  "a": "Volunteers from Taal and its friends, as part of the BetterGov.ph movement. Anyone can help; see the <about>About</about> page."
+                },
+                {
+                  "q": "How is the website funded?",
+                  "a": "Volunteers cover the small costs, such as the domain. The site costs the people and the government of Taal nothing. We do not run ads or accept political funding."
+                },
+                {
+                  "q": "Does this website support any politician or party?",
+                  "a": "No. The portal is non-partisan. Officials are listed because they hold office, not as an endorsement."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "information",
+          "title": "Information and Accuracy",
+          "body": [
+            {
+              "faq": [
+                {
+                  "q": "Where does the information come from?",
+                  "a": "Services, fees and offices come from the <charter>{{charterTitle}}</charter>. Officials come from the May 2025 election results. Weather comes from Open-Meteo, and exchange rates from the Bangko Sentral ng Pilipinas."
+                },
+                {
+                  "q": "Is the information always up to date?",
+                  "a": "We update it whenever we learn of changes, but fees, requirements and office hours can change without notice. Before you go, confirm with the office concerned."
+                },
+                {
+                  "q": "I found an error. What should I do?",
+                  "a": "Please <report>report an issue</report> with the page, what is wrong and the correct information if you know it. We fix reports as soon as we can."
+                },
+                {
+                  "q": "Can I apply for a permit or pay fees here?",
+                  "a": "No. This site explains how each service works, but all applications and payments are made at the municipal hall or through official channels."
+                },
+                {
+                  "q": "Can I reuse the content of this website?",
+                  "a": "Yes. Our own content is public domain unless otherwise stated. Content from other sources, such as photos, belongs to their owners and is credited on each page."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "using",
+          "title": "Using the Website",
+          "body": [
+            {
+              "faq": [
+                {
+                  "q": "Do I need an account?",
+                  "a": "No. There are no accounts or sign-ups. Everything is free to read."
+                },
+                {
+                  "q": "Does this website collect my personal information?",
+                  "a": "No. We do not use analytics, ads or tracking cookies. See our <privacy>Privacy Policy</privacy> for the details."
+                },
+                {
+                  "q": "Is the website available in Tagalog?",
+                  "a": "Yes. Choose Tagalog from the language menu at the top of any page. The detailed requirements and steps of each service stay in English, as printed in the official Citizen's Charter."
+                },
+                {
+                  "q": "Can I use this website on my phone?",
+                  "a": "Yes. Every page works on phones, tablets and computers."
+                },
+                {
+                  "q": "How can I help?",
+                  "a": "Report errors, share updated information or contribute on <repo>GitHub</repo>. Non-developers are welcome too."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "subtitle": "The rules for using BetterTaalBatangas.org, a volunteer-run civic portal.",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "Introduction",
+          "body": [
+            "BetterTaalBatangas.org (“the portal”, “we”) is a free, community-run website that explains the services and offices of the Municipality of Taal, Batangas. These terms apply to everyone who uses it."
+          ]
+        },
+        {
+          "id": "acceptance",
+          "title": "Acceptance of Terms",
+          "body": [
+            "By using the portal, you agree to these terms. If you do not agree, please do not use the portal."
+          ]
+        },
+        {
+          "id": "not-official",
+          "title": "Not an Official Government Website",
+          "body": [
+            "The portal is run by independent volunteers. It is not owned, operated or endorsed by the Municipality of Taal, the Province of Batangas or any government agency. Nothing on the portal is an official government statement, notice or decision."
+          ]
+        },
+        {
+          "id": "content",
+          "title": "Content and License",
+          "body": [
+            "Content we write is dedicated to the public domain unless otherwise stated. You may copy, share and reuse it freely.",
+            "Some content, such as photos and quoted material, belongs to others and is credited where it appears. Those works remain under their owners’ terms. The source code is available on <repo>GitHub</repo> under its stated license."
+          ]
+        },
+        {
+          "id": "as-is",
+          "title": "\"As Is\" Disclaimer",
+          "body": [
+            "We work to keep the portal accurate, but it is provided “as is”, without warranties of any kind. Fees, requirements, schedules and officials can change without notice. Always confirm important details with the office concerned before acting on them."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "Limitation of Liability",
+          "body": [
+            "To the extent allowed by law, the volunteers behind the portal are not liable for any loss or damage arising from your use of, or reliance on, the portal or the sites it links to."
+          ]
+        },
+        {
+          "id": "responsibilities",
+          "title": "Your Responsibilities",
+          "body": [
+            [
+              "Use the portal lawfully and in good faith.",
+              "Do not try to disrupt, overload or gain unauthorized access to the portal.",
+              "Do not present the portal’s content as an official government statement.",
+              "When reporting errors, share accurate information and do not post anyone’s personal data."
+            ]
+          ]
+        },
+        {
+          "id": "no-advice",
+          "title": "No Professional Advice",
+          "body": [
+            "The portal gives general information only. It is not legal, financial, medical or other professional advice. For advice on your situation, consult a qualified professional or the office concerned."
+          ]
+        },
+        {
+          "id": "links",
+          "title": "External Links",
+          "body": [
+            "The portal links to government websites, data sources and other sites we do not control. We are not responsible for their content, availability or privacy practices."
+          ]
+        },
+        {
+          "id": "availability",
+          "title": "Availability",
+          "body": [
+            "As a volunteer project, the portal may be changed, paused or discontinued at any time without notice."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to These Terms",
+          "body": [
+            "We may update these terms. The date at the bottom of this page shows the latest version. Continuing to use the portal means you accept the updated terms."
+          ]
+        },
+        {
+          "id": "law",
+          "title": "Governing Law",
+          "body": ["These terms are governed by the laws of the Philippines."]
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "body": [
+            "Questions about these terms? See the <contact>Contact Us</contact> page."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "We collect as little as possible. Here is exactly what happens when you use BetterTaalBatangas.org.",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "Introduction",
+          "body": [
+            "BetterTaalBatangas.org is a volunteer-run information portal. We respect your privacy and follow the principles of the Data Privacy Act of 2012 (Republic Act No. 10173): collect only what is needed, use it only for a clear purpose and keep it safe."
+          ]
+        },
+        {
+          "id": "approach",
+          "title": "Our Approach",
+          "body": [
+            [
+              "No accounts, sign-ups or log-ins.",
+              "No forms that collect personal information.",
+              "No analytics, advertising or tracking cookies.",
+              "We never sell or rent information about our visitors."
+            ]
+          ]
+        },
+        {
+          "id": "collected",
+          "title": "Information That Is Processed",
+          "body": [
+            "<strong>On your device.</strong> If you change the language, your choice is saved in your browser’s local storage so the site remembers it. It never leaves your device, and you can clear it in your browser settings.",
+            "<strong>By our hosting provider.</strong> Like any website, the server that delivers our pages may record basic technical data, such as your IP address, browser type and the pages requested, for security and to keep the site running.",
+            "<strong>By services that supply content.</strong> To show fonts, weather and exchange rates, your browser loads data from Google Fonts, Open-Meteo and the BetterGov.ph API. These services receive your IP address as part of the request and handle it under their own privacy policies."
+          ]
+        },
+        {
+          "id": "contact-us",
+          "title": "When You Contact Us",
+          "body": [
+            "If you use our report form, your answers are collected through Google Forms and handled under Google’s privacy policy. Only the volunteers who maintain the portal can see them. We use what you send only to correct and improve the portal. If you email us, we use your message and address only to reply and to improve the portal, and we do not share them. Please do not send sensitive personal information."
+          ]
+        },
+        {
+          "id": "cookies",
+          "title": "Cookies",
+          "body": [
+            "We do not set cookies. The only thing we store is the language preference described above."
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Data Security",
+          "body": [
+            "The portal is a static website served over HTTPS. Because we do not keep a database of visitor information, there is very little personal data to protect or to lose."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "Your Rights",
+          "body": [
+            "Under the Data Privacy Act, you have the right to be informed, to access, to correct and to erase your personal data, and to object to its processing. To exercise these rights for any message you sent us, see the <contact>Contact Us</contact> page.",
+            "You may also file a complaint with the <npc>National Privacy Commission</npc>."
+          ]
+        },
+        {
+          "id": "children",
+          "title": "Children's Privacy",
+          "body": [
+            "The portal is for the general public and does not knowingly collect information from children."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "Third-Party Links",
+          "body": [
+            "We link to government and other websites. Their privacy practices are their own, so please review their policies."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to This Policy",
+          "body": [
+            "If our practices change, for example if we ever add analytics, we will update this page first. The date below shows the latest version."
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "subtitle": "Government information should be usable by everyone in Taal, including seniors and people with disabilities.",
+      "sections": [
+        {
+          "id": "commitment",
+          "title": "Our Commitment",
+          "body": [
+            "We aim for BetterTaalBatangas.org to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. We check pages as we build them and fix problems as we find them."
+          ]
+        },
+        {
+          "id": "features",
+          "title": "What We Do",
+          "body": [
+            [
+              "<strong>Readable text:</strong> body text is at least 14 pixels, and text and background colors meet WCAG AA contrast.",
+              "<strong>Plain language:</strong> steps, requirements and fees are written simply and laid out one item per line.",
+              "<strong>Keyboard friendly:</strong> menus, links and buttons can be used without a mouse, with a visible focus outline.",
+              "<strong>Screen reader support:</strong> pages use proper headings, labels and text alternatives for icons and images.",
+              "<strong>Any screen size:</strong> every page works on phones, tablets and computers, and with browser zoom.",
+              "<strong>Two languages:</strong> every page can be read in English or Tagalog.",
+              "<strong>Light pages:</strong> no autoplaying media and no heavy downloads, so pages load on slow connections."
+            ]
+          ]
+        },
+        {
+          "id": "limitations",
+          "title": "Known Limitations",
+          "body": [
+            [
+              "Some documents we link to, such as the Citizen’s Charter, are scanned PDFs published by the municipality and may not work with screen readers.",
+              "The detailed requirements and steps of each service are in English only, as printed in the official Citizen’s Charter.",
+              "Content from other services, such as weather and exchange rates, depends on those providers."
+            ]
+          ]
+        },
+        {
+          "id": "alternative",
+          "title": "Alternative Access",
+          "body": [
+            "If you cannot use part of this site, the same information is available from the office concerned at the Taal Municipal Hall. Office emails are listed in the <offices>Government Directory</offices>."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Feedback",
+          "body": [
+            "If something is hard to read or use, please tell us through the <contact>Contact Us</contact> page. Include the page and what went wrong, and we will work on a fix."
+          ]
+        }
+      ]
+    }
+  },
+  "seo": {
+    "defaultTitle": "Community Portal for Taal, Batangas",
+    "defaultDescription": "A volunteer-run guide to the services, offices and officials of the Municipality of Taal, Batangas.",
+    "homeDescription": "Community-run portal for the Municipality of Taal, Batangas. Find local government services, hotlines, weather and exchange rates.",
+    "homeKeywords": "Taal, Batangas, local government, services, hotlines"
   }
 }

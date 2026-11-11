@@ -1,5 +1,7 @@
 import { Calendar, TriangleAlert } from 'lucide-react';
+import { Trans } from 'react-i18next';
 import SEO from '../../components/SEO';
+import { useContent } from '../../lib/useContent';
 import {
   HOLIDAY_YEAR,
   LOCAL_OBSERVANCES,
@@ -9,6 +11,7 @@ import {
 } from '../../data/taal';
 
 interface Holiday {
+  key: string; // holidaysPage.events.<key>
   event: string;
   date: string;
 }
@@ -20,6 +23,7 @@ function parseDate(iso: string): Date {
 }
 
 function HolidayTable({ title, items }: { title: string; items: Holiday[] }) {
+  const { t, locale } = useContent();
   return (
     <section className="mt-10">
       <h2 className="flex items-center gap-2 text-xl font-bold text-gray-900">
@@ -34,26 +38,34 @@ function HolidayTable({ title, items }: { title: string; items: Holiday[] }) {
           <table className="w-full text-left text-sm">
             <thead className="bg-gray-50 text-xs uppercase tracking-wide text-gray-700">
               <tr>
-                <th className="px-5 py-3 font-bold">Event</th>
-                <th className="px-5 py-3 font-bold">Date</th>
-                <th className="px-5 py-3 font-bold">Day</th>
+                <th className="px-5 py-3 font-bold">
+                  {t('holidaysPage.event')}
+                </th>
+                <th className="px-5 py-3 font-bold">
+                  {t('holidaysPage.date')}
+                </th>
+                <th className="px-5 py-3 font-bold">{t('holidaysPage.day')}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {items.map(h => {
                 const d = parseDate(h.date);
                 return (
-                  <tr key={`${h.event}-${h.date}`}>
-                    <td className="px-5 py-4 text-gray-900">{h.event}</td>
+                  <tr key={`${h.key}-${h.date}`}>
                     <td className="px-5 py-4 text-gray-900">
-                      {d.toLocaleDateString('en-US', {
+                      {t(`holidaysPage.events.${h.key}`, {
+                        defaultValue: h.event,
+                      })}
+                    </td>
+                    <td className="px-5 py-4 text-gray-900">
+                      {d.toLocaleDateString(locale, {
                         month: 'long',
                         day: 'numeric',
                       })}
                     </td>
                     <td className="px-5 py-4">
                       <span className="rounded bg-primary-50 px-2 py-0.5 text-xs font-bold text-primary-700">
-                        {d.toLocaleDateString('en-US', { weekday: 'long' })}
+                        {d.toLocaleDateString(locale, { weekday: 'long' })}
                       </span>
                     </td>
                   </tr>
@@ -68,62 +80,57 @@ function HolidayTable({ title, items }: { title: string; items: Holiday[] }) {
 }
 
 export default function TaalHolidays() {
+  const { t } = useContent();
+  const link = (href: string) => (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-accent-700 underline hover:text-accent-800"
+    />
+  );
   return (
     <main className="bg-white">
       <SEO
-        title={`Holidays in Taal ${HOLIDAY_YEAR}`}
-        description="National holidays and local Taal observances."
+        title={t('holidaysPage.seoTitle', { year: HOLIDAY_YEAR })}
+        description={t('holidaysPage.seoDescription')}
       />
       <div className="container mx-auto max-w-4xl px-4 py-10">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900 md:text-5xl">
-            Public Holidays {HOLIDAY_YEAR}
+            {t('holidaysPage.title', { year: HOLIDAY_YEAR })}
           </h1>
           <p className="mt-3 text-lg text-gray-800">
-            National non-working holidays and local observances in Taal
+            {t('holidaysPage.subtitle')}
           </p>
         </div>
 
         <div className="mt-8 flex gap-3 border-l-4 border-warning-500 bg-warning-50 p-4 text-sm text-warning-800">
           <TriangleAlert className="h-5 w-5 shrink-0" aria-hidden="true" />
-          <p>
-            National holidays follow the list declared for {HOLIDAY_YEAR}. Local
-            observances become non-working days only when declared by
-            proclamation or municipal ordinance. Dates may change based on
-            official announcements.
-          </p>
+          <p>{t('holidaysPage.notice', { year: HOLIDAY_YEAR })}</p>
         </div>
 
-        <HolidayTable title="A. Regular Holidays" items={REGULAR_HOLIDAYS} />
         <HolidayTable
-          title="B. Special (Non-Working) Holidays"
+          title={t('holidaysPage.regular')}
+          items={REGULAR_HOLIDAYS}
+        />
+        <HolidayTable
+          title={t('holidaysPage.special')}
           items={SPECIAL_HOLIDAYS}
         />
         <HolidayTable
-          title="C. Taal Local Observances"
+          title={t('holidaysPage.local')}
           items={LOCAL_OBSERVANCES}
         />
 
         <p className="mt-8 text-sm text-gray-700">
-          National list from{' '}
-          <a
-            href={TAAL_SOURCES.bettergovHolidays.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent-700 underline hover:text-accent-800"
-          >
-            BetterGov.ph
-          </a>
-          ; local feast days from{' '}
-          <a
-            href={TAAL_SOURCES.wikipedia.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent-700 underline hover:text-accent-800"
-          >
-            Wikipedia
-          </a>
-          .
+          <Trans
+            i18nKey="holidaysPage.sourcesNote"
+            components={{
+              bettergov: link(TAAL_SOURCES.bettergovHolidays.url),
+              wikipedia: link(TAAL_SOURCES.wikipedia.url),
+            }}
+          />
         </p>
       </div>
     </main>
