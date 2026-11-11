@@ -1,17 +1,14 @@
 import { useMemo, useState } from 'react';
 import { Building2, MapPin, Search } from 'lucide-react';
-import {
-  BARANGAYS,
-  BARANGAY_OVERVIEW,
-  POBLACION_COUNT,
-  TAAL_SOURCES,
-} from '../../data/taal';
+import { useTranslation } from 'react-i18next';
+import { BARANGAYS, POBLACION_COUNT, TAAL_SOURCES } from '../../data/taal';
 import { Card, InfoList, Prose, Sources } from '../taal/TaalUI';
 import { Panel, PanelHeading } from '../layout/PageLayout';
 
 // The 42 barangays of Taal, shown in the Government directory
 // (/government/barangays). Barangay officials will be added per barangay.
 export default function BarangayDirectory() {
+  const { t } = useTranslation('common');
   const [query, setQuery] = useState('');
 
   const filtered = useMemo(() => {
@@ -26,12 +23,15 @@ export default function BarangayDirectory() {
       <Panel>
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <PanelHeading
-            eyebrow="Barangays"
-            title="Barangays of Taal"
-            text={`${BARANGAYS.length} barangays, ${POBLACION_COUNT} of them in the poblacion (town center).`}
+            eyebrow={t('barangaysPage.eyebrow')}
+            title={t('barangaysPage.title')}
+            text={t('barangaysPage.count', {
+              total: BARANGAYS.length,
+              poblacion: POBLACION_COUNT,
+            })}
           />
           <label className="relative block md:w-72">
-            <span className="sr-only">Search barangays</span>
+            <span className="sr-only">{t('barangaysPage.searchLabel')}</span>
             <Search
               className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-700"
               aria-hidden="true"
@@ -40,7 +40,7 @@ export default function BarangayDirectory() {
               type="search"
               value={query}
               onChange={e => setQuery(e.target.value)}
-              placeholder="Search barangays..."
+              placeholder={t('barangaysPage.searchPlaceholder')}
               className="w-full rounded-md border border-gray-400 bg-white py-2.5 pl-10 pr-3 text-base text-gray-900 placeholder:text-gray-600 focus:border-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-700"
             />
           </label>
@@ -57,41 +57,56 @@ export default function BarangayDirectory() {
                 <p className="mt-1 flex items-center gap-1 text-sm text-gray-700">
                   <MapPin className="h-4 w-4" aria-hidden="true" />
                   {b.type === 'Poblacion'
-                    ? 'Town center (poblacion)'
-                    : 'Barangay'}
+                    ? t('barangaysPage.poblacion')
+                    : t('barangaysPage.barangay')}
                 </p>
                 <p className="mt-2 text-sm text-gray-700">
-                  Officials and contacts coming soon
+                  {t('barangaysPage.comingSoon')}
                 </p>
               </div>
             </Card>
           ))}
           {filtered.length === 0 && (
             <p className="text-base text-gray-800">
-              No barangay matches &ldquo;{query}&rdquo;.
+              {t('barangaysPage.noResults', { query })}
             </p>
           )}
         </div>
       </Panel>
 
       <Panel>
-        <h2 className="text-2xl font-bold text-gray-900">Barangay Overview</h2>
+        <h2 className="text-2xl font-bold text-gray-900">
+          {t('barangaysPage.overview')}
+        </h2>
         <div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <Prose paragraphs={BARANGAY_OVERVIEW} />
+            <Prose
+              paragraphs={
+                t('taal.barangays.paragraphs', {
+                  returnObjects: true,
+                }) as string[]
+              }
+            />
           </div>
           <InfoList
             items={[
-              { label: 'Total Barangays', value: `${BARANGAYS.length}` },
               {
-                label: 'Poblacion (town center)',
-                value: `${POBLACION_COUNT} barangays`,
+                label: t('barangaysPage.total'),
+                value: `${BARANGAYS.length}`,
               },
               {
-                label: 'Outside the poblacion',
-                value: `${BARANGAYS.length - POBLACION_COUNT} barangays`,
+                label: t('barangaysPage.poblacionLabel'),
+                value: t('barangaysPage.nBarangays', {
+                  count: POBLACION_COUNT,
+                }),
               },
-              { label: 'Population (2020 Census)', value: '61,460' },
+              {
+                label: t('barangaysPage.outside'),
+                value: t('barangaysPage.nBarangays', {
+                  count: BARANGAYS.length - POBLACION_COUNT,
+                }),
+              },
+              { label: t('barangaysPage.population'), value: '61,460' },
             ]}
           />
         </div>

@@ -1,7 +1,7 @@
+import { useTranslation } from 'react-i18next';
 import SEO from '../../components/SEO';
 import {
   CULTURAL_HERITAGE,
-  CULTURE_OVERVIEW,
   FESTIVALS,
   TAAL_SOURCES,
   TRADITIONAL_ARTS,
@@ -21,36 +21,40 @@ import {
   TwoColumn,
 } from '../../components/taal/TaalUI';
 
+// Text: taal.culture in public/locales/<lang>/common.json
 export default function TaalCulture() {
+  const { t } = useTranslation('common');
   return (
     <main>
       <SEO
-        title="Culture of Taal"
-        description="Crafts, food, festivals and faith traditions of Taal, Batangas."
+        title={t('taal.culture.seoTitle')}
+        description={t('taal.culture.seoDescription')}
       />
       <PageHero
         image={HERO_PHOTOS.culture.src}
         credit={HERO_PHOTOS.culture.credit}
-        title="Culture of Taal"
-        subtitle="Experience the embroidery, balisong, food and fiestas that make Taal the heritage capital of Batangas."
-        photoNote="Photo placeholder: El Pasubat Festival"
+        title={t('taal.culture.title')}
+        subtitle={t('taal.culture.subtitle')}
+        photoNote={t('taal.culture.photoNote')}
       />
       <TwoColumn
         main={
           <>
-            <SectionTitle>Cultural Heritage</SectionTitle>
+            <SectionTitle>{t('taal.culture.heritageTitle')}</SectionTitle>
             <div className="space-y-5">
               {CULTURAL_HERITAGE.map(item => (
-                <Card key={item.title} className="flex gap-4 p-6">
+                <Card key={item.key} className="flex gap-4 p-6">
                   <IconBadge name={item.icon} />
                   <div className="flex-1">
-                    <h3 className="font-bold text-gray-900">{item.title}</h3>
+                    <h3 className="font-bold text-gray-900">
+                      {t(`taal.culture.heritage.${item.key}.title`)}
+                    </h3>
                     <p className="mt-1 text-sm leading-relaxed text-gray-800">
-                      {item.text}
+                      {t(`taal.culture.heritage.${item.key}.text`)}
                     </p>
                     <TaalImage
                       src={item.photo}
-                      label={item.image}
+                      label={t(`taal.culture.heritage.${item.key}.image`)}
                       className="mt-4 h-56 md:h-72"
                     />
                   </div>
@@ -59,8 +63,14 @@ export default function TaalCulture() {
             </div>
 
             <div className="mt-12">
-              <SectionTitle>Cultural Identity</SectionTitle>
-              <Prose paragraphs={CULTURE_OVERVIEW} />
+              <SectionTitle>{t('taal.culture.identityTitle')}</SectionTitle>
+              <Prose
+                paragraphs={
+                  t('taal.culture.paragraphs', {
+                    returnObjects: true,
+                  }) as string[]
+                }
+              />
               <Sources
                 items={[
                   TAAL_SOURCES.wikipedia,
@@ -73,16 +83,19 @@ export default function TaalCulture() {
         }
         sidebar={
           <>
-            <SidebarCard title="Major Festivals">
+            <SidebarCard title={t('taal.culture.festivalsTitle')}>
               <NameList
-                items={FESTIVALS.map(f => ({ name: f.name, detail: f.when }))}
+                items={FESTIVALS.map(key => ({
+                  name: t(`taal.culture.festivals.${key}.name`),
+                  detail: t(`taal.culture.festivals.${key}.when`),
+                }))}
               />
             </SidebarCard>
-            <SidebarCard title="Traditional Arts">
+            <SidebarCard title={t('taal.culture.artsTitle')}>
               <NameList
-                items={TRADITIONAL_ARTS.map(a => ({
-                  name: a.name,
-                  detail: a.detail,
+                items={TRADITIONAL_ARTS.map(key => ({
+                  name: t(`taal.culture.arts.${key}.name`),
+                  detail: t(`taal.culture.arts.${key}.detail`),
                 }))}
               />
             </SidebarCard>

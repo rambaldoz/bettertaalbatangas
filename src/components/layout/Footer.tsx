@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center mb-4">
               <img
                 src="/images/taal-seal-192.webp"
-                alt="Official seal of the Municipality of Taal"
+                alt={t('common.seal')}
                 width={56}
                 height={56}
                 className="mr-3 h-14 w-14"
@@ -50,9 +50,12 @@ const Footer: React.FC = () => {
                       to={link.href}
                       className="text-gray-300 hover:text-white text-sm transition-colors"
                     >
-                      {t(`footer.links.${link.key}`, {
-                        defaultValue: link.label,
-                      })}
+                      {t(
+                        link.key.includes('.')
+                          ? link.key
+                          : `footer.links.${link.key}`,
+                        { defaultValue: link.label }
+                      )}
                     </Link>
                   </li>
                 ))}

@@ -3,6 +3,7 @@ import { Link, useParams, useSearchParams } from 'react-router';
 import { ArrowRight, ChevronRight, Search, X } from 'lucide-react';
 import SEO from '../components/SEO';
 import { useTranslation } from '../hooks/useTranslation';
+import { useContent } from '../lib/useContent';
 import {
   getAllServices,
   getCategoryServices,
@@ -33,7 +34,8 @@ export default function Services() {
 
 /** Left sidebar: every category, with counts; empty ones are "Coming soon". */
 function CategoryNav({ active }: { active?: string }) {
-  const { t } = useTranslation();
+  const content = useContent();
+  const { t } = content;
   return (
     <SideNav
       title={t('servicesPage.categoriesTitle')}
@@ -47,7 +49,7 @@ function CategoryNav({ active }: { active?: string }) {
         },
         ...serviceCategories.categories.map(c => ({
           key: c.slug,
-          label: c.category,
+          label: content.categoryName(c),
           href: `/services/${c.slug}`,
           icon: c.icon,
           active: c.slug === active,
@@ -77,7 +79,8 @@ function ServiceCard({
   service: Service;
   showCategory?: boolean;
 }) {
-  const { t } = useTranslation();
+  const c = useContent();
+  const { t } = c;
   return (
     <Link
       to={service.href}
@@ -88,10 +91,10 @@ function ServiceCard({
       </span>
       <span className="min-w-0 flex-1">
         <span className="block text-lg font-bold text-gray-900">
-          {service.title}
+          {c.serviceTitle(service)}
         </span>
         <span className="mt-1 block text-base text-gray-700">
-          {service.summary}
+          {c.serviceSummary(service)}
         </span>
         {service.type !== 'guide' && (
           <span className="mt-3 block space-y-1 text-base text-gray-900">
@@ -108,7 +111,7 @@ function ServiceCard({
         {showCategory && (
           <span className="mt-1 block text-base text-gray-900">
             <span className="font-bold">{t('servicesPage.category')}:</span>{' '}
-            {service.categoryName}
+            {c.categoryNameBySlug(service.categorySlug, service.categoryName)}
           </span>
         )}
         <span className="mt-3 inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 group-hover:text-accent-800">
@@ -139,7 +142,8 @@ function ServiceGrid({
 }
 
 function Directory() {
-  const { t } = useTranslation();
+  const c = useContent();
+  const { t } = c;
   const [query, setQuery] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
   const office = getOffice(searchParams.get('office') ?? undefined);
@@ -150,8 +154,21 @@ function Directory() {
     words.length === 0
       ? []
       : all.filter(s => {
-          const text =
-            `${s.title} ${s.fullTitle ?? ''} ${s.summary} ${s.categoryName} ${getOffice(s.office)?.name ?? ''}`.toLowerCase();
+          const office = getOffice(s.office);
+          // English and translated text, so either language finds a service.
+          const text = [
+            s.title,
+            s.fullTitle,
+            s.summary,
+            s.categoryName,
+            office?.name,
+            c.serviceTitle(s),
+            c.serviceSummary(s),
+            c.categoryNameBySlug(s.categorySlug, s.categoryName),
+            office ? c.officeName(office) : '',
+          ]
+            .join(' ')
+            .toLowerCase();
           return words.every(w => text.includes(w));
         });
 
@@ -183,7 +200,7 @@ function Directory() {
         <div className="flex flex-wrap items-start justify-between gap-3">
           <PanelHeading
             eyebrow={t('servicesPage.byOffice')}
-            title={office.name}
+            title={c.officeName(office)}
           />
           <button
             type="button"
@@ -220,7 +237,7 @@ function Directory() {
           />
           <ul className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3">
             {serviceCategories.lifeEvents.map(e => (
-              <li key={e.title}>
+              <li key={e.href}>
                 <Link
                   to={e.href}
                   className="flex h-full flex-col items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 text-center text-base font-bold text-gray-900 transition-colors hover:border-primary-300 hover:bg-primary-50"
@@ -228,7 +245,7 @@ function Directory() {
                   <span className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-50 text-primary-700">
                     <LucideIcon name={e.icon} className="h-6 w-6" />
                   </span>
-                  {e.title}
+                  {c.lifeEvent(e)}
                 </Link>
               </li>
             ))}
@@ -252,7 +269,7 @@ function Directory() {
                     <LucideIcon name={o.icon} />
                   </span>
                   <span className="flex-1 text-base font-bold text-gray-900">
-                    {o.name}
+                    {c.officeName(o)}
                   </span>
                   <span className="text-sm text-gray-700">
                     {t('servicesPage.serviceCount', { count })}
@@ -271,7 +288,7 @@ function Directory() {
       <SEO
         title={t('servicesPage.directoryTitle')}
         description={t('servicesPage.directorySubtitle')}
-        keywords="Taal services, citizen's charter, business permit, birth certificate, building permit, cedula, real property tax"
+        keywords={t('servicesPage.keywords')}
       />
       <PageHeader
         crumbs={[
@@ -311,7 +328,8 @@ function Directory() {
 }
 
 function CategoryPage({ slug }: { slug: string }) {
-  const { t } = useTranslation();
+  const c = useContent();
+  const { t } = c;
   const category = getServiceCategory(slug);
 
   if (!category) {
@@ -341,27 +359,33 @@ function CategoryPage({ slug }: { slug: string }) {
 
   const services = getCategoryServices(category.slug);
   const offices = [
-    ...new Set(services.map(s => getOffice(s.office)?.name).filter(Boolean)),
+    ...new Set(
+      services
+        .map(s => getOffice(s.office))
+        .filter(o => o !== undefined)
+        .map(o => c.officeName(o))
+    ),
   ];
+  const categoryName = c.categoryName(category);
 
   return (
     <main className="flex-grow">
-      <SEO title={category.category} description={category.description} />
+      <SEO title={categoryName} description={c.categoryDescription(category)} />
       <PageHeader
         crumbs={[
           { label: t('servicesPage.home'), href: '/' },
           { label: t('servicesPage.services'), href: '/services' },
-          { label: category.category },
+          { label: categoryName },
         ]}
-        title={category.category}
-        subtitle={category.description}
+        title={categoryName}
+        subtitle={c.categoryDescription(category)}
       />
       <PageBody sidebar={<CategoryNav active={category.slug} />}>
         <Panel>
           <PanelHeading
             title={t('servicesPage.available')}
             text={t('servicesPage.availableText', {
-              category: category.category,
+              category: categoryName,
             })}
           />
           <dl className="mt-4 space-y-1 text-base text-gray-900">

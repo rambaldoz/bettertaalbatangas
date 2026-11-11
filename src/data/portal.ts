@@ -12,5 +12,5 @@ export const BETTERGOV_URL = 'https://bettergov.ph';
 // Portal email, if any. Set VITE_CONTACT_EMAIL in .env.local.
 export const CONTACT_EMAIL = (import.meta.env.VITE_CONTACT_EMAIL ||
   '') as string;
-// Date the policy pages were last reviewed.
-export const POLICIES_UPDATED = 'November 10, 2026';
+// Date the policy pages were last reviewed (YYYY-MM-DD).
+export const POLICIES_UPDATED = '2026-11-10';

@@ -5,27 +5,41 @@ import { Search, X } from 'lucide-react';
 import { getAllServicePages, serviceCategories } from '../../data/yamlLoader';
 import { TAAL_PAGES } from '../../data/taal';
 import { isMeilisearchEnabled } from '../../lib/meilisearch';
+import { useContent, type Content } from '../../lib/useContent';
 
 interface Entry {
   title: string;
   section: string;
   href: string;
+  english: string; // English title, so English words also find a page
 }
 
 // Everything the header search can find without a search server:
 // Taal pages, service categories and every service page.
-function buildIndex(): Entry[] {
+function buildIndex(c: Content): Entry[] {
+  const { t } = c;
   return [
-    ...TAAL_PAGES.map(p => ({ title: p.label, section: 'Taal', href: p.href })),
-    ...serviceCategories.categories.map(c => ({
-      title: c.category,
-      section: 'Services',
-      href: `/services/${c.slug}`,
+    ...TAAL_PAGES.map(p => ({
+      title: t(`taal.pages.${p.key}`),
+      section: 'Taal',
+      href: p.href,
+      english: p.label,
+    })),
+    ...serviceCategories.categories.map(cat => ({
+      title: c.categoryName(cat),
+      section: t('navbar.services'),
+      href: `/services/${cat.slug}`,
+      english: cat.category,
     })),
     ...getAllServicePages().map(p => ({
-      title: p.name,
-      section: p.categoryName,
+      title: c.serviceTitle({
+        categorySlug: p.categorySlug,
+        slug: p.slug,
+        title: p.name,
+      }),
+      section: c.categoryNameBySlug(p.categorySlug, p.categoryName),
       href: p.href,
+      english: `${p.name} ${p.categoryName}`,
     })),
   ];
 }
@@ -48,14 +62,16 @@ export default function SiteSearch({
   const [query, setQuery] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
+  const c = useContent();
+  const { t } = c;
 
-  const index = useMemo(() => buildIndex(), []);
+  const index = useMemo(() => buildIndex(c), [c]);
   const results = useMemo(() => {
     const words = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
     if (words.length === 0) return [];
     return index
       .filter(e => {
-        const text = `${e.title} ${e.section}`.toLowerCase();
+        const text = `${e.title} ${e.section} ${e.english}`.toLowerCase();
         return words.every(w => text.includes(w));
       })
       .slice(0, 8);
@@ -119,7 +135,7 @@ export default function SiteSearch({
                   className="flex items-center gap-3"
                 >
                   <label htmlFor="site-search" className="sr-only">
-                    Search the site
+                    {t('search.label')}
                   </label>
                   <div className="relative flex-1">
                     <Search
@@ -132,7 +148,7 @@ export default function SiteSearch({
                       type="search"
                       value={query}
                       onChange={e => setQuery(e.target.value)}
-                      placeholder="Search services, permits, hotlines..."
+                      placeholder={t('search.placeholder')}
                       autoComplete="off"
                       className="w-full rounded-md border border-gray-300 py-3 pl-11 pr-4 focus:border-primary-600 focus:outline-none focus:ring-1 focus:ring-primary-600"
                     />
@@ -142,7 +158,7 @@ export default function SiteSearch({
                     onClick={close}
                     className="rounded-md p-2 text-gray-700 hover:bg-gray-100"
                   >
-                    <span className="sr-only">Close search</span>
+                    <span className="sr-only">{t('search.close')}</span>
                     <X className="h-5 w-5" aria-hidden="true" />
                   </button>
                 </form>
@@ -166,7 +182,7 @@ export default function SiteSearch({
                     ))}
                     {results.length === 0 && (
                       <li className="px-3 py-2.5 text-sm text-gray-700">
-                        No pages match &ldquo;{query.trim()}&rdquo;.
+                        {t('search.noResults', { query: query.trim() })}
                       </li>
                     )}
                   </ul>

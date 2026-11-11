@@ -11,7 +11,9 @@ import {
   Shield,
   type LucideIcon,
 } from 'lucide-react';
+import { Trans } from 'react-i18next';
 import SEO from '../../components/SEO';
+import { useContent } from '../../lib/useContent';
 import {
   HOTLINES,
   TAAL_SOURCES,
@@ -26,19 +28,19 @@ import {
   SideNav,
 } from '../../components/layout/PageLayout';
 
+// Labels: hotlinesPage.categories.<value>
 const FILTERS: {
-  label: string;
   value: HotlineCategory | 'All';
   icon: LucideIcon;
 }[] = [
-  { label: 'All Hotlines', value: 'All', icon: Phone },
-  { label: 'Taal', value: 'Taal', icon: MapPin },
-  { label: 'Emergency', value: 'Emergency', icon: AlertCircle },
-  { label: 'Disaster', value: 'Disaster', icon: AlertTriangle },
-  { label: 'Security', value: 'Security', icon: Shield },
-  { label: 'Transport', value: 'Transport', icon: Bus },
-  { label: 'Weather', value: 'Weather', icon: CloudSun },
-  { label: 'Social Services', value: 'Social Services', icon: Heart },
+  { value: 'All', icon: Phone },
+  { value: 'Taal', icon: MapPin },
+  { value: 'Emergency', icon: AlertCircle },
+  { value: 'Disaster', icon: AlertTriangle },
+  { value: 'Security', icon: Shield },
+  { value: 'Transport', icon: Bus },
+  { value: 'Weather', icon: CloudSun },
+  { value: 'Social Services', icon: Heart },
 ];
 
 // "(02) 8911-1406" -> "tel:0289111406". Text-only entries get no link.
@@ -54,6 +56,9 @@ function telHref(number: string): string | null {
 }
 
 export default function TaalHotlines() {
+  const c = useContent();
+  const { t } = c;
+  const label = (value: string) => t(`hotlinesPage.categories.${value}`);
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<HotlineCategory | 'All'>('All');
 
@@ -64,23 +69,28 @@ export default function TaalHotlines() {
     ).filter(
       h =>
         !q ||
-        h.name.toLowerCase().includes(q) ||
-        h.description.toLowerCase().includes(q)
+        [h.name, h.description, c.hotlineName(h), c.hotlineDescription(h)]
+          .join(' ')
+          .toLowerCase()
+          .includes(q)
     );
-  }, [query, filter]);
+  }, [query, filter, c]);
 
   const active = FILTERS.find(f => f.value === filter) ?? FILTERS[0];
 
   return (
     <main className="flex-grow">
       <SEO
-        title="Taal Emergency Hotlines"
-        description="Emergency and public service hotlines for Taal, Batangas."
+        title={t('hotlinesPage.title')}
+        description={t('hotlinesPage.seoDescription')}
       />
       <PageHeader
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Hotlines' }]}
-        title="Taal Emergency Hotlines"
-        subtitle="Important contact numbers for emergencies and public services"
+        crumbs={[
+          { label: t('common.home'), href: '/' },
+          { label: t('hotlinesPage.crumb') },
+        ]}
+        title={t('hotlinesPage.title')}
+        subtitle={t('hotlinesPage.subtitle')}
       >
         <form
           role="search"
@@ -88,7 +98,7 @@ export default function TaalHotlines() {
           className="mx-auto mt-8 max-w-xl"
         >
           <label htmlFor="hotline-search" className="sr-only">
-            Search hotlines
+            {t('hotlinesPage.searchLabel')}
           </label>
           <div className="relative">
             <Search
@@ -100,7 +110,7 @@ export default function TaalHotlines() {
               type="search"
               value={query}
               onChange={e => setQuery(e.target.value)}
-              placeholder="Search for hotlines..."
+              placeholder={t('hotlinesPage.searchPlaceholder')}
               className="w-full rounded-full border border-white bg-white py-3 pl-12 pr-4 text-base text-gray-900 placeholder:text-gray-600 focus:outline-none focus:ring-4 focus:ring-white/50"
             />
           </div>
@@ -109,10 +119,10 @@ export default function TaalHotlines() {
       <PageBody
         sidebar={
           <SideNav
-            title="Hotline Categories"
+            title={t('hotlinesPage.categoriesTitle')}
             items={FILTERS.map(f => ({
               key: f.value,
-              label: f.label,
+              label: label(f.value),
               iconNode: (
                 <f.icon className="h-5 w-5 shrink-0" aria-hidden="true" />
               ),
@@ -128,25 +138,32 @@ export default function TaalHotlines() {
       >
         <Panel>
           <PanelHeading
-            title={active.label}
+            title={label(active.value)}
             text={
               query.trim()
-                ? `${results.length} ${results.length === 1 ? 'hotline matches' : 'hotlines match'} "${query.trim()}"`
-                : `${results.length} ${results.length === 1 ? 'hotline' : 'hotlines'}`
+                ? t('hotlinesPage.matches', {
+                    count: results.length,
+                    query: query.trim(),
+                  })
+                : t('hotlinesPage.count', { count: results.length })
             }
           />
           <ul className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
             {results.map(h => (
               <li
-                key={h.name}
+                key={h.id}
                 className="rounded-lg border border-gray-200 bg-white p-5"
               >
-                <h3 className="text-lg font-bold text-gray-900">{h.name}</h3>
-                <p className="mt-1 text-base text-gray-800">{h.description}</p>
+                <h3 className="text-lg font-bold text-gray-900">
+                  {c.hotlineName(h)}
+                </h3>
+                <p className="mt-1 text-base text-gray-800">
+                  {c.hotlineDescription(h)}
+                </p>
                 <ul className="mt-3 space-y-2">
                   {h.numbers.length === 0 && (
                     <li className="text-base italic text-gray-700">
-                      Number to be confirmed
+                      {t('hotlinesPage.numberTbc')}
                     </li>
                   )}
                   {h.numbers.map(n => {
@@ -162,15 +179,17 @@ export default function TaalHotlines() {
                             href={href}
                             className="font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
                           >
-                            {n}
+                            {c.phone(n)}
                           </a>
                         ) : isPlaceholderNumber(n) ? (
                           <span className="text-gray-700">
                             {n}{' '}
-                            <span className="italic">(to be confirmed)</span>
+                            <span className="italic">
+                              ({t('common.tbcLower')})
+                            </span>
                           </span>
                         ) : (
-                          <span className="text-gray-900">{n}</span>
+                          <span className="text-gray-900">{c.phone(n)}</span>
                         )}
                       </li>
                     );
@@ -181,23 +200,23 @@ export default function TaalHotlines() {
           </ul>
           {results.length === 0 && (
             <p className="mt-4 text-base text-gray-800">
-              No hotlines match your search.
+              {t('hotlinesPage.noResults')}
             </p>
           )}
           <p className="mt-8 text-sm text-gray-700">
-            National hotlines are from{' '}
-            <a
-              href={TAAL_SOURCES.bettergovHotlines.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent-700 underline hover:text-accent-800"
-            >
-              BetterGov.ph
-            </a>
-            . Taal numbers were gathered from public sources in November 2026,
-            including the Batangas provincial MDRRMO list, the PNP telephone
-            directory and the Taal LGU directory, and some may have changed. If
-            a number does not connect in an emergency, call 911.
+            <Trans
+              i18nKey="hotlinesPage.sourcesNote"
+              components={{
+                link: (
+                  <a
+                    href={TAAL_SOURCES.bettergovHotlines.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent-700 underline hover:text-accent-800"
+                  />
+                ),
+              }}
+            />
           </p>
         </Panel>
       </PageBody>

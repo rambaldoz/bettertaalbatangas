@@ -1,22 +1,22 @@
 import { ArrowUpRight, BadgeCheck, IdCard, Users } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 // PhilSys National ID: a contained card instead of a full-width color band.
 export default function PhilSysBanner() {
+  const { t } = useTranslation('common');
   return (
     <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 overflow-hidden rounded-2xl border border-gray-200 bg-white lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           <div className="p-6 md:p-10">
             <p className="text-sm font-bold uppercase tracking-wider text-accent-700">
-              Philippine Identification System
+              {t('philsys.eyebrow')}
             </p>
             <h2 className="mt-2 text-3xl font-bold text-gray-900">
-              Get your PhilSys National ID
+              {t('philsys.title')}
             </h2>
             <p className="mt-3 max-w-2xl text-lg text-gray-800">
-              The national ID is a single government-issued identification
-              document for all citizens. Use it for government services, bank
-              accounts and other transactions.
+              {t('philsys.text')}
             </p>
             <ul className="mt-6 space-y-3 text-base text-gray-900">
               <li className="flex items-start gap-3">
@@ -24,14 +24,14 @@ export default function PhilSysBanner() {
                   className="mt-0.5 h-5 w-5 shrink-0 text-primary-700"
                   aria-hidden="true"
                 />
-                Registration is free.
+                {t('philsys.free')}
               </li>
               <li className="flex items-start gap-3">
                 <Users
                   className="mt-0.5 h-5 w-5 shrink-0 text-primary-700"
                   aria-hidden="true"
                 />
-                Open to all Filipino citizens and resident aliens.
+                {t('philsys.open')}
               </li>
             </ul>
             <a
@@ -40,7 +40,7 @@ export default function PhilSysBanner() {
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-accent-700 px-6 py-3 text-base font-bold text-white transition-colors hover:bg-accent-800"
             >
-              Register at philsys.gov.ph
+              {t('philsys.button')}
               <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
             </a>
           </div>

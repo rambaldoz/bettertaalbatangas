@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import { Link, useLocation } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import {
   AlertTriangle,
   Building2,
@@ -132,12 +133,13 @@ export function PhotoCreditLine({
   className?: string;
   linkClassName?: string;
 }) {
+  const { t } = useTranslation('common');
   const link =
     linkClassName ?? 'text-accent-700 underline hover:text-accent-800';
   const viaCommons = credit.sourceUrl.includes('wikimedia.org');
   return (
     <p className={cn('text-[12px] leading-snug', className)}>
-      Photo:{' '}
+      {t('taal.ui.photo')}{' '}
       <a
         href={credit.sourceUrl}
         target="_blank"
@@ -146,7 +148,7 @@ export function PhotoCreditLine({
       >
         {credit.title}
       </a>{' '}
-      by{' '}
+      {t('taal.ui.by')}{' '}
       {credit.authorUrl ? (
         <a
           href={credit.authorUrl}
@@ -168,8 +170,9 @@ export function PhotoCreditLine({
       >
         {credit.license}
       </a>
-      {viaCommons && ', via Wikimedia Commons'}
-      {credit.changes && ` (${credit.changes})`}
+      {viaCommons && `, ${t('taal.ui.viaCommons')}`}
+      {credit.changes &&
+        ` (${t(`taal.ui.changes.${credit.changes}`, { defaultValue: credit.changes })})`}
     </p>
   );
 }
@@ -192,7 +195,7 @@ export function TaalImage({
       <figure>
         <img
           src={src}
-          alt={label.replace(/^Photo:\s*/, '')}
+          alt={label.replace(/^[^:]+:\s*/, '')}
           loading="lazy"
           onError={() => setFailed(true)}
           className={cn('w-full rounded-lg object-cover', className)}
@@ -291,12 +294,13 @@ export function NameList({
 
 // Links to the other Taal pages, leaving out the current one.
 export function RelatedLinks() {
+  const { t } = useTranslation('common');
   const { pathname } = useLocation();
   const links = TAAL_PAGES.filter(
     page => page.href !== pathname && page.href.startsWith('/taal')
   ).slice(0, 4);
   return (
-    <SidebarCard title="Related Links">
+    <SidebarCard title={t('taal.ui.relatedLinks')}>
       <ul className="space-y-1">
         {links.map(link => (
           <li key={link.href}>
@@ -304,7 +308,7 @@ export function RelatedLinks() {
               to={link.href}
               className="block rounded-md px-3 py-2 text-base text-gray-800 transition-colors hover:bg-primary-50 hover:text-primary-700"
             >
-              {link.label}
+              {t(`taal.pages.${link.key}`)}
             </Link>
           </li>
         ))}
@@ -316,8 +320,8 @@ export function RelatedLinks() {
 export function Prose({ paragraphs }: { paragraphs: readonly string[] }) {
   return (
     <div className="space-y-4 leading-relaxed text-gray-800">
-      {paragraphs.map(p => (
-        <p key={p.slice(0, 40)}>{p}</p>
+      {paragraphs.map((p, i) => (
+        <p key={i}>{p}</p>
       ))}
     </div>
   );
@@ -328,9 +332,10 @@ export function Sources({
 }: {
   items: readonly { label: string; url: string }[];
 }) {
+  const { t } = useTranslation('common');
   return (
     <p className="mt-8 text-sm text-gray-700">
-      Sources:{' '}
+      {t('taal.ui.sources')}{' '}
       {items.map((item, i) => (
         <span key={item.url}>
           <a

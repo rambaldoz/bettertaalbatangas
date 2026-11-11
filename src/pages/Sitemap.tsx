@@ -13,6 +13,7 @@ import {
   type LucideIcon as LucideIconType,
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import { useContent } from '../lib/useContent';
 import {
   LucideIcon,
   PageBody,
@@ -32,102 +33,41 @@ interface PageLink {
   description: string;
 }
 
-const MAIN_PAGES: PageLink[] = [
-  { label: 'Home', href: '/', description: 'Main landing page' },
-  {
-    label: 'Services',
-    href: '/services',
-    description: 'Step-by-step guides for municipal services',
-  },
-  {
-    label: 'Government',
-    href: '/government',
-    description: 'Elected officials, offices and barangays',
-  },
-  {
-    label: 'Hotlines',
-    href: '/taal/hotlines',
-    description: 'Emergency and public service numbers',
-  },
+// Labels and descriptions: sitemap.pages.<key>.label / .description
+const MAIN_PAGES = [
+  { key: 'home', href: '/' },
+  { key: 'services', href: '/services' },
+  { key: 'government', href: '/government' },
+  { key: 'hotlines', href: '/taal/hotlines' },
+];
+const TAAL_PAGES = [
+  { key: 'aboutTaal', href: '/taal/about' },
+  { key: 'history', href: '/taal/history' },
+  { key: 'culture', href: '/taal/culture' },
+  { key: 'holidays', href: '/taal/holidays' },
+];
+const DATA_PAGES = [
+  { key: 'weather', href: '/weather' },
+  { key: 'forex', href: '/forex' },
+];
+const PORTAL_PAGES = [
+  { key: 'aboutPortal', href: '/about' },
+  { key: 'faq', href: '/faq' },
+  { key: 'contact', href: '/contact' },
+  { key: 'terms', href: '/terms' },
+  { key: 'privacy', href: '/privacy' },
+  { key: 'accessibility', href: '/accessibility' },
 ];
 
-const TAAL_PAGES: PageLink[] = [
-  {
-    label: 'About Taal',
-    href: '/taal/about',
-    description: 'Overview of the Heritage Town',
-  },
-  {
-    label: 'History',
-    href: '/taal/history',
-    description: 'Timeline of Taal since 1572',
-  },
-  {
-    label: 'Culture',
-    href: '/taal/culture',
-    description: 'Crafts, food, churches and festivals',
-  },
-  {
-    label: 'Holidays',
-    href: '/taal/holidays',
-    description: 'National holidays and local feast days',
-  },
-];
-
-const DATA_PAGES: PageLink[] = [
-  {
-    label: 'Weather',
-    href: '/weather',
-    description: 'Current conditions and 5-day forecast',
-  },
-  {
-    label: 'Forex',
-    href: '/forex',
-    description: 'Peso exchange rates from the BSP',
-  },
-];
-
-const PORTAL_PAGES: PageLink[] = [
-  {
-    label: 'About the Portal',
-    href: '/about',
-    description: 'Who we are and why we built this site',
-  },
-  {
-    label: 'FAQs',
-    href: '/faq',
-    description: 'Common questions about the portal',
-  },
-  {
-    label: 'Contact Us',
-    href: '/contact',
-    description: 'Report an issue or reach the volunteers',
-  },
-  {
-    label: 'Terms of Use',
-    href: '/terms',
-    description: 'Rules for using this site',
-  },
-  {
-    label: 'Privacy Policy',
-    href: '/privacy',
-    description: 'What data is and is not collected',
-  },
-  {
-    label: 'Accessibility',
-    href: '/accessibility',
-    description: 'Our accessibility commitment and known limits',
-  },
-];
-
+// Titles: sitemap.sections.<id>
 const SECTIONS = [
-  { id: 'main', label: 'Main Pages', icon: Home },
-  { id: 'taal', label: 'About Taal', icon: Mountain },
-  { id: 'services', label: 'Services', icon: LayoutGrid },
-  { id: 'government', label: 'Government', icon: Landmark },
-  { id: 'data', label: 'Live Data', icon: Radio },
-  { id: 'national', label: 'National Government', icon: Globe },
-  { id: 'portal', label: 'About This Portal', icon: Info },
+  { id: 'main', icon: Home },
+  { id: 'taal', icon: Mountain },
+  { id: 'services', icon: LayoutGrid },
+  { id: 'government', icon: Landmark },
+  { id: 'data', icon: Radio },
+  { id: 'national', icon: Globe },
+  { id: 'portal', icon: Info },
 ];
 
 function Section({
@@ -210,34 +150,36 @@ function LinkCards({ links }: { links: PageLink[] }) {
   );
 }
 
-const NATIONAL_DESCRIPTIONS: Record<string, string> = {
-  officialGovPh: 'Official portal of the Republic of the Philippines',
-  openData: 'Open datasets from national agencies',
-  foi: 'Request information from government agencies',
-  contactCenter: 'Contact Center ng Bayan hotline and feedback',
-  officialGazette: 'Laws, orders and official issuances',
-};
-
 // A guide to every page on the site, in the style of bettergov.ph/sitemap.
 export default function Sitemap() {
+  const c = useContent();
+  const { t } = c;
+  const pages = (list: { key: string; href: string }[]): PageLink[] =>
+    list.map(p => ({
+      label: t(`sitemap.pages.${p.key}.label`),
+      href: p.href,
+      description: t(`sitemap.pages.${p.key}.description`),
+    }));
+  const section = (id: string) => t(`sitemap.sections.${id}`);
+
   const nationalLinks: PageLink[] = (
     footerNavigation.mainSections.find(s => s.key === 'government')?.links ?? []
   ).map(link => ({
-    label: link.label,
+    label: t(`footer.links.${link.key}`, { defaultValue: link.label }),
     href: link.href,
-    description: NATIONAL_DESCRIPTIONS[link.key] ?? '',
+    description: t(`sitemap.national.${link.key}`),
   }));
 
   const governmentLinks: PageLink[] = [
     {
-      label: 'Government Directory',
+      label: t('sitemap.pages.directory.label'),
       href: '/government',
-      description: 'All branches, offices and officials',
+      description: t('sitemap.pages.directory.description'),
     },
     ...BRANCHES.map(branch => ({
-      label: branch.name,
+      label: c.branchName(branch),
       href: `/government/${branch.slug}`,
-      description: branch.description ?? '',
+      description: c.branchDescription(branch),
     })),
   ];
 
@@ -248,46 +190,48 @@ export default function Sitemap() {
 
   return (
     <>
-      <SEO
-        title="Sitemap"
-        description="A complete guide to all pages and services on BetterTaalBatangas.org."
-      />
+      <SEO title={t('footer.sitemap')} description={t('sitemap.subtitle')} />
       <PageHeader
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Sitemap' }]}
-        title="Sitemap"
-        subtitle="A complete guide to all pages and services on BetterTaalBatangas.org."
+        crumbs={[
+          { label: t('common.home'), href: '/' },
+          { label: t('footer.sitemap') },
+        ]}
+        title={t('footer.sitemap')}
+        subtitle={t('sitemap.subtitle')}
       />
       <PageBody
         stickySidebar
         sidebar={
           <SideNav
-            title="On this page"
-            items={SECTIONS.map(({ id, label, icon: Icon }) => ({
+            title={t('common.onThisPage')}
+            items={SECTIONS.map(({ id, icon: Icon }) => ({
               key: id,
-              label,
+              label: section(id),
               href: `#${id}`,
               iconNode: <Icon className="h-5 w-5" aria-hidden="true" />,
             }))}
           />
         }
       >
-        <Section id="main" title="Main Pages" icon={Home}>
-          <LinkCards links={MAIN_PAGES} />
+        <Section id="main" title={section('main')} icon={Home}>
+          <LinkCards links={pages(MAIN_PAGES)} />
         </Section>
 
-        <Section id="taal" title="About Taal" icon={Mountain}>
-          <LinkCards links={TAAL_PAGES} />
+        <Section id="taal" title={section('taal')} icon={Mountain}>
+          <LinkCards links={pages(TAAL_PAGES)} />
         </Section>
 
-        <Section id="services" title="Services" icon={LayoutGrid}>
+        <Section id="services" title={section('services')} icon={LayoutGrid}>
           <p className="-mt-2 mb-6 text-base text-gray-700">
-            {serviceCount} services in {activeServiceCategories.length}{' '}
-            categories.{' '}
+            {t('sitemap.serviceCount', {
+              services: serviceCount,
+              categories: activeServiceCategories.length,
+            })}{' '}
             <Link
               to="/services"
               className="font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
             >
-              Browse all services
+              {t('sitemap.browseAll')}
             </Link>
           </p>
           <div className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2">
@@ -302,7 +246,7 @@ export default function Sitemap() {
                     to={`/services/${category.slug}`}
                     className="hover:text-accent-700 hover:underline"
                   >
-                    {category.category}
+                    {c.categoryName(category)}
                   </Link>
                 </h3>
                 <ul className="mt-2 space-y-1.5">
@@ -312,7 +256,7 @@ export default function Sitemap() {
                         to={service.href}
                         className="text-base text-accent-700 underline-offset-2 hover:text-accent-800 hover:underline"
                       >
-                        {service.title}
+                        {c.serviceTitle(service)}
                       </Link>
                     </li>
                   ))}
@@ -322,20 +266,20 @@ export default function Sitemap() {
           </div>
         </Section>
 
-        <Section id="government" title="Government" icon={Landmark}>
+        <Section id="government" title={section('government')} icon={Landmark}>
           <LinkCards links={governmentLinks} />
         </Section>
 
-        <Section id="data" title="Live Data" icon={Radio}>
-          <LinkCards links={DATA_PAGES} />
+        <Section id="data" title={section('data')} icon={Radio}>
+          <LinkCards links={pages(DATA_PAGES)} />
         </Section>
 
-        <Section id="national" title="National Government" icon={Globe}>
+        <Section id="national" title={section('national')} icon={Globe}>
           <LinkCards links={nationalLinks} />
         </Section>
 
-        <Section id="portal" title="About This Portal" icon={Info}>
-          <LinkCards links={PORTAL_PAGES} />
+        <Section id="portal" title={section('portal')} icon={Info}>
+          <LinkCards links={pages(PORTAL_PAGES)} />
         </Section>
       </PageBody>
     </>

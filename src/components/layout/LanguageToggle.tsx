@@ -13,7 +13,7 @@ const CODES = Object.keys(LANGUAGES) as LanguageType[];
  * mouse, touch and keyboard (arrows, Enter, Escape).
  */
 export default function LanguageToggle({ className }: { className?: string }) {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation('common');
   const current = (i18n.resolvedLanguage ?? 'en') as LanguageType;
   const [open, setOpen] = useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -62,7 +62,7 @@ export default function LanguageToggle({ className }: { className?: string }) {
         type="button"
         aria-haspopup="menu"
         aria-expanded={open}
-        aria-label={`Language: ${LANGUAGES[current].name}`}
+        aria-label={`${t('footer.language')}: ${LANGUAGES[current].name}`}
         onClick={() => setOpen(o => !o)}
         onKeyDown={e => {
           if (e.key === 'ArrowDown' && !open) {
@@ -95,7 +95,7 @@ export default function LanguageToggle({ className }: { className?: string }) {
       {open && (
         <div
           role="menu"
-          aria-label="Choose a language"
+          aria-label={t('common.chooseLanguage')}
           onKeyDown={onMenuKey}
           className="absolute right-0 z-50 mt-2 w-48 overflow-hidden rounded-xl border border-gray-200 bg-white p-1.5 shadow-lg"
         >

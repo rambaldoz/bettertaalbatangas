@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import { useTranslation } from '../hooks/useTranslation';
+import { useContent } from '../lib/useContent';
 import {
   getCategoryServices,
   getService,
@@ -82,7 +83,13 @@ export default function ServiceDetail() {
 }
 
 function ServicePage({ service }: { service: Service }) {
-  const { t } = useTranslation();
+  const c = useContent();
+  const { t } = c;
+  const title = c.serviceTitle(service);
+  const categoryName = c.categoryNameBySlug(
+    service.categorySlug,
+    service.categoryName
+  );
   const [searchParams, setSearchParams] = useSearchParams();
   const isGuide = service.type === 'guide';
   const variants = service.variants ?? [];
@@ -128,8 +135,8 @@ function ServicePage({ service }: { service: Service }) {
   return (
     <main className="flex-grow">
       <SEO
-        title={`${service.title} | ${service.categoryName}`}
-        description={service.description}
+        title={`${title} | ${categoryName}`}
+        description={c.isFil ? c.serviceSummary(service) : service.description}
       />
       <PageHeader
         back={{
@@ -140,13 +147,15 @@ function ServicePage({ service }: { service: Service }) {
           { label: t('servicesPage.home'), href: '/' },
           { label: t('servicesPage.services'), href: '/services' },
           {
-            label: service.categoryName,
+            label: categoryName,
             href: `/services/${service.categorySlug}`,
           },
-          { label: service.title },
+          { label: title },
         ]}
-        title={service.fullTitle || service.title}
-        subtitle={service.description}
+        // Tagalog: the translated name and summary; the official English
+        // name and description from the Charter are shown in English only.
+        title={c.isFil ? title : service.fullTitle || service.title}
+        subtitle={c.isFil ? c.serviceSummary(service) : service.description}
       />
 
       <PageBody stickySidebar sidebar={<SectionNav sections={sections} />}>
@@ -157,6 +166,12 @@ function ServicePage({ service }: { service: Service }) {
               title={t('servicesPage.summaryTitle')}
               text={t('servicesPage.summaryText')}
             />
+
+            {c.isFil && (
+              <p className="mt-4 rounded-lg border border-primary-200 bg-primary-50 p-4 text-base text-gray-900">
+                {t('servicesPage.englishNote')}
+              </p>
+            )}
 
             {variants.length > 1 && (
               <div className="mt-6">
@@ -401,7 +416,9 @@ function ServicePage({ service }: { service: Service }) {
                     <DynamicIcon name={office.icon} />
                   </span>
                   <div>
-                    <h3 className="font-bold text-gray-900">{office.name}</h3>
+                    <h3 className="font-bold text-gray-900">
+                      {c.officeName(office)}
+                    </h3>
                     {office.short && (
                       <p className="text-sm text-gray-700">{office.short}</p>
                     )}
@@ -420,7 +437,7 @@ function ServicePage({ service }: { service: Service }) {
                             {office.head}
                           </span>
                           <span className="block text-sm text-gray-700">
-                            {office.headTitle}
+                            {c.officeHeadTitle(office)}
                           </span>
                         </>
                       ) : (
@@ -544,7 +561,7 @@ function ServicePage({ service }: { service: Service }) {
               <div className="mt-8">
                 <h3 className="font-bold text-gray-900">
                   {t('servicesPage.related', {
-                    category: service.categoryName,
+                    category: categoryName,
                   })}
                 </h3>
                 <ul className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -557,7 +574,7 @@ function ServicePage({ service }: { service: Service }) {
                         <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-primary-50 text-primary-600">
                           <DynamicIcon name={s.icon} className="h-4 w-4" />
                         </span>
-                        <span className="flex-1">{s.title}</span>
+                        <span className="flex-1">{c.serviceTitle(s)}</span>
                         <ChevronRight
                           className="h-4 w-4 text-gray-700"
                           aria-hidden="true"

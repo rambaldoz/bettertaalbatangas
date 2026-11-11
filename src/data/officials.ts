@@ -9,7 +9,7 @@
 import { CHARTER, MAYOR_OFFICE_EMAIL, OFFICES } from './offices';
 
 export const OFFICIALS_TERM = '2025–2028';
-export const OFFICIALS_AS_OF = 'November 2026';
+export const OFFICIALS_AS_OF = '2026-11'; // year-month, shown as "November 2026"
 
 export const OFFICIALS_SOURCES = [
   {

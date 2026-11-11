@@ -41,49 +41,27 @@ export const TBC = 'To be confirmed';
 
 // ---------- About ----------
 
+// Text for the Taal pages is in public/locales/<lang>/common.json under
+// "taal"; these lists hold the icons, photos and translation keys.
+
 export const QUICK_FACTS = [
-  {
-    icon: 'Globe',
-    title: 'Geography',
-    text: 'A coastal municipality in Batangas, facing Balayan Bay and about 79 km south of Metro Manila.',
-  },
-  {
-    icon: 'Users',
-    title: 'Population',
-    text: 'Home to 61,460 people as of the 2020 Census of Population and Housing.',
-  },
-  {
-    icon: 'Landmark',
-    title: 'Heritage Town',
-    text: 'Its poblacion is a National Historical Landmark, with hundreds of Spanish-era structures.',
-  },
-  {
-    icon: 'Mountain',
-    title: 'Landscape',
-    text: 'Set between Taal Lake and Balayan Bay, linked by the Pansipit River.',
-  },
-  {
-    icon: 'MapPin',
-    title: 'Barangays',
-    text: '42 barangays, including 14 poblacion barangays in the town center.',
-  },
+  { icon: 'Globe', key: 'geography' },
+  { icon: 'Users', key: 'population' },
+  { icon: 'Landmark', key: 'heritage' },
+  { icon: 'Mountain', key: 'landscape' },
+  { icon: 'MapPin', key: 'barangays' },
 ] as const;
 
+// taal.about.info.<key>.label / .value
 export const KEY_INFORMATION = [
-  { label: 'Province', value: 'Batangas' },
-  { label: 'Region', value: 'Region IV-A (CALABARZON)' },
-  { label: 'Founded', value: 'April 26, 1572' },
-  { label: 'Language', value: 'Tagalog (Batangueño), English' },
-  { label: 'Land Area', value: '29.76 km²' },
-  { label: 'ZIP Code', value: '4208' },
-  { label: 'Income Class', value: TBC },
+  'province',
+  'region',
+  'founded',
+  'language',
+  'landArea',
+  'zip',
+  'incomeClass',
 ] as const;
-
-export const ABOUT_OVERVIEW = [
-  'Taal is a coastal municipality in the province of Batangas, in the CALABARZON region. Founded by Augustinian friars in 1572, it is one of the oldest towns in Batangas and once served as the provincial capital.',
-  'The town moved to its present site overlooking Balayan Bay after the great eruption of Taal Volcano in 1754. Today its town center keeps a Spanish-era grid of narrow streets, ancestral houses and the Basilica de San Martin de Tours.',
-  'Taal is known as the balisong and Barong Tagalog capital of the Philippines. Its embroidery, crafts and food, from tapang Taal to sinaing na tulingan, are celebrated every April at the El Pasubat Festival.',
-];
 
 // ---------- Photos ----------
 // Drop photos into public/images/taal/ with the file names used below and
@@ -159,142 +137,81 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
 
 // ---------- History ----------
 
+// taal.history.timeline.<period>.title / .description / .image
 export const TIMELINE = [
   {
     period: '2020',
     icon: 'AlertTriangle',
-    title: 'Taal Volcano Eruption',
-    description:
-      'The town was evacuated for several weeks in early 2020. Ashfall and volcanic tremors damaged several heritage structures.',
-    image: 'Photo: Taal Volcano and Taal Lake',
     photo: '/images/taal/history-2020.jpg',
   },
-  {
-    period: '1898',
-    icon: 'Flag',
-    title: 'The Philippine Flag',
-    description:
-      'Taal-born Marcela Agoncillo sewed the first Philippine flag, unfurled at the declaration of independence in Kawit on June 12, 1898.',
-    image: 'Photo: Marcela Agoncillo Museum',
-    photo: '/images/taal/history-1898.jpg',
-  },
-  {
-    period: '1754',
-    icon: 'Mountain',
-    title: 'The Great Eruption',
-    description:
-      'A months-long eruption of Taal Volcano destroyed the lakeshore town. Residents moved to Caysasay and later to the present site above Balayan Bay.',
-    image: 'Photo: Ruins of the old Taal church, San Nicolas',
-    photo: '/images/taal/history-1754.jpg',
-  },
-  {
-    period: '1732',
-    icon: 'Crown',
-    title: 'Capital of Batangas',
-    description:
-      'Taal became the provincial capital and a busy lake and river port linking Taal Lake to Balayan Bay.',
-    image: 'Photo: Pansipit River',
-    photo: '/images/taal/history-1732.jpg',
-  },
-  {
-    period: '1572',
-    icon: 'Clock',
-    title: 'Founding of Taal',
-    description:
-      'Augustinian friars founded Taal on April 26, 1572 as the first Christian mission in Batangas. In 1575 it moved to the edge of the lake.',
-    image: 'Photo: Basilica de San Martin de Tours',
-    photo: '/images/taal/history-1572.webp',
-  },
+  { period: '1898', icon: 'Flag', photo: '/images/taal/history-1898.jpg' },
+  { period: '1754', icon: 'Mountain', photo: '/images/taal/history-1754.jpg' },
+  { period: '1732', icon: 'Crown', photo: '/images/taal/history-1732.jpg' },
+  { period: '1572', icon: 'Clock', photo: '/images/taal/history-1572.webp' },
 ] as const;
 
+// Names stay as written; roles are in taal.history.figures.<key>.
 export const HISTORICAL_FIGURES = [
-  { name: 'Marcela Agoncillo', role: 'Maker of the first Philippine flag' },
-  {
-    name: 'Felipe Agoncillo',
-    role: 'Diplomat at the Treaty of Paris talks (1898)',
-  },
-  {
-    name: 'Galicano Apacible',
-    role: 'Co-founder of La Solidaridad, Governor of Batangas',
-  },
-  {
-    name: 'Gliceria de Villavicencio',
-    role: 'Supporter of the revolutionary forces',
-  },
+  { key: 'marcela', name: 'Marcela Agoncillo' },
+  { key: 'felipe', name: 'Felipe Agoncillo' },
+  { key: 'galicano', name: 'Galicano Apacible' },
+  { key: 'gliceria', name: 'Gliceria de Villavicencio' },
 ] as const;
 
+// taal.history.dates.<key>.date / .event
 export const IMPORTANT_DATES = [
-  { date: 'April 26, 1572', event: 'Founding of Taal' },
-  { date: '1732', event: 'Taal becomes capital of Batangas' },
-  { date: 'May to December 1754', event: 'Great eruption of Taal Volcano' },
-  { date: 'June 12, 1898', event: 'Agoncillo flag unfurled in Kawit' },
+  'founding',
+  'capital',
+  'eruption',
+  'flag',
 ] as const;
-
-export const HISTORY_OVERVIEW = [
-  'Taal was founded in 1572 by Augustinian missionaries at Balangon, near the Pansipit River, and grew into a lake and river port. Its early parish counted Balayan and Bauan as mission stations.',
-  'In 1732 Taal became the capital of Batangas. The great eruption of 1754 devastated the lakeshore towns, forcing Taal to move toward Balayan Bay and the provincial capital to move to what is now Batangas City.',
-  'In the 19th and 20th centuries several towns, including Lemery, San Luis, San Nicolas and Santa Teresita, were formed from parts of Taal. Its sons and daughters, from the Agoncillos to Galicano Apacible, played a large part in the revolution and the early republic.',
-];
 
 // ---------- Culture ----------
 
+// taal.culture.heritage.<key>.title / .text / .image
 export const CULTURAL_HERITAGE = [
   {
+    key: 'barong',
     icon: 'Shirt',
-    title: 'Barong Tagalog and Burdang Taal',
-    text: 'Hand embroidery on piña and jusi fabric for barong and camisa, a home industry passed down for generations.',
-    image: 'Photo: Burdang Taal embroidery',
     photo: '/images/taal/culture-barong-burda.jpg',
   },
   {
+    key: 'balisong',
     icon: 'Swords',
-    title: 'Balisong',
-    text: 'The Filipino fan knife, crafted by hand in Taal, especially in Barangay Balisong.',
-    image: 'Photo: Balisong makers at work',
     photo: '/images/taal/culture-balisong.jpg',
   },
   {
+    key: 'cuisine',
     icon: 'UtensilsCrossed',
-    title: 'Cuisine',
-    text: 'Tapang Taal, longganisang Taal, empanada, sinaing na tulingan, adobo sa dilaw, suman and panutsa.',
-    image: 'Photo: Tapang Taal and longganisa',
     photo: '/images/taal/culture-cuisine.jpg',
   },
   {
+    key: 'festivals',
     icon: 'PartyPopper',
-    title: 'Festivals',
-    text: 'The El Pasubat Festival every April and the town fiesta honoring St. Martin of Tours and Our Lady of Caysasay.',
-    image: 'Photo: El Pasubat Festival parade',
     photo: '/images/taal/culture-festivals.jpg',
   },
   {
+    key: 'churches',
     icon: 'Church',
-    title: 'Churches and Ancestral Houses',
-    text: 'The Basilica de San Martin de Tours, the Caysasay shrine and ancestral houses like the Marcela Agoncillo house, now a museum.',
-    image: 'Photo: Taal ancestral houses',
     photo: '/images/taal/culture-heritage-houses.jpg',
   },
 ] as const;
 
+// taal.culture.festivals.<key>.name / .when
 export const FESTIVALS = [
-  { name: 'Founding Anniversary', when: 'April 26' },
-  { name: 'El Pasubat Festival', when: 'April' },
-  { name: 'Feast of St. Martin of Tours', when: 'November 11' },
-  { name: 'Feast of Our Lady of Caysasay', when: 'December 8' },
+  'founding',
+  'elPasubat',
+  'stMartin',
+  'caysasay',
 ] as const;
 
+// taal.culture.arts.<key>.name / .detail
 export const TRADITIONAL_ARTS = [
-  { name: 'Embroidery', detail: 'Burdang Taal on piña and jusi' },
-  { name: 'Knife Making', detail: 'Balisong' },
-  { name: 'Garments', detail: 'Barong Tagalog, camisa' },
-  { name: 'Food Crafts', detail: 'Panutsa, suman, tapa, longganisa' },
+  'embroidery',
+  'knives',
+  'garments',
+  'food',
 ] as const;
-
-export const CULTURE_OVERVIEW = [
-  'Taal is called the balisong and Barong Tagalog capital of the Philippines. Its embroiderers and knife makers keep crafts alive that started as home industries in the town.',
-  'The name El Pasubat comes from the things Taal is known for: empanada, longganisa, panutsa, suman, balisong, barong and tapa. Tamales, tawilis and tulingan were added later.',
-  'Faith is central to town life. The feasts of St. Martin of Tours and Our Lady of Caysasay bring processions and old traditions back to the streets each year.',
-];
 
 // ---------- Barangays ----------
 
@@ -337,10 +254,7 @@ export const BARANGAYS: { name: string; type: 'Poblacion' | 'Barangay' }[] = [
   ].map(name => ({ name, type: 'Barangay' as const })),
 ];
 
-export const BARANGAY_OVERVIEW = [
-  'Taal is divided into 42 barangays. Fourteen poblacion barangays make up the heritage town center, while the rest spread toward Taal Lake, the Pansipit River and Balayan Bay.',
-  'Each barangay is made up of puroks, and some have sitios. Barangay officials, contact details and health stations will be added to each barangay page.',
-];
+// Barangay overview text: taal.barangays.paragraphs
 
 // ---------- Hotlines ----------
 
@@ -354,6 +268,7 @@ export type HotlineCategory =
   | 'Social Services';
 
 export interface Hotline {
+  id: string; // translation key: content.hotlines.<id>
   name: string;
   description: string;
   category: HotlineCategory;
@@ -366,7 +281,8 @@ export interface Hotline {
 // Placeholder for local numbers until each office confirms its number.
 // Placeholders are shown greyed out and are not clickable.
 export const PLACEHOLDER_NUMBER = '09XX XXX XXXX';
-export const isPlaceholderNumber = (n: string) => /X/i.test(n);
+// Two or more X's, so words like "Text" are not mistaken for placeholders.
+export const isPlaceholderNumber = (n: string) => /XX/.test(n);
 
 export const HOTLINES: Hotline[] = [
   // Taal numbers were gathered from public sources in November 2026:
@@ -375,6 +291,7 @@ export const HOTLINES: Hotline[] = [
   // the Philippine Coast Guard website and hospital listings.
   // Confirm with each office and update when numbers change.
   {
+    id: 'taal-mdrrmo',
     name: 'Taal MDRRMO',
     description:
       'Municipal disaster response, rescue, evacuation and ambulance.',
@@ -383,6 +300,7 @@ export const HOTLINES: Hotline[] = [
     featured: { label: 'Rescue (MDRRMO)', icon: 'Siren' },
   },
   {
+    id: 'taal-police',
     name: 'PNP Taal Municipal Police Station',
     description: 'Local police assistance and crime reports.',
     category: 'Taal',
@@ -390,6 +308,7 @@ export const HOTLINES: Hotline[] = [
     featured: { label: 'Police', icon: 'Shield' },
   },
   {
+    id: 'taal-fire',
     name: 'BFP Taal Fire Station',
     description: 'Local fire emergencies and rescue.',
     category: 'Taal',
@@ -397,6 +316,7 @@ export const HOTLINES: Hotline[] = [
     featured: { label: 'Fire', icon: 'Flame' },
   },
   {
+    id: 'pcg-batangas',
     name: 'Philippine Coast Guard Station Batangas',
     description:
       'Sea rescue and maritime emergencies along Balayan Bay. Taal has no Coast Guard sub-station of its own.',
@@ -405,6 +325,7 @@ export const HOTLINES: Hotline[] = [
     featured: { label: 'Coast Guard', icon: 'Ship' },
   },
   {
+    id: 'taal-polymedic',
     name: 'Taal Polymedic Hospital and Medical Center',
     description:
       'Hospital in Barangay Carsuche, Diversion Road, Taal, with an emergency room.',
@@ -413,24 +334,28 @@ export const HOTLINES: Hotline[] = [
     featured: { label: 'Hospital', icon: 'Hospital' },
   },
   {
+    id: 'taal-rhu',
     name: 'Taal Rural Health Unit',
     description: 'Municipal Health Office in Barangay Carsuche.',
     category: 'Taal',
     numbers: ['(043) 706-3391'],
   },
   {
+    id: 'taal-mswdo',
     name: 'Taal MSWDO',
     description: 'Social welfare assistance for residents.',
     category: 'Taal',
     numbers: ['(043) 706-3390'],
   },
   {
+    id: 'taal-municipal-hall',
     name: 'Taal Municipal Hall',
     description: 'Office of the Mayor and general municipal concerns.',
     category: 'Taal',
     numbers: ['(043) 740-6183', '(043) 706-3366'],
   },
   {
+    id: 'national-emergency',
     name: 'National Emergency Hotline',
     description:
       'Nationwide emergency hotline for police, fire, and medical assistance.',
@@ -438,6 +363,7 @@ export const HOTLINES: Hotline[] = [
     numbers: ['911'],
   },
   {
+    id: 'red-cross',
     name: 'Red Cross',
     description:
       'Emergency response, disaster relief, and blood donation services.',
@@ -450,6 +376,7 @@ export const HOTLINES: Hotline[] = [
     ],
   },
   {
+    id: 'ndrrmc',
     name: 'National Disaster Risk Reduction and Management Council (NDRRMC)',
     description:
       'Coordinates national disaster preparedness, response, and recovery.',
@@ -463,6 +390,7 @@ export const HOTLINES: Hotline[] = [
     ],
   },
   {
+    id: 'phivolcs',
     name: 'Philippine Institute of Volcanology and Seismology (PHIVOLCS)',
     description:
       'Warnings for earthquakes, tsunamis, and eruptions, including Taal Volcano.',
@@ -470,6 +398,7 @@ export const HOTLINES: Hotline[] = [
     numbers: ['(02) 8426-1468 to 79'],
   },
   {
+    id: 'pnp',
     name: 'Philippine National Police (PNP)',
     description: 'Law enforcement hotline for crimes and public safety.',
     category: 'Security',
@@ -480,12 +409,14 @@ export const HOTLINES: Hotline[] = [
     ],
   },
   {
+    id: 'bfp',
     name: 'Bureau of Fire Protection (BFP)',
     description: 'Fire prevention, rescue, and related emergencies.',
     category: 'Emergency',
     numbers: ['(02) 8426-0219', '(02) 8426-0246'],
   },
   {
+    id: 'pcg',
     name: 'Philippine Coast Guard',
     description: 'Maritime safety, rescue, and law enforcement at sea.',
     category: 'Security',
@@ -498,6 +429,7 @@ export const HOTLINES: Hotline[] = [
     ],
   },
   {
+    id: 'dotr',
     name: 'Department of Transportation (DOTr)',
     description: 'Public transportation services and passenger complaints.',
     category: 'Transport',
@@ -508,12 +440,14 @@ export const HOTLINES: Hotline[] = [
     ],
   },
   {
+    id: 'lto',
     name: 'Land Transportation Office (LTO)',
     description: 'Vehicle registration, licensing, and road safety.',
     category: 'Transport',
     numbers: ['Text LTOHELP to 2600 (All networks)', '(02) 8922-9061 to 63'],
   },
   {
+    id: 'ltfrb',
     name: 'Land Transportation Franchising and Regulatory Board (LTFRB)',
     description: 'Public utility vehicles and transport complaints.',
     category: 'Transport',
@@ -525,12 +459,14 @@ export const HOTLINES: Hotline[] = [
     ],
   },
   {
+    id: 'pagasa',
     name: 'PAGASA',
     description: 'Weather forecasts, flood warnings, and typhoon advisories.',
     category: 'Weather',
     numbers: ['(02) 8284-0800'],
   },
   {
+    id: 'dswd',
     name: 'Department of Social Welfare and Development (DSWD)',
     description: 'Social services and disaster relief for affected families.',
     category: 'Social Services',
@@ -542,6 +478,7 @@ export const HOTLINES: Hotline[] = [
     ],
   },
   {
+    id: 'vawc',
     name: 'Violence Against Women and Children (VAWC)',
     description:
       'Report and seek help for violence against women and children.',
@@ -553,6 +490,7 @@ export const HOTLINES: Hotline[] = [
     ],
   },
   {
+    id: 'ncmh',
     name: 'National Center for Mental Health (NCMH)',
     description: '24/7 crisis hotline and mental health support.',
     category: 'Social Services',
@@ -569,45 +507,62 @@ export const HOTLINES: Hotline[] = [
 export const HOLIDAY_YEAR = 2026;
 
 export const REGULAR_HOLIDAYS = [
-  { event: "New Year's Day", date: '2026-01-01' },
-  { event: 'Maundy Thursday', date: '2026-04-02' },
-  { event: 'Good Friday', date: '2026-04-03' },
-  { event: 'Araw ng Kagitingan', date: '2026-04-09' },
-  { event: 'Labor Day', date: '2026-05-01' },
-  { event: 'Independence Day', date: '2026-06-12' },
-  { event: 'National Heroes Day', date: '2026-08-31' },
-  { event: 'Bonifacio Day', date: '2026-11-30' },
-  { event: 'Christmas Day', date: '2026-12-25' },
-  { event: 'Rizal Day', date: '2026-12-30' },
+  { key: 'newYear', event: "New Year's Day", date: '2026-01-01' },
+  { key: 'maundyThursday', event: 'Maundy Thursday', date: '2026-04-02' },
+  { key: 'goodFriday', event: 'Good Friday', date: '2026-04-03' },
+  { key: 'kagitingan', event: 'Araw ng Kagitingan', date: '2026-04-09' },
+  { key: 'labor', event: 'Labor Day', date: '2026-05-01' },
+  { key: 'independence', event: 'Independence Day', date: '2026-06-12' },
+  { key: 'heroes', event: 'National Heroes Day', date: '2026-08-31' },
+  { key: 'bonifacio', event: 'Bonifacio Day', date: '2026-11-30' },
+  { key: 'christmas', event: 'Christmas Day', date: '2026-12-25' },
+  { key: 'rizal', event: 'Rizal Day', date: '2026-12-30' },
 ];
 
 export const SPECIAL_HOLIDAYS = [
-  { event: 'Chinese New Year', date: '2026-02-17' },
-  { event: 'Black Saturday', date: '2026-04-04' },
-  { event: 'Ninoy Aquino Day', date: '2026-08-21' },
-  { event: "All Saints' Day", date: '2026-11-01' },
-  { event: "All Souls' Day", date: '2026-11-02' },
-  { event: 'Feast of the Immaculate Conception of Mary', date: '2026-12-08' },
-  { event: 'Christmas Eve', date: '2026-12-24' },
-  { event: 'Last Day of the Year', date: '2026-12-31' },
+  { key: 'chineseNewYear', event: 'Chinese New Year', date: '2026-02-17' },
+  { key: 'blackSaturday', event: 'Black Saturday', date: '2026-04-04' },
+  { key: 'ninoy', event: 'Ninoy Aquino Day', date: '2026-08-21' },
+  { key: 'allSaints', event: "All Saints' Day", date: '2026-11-01' },
+  { key: 'allSouls', event: "All Souls' Day", date: '2026-11-02' },
+  {
+    key: 'immaculate',
+    event: 'Feast of the Immaculate Conception of Mary',
+    date: '2026-12-08',
+  },
+  { key: 'christmasEve', event: 'Christmas Eve', date: '2026-12-24' },
+  { key: 'lastDay', event: 'Last Day of the Year', date: '2026-12-31' },
 ];
 
 // Local observances. Whether each is a non-working day depends on
 // a proclamation or municipal ordinance for that year.
 export const LOCAL_OBSERVANCES = [
-  { event: 'Founding Anniversary of Taal', date: '2026-04-26' },
-  { event: 'Feast of St. Martin of Tours', date: '2026-11-11' },
-  { event: 'Feast of Our Lady of Caysasay', date: '2026-12-08' },
+  {
+    key: 'founding',
+    event: 'Founding Anniversary of Taal',
+    date: '2026-04-26',
+  },
+  {
+    key: 'stMartin',
+    event: 'Feast of St. Martin of Tours',
+    date: '2026-11-11',
+  },
+  {
+    key: 'caysasay',
+    event: 'Feast of Our Lady of Caysasay',
+    date: '2026-12-08',
+  },
 ];
 
 // ---------- Shared ----------
 
+// Labels are translated under taal.pages.<key>.
 export const TAAL_PAGES = [
-  { label: 'About', href: '/taal/about' },
-  { label: 'History', href: '/taal/history' },
-  { label: 'Culture', href: '/taal/culture' },
-  { label: 'Hotlines', href: '/taal/hotlines' },
-  { label: 'Holidays', href: '/taal/holidays' },
-  { label: 'Forex', href: '/forex' },
-  { label: 'Weather', href: '/weather' },
+  { key: 'about', label: 'About', href: '/taal/about' },
+  { key: 'history', label: 'History', href: '/taal/history' },
+  { key: 'culture', label: 'Culture', href: '/taal/culture' },
+  { key: 'hotlines', label: 'Hotlines', href: '/taal/hotlines' },
+  { key: 'holidays', label: 'Holidays', href: '/taal/holidays' },
+  { key: 'forex', label: 'Forex', href: '/forex' },
+  { key: 'weather', label: 'Weather', href: '/weather' },
 ] as const;

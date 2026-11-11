@@ -64,22 +64,35 @@ export type WeatherKind =
   | 'thunderstorm';
 
 export function describeWeatherCode(code: number): {
-  label: string;
+  id: string; // translation key: content.weather.<id>
+  label: string; // English
   kind: WeatherKind;
 } {
-  if (code === 0) return { label: 'Clear sky', kind: 'clear' };
-  if (code === 1) return { label: 'Mainly clear', kind: 'clear' };
-  if (code === 2) return { label: 'Partly cloudy', kind: 'partly-cloudy' };
-  if (code === 3) return { label: 'Overcast', kind: 'cloudy' };
-  if (code === 45 || code === 48) return { label: 'Fog', kind: 'fog' };
-  if (code >= 51 && code <= 57) return { label: 'Drizzle', kind: 'drizzle' };
-  if (code === 61) return { label: 'Light rain', kind: 'rain' };
-  if (code === 63) return { label: 'Moderate rain', kind: 'rain' };
+  if (code === 0) return { id: 'clearSky', label: 'Clear sky', kind: 'clear' };
+  if (code === 1)
+    return { id: 'mainlyClear', label: 'Mainly clear', kind: 'clear' };
+  if (code === 2)
+    return {
+      id: 'partlyCloudy',
+      label: 'Partly cloudy',
+      kind: 'partly-cloudy',
+    };
+  if (code === 3) return { id: 'overcast', label: 'Overcast', kind: 'cloudy' };
+  if (code === 45 || code === 48)
+    return { id: 'fog', label: 'Fog', kind: 'fog' };
+  if (code >= 51 && code <= 57)
+    return { id: 'drizzle', label: 'Drizzle', kind: 'drizzle' };
+  if (code === 61)
+    return { id: 'lightRain', label: 'Light rain', kind: 'rain' };
+  if (code === 63)
+    return { id: 'moderateRain', label: 'Moderate rain', kind: 'rain' };
   if (code === 65 || code === 66 || code === 67)
-    return { label: 'Heavy rain', kind: 'rain' };
-  if (code >= 80 && code <= 82) return { label: 'Rain showers', kind: 'rain' };
-  if (code >= 95) return { label: 'Thunderstorm', kind: 'thunderstorm' };
-  return { label: 'Cloudy', kind: 'cloudy' };
+    return { id: 'heavyRain', label: 'Heavy rain', kind: 'rain' };
+  if (code >= 80 && code <= 82)
+    return { id: 'rainShowers', label: 'Rain showers', kind: 'rain' };
+  if (code >= 95)
+    return { id: 'thunderstorm', label: 'Thunderstorm', kind: 'thunderstorm' };
+  return { id: 'cloudy', label: 'Cloudy', kind: 'cloudy' };
 }
 
 const isNumber = (v: unknown): v is number =>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Menu, ChevronDown } from 'lucide-react';
 import { mainNavigation } from '../../data/navigation';
+import type { NavigationItem } from '../../types';
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import InfoBar from './InfoBar';
@@ -12,6 +13,8 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const { t } = useTranslation('common');
+  const navLabel = (item: NavigationItem) =>
+    item.labelKey ? t(item.labelKey, { defaultValue: item.label }) : item.label;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -38,7 +41,7 @@ const Navbar: React.FC = () => {
             <Link to="/" className="flex min-w-0 items-center">
               <img
                 src="/images/taal-seal-192.webp"
-                alt="Official seal of the Municipality of Taal"
+                alt={t('common.seal')}
                 width={84}
                 height={84}
                 className="mr-3 h-12 w-12 sm:h-16 sm:w-16 xl:mr-4 xl:h-21 xl:w-21"
@@ -59,7 +62,7 @@ const Navbar: React.FC = () => {
                   to={item.href}
                   className="flex items-center whitespace-nowrap text-gray-700 hover:text-primary-600 font-bold transition-colors"
                 >
-                  {t(`navbar.${item.label.replace(' ', '').toLowerCase()}`)}
+                  {navLabel(item)}
                   {item.children && (
                     <ChevronDown className="ml-1 h-4 w-4 text-gray-800 group-hover:text-primary-600 transition-colors" />
                   )}
@@ -78,7 +81,7 @@ const Navbar: React.FC = () => {
                           className="text-left block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600"
                           role="menuitem"
                         >
-                          {child.label}
+                          {navLabel(child)}
                         </Link>
                       ))}
                     </div>
@@ -104,7 +107,7 @@ const Navbar: React.FC = () => {
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{t('common.openMenu')}</span>
               {isOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
               ) : (
@@ -131,14 +134,14 @@ const Navbar: React.FC = () => {
                   onClick={closeMenu}
                   className="block px-4 py-2 text-base font-bold text-gray-700 hover:bg-gray-50 hover:text-primary-500"
                 >
-                  {t(`navbar.${item.label.toLowerCase()}`)}
+                  {navLabel(item)}
                 </Link>
               ) : (
                 <button
                   onClick={() => toggleSubmenu(item.label)}
                   className="w-full flex justify-between items-center px-4 py-2 text-base font-bold text-gray-700 hover:bg-gray-50 hover:text-primary-500"
                 >
-                  {t(`navbar.${item.label.toLowerCase()}`)}
+                  {navLabel(item)}
                   {item.children && (
                     <ChevronDown
                       className={`h-5 w-5 transition-transform ${
@@ -157,7 +160,7 @@ const Navbar: React.FC = () => {
                       onClick={closeMenu}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-500"
                     >
-                      {child.label}
+                      {navLabel(child)}
                     </Link>
                   ))}
                 </div>
@@ -174,7 +177,7 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-bold text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            Sitemap
+            {t('footer.sitemap')}
           </Link>
         </div>
       </div>

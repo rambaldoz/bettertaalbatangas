@@ -227,6 +227,7 @@ export function getCategoryPages(categorySlug: string): Subcategory[] {
 export interface ServicePageLink {
   name: string;
   slug: string;
+  categorySlug: string;
   categoryName: string;
   href: string;
 }
@@ -236,6 +237,7 @@ export function getAllServicePages(): ServicePageLink[] {
   return getAllServices().map(s => ({
     name: s.title,
     slug: s.slug,
+    categorySlug: s.categorySlug,
     categoryName: s.categoryName,
     href: s.href,
   }));
