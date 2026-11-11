@@ -8,6 +8,7 @@ import InfoBar from './InfoBar';
 import SiteSearch from './SiteSearch';
 import LanguageToggle from './LanguageToggle';
 import ErrorBoundary from '../ui/ErrorBoundary';
+import Logo from '../ui/Logo';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,12 +40,9 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center gap-4 py-4">
           <div className="flex min-w-0 items-center">
             <Link to="/" className="flex min-w-0 items-center">
-              <img
-                src="/images/taal-seal-192.webp"
-                alt={t('common.seal')}
-                width={84}
-                height={84}
-                className="mr-3 h-12 w-12 sm:h-16 sm:w-16 xl:mr-4 xl:h-21 xl:w-21"
+              <Logo
+                title={t('common.logo')}
+                className="mr-3 h-12 w-12 shrink-0 sm:h-16 sm:w-16 xl:mr-4 xl:h-21 xl:w-21"
               />
               <div className="min-w-0">
                 <div className="text-base font-bold text-black sm:text-lg xl:text-xl">

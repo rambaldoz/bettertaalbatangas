@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { LANGUAGES } from '../../i18n/languages';
 import FooterStrips from './FooterStrips';
 import type { LanguageType } from '../../types/index';
+import Logo from '../ui/Logo';
 
 const Footer: React.FC = () => {
   const { t, i18n } = useTranslation('common');
@@ -18,12 +19,10 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <img
-                src="/images/taal-seal-192.webp"
-                alt={t('common.seal')}
-                width={56}
-                height={56}
-                className="mr-3 h-14 w-14"
+              <Logo
+                variant="lines"
+                title={t('common.logo')}
+                className="mr-3 h-14 w-14 shrink-0 text-[#fefae0]"
               />
 
               <div>
