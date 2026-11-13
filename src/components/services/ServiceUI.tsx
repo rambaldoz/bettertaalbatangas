@@ -58,7 +58,7 @@ export function ServicesHero({
   return (
     <section className="relative isolate overflow-hidden text-white">
       <div
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(254,250,224,0.14),transparent),linear-gradient(135deg,#606c38_0%,#4d572c_55%,#283618_100%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(255,255,255,0.12),transparent),linear-gradient(135deg,#0032a0_0%,#002a86_55%,#001f63_100%)]"
         aria-hidden="true"
       />
       <div className="container mx-auto px-4 py-12 text-center md:py-16">
@@ -131,7 +131,7 @@ export function PlaceholderNotice({ text }: { text: string }) {
       className="flex items-start gap-3 rounded-xl border border-accent-300 bg-accent-50 p-4 text-sm text-accent-900"
     >
       <TriangleAlert
-        className="mt-0.5 h-4 w-4 shrink-0 text-accent-700"
+        className="mt-0.5 h-4 w-4 shrink-0 text-primary-700"
         aria-hidden="true"
       />
       <p>{text}</p>

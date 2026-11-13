@@ -6,9 +6,10 @@
 @import '@bettergov/kapwa/styles';
 
 @theme {
-  /* Colors: coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25, chosen to
-     suit Taal's ancestral, heritage character. Text pairings are checked
-     for WCAG AA contrast. */
+  /* Colors: the Philippine flag. Blue #0032A0 (primary-700), red #BF0D3E
+     (secondary-600), yellow #FED141 (accent-400) and white. Blue is the main
+     color, red marks the main action buttons and yellow is the highlight on
+     dark blue. Text pairings are checked for WCAG AA contrast. */
   /* Accessibility: 14px is the smallest text size on the site. Only photo
      credits go smaller (text-[12px]). */
   --text-xs: 0.875rem;
@@ -28,42 +29,42 @@
 
   --font-serif: Georgia, 'Times New Roman', serif;
 
-  /* Moss green (#606c38) to dark forest (#283618) */
-  --color-primary-50: #f3f5ea;
-  --color-primary-100: #e4e9cf;
-  --color-primary-200: #cbd4a5;
-  --color-primary-300: #aab877;
-  --color-primary-400: #8a9a52;
-  --color-primary-500: #6e7a3f;
-  --color-primary-600: #606c38;
-  --color-primary-700: #4d572c;
-  --color-primary-800: #3a4221;
-  --color-primary-900: #283618;
-  --color-primary-950: #1a2410;
+  /* Flag blue (#0032A0) */
+  --color-primary-50: #eef3fc;
+  --color-primary-100: #dbe5f8;
+  --color-primary-200: #b7caf0;
+  --color-primary-300: #8aa8e4;
+  --color-primary-400: #5580d4;
+  --color-primary-500: #2a5cc0;
+  --color-primary-600: #0b44ad;
+  --color-primary-700: #0032a0;
+  --color-primary-800: #002a86;
+  --color-primary-900: #001f63;
+  --color-primary-950: #00143f;
 
-  /* Same earth tones as accent */
-  --color-secondary-50: #fcf6ec;
-  --color-secondary-100: #f8e9d2;
-  --color-secondary-200: #f1d4a8;
-  --color-secondary-300: #e9bd83;
-  --color-secondary-400: #dda15e;
-  --color-secondary-500: #cf8c45;
-  --color-secondary-600: #bc6c25;
-  --color-secondary-700: #985620;
-  --color-secondary-800: #73411a;
-  --color-secondary-900: #4d2c12;
+  /* Flag red (#BF0D3E) */
+  --color-secondary-50: #fdeef2;
+  --color-secondary-100: #fad8e1;
+  --color-secondary-200: #f4b0c2;
+  --color-secondary-300: #ec7f9c;
+  --color-secondary-400: #e04d74;
+  --color-secondary-500: #cf2253;
+  --color-secondary-600: #bf0d3e;
+  --color-secondary-700: #9c0a32;
+  --color-secondary-800: #780826;
+  --color-secondary-900: #54051a;
 
-  /* Earth yellow (#dda15e) to tiger's eye (#bc6c25) */
-  --color-accent-50: #fcf6ec;
-  --color-accent-100: #f8e9d2;
-  --color-accent-200: #f1d4a8;
-  --color-accent-300: #e9bd83;
-  --color-accent-400: #dda15e;
-  --color-accent-500: #cf8c45;
-  --color-accent-600: #bc6c25;
-  --color-accent-700: #985620;
-  --color-accent-800: #73411a;
-  --color-accent-900: #4d2c12;
+  /* Flag yellow (#FED141) */
+  --color-accent-50: #fffaeb;
+  --color-accent-100: #fff2c7;
+  --color-accent-200: #ffe68f;
+  --color-accent-300: #fedc66;
+  --color-accent-400: #fed141;
+  --color-accent-500: #f2b90f;
+  --color-accent-600: #c99300;
+  --color-accent-700: #9a6f00;
+  --color-accent-800: #6f5000;
+  --color-accent-900: #4a3500;
 
   --color-success-50: #e6f7ef;
   --color-success-100: #ccefdf;
@@ -98,17 +99,18 @@
   --color-error-800: #5a1212;
   --color-error-900: #2d0909;
 
-  /* Warm neutrals; gray-50/100 are light grays for page backgrounds */
-  --color-gray-50: #f5f5f4;
-  --color-gray-100: #ebebe8;
-  --color-gray-200: #e6e0c3;
-  --color-gray-300: #d3cdb0;
-  --color-gray-400: #b5b098;
-  --color-gray-500: #8f8b77;
-  --color-gray-600: #6f6c5c;
-  --color-gray-700: #4e4c40;
-  --color-gray-800: #353429;
-  --color-gray-900: #22231a;
+  /* Cool neutrals to sit with the flag colors; gray-50/100 are light grays
+     for page backgrounds */
+  --color-gray-50: #f3f4f6;
+  --color-gray-100: #e9ebef;
+  --color-gray-200: #dde1e8;
+  --color-gray-300: #c8ced8;
+  --color-gray-400: #9aa2b1;
+  --color-gray-500: #6b7385;
+  --color-gray-600: #525a6b;
+  --color-gray-700: #3e4554;
+  --color-gray-800: #2a303c;
+  --color-gray-900: #141a26;
 
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-in: slideIn 0.5s ease-out;
@@ -179,7 +181,7 @@
   font-weight: 400;
 }
 
-/* Links in long-form text use the copper link color (WCAG AA on white). */
+/* Links in long-form text use the flag blue (WCAG AA on white). */
 .prose {
-  --tw-prose-links: var(--color-accent-700);
+  --tw-prose-links: var(--color-primary-700);
 }

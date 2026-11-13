@@ -12,7 +12,7 @@ const ext = (href: string) => (
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-accent-700 underline hover:text-accent-800"
+    className="text-primary-700 underline hover:text-primary-800"
   />
 );
 
@@ -162,7 +162,7 @@ export default function Weather() {
                         </div>
                         <WeatherIcon
                           code={day.code}
-                          className="mx-auto my-2 h-6 w-6 text-accent-500"
+                          className="mx-auto my-2 h-6 w-6 text-accent-600"
                         />
                         <div className="text-sm text-gray-700">
                           {c.weather(day.code)}

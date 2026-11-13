@@ -12,7 +12,7 @@ export default function Contact() {
         href={REPORT_FORM_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="!no-underline inline-flex items-center gap-2 rounded-lg bg-accent-700 px-5 py-3 font-bold !text-white hover:bg-accent-800"
+        className="!no-underline inline-flex items-center gap-2 rounded-lg bg-secondary-600 px-5 py-3 font-bold !text-white hover:bg-secondary-700"
       >
         {t('portal.contact.openForm')}
         <ArrowUpRight className="h-5 w-5" aria-hidden="true" />

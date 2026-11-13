@@ -135,7 +135,7 @@ export function PhotoCreditLine({
 }) {
   const { t } = useTranslation('common');
   const link =
-    linkClassName ?? 'text-accent-700 underline hover:text-accent-800';
+    linkClassName ?? 'text-primary-700 underline hover:text-primary-800';
   const viaCommons = credit.sourceUrl.includes('wikimedia.org');
   return (
     <p className={cn('text-[12px] leading-snug', className)}>
@@ -211,16 +211,17 @@ export function TaalImage({
       </figure>
     );
   }
+  // No photo yet: a plain image icon. The label stays for screen readers.
   return (
     <div
+      role="img"
+      aria-label={label.replace(/^[^:]+:\s*/, '')}
       className={cn(
-        'flex w-full flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-gray-300 bg-gray-100 text-sm text-gray-700',
+        'flex w-full items-center justify-center rounded-lg bg-gray-100 text-gray-400',
         className
       )}
     >
-      <ImageIcon className="h-6 w-6" aria-hidden="true" />
-      <span>{label}</span>
-      {src && <span className="text-sm text-gray-700">public{src}</span>}
+      <ImageIcon className="h-12 w-12" aria-hidden="true" strokeWidth={1.5} />
     </div>
   );
 }
@@ -342,7 +343,7 @@ export function Sources({
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-700 underline hover:text-accent-800"
+            className="text-primary-700 underline hover:text-primary-800"
           >
             {item.label}
           </a>

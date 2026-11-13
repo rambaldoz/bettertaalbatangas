@@ -21,7 +21,7 @@ export interface InfoSection {
 
 // Text styles for the body of a section: paragraphs, lists and links.
 export const proseClass =
-  'space-y-4 text-base leading-relaxed text-gray-800 [&_a]:text-accent-700 [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-accent-800 [&_strong]:font-bold [&_strong]:text-gray-900 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-6';
+  'space-y-4 text-base leading-relaxed text-gray-800 [&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-primary-800 [&_strong]:font-bold [&_strong]:text-gray-900 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-6';
 
 /** External link that opens in a new tab. */
 export function Ext({ href, children }: { href: string; children: ReactNode }) {
@@ -164,7 +164,7 @@ function FaqList({ items }: { items: { q: string; a: ReactNode }[] }) {
     <div className="divide-y divide-gray-200 border-y border-gray-200">
       {items.map((item, i) => (
         <details key={i} className="group py-1">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-3 text-lg font-bold text-gray-900 hover:text-accent-700 [&::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-3 text-lg font-bold text-gray-900 hover:text-primary-700 [&::-webkit-details-marker]:hidden">
             {item.q}
             <ChevronDown
               className="h-5 w-5 shrink-0 text-gray-700 transition-transform group-open:rotate-180"

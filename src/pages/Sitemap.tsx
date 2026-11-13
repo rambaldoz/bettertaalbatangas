@@ -105,7 +105,7 @@ function LinkCards({ links }: { links: PageLink[] }) {
         const body = (
           <>
             <span className="min-w-0 flex-1">
-              <span className="block text-lg font-bold text-gray-900 group-hover:text-accent-700">
+              <span className="block text-lg font-bold text-gray-900 group-hover:text-primary-700">
                 {link.label}
               </span>
               <span className="mt-1 block text-base text-gray-700">
@@ -114,19 +114,19 @@ function LinkCards({ links }: { links: PageLink[] }) {
             </span>
             {external ? (
               <ArrowUpRight
-                className="h-5 w-5 shrink-0 text-gray-600 group-hover:text-accent-700"
+                className="h-5 w-5 shrink-0 text-gray-600 group-hover:text-primary-700"
                 aria-hidden="true"
               />
             ) : (
               <ChevronRight
-                className="h-5 w-5 shrink-0 text-gray-600 group-hover:text-accent-700"
+                className="h-5 w-5 shrink-0 text-gray-600 group-hover:text-primary-700"
                 aria-hidden="true"
               />
             )}
           </>
         );
         const cls =
-          'group flex h-full items-start gap-3 rounded-lg border border-gray-200 p-4 transition-colors hover:border-accent-400 hover:bg-accent-50';
+          'group flex h-full items-start gap-3 rounded-lg border border-gray-200 p-4 transition-colors hover:border-primary-300 hover:bg-primary-50';
         return (
           <li key={link.href}>
             {external ? (
@@ -229,7 +229,7 @@ export default function Sitemap() {
             })}{' '}
             <Link
               to="/services"
-              className="font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+              className="font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
             >
               {t('sitemap.browseAll')}
             </Link>
@@ -244,7 +244,7 @@ export default function Sitemap() {
                   />
                   <Link
                     to={`/services/${category.slug}`}
-                    className="hover:text-accent-700 hover:underline"
+                    className="hover:text-primary-700 hover:underline"
                   >
                     {c.categoryName(category)}
                   </Link>
@@ -254,7 +254,7 @@ export default function Sitemap() {
                     <li key={service.href}>
                       <Link
                         to={service.href}
-                        className="text-base text-accent-700 underline-offset-2 hover:text-accent-800 hover:underline"
+                        className="text-base text-primary-700 underline-offset-2 hover:text-primary-800 hover:underline"
                       >
                         {c.serviceTitle(service)}
                       </Link>

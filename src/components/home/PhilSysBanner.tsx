@@ -9,7 +9,7 @@ export default function PhilSysBanner() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 overflow-hidden rounded-2xl border border-gray-200 bg-white lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           <div className="p-6 md:p-10">
-            <p className="text-sm font-bold uppercase tracking-wider text-accent-700">
+            <p className="text-sm font-bold uppercase tracking-wider text-primary-700">
               {t('philsys.eyebrow')}
             </p>
             <h2 className="mt-2 text-3xl font-bold text-gray-900">
@@ -38,14 +38,14 @@ export default function PhilSysBanner() {
               href="https://philsys.gov.ph"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-accent-700 px-6 py-3 text-base font-bold text-white transition-colors hover:bg-accent-800"
+              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-secondary-600 px-6 py-3 text-base font-bold text-white transition-colors hover:bg-secondary-700"
             >
               {t('philsys.button')}
               <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
             </a>
           </div>
           <div
-            className="relative hidden items-center justify-center bg-[linear-gradient(135deg,#606c38_0%,#283618_100%)] p-10 lg:flex"
+            className="relative hidden items-center justify-center bg-[linear-gradient(135deg,#0032a0_0%,#001f63_100%)] p-10 lg:flex"
             aria-hidden="true"
           >
             {/* Simple ID card illustration */}

@@ -46,7 +46,7 @@ export function Breadcrumbs({ crumbs }: { crumbs: Crumb[] }) {
             {crumb.href ? (
               <Link
                 to={crumb.href}
-                className="text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                className="text-primary-700 underline underline-offset-2 hover:text-primary-800"
               >
                 {crumb.label}
               </Link>
@@ -85,7 +85,7 @@ export function BreadcrumbBar({
         {back && (
           <Link
             to={back.href}
-            className="inline-flex shrink-0 items-center gap-2 self-start rounded-md border-2 border-accent-700 bg-white px-4 py-2 text-base font-bold text-accent-700 transition-colors hover:bg-accent-700 hover:text-white sm:self-auto"
+            className="inline-flex shrink-0 items-center gap-2 self-start rounded-md border-2 border-primary-700 bg-white px-4 py-2 text-base font-bold text-primary-700 transition-colors hover:bg-primary-700 hover:text-white sm:self-auto"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             {back.label}
@@ -134,8 +134,8 @@ export function PageHeader({
           className={cn(
             'absolute inset-0 -z-10',
             hasPhoto
-              ? 'bg-gradient-to-b from-[#283618]/80 via-[#283618]/70 to-[#283618]/85'
-              : 'bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(254,250,224,0.14),transparent),linear-gradient(135deg,#606c38_0%,#4d572c_55%,#283618_100%)]'
+              ? 'bg-gradient-to-b from-[#001f63]/80 via-[#001f63]/70 to-[#001f63]/85'
+              : 'bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(255,255,255,0.12),transparent),linear-gradient(135deg,#0032a0_0%,#002a86_55%,#001f63_100%)]'
           )}
           aria-hidden="true"
         />

@@ -68,7 +68,7 @@ export default function ServiceDetail() {
           <Panel>
             <Link
               to="/services"
-              className="inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+              className="inline-flex items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
             >
               {t('servicesPage.backToServices')}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -199,8 +199,8 @@ function ServicePage({ service }: { service: Service }) {
                         }
                         className={`rounded-full border-2 px-4 py-2 text-base font-bold transition-colors ${
                           selected
-                            ? 'border-accent-700 bg-accent-700 text-white'
-                            : 'border-gray-300 bg-white text-gray-900 hover:border-accent-700 hover:bg-accent-50'
+                            ? 'border-primary-700 bg-primary-700 text-white'
+                            : 'border-gray-300 bg-white text-gray-900 hover:border-primary-700 hover:bg-primary-50'
                         }`}
                       >
                         {v.name}
@@ -453,7 +453,7 @@ function ServicePage({ service }: { service: Service }) {
                     {office.email ? (
                       <a
                         href={`mailto:${office.email}`}
-                        className="break-all text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                        className="break-all text-primary-700 underline underline-offset-2 hover:text-primary-800"
                       >
                         {office.email}
                       </a>
@@ -475,7 +475,7 @@ function ServicePage({ service }: { service: Service }) {
                 </ul>
                 <Link
                   to={`/services?office=${office.key}`}
-                  className="mt-4 inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                  className="mt-4 inline-flex items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
                 >
                   {t('servicesPage.officeServices')}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -511,7 +511,7 @@ function ServicePage({ service }: { service: Service }) {
                       href={CHARTER.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                      className="inline-flex items-center gap-1 font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
                     >
                       {t('servicesPage.charterPdf')}
                       <ExternalLink
@@ -525,7 +525,7 @@ function ServicePage({ service }: { service: Service }) {
                       href={CHARTER.post}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                      className="inline-flex items-center gap-1 font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
                     >
                       {t('servicesPage.charterPost')}
                       <ExternalLink
@@ -549,7 +549,7 @@ function ServicePage({ service }: { service: Service }) {
                 </p>
                 <Link
                   to="/taal/hotlines"
-                  className="mt-3 inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                  className="mt-3 inline-flex items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
                 >
                   {t('servicesPage.hotlines')}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -685,7 +685,7 @@ function StepCard({
         {step.link && (
           <Link
             to={step.link}
-            className="mt-3 inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+            className="mt-3 inline-flex items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
           >
             {t('servicesPage.openService')}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />

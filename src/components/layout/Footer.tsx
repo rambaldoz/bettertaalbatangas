@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
   const currentLanguage = i18n.resolvedLanguage ?? 'en';
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-primary-950 text-white">
       <FooterStrips />
       <div className="container mx-auto px-4 pt-12 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               <Logo
                 variant="lines"
                 title={t('common.logo')}
-                className="mr-3 h-14 w-14 shrink-0 text-[#fefae0]"
+                className="mr-3 h-14 w-14 shrink-0 text-white"
               />
 
               <div>

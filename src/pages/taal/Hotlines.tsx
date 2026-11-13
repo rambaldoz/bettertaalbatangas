@@ -171,13 +171,13 @@ export default function TaalHotlines() {
                     return (
                       <li key={n} className="flex items-start gap-2 text-base">
                         <Phone
-                          className="mt-1 h-4 w-4 shrink-0 text-accent-700"
+                          className="mt-1 h-4 w-4 shrink-0 text-primary-700"
                           aria-hidden="true"
                         />
                         {href ? (
                           <a
                             href={href}
-                            className="font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                            className="font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
                           >
                             {c.phone(n)}
                           </a>
@@ -212,7 +212,7 @@ export default function TaalHotlines() {
                     href={TAAL_SOURCES.bettergovHotlines.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-accent-700 underline hover:text-accent-800"
+                    className="text-primary-700 underline hover:text-primary-800"
                   />
                 ),
               }}

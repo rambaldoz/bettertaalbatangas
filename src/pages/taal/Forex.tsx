@@ -188,7 +188,7 @@ export default function Forex() {
                           href={FOREX_API_URL}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-accent-700 underline hover:text-accent-800"
+                          className="text-primary-700 underline hover:text-primary-800"
                         />
                       ),
                     }}
@@ -230,7 +230,7 @@ export default function Forex() {
                         href="https://www.bsp.gov.ph"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-accent-700 underline hover:text-accent-800"
+                        className="text-primary-700 underline hover:text-primary-800"
                       />
                     ),
                   }}
