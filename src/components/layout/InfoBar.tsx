@@ -63,7 +63,7 @@ export default function InfoBar() {
                 {currencySymbol(rate.symbol)}
               </span>
               <span>{rate.symbol}</span>
-              <span className="text-accent-300">
+              <span className="text-accent-400">
                 {formatPeso(rate.phpEquivalent)}
               </span>
             </span>
@@ -80,7 +80,7 @@ export default function InfoBar() {
               className="shrink-0 uppercase hover:underline"
             >
               {p.name}{' '}
-              <span className="font-normal text-accent-300">
+              <span className="font-normal text-accent-400">
                 {Math.round(p.temperature)}°C
               </span>
             </Link>

@@ -235,7 +235,7 @@ export default function GovernmentDirectory() {
                         />
                         <a
                           href={`mailto:${office.contact.email}`}
-                          className="break-all text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                          className="break-all text-primary-700 underline underline-offset-2 hover:text-primary-800"
                         >
                           {office.contact.email}
                         </a>
@@ -251,7 +251,7 @@ export default function GovernmentDirectory() {
                           href={office.contact.website}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-accent-700 underline underline-offset-2 hover:text-accent-800"
+                          className="text-primary-700 underline underline-offset-2 hover:text-primary-800"
                         >
                           {office.contact.website.replace(/^https?:\/\//, '')}
                         </a>
@@ -288,7 +288,7 @@ export default function GovernmentDirectory() {
                     href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-accent-700 underline hover:text-accent-800"
+                    className="text-primary-700 underline hover:text-primary-800"
                   >
                     {s.label}
                   </a>

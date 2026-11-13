@@ -26,14 +26,16 @@ export default function HomeHero() {
 
   return (
     <section className="relative isolate overflow-hidden text-white">
-      {/* Soft light at the top over a deep blue gradient */}
+      {/* A soft yellow sun in the corner over the flag-blue gradient */}
       <div
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(254,250,224,0.14),transparent),linear-gradient(135deg,#606c38_0%,#4d572c_55%,#283618_100%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_85%_10%,rgba(254,209,65,0.22),transparent_35%),radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(255,255,255,0.12),transparent),linear-gradient(135deg,#0032a0_0%,#002a86_55%,#001f63_100%)]"
         aria-hidden="true"
       />
       <div className="container mx-auto grid grid-cols-1 items-center gap-10 px-4 py-14 md:py-20 lg:grid-cols-2 lg:gap-12">
         <div>
-          <p className="text-lg text-white/90">{t('hero.greeting')}</p>
+          <p className="text-lg font-bold text-accent-400">
+            {t('hero.greeting')}
+          </p>
           <h1 className="mt-2 text-[1.75rem] font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-[2.5rem] xl:text-5xl 2xl:text-[3.5rem]">
             {t('hero.brand')}
           </h1>
@@ -42,7 +44,7 @@ export default function HomeHero() {
           </p>
           <Link
             to="/services"
-            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-accent-700 px-5 py-3 font-bold text-white shadow-md transition-colors hover:bg-accent-800"
+            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-secondary-600 px-5 py-3 font-bold text-white shadow-md transition-colors hover:bg-secondary-700"
           >
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
             {t('hero.browseServices')}
@@ -87,7 +89,7 @@ export default function HomeHero() {
           </ul>
           <Link
             to="/services"
-            className="mt-2 flex items-center justify-between bg-gray-50 px-6 py-4 text-sm font-bold text-accent-700 underline underline-offset-2 transition-colors hover:bg-accent-50"
+            className="mt-2 flex items-center justify-between bg-gray-50 px-6 py-4 text-sm font-bold text-primary-700 underline underline-offset-2 transition-colors hover:bg-primary-50"
           >
             {t('hero.helpFind')}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />

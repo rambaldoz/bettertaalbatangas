@@ -35,6 +35,11 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
+      {/* Flag stripe: blue and red, as on the Philippine flag */}
+      <div
+        className="h-1.5 bg-[linear-gradient(90deg,#0032a0_0_50%,#bf0d3e_50%_100%)]"
+        aria-hidden="true"
+      />
       {/* Main navigation */}
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center gap-4 py-4">

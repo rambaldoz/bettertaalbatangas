@@ -114,7 +114,7 @@ function ServiceCard({
             {c.categoryNameBySlug(service.categorySlug, service.categoryName)}
           </span>
         )}
-        <span className="mt-3 inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 group-hover:text-accent-800">
+        <span className="mt-3 inline-flex items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 group-hover:text-primary-800">
           {t('servicesPage.learnMore')}
           <ChevronRight className="h-4 w-4" aria-hidden="true" />
         </span>
@@ -205,7 +205,7 @@ function Directory() {
           <button
             type="button"
             onClick={() => setSearchParams({})}
-            className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:bg-accent-50"
+            className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:bg-primary-50"
           >
             <X className="h-4 w-4" aria-hidden="true" />
             {t('servicesPage.showAll')}
@@ -346,7 +346,7 @@ function CategoryPage({ slug }: { slug: string }) {
           <Panel>
             <Link
               to="/services"
-              className="inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+              className="inline-flex items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
             >
               {t('servicesPage.backToServices')}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />

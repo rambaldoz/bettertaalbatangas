@@ -23,7 +23,7 @@ export default function ServicesGrid() {
           </div>
           <Link
             to="/services"
-            className="inline-flex shrink-0 items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+            className="inline-flex shrink-0 items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
           >
             {t('services.viewAll')}
             <ChevronRight className="h-4 w-4" aria-hidden="true" />

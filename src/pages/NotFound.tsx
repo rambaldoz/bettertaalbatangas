@@ -44,13 +44,13 @@ export default function NotFound() {
               <li key={href}>
                 <Link
                   to={href}
-                  className="group flex h-full items-start gap-4 rounded-lg border border-gray-200 p-5 transition-colors hover:border-accent-400 hover:bg-accent-50"
+                  className="group flex h-full items-start gap-4 rounded-lg border border-gray-200 p-5 transition-colors hover:border-primary-300 hover:bg-primary-50"
                 >
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-50 text-primary-700">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="flex items-center gap-1 text-lg font-bold text-gray-900 group-hover:text-accent-700">
+                    <span className="flex items-center gap-1 text-lg font-bold text-gray-900 group-hover:text-primary-700">
                       {t(`notFound.links.${key}.label`)}
                       <ArrowRight className="h-4 w-4" aria-hidden="true" />
                     </span>

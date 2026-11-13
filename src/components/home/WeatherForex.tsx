@@ -51,7 +51,7 @@ function CardFooter({
     <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-6">
       <Link
         to={to}
-        className="inline-flex items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+        className="inline-flex items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
       >
         {label}
         <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -62,7 +62,7 @@ function CardFooter({
           href={sourceHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-accent-700 underline hover:text-accent-800"
+          className="text-primary-700 underline hover:text-primary-800"
         >
           {sourceLabel}
         </a>
@@ -116,7 +116,7 @@ function WeatherCard() {
       {taal ? (
         <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-5">
-            <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-accent-50 text-accent-700">
+            <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-accent-100 text-accent-700">
               <WeatherIcon code={taal.code} className="h-12 w-12" />
             </span>
             <div>

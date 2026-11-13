@@ -56,7 +56,7 @@ export default function EmergencyHotlines() {
           </div>
           <Link
             to="/taal/hotlines"
-            className="inline-flex shrink-0 items-center gap-1 text-base font-bold text-accent-700 underline underline-offset-2 hover:text-accent-800"
+            className="inline-flex shrink-0 items-center gap-1 text-base font-bold text-primary-700 underline underline-offset-2 hover:text-primary-800"
           >
             {t('home.allHotlines')}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -95,7 +95,7 @@ export default function EmergencyHotlines() {
               const number = mainNumber(h);
               const usable = number && !isPlaceholderNumber(number);
               const callLabel = usable && (
-                <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-accent-700 px-3 py-1.5 text-sm font-bold text-accent-700 transition-colors group-hover:bg-accent-700 group-hover:text-white">
+                <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-primary-700 px-3 py-1.5 text-sm font-bold text-primary-700 transition-colors group-hover:bg-primary-700 group-hover:text-white">
                   <Phone className="h-4 w-4" aria-hidden="true" />
                   {t('home.call')}
                 </span>

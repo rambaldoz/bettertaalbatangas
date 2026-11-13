@@ -86,7 +86,7 @@ export default function TaalHolidays() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-accent-700 underline hover:text-accent-800"
+      className="text-primary-700 underline hover:text-primary-800"
     />
   );
   return (
