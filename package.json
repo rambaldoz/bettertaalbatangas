@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "node scripts/generate-seo-files.mjs && tsc -b && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "preview": "vite preview",
     "prepare": "husky",
-    "index-content": "node scripts/index-content.mjs"
+    "index-content": "node scripts/index-content.mjs",
+    "seo-files": "node scripts/generate-seo-files.mjs"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

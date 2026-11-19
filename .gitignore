@@ -35,3 +35,7 @@ dist-ssr
 # AI assistant files (kept local, not pushed)
 CLAUDE.md
 .claude/
+
+# Generated at build time by scripts/generate-seo-files.mjs
+public/robots.txt
+public/sitemap.xml
