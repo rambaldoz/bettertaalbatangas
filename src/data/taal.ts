@@ -85,10 +85,7 @@ export interface Photo {
   credit?: PhotoCredit;
 }
 
-export const HERO_PHOTOS: Record<
-  'about' | 'history' | 'culture' | 'barangays',
-  Photo
-> = {
+export const HERO_PHOTOS: Record<'about' | 'history' | 'culture', Photo> = {
   about: {
     src: '/images/taal/hero-about.webp',
     credit: {
@@ -107,7 +104,7 @@ export const HERO_PHOTOS: Record<
     credit: {
       title: 'Old houses in Taal',
       // Attribution wording requested on the Commons file page.
-      author: 'Patrickroque01 at English Wikipedia',
+      author: 'Patrickroque01',
       authorUrl: 'https://en.wikipedia.org/wiki/User:Patrickroque01',
       sourceUrl:
         'https://commons.wikimedia.org/wiki/File:Taal_town_proper_-_old_houses_side_(Taal,_Batangas)(2018-07-30).jpg',
@@ -116,13 +113,97 @@ export const HERO_PHOTOS: Record<
       changes: 'cropped',
     },
   },
-  culture: { src: '/images/taal/hero-culture.jpg' },
-  barangays: { src: '/images/taal/hero-barangays.jpg' },
+  culture: {
+    src: '/images/taal/hero-culture.webp',
+    credit: {
+      title: 'Drone shot of Taal',
+      // Attribution wording requested on the Commons file page.
+      author: 'Patrickroque01',
+      authorUrl: 'https://en.wikipedia.org/wiki/User:Patrickroque01',
+      sourceUrl:
+        'https://commons.wikimedia.org/wiki/File:Taal_Poblacion_drone_(Taal,_Batangas;_12-29-2025).jpg',
+      license: 'CC BY-SA 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      changes: 'cropped',
+    },
+  },
 };
 
 // Credits for photos used inside cards (timeline, culture), by file path.
 // Cards show the credit under the photo automatically.
 export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
+  '/images/taal/culture-barong-burda.webp': {
+    title: 'Burdang Taal',
+    author: 'jayexiomo',
+    authorUrl: '',
+    sourceUrl:
+      'https://jayexiomo.com/2026/10/18/taal-heritage-town-walking-tour/',
+    license: '',
+    licenseUrl: '',
+    changes: 'cropped',
+  },
+  '/images/taal/culture-festivals.webp': {
+    title: 'El Pasubat Festival',
+    author: 'WoW Batangas',
+    authorUrl: '',
+    sourceUrl:
+      'https://www.wowbatangas.com/the-great-taal-adventure-stories-images-of-el-pasubat-festival-heritage-houses/',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    changes: 'cropped',
+  },
+  '/images/taal/culture-heritage-houses.webp': {
+    title: 'Basilica facade in 2022',
+    author: 'ImaheNiNiño1989',
+    authorUrl: '',
+    sourceUrl:
+      'https://commons.wikimedia.org/wiki/File:Minor_Basilica_of_Saint_Martin_of_Tours_or_Taal_Basilica_85M7772.jpg',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    changes: 'cropped',
+  },
+  '/images/taal/history-2020.webp': {
+    title:
+      'Houses at a portion of the Taal Volcano island destroyed by ashfall',
+    author: 'Mark Bryan Lito',
+    authorUrl: '',
+    sourceUrl:
+      'https://commons.wikimedia.org/wiki/File:Taal_Volcano_Island_ashfall.png',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    changes: 'cropped',
+  },
+  '/images/taal/history-1898.webp': {
+    title: 'Museo Nina Marcela Marino at Felipe Agoncillo',
+    author: 'Ragudosjaninedalisay',
+    authorUrl: 'https://commons.wikimedia.org/wiki/User:Ragudosjaninedalisay',
+    sourceUrl:
+      'https://commons.wikimedia.org/wiki/File:MUSEO_NINA_MARCELA_MARI%C3%91O_AT_FELIPE_AGONCILLO.jpg',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    changes: 'cropped',
+  },
+  '/images/taal/history-1754.webp': {
+    title: 'Archdiocesan Shrine of Our Lady of Caysasay',
+    author: 'Mindtrip',
+    authorUrl:
+      'https://mindtrip.ai/attraction/taal-luzon/archdiocesan-shrine-our-lady-caysasay/at-7JrRK5m5',
+    sourceUrl:
+      'https://mindtrip.ai/attraction/taal-luzon/archdiocesan-shrine-our-lady-caysasay/at-7JrRK5m5',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    changes: 'cropped',
+  },
+  '/images/taal/history-1732.webp': {
+    title: 'Panorama of Lake Taal & Volcano, Philippines',
+    author: 'Ray in Manila',
+    authorUrl: 'https://www.flickr.com/people/21186555@N07',
+    sourceUrl:
+      'https://commons.wikimedia.org/wiki/File:Panorama_of_Lake_Taal_%26_Volcano,_Philippines.jpg',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    changes: 'cropped',
+  },
   '/images/taal/history-1572.webp': {
     title: 'Taal Basilica',
     author: 'ImaheNiNiño1989',
@@ -142,11 +223,11 @@ export const TIMELINE = [
   {
     period: '2020',
     icon: 'AlertTriangle',
-    photo: '/images/taal/history-2020.jpg',
+    photo: '/images/taal/history-2020.webp',
   },
-  { period: '1898', icon: 'Flag', photo: '/images/taal/history-1898.jpg' },
-  { period: '1754', icon: 'Mountain', photo: '/images/taal/history-1754.jpg' },
-  { period: '1732', icon: 'Crown', photo: '/images/taal/history-1732.jpg' },
+  { period: '1898', icon: 'Flag', photo: '/images/taal/history-1898.webp' },
+  { period: '1754', icon: 'Mountain', photo: '/images/taal/history-1754.webp' },
+  { period: '1732', icon: 'Crown', photo: '/images/taal/history-1732.webp' },
   { period: '1572', icon: 'Clock', photo: '/images/taal/history-1572.webp' },
 ] as const;
 
@@ -173,7 +254,7 @@ export const CULTURAL_HERITAGE = [
   {
     key: 'barong',
     icon: 'Shirt',
-    photo: '/images/taal/culture-barong-burda.jpg',
+    photo: '/images/taal/culture-barong-burda.webp',
   },
   {
     key: 'balisong',
@@ -188,12 +269,12 @@ export const CULTURAL_HERITAGE = [
   {
     key: 'festivals',
     icon: 'PartyPopper',
-    photo: '/images/taal/culture-festivals.jpg',
+    photo: '/images/taal/culture-festivals.webp',
   },
   {
     key: 'churches',
     icon: 'Church',
-    photo: '/images/taal/culture-heritage-houses.jpg',
+    photo: '/images/taal/culture-heritage-houses.webp',
   },
 ] as const;
 

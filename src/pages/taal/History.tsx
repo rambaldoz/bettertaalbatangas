@@ -60,7 +60,7 @@ export default function TaalHistory() {
                       <TaalImage
                         src={item.photo}
                         label={t(`taal.history.timeline.${item.period}.image`)}
-                        className="mt-4 h-56 md:h-72"
+                        className="mt-4 h-56 md:h-90"
                       />
                     </div>
                   </div>

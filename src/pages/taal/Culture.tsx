@@ -55,7 +55,7 @@ export default function TaalCulture() {
                     <TaalImage
                       src={item.photo}
                       label={t(`taal.culture.heritage.${item.key}.image`)}
-                      className="mt-4 h-56 md:h-72"
+                      className="mt-4 h-56 md:h-90"
                     />
                   </div>
                 </Card>
