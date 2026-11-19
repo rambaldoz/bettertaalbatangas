@@ -154,6 +154,8 @@ function useLinks(): Record<string, ReactElement> {
     bettergov: <Ext href={BETTERGOV_URL}>{null}</Ext>,
     meteo: <Ext href="https://open-meteo.com">{null}</Ext>,
     npc: <Ext href="https://privacy.gov.ph">{null}</Ext>,
+    gaPrivacy: <Ext href="https://policies.google.com/privacy">{null}</Ext>,
+    gaOptout: <Ext href="https://tools.google.com/dlpage/gaoptout">{null}</Ext>,
     mayorEmail: <a href={`mailto:${MAYOR_OFFICE_EMAIL}`} />,
     contactEmail: <a href={`mailto:${CONTACT_EMAIL}`} />,
   };

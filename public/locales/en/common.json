@@ -102,6 +102,7 @@
     "forecastTitle": "{{count}}-day forecast",
     "hotlinesTitle": "Emergency Hotlines",
     "hotlinesText": "Tap a number to call. Save these numbers on your phone.",
+    "hotlinesNote": "Phone numbers may change without notice. If a number does not connect in an emergency, call 911.",
     "allHotlines": "All hotlines",
     "call": "Call",
     "national": "National Emergency",
@@ -895,7 +896,7 @@
                 },
                 {
                   "q": "Does this website collect my personal information?",
-                  "a": "No. We do not use analytics, ads or tracking cookies. See our <privacy>Privacy Policy</privacy> for the details."
+                  "a": "We do not ask for your name, email or any account details. We use Google Analytics to count visits and see which pages are used, so we can improve the site. It does not identify you, and you can opt out. See our <privacy>Privacy Policy</privacy> for the details."
                 },
                 {
                   "q": "Is the website available in Tagalog?",
@@ -982,6 +983,13 @@
           ]
         },
         {
+          "id": "analytics",
+          "title": "Website Analytics",
+          "body": [
+            "We use Google Analytics to measure visits and learn how the portal is used, so we can improve it. By using the portal, you agree to this use as described in our <privacy>Privacy Policy</privacy>, which also explains how to opt out."
+          ]
+        },
+        {
           "id": "links",
           "title": "External Links",
           "body": [
@@ -1034,7 +1042,7 @@
             [
               "No accounts, sign-ups or log-ins.",
               "No forms that collect personal information.",
-              "No analytics, advertising or tracking cookies.",
+              "No advertising. We use Google Analytics only to count visits and see how the site is used, so we can improve it.",
               "We never sell or rent information about our visitors."
             ]
           ]
@@ -1049,6 +1057,15 @@
           ]
         },
         {
+          "id": "analytics",
+          "title": "Website Analytics",
+          "body": [
+            "To understand how people use the portal and make it better, we use <strong>Google Analytics 4</strong>, a service by Google. It tells us things like how many people visit, which pages they read, how long they stay, which site sent them here, their browser and device type, and their approximate location (city or country).",
+            "Google Analytics 4 does not log or store full IP addresses. We see only totals and trends, not individual visitors. We do not use this information to identify anyone, we do not combine it with other data, and we do not use it for advertising.",
+            "Google processes this data under its own <gaPrivacy>privacy policy</gaPrivacy>. You can stop Google Analytics from counting your visits with the <gaOptout>Google Analytics Opt-out Browser Add-on</gaOptout>, or by blocking cookies in your browser. The portal works fully either way."
+          ]
+        },
+        {
           "id": "contact-us",
           "title": "When You Contact Us",
           "body": [
@@ -1059,14 +1076,15 @@
           "id": "cookies",
           "title": "Cookies",
           "body": [
-            "We do not set cookies. The only thing we store is the language preference described above."
+            "Google Analytics sets cookies (such as _ga) to tell new and returning visits apart. They do not contain your name or contact details. You can block or delete them in your browser settings, and the portal still works without them.",
+            "Your language choice is saved in your browser’s local storage, not in a cookie."
           ]
         },
         {
           "id": "security",
           "title": "Data Security",
           "body": [
-            "The portal is a static website served over HTTPS. Because we do not keep a database of visitor information, there is very little personal data to protect or to lose."
+            "The portal is a static website served over HTTPS. We do not keep a database of visitor information on our own servers. Visit statistics are kept by Google Analytics as described above."
           ]
         },
         {
@@ -1095,7 +1113,7 @@
           "id": "changes",
           "title": "Changes to This Policy",
           "body": [
-            "If our practices change, for example if we ever add analytics, we will update this page first. The date below shows the latest version."
+            "If our practices change, for example if we add or replace a tool that handles visitor data, we will update this page first. The date below shows the latest version."
           ]
         }
       ]

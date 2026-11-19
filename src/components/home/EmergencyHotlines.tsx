@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import {
+  Info,
   ArrowRight,
   Flame,
   Hospital,
@@ -148,6 +149,11 @@ export default function EmergencyHotlines() {
             })}
           </ul>
         </div>
+
+        <p className="mt-6 flex items-start gap-2 text-sm text-gray-700">
+          <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+          {t('home.hotlinesNote')}
+        </p>
       </div>
     </section>
   );

@@ -5,6 +5,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import ScrollToTop from './components/ui/ScrollToTop';
+import Analytics from './components/ui/Analytics';
 import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Search from './pages/Search';
@@ -64,6 +65,7 @@ function App() {
           <div className="min-h-screen flex flex-col">
             <Navbar />
             <ScrollToTop />
+            <Analytics />
             <PageBoundary>
               <Routes>
                 <Route path="/" element={<Home />} />
