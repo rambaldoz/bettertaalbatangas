@@ -113,7 +113,10 @@ export default function Forex() {
                         </span>
                       </span>
                       <span className="font-bold text-gray-900">
-                        {formatPeso(r.phpEquivalent)}
+                        {formatPeso(
+                          r.phpEquivalent,
+                          r.phpEquivalent < 1 ? 4 : 2
+                        )}
                       </span>
                     </button>
                   </li>

@@ -102,6 +102,7 @@
     "forecastTitle": "Taya ng panahon sa {{count}} araw",
     "hotlinesTitle": "Mga Emergency Hotline",
     "hotlinesText": "Pindutin ang numero para tumawag. I-save ang mga numerong ito sa iyong telepono.",
+    "hotlinesNote": "Maaaring magbago ang mga numero ng telepono nang walang abiso. Kung hindi makakonekta ang isang numero sa oras ng emergency, tumawag sa 911.",
     "allHotlines": "Lahat ng hotline",
     "call": "Tumawag",
     "national": "Pambansang Emergency",
@@ -918,7 +919,7 @@
                 },
                 {
                   "q": "Kumukuha ba ang website na ito ng aking personal na impormasyon?",
-                  "a": "Hindi. Hindi kami gumagamit ng analytics, ads o tracking cookies. Tingnan ang aming <privacy>Patakaran sa Privacy</privacy> para sa detalye."
+                  "a": "Hindi namin hinihingi ang iyong pangalan, email o anumang account details. Gumagamit kami ng Google Analytics para bilangin ang mga pagbisita at makita kung aling mga pahina ang ginagamit, para mapaganda namin ang site. Hindi ka nito kinikilala, at maaari kang mag-opt out. Tingnan ang aming <privacy>Patakaran sa Privacy</privacy> para sa detalye."
                 },
                 {
                   "q": "Mayroon bang Tagalog ang website?",
@@ -1005,6 +1006,13 @@
           ]
         },
         {
+          "id": "analytics",
+          "title": "Analytics ng Website",
+          "body": [
+            "Gumagamit kami ng Google Analytics para sukatin ang mga pagbisita at malaman kung paano ginagamit ang portal, para mapaganda namin ito. Sa paggamit ng portal, sumasang-ayon ka sa paggamit na ito ayon sa nakasaad sa aming <privacy>Patakaran sa Privacy</privacy>, kung saan ipinaliliwanag din kung paano mag-opt out."
+          ]
+        },
+        {
           "id": "links",
           "title": "Mga Link sa Labas",
           "body": [
@@ -1057,7 +1065,7 @@
             [
               "Walang account, pag-sign up o pag-log in.",
               "Walang form na kumukuha ng personal na impormasyon.",
-              "Walang analytics, advertising o tracking cookies.",
+              "Walang advertising. Gumagamit lang kami ng Google Analytics para bilangin ang mga bisita at makita kung paano ginagamit ang site, para mapaganda namin ito.",
               "Hindi kami kailanman nagbebenta o nagpapaupa ng impormasyon tungkol sa aming mga bisita."
             ]
           ]
@@ -1072,6 +1080,15 @@
           ]
         },
         {
+          "id": "analytics",
+          "title": "Analytics ng Website",
+          "body": [
+            "Para maunawaan kung paano ginagamit ng mga tao ang portal at mapaganda ito, gumagamit kami ng <strong>Google Analytics 4</strong>, isang serbisyo ng Google. Ipinapakita nito sa amin kung ilan ang bumibisita, aling mga pahina ang binabasa, gaano katagal sila nananatili, aling site ang nagdala sa kanila rito, ang uri ng browser at device, at ang tinatayang lokasyon (lungsod o bansa).",
+            "Hindi nagtatala o nag-iimbak ang Google Analytics 4 ng buong IP address. Kabuuan at takbo lang ang nakikita namin, hindi ang bawat bisita. Hindi namin ginagamit ang impormasyong ito para kilalanin ang sinuman, hindi namin ito pinagsasama sa ibang datos, at hindi namin ito ginagamit para sa advertising.",
+            "Pinoproseso ng Google ang datos na ito ayon sa sarili nitong <gaPrivacy>patakaran sa privacy</gaPrivacy>. Mapipigilan mo ang Google Analytics na bilangin ang iyong pagbisita gamit ang <gaOptout>Google Analytics Opt-out Browser Add-on</gaOptout>, o sa pag-block ng cookies sa iyong browser. Gumagana pa rin nang buo ang portal sa alinmang paraan."
+          ]
+        },
+        {
           "id": "contact-us",
           "title": "Kapag Nakipag-ugnayan Ka sa Amin",
           "body": [
@@ -1082,14 +1099,15 @@
           "id": "cookies",
           "title": "Cookies",
           "body": [
-            "Hindi kami naglalagay ng cookies. Ang tanging iniimbak namin ay ang piniling wika na nabanggit sa itaas."
+            "Naglalagay ang Google Analytics ng cookies (tulad ng _ga) para matukoy kung bago o bumabalik ang isang pagbisita. Wala rito ang iyong pangalan o contact details. Maaari mo itong i-block o burahin sa settings ng iyong browser, at gagana pa rin ang portal kahit wala ang mga ito.",
+            "Ang piniling wika ay nase-save sa local storage ng iyong browser, hindi sa cookie."
           ]
         },
         {
           "id": "security",
           "title": "Seguridad ng Datos",
           "body": [
-            "Ang portal ay isang static na website na inihahatid sa pamamagitan ng HTTPS. Dahil wala kaming database ng impormasyon ng mga bisita, napakakaunting personal na datos ang kailangang protektahan o maaaring mawala."
+            "Ang portal ay isang static na website na inihahatid sa pamamagitan ng HTTPS. Wala kaming database ng impormasyon ng mga bisita sa sarili naming mga server. Ang estadistika ng pagbisita ay iniingatan ng Google Analytics ayon sa nakasaad sa itaas."
           ]
         },
         {
@@ -1118,7 +1136,7 @@
           "id": "changes",
           "title": "Mga Pagbabago sa Patakarang Ito",
           "body": [
-            "Kung magbabago ang aming paraan, halimbawa kung magdaragdag kami ng analytics, ia-update muna namin ang pahinang ito. Ipinapakita ng petsa sa ibaba ang pinakabagong bersyon."
+            "Kung magbabago ang aming paraan, halimbawa kung magdaragdag o papalitan namin ang isang tool na humahawak ng datos ng mga bisita, ia-update muna namin ang pahinang ito. Ipinapakita ng petsa sa ibaba ang pinakabagong bersyon."
           ]
         }
       ]

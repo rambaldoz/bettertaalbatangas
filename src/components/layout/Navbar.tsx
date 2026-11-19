@@ -45,15 +45,11 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center gap-4 py-4">
           <div className="flex min-w-0 items-center">
             <Link to="/" className="flex min-w-0 items-center">
+              {/* The wordmark spells the site name, so it is the link text. */}
               <Logo
-                title={t('common.logo')}
-                className="mr-3 h-12 w-12 shrink-0 sm:h-16 sm:w-16 xl:mr-4 xl:h-21 xl:w-21"
+                title="BetterTaalBatangas.org"
+                className="h-12 w-auto shrink-0 sm:h-16 xl:h-20"
               />
-              <div className="min-w-0">
-                <div className="text-base font-bold text-black sm:text-lg xl:text-xl">
-                  BetterTaalBatangas.org
-                </div>
-              </div>
             </Link>
           </div>
 

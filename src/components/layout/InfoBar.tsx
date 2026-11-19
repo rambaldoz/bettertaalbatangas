@@ -52,7 +52,7 @@ export default function InfoBar() {
           <Link
             to="/forex"
             className="flex min-w-[7.5rem] items-center justify-end overflow-hidden hover:underline"
-            aria-label={`${t('common.exchangeRate')}: 1 ${rate.symbol} = ${formatPeso(rate.phpEquivalent)}`}
+            aria-label={`${t('common.exchangeRate')}: 1 ${rate.symbol} = ${formatPeso(rate.phpEquivalent, rate.phpEquivalent < 1 ? 4 : 2)}`}
           >
             {/* key forces a remount so each new rate animates in */}
             <span
@@ -64,7 +64,7 @@ export default function InfoBar() {
               </span>
               <span>{rate.symbol}</span>
               <span className="text-accent-400">
-                {formatPeso(rate.phpEquivalent)}
+                {formatPeso(rate.phpEquivalent, rate.phpEquivalent < 1 ? 4 : 2)}
               </span>
             </span>
           </Link>

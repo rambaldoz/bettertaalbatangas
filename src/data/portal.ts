@@ -13,4 +13,4 @@ export const BETTERGOV_URL = 'https://bettergov.ph';
 export const CONTACT_EMAIL = (import.meta.env.VITE_CONTACT_EMAIL ||
   '') as string;
 // Date the policy pages were last reviewed (YYYY-MM-DD).
-export const POLICIES_UPDATED = '2026-11-10';
+export const POLICIES_UPDATED = '2026-11-19';
