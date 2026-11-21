@@ -8,7 +8,16 @@ import { useLocation } from 'react-router';
 const GA_ID = (
   import.meta.env.VITE_GOOGLE_ANALYTICS_ID as string | undefined
 )?.trim();
-const ENABLED = !!GA_ID && /^G-[A-Z0-9]+$/i.test(GA_ID) && import.meta.env.PROD;
+// Only the live site reports. Vercel preview deployments are production
+// builds too, so check the hostname as well; otherwise previews and the
+// screenshot bots that load them show up as visitors.
+const LIVE_HOSTS = ['bettertaalbatangas.org', 'www.bettertaalbatangas.org'];
+const ENABLED =
+  !!GA_ID &&
+  /^G-[A-Z0-9]+$/i.test(GA_ID) &&
+  import.meta.env.PROD &&
+  typeof window !== 'undefined' &&
+  LIVE_HOSTS.includes(window.location.hostname);
 
 declare global {
   interface Window {

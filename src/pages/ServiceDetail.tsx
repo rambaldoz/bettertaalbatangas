@@ -135,8 +135,29 @@ function ServicePage({ service }: { service: Service }) {
   return (
     <main className="flex-grow">
       <SEO
-        title={`${title} | ${categoryName}`}
+        title={t('seo.serviceTitle', { service: title })}
         description={c.isFil ? c.serviceSummary(service) : service.description}
+        breadcrumbs={[
+          { name: t('servicesPage.home'), path: '/' },
+          { name: t('servicesPage.services'), path: '/services' },
+          { name: categoryName, path: `/services/${service.categorySlug}` },
+          { name: title, path: service.href },
+        ]}
+        jsonLd={
+          faqs.length
+            ? [
+                {
+                  '@context': 'https://schema.org',
+                  '@type': 'FAQPage',
+                  mainEntity: faqs.map(faq => ({
+                    '@type': 'Question',
+                    name: faq.question,
+                    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+                  })),
+                },
+              ]
+            : []
+        }
       />
       <PageHeader
         back={{
