@@ -1196,10 +1196,12 @@
     }
   },
   "seo": {
-    "defaultTitle": "Portal ng Komunidad para sa Taal, Batangas",
-    "defaultDescription": "Gabay na pinapatakbo ng mga boluntaryo sa mga serbisyo, tanggapan at opisyal ng Bayan ng Taal, Batangas.",
-    "homeDescription": "Portal na pinapatakbo ng komunidad para sa Bayan ng Taal, Batangas. Hanapin ang mga serbisyo ng lokal na pamahalaan, hotline, panahon at palitan ng pera.",
-    "homeKeywords": "Taal, Batangas, lokal na pamahalaan, serbisyo, hotline"
+    "defaultTitle": "Gabay sa Serbisyo, Hotline at Tanggapan ng Taal, Batangas",
+    "defaultDescription": "Mga requirements at hakbang para sa serbisyo ng Bayan ng Taal, Batangas: business permit, cedula, civil registry, building permit, mga hotline at tanggapan.",
+    "homeTitle": "Portal ng Komunidad ng Taal, Batangas: Serbisyo, Hotline at Tanggapan",
+    "homeDescription": "Mga requirements at hakbang para sa serbisyo ng pamahalaang bayan ng Taal, Batangas, mga emergency hotline, tanggapan at opisyal. Pinapatakbo ng mga boluntaryo.",
+    "homeKeywords": "Taal, Batangas, business permit, cedula, birth certificate, hotline, munisipyo",
+    "serviceTitle": "{{service}} sa Taal, Batangas"
   },
   "content": {
     "categories": {

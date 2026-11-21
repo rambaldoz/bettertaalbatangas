@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title={t('common.home')}
+        title={t('seo.homeTitle')}
         description={t('seo.homeDescription')}
         keywords={t('seo.homeKeywords')}
       />

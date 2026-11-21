@@ -26,6 +26,7 @@ export default function NotFound() {
   return (
     <main className="flex-grow">
       <SEO
+        noindex
         title={t('notFound.title')}
         description={t('notFound.seoDescription')}
       />

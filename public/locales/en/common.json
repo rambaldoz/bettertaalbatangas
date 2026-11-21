@@ -1173,9 +1173,11 @@
     }
   },
   "seo": {
-    "defaultTitle": "Community Portal for Taal, Batangas",
-    "defaultDescription": "A volunteer-run guide to the services, offices and officials of the Municipality of Taal, Batangas.",
-    "homeDescription": "Community-run portal for the Municipality of Taal, Batangas. Find local government services, hotlines, weather and exchange rates.",
-    "homeKeywords": "Taal, Batangas, local government, services, hotlines"
+    "defaultTitle": "Taal, Batangas Services, Hotlines and Offices Guide",
+    "defaultDescription": "Requirements and steps for Taal, Batangas municipal services: business permits, cedula, civil registry, building permits, plus hotlines and office contacts.",
+    "homeTitle": "Taal, Batangas Community Portal: Services, Hotlines and Offices",
+    "homeDescription": "Taal, Batangas government services made simple: requirements and steps, emergency hotlines, municipal offices and officials. A volunteer-run community portal.",
+    "homeKeywords": "Taal, Batangas, business permit, cedula, birth certificate, hotlines, municipal hall",
+    "serviceTitle": "{{service}} in Taal, Batangas"
   }
 }
